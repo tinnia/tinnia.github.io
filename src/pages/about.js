@@ -10,7 +10,7 @@ const AboutPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
       <h2 style={{ color:"#8C749F" }} >About Me</h2>
-      <pageQuery>Hi. I'm Tinnia, a Full Stack Developer from Repubilc of Korea.</pageQuery>
+      <p>Hi. I'm Tinnia, a Full Stack Developer from Repubilc of Korea.</p>
     </Layout>
   )
 }

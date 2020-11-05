@@ -1,7 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+// import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -22,7 +23,7 @@ const BlogPostTemplate = ({ data, location }) => {
         itemType="http://schema.org/Article"
       >
         <header>
-          <h2 style={{ margin:0, color:"#8C749F" }} itemProp="headline">{post.frontmatter.title}</h2>
+          <h2 style={{ color:"#8C749F", marginBottom:3 }} itemProp="headline">{post.frontmatter.title}</h2>
           <small style={{ color:"#D2ACD1" }}>{post.frontmatter.category}</small> - <small>{post.frontmatter.date}</small>
         </header>
         <section
@@ -30,9 +31,9 @@ const BlogPostTemplate = ({ data, location }) => {
           itemProp="articleBody"
         />
         <hr />
-        <footer>
+        {/* <footer>
           <Bio />
-        </footer>
+        </footer> */}
       </article>
       <nav className="blog-post-nav">
         <ul
@@ -46,15 +47,15 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+              <Link to={previous.fields.slug} rel="prev" style={{ textDecoration:"None", color: "#D2ACD1" }}>
+                <strong><small style={{ color: "#8C749F" }}><FaChevronLeft size="10" /> Before</small></strong> {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+              <Link to={next.fields.slug} rel="next" style={{ textDecoration:"None", color: "#D2ACD1" }}>
+                {next.frontmatter.title} <strong><small style={{ color: "#8C749F" }}>After <FaChevronRight size="10" /></small></strong>
               </Link>
             )}
           </li>
