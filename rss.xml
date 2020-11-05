@@ -1,27 +1,92 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tinnia Blog]]></title><description><![CDATA[Welcome to Tinnia Blog]]></description><link>https://tinnia.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 03 Nov 2020 22:26:10 GMT</lastBuildDate><item><title><![CDATA[[Programmers/Python] 문자열 압축]]></title><link>https://tinnia.github.io/algorithm/programmers/문자열 압축/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/문자열 압축/</guid><pubDate>Sun, 01 Nov 2020 23:41:32 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;a+b=1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[BOJ/Python] 1000]]></title><link>https://tinnia.github.io/algorithm/boj/1000/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/boj/1000/</guid><pubDate>Sun, 01 Nov 2020 23:41:32 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;a+b=1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Blog#01 만들기]]></title><description><![CDATA[Gatsby + React + gh-pages 로 블로그 만들기 ❤️ 준비 node.js npm git github 계정 1️⃣ Gatsby 설치 2️⃣ Gatsby…]]></description><link>https://tinnia.github.io/blog/1/</link><guid isPermaLink="false">https://tinnia.github.io/blog/1/</guid><pubDate>Sat, 24 Oct 2020 23:41:32 GMT</pubDate><content:encoded>&lt;br /&gt;
-&lt;h5&gt;Gatsby + React + gh-pages 로 블로그 만들기&lt;/h5&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tinnia Blog]]></title><description><![CDATA[Welcome to Tinnia Blog]]></description><link>https://tinnia.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 05 Nov 2020 22:13:44 GMT</lastBuildDate><item><title><![CDATA[Blog#03 Font 바꾸기 & Icon 넣기]]></title><description><![CDATA[Gatsby + React Font 바꾸기  - local에서 폰트 바꾸기 1️⃣ 폰트 저장할 폴더 만들기  - src에 fonts 폴더 만들기 2️⃣ 원하는 폰트를 골라 다운로드하기  - 눈누에서 다운받음 3️⃣ style.css에서 수정…]]></description><link>https://tinnia.github.io/blog/3/</link><guid isPermaLink="false">https://tinnia.github.io/blog/3/</guid><pubDate>Fri, 06 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React Font 바꾸기&lt;/h4&gt;
+&lt;p&gt; - local에서 폰트 바꾸기&lt;/p&gt;
+&lt;h5&gt;1️⃣ 폰트 저장할 폴더 만들기&lt;/h5&gt;
+&lt;p&gt; - src에 fonts 폴더 만들기&lt;/p&gt;
+&lt;h5&gt;2️⃣ 원하는 폰트를 골라 다운로드하기&lt;/h5&gt;
+&lt;p&gt; - &lt;a href=&quot;https://noonnu.cc/&quot;&gt;눈누&lt;/a&gt;에서 다운받음&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shnolinenumbers&quot;&gt;&lt;pre class=&quot;language-shnolinenumbers&quot;&gt;&lt;code class=&quot;language-shnolinenumbers&quot;&gt;# src/fonts/
+TmoneyRoundWindExtraBold.ttf
+TmoneyRoundWindRegular.ttf&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;3️⃣ style.css에서 수정&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* src/style.css */&lt;/span&gt;
+&lt;span class=&quot;token selector&quot;&gt;:root&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;--fontFamily-sans&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TmoneyRoundWindExtraBold&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;--fontFamily-serif&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TmoneyRoundWindRegular&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;--font-body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--fontFamily-serif&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;--font-heading&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--fontFamily-sans&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;4️⃣ 추가 : 수정이 안 될 때&lt;/h5&gt;
+&lt;p&gt; - src에 fonts.css 만들기&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* src/fonts.css */&lt;/span&gt;
+&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@font-face&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TmoneyRoundWindExtraBold&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token url&quot;&gt;&lt;span class=&quot;token function&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string url&quot;&gt;&apos;./fonts/TmoneyRoundWindExtraBold.ttf&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;woff&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; normal&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; normal&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@font-face&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TmoneyRoundWindRegular&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token url&quot;&gt;&lt;span class=&quot;token function&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string url&quot;&gt;&apos;./fonts/TmoneyRoundWindRegular.ttf&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;woff&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; normal&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; normal&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;5️⃣ 추가 : gatsby-browser.js 수정&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// gatsby-browser.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;./src/fonts.css&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;hr /&gt;
+&lt;h4&gt;Gatsby + React Icon 넣기&lt;/h4&gt;
+&lt;h5&gt;1️⃣ npm 설치&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;npm install react-icons --save&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;2️⃣ 사용하기&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; FaBeer &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react-icons/fa&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Question&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Component&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;h3&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; Lets go &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;FaBeer &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;h3&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Blog#02 페이지 만들기]]></title><description><![CDATA[Gatsby + React Todo 페이지 만들기 1️⃣ js파일 만들기  - src/pages에 todo.js 만들기 2️⃣ js 파일 원하는 모습으로 꾸미기]]></description><link>https://tinnia.github.io/blog/2/</link><guid isPermaLink="false">https://tinnia.github.io/blog/2/</guid><pubDate>Wed, 04 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React Todo 페이지 만들기&lt;/h4&gt;
+&lt;h5&gt;1️⃣ js파일 만들기&lt;/h5&gt;
+&lt;p&gt; - src/pages에 todo.js 만들기&lt;/p&gt;
+&lt;h5&gt;2️⃣ js 파일 원하는 모습으로 꾸미기&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsnolinenumbers&quot;&gt;&lt;pre class=&quot;language-jsnolinenumbers&quot;&gt;&lt;code class=&quot;language-jsnolinenumbers&quot;&gt;import React from &amp;quot;react&amp;quot;
+...
+
+const TodoPage = ({ data, location }) =&amp;gt; {
+  const siteTitle = data.site.siteMetadata.title
+  const todolist = [...]
+  const addBoard = [...]
+
+  return (
+    &amp;lt;Layout location={location} title={siteTitle}&amp;gt;
+      &amp;lt;SEO title=&amp;quot;Todo&amp;quot; /&amp;gt;
+      &amp;lt;h2 style={{ color:&amp;quot;#8C749F&amp;quot; }}&amp;gt;To Do List&amp;lt;/h2&amp;gt;
+      ...
+    &amp;lt;/Layout&amp;gt;
+  );
+}
+
+export default TodoPage
+
+export const pageQuery = graphql`
+  query {
+    ...
+  }
+`&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[BOJ/Python] 1000]]></title><link>https://tinnia.github.io/algorithm/boj/1000/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/boj/1000/</guid><pubDate>Sun, 01 Nov 2020 23:41:32 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;a+b=1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[Programmers/Python] 문자열 압축]]></title><link>https://tinnia.github.io/algorithm/programmers/문자열 압축/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/문자열 압축/</guid><pubDate>Sun, 01 Nov 2020 23:41:32 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;a+b=1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Blog#01 Blog 제작]]></title><description><![CDATA[Gatsby + React + gh-pages로 블로그 만들기 ❤️ 준비 1️⃣ Gatsby 설치 2️⃣ Gatsby 프로젝트 만들기   - 테마는 생략 가능하지만 빠른 시작을 위해서는 여기에서 테마를 선택하는 것이 좋다. 3️⃣ Gatsby…]]></description><link>https://tinnia.github.io/blog/1/</link><guid isPermaLink="false">https://tinnia.github.io/blog/1/</guid><pubDate>Sun, 25 Oct 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React + gh-pages로 블로그 만들기&lt;/h4&gt;
 &lt;h6&gt;❤️ 준비&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;node.js&lt;/li&gt;
-&lt;li&gt;npm&lt;/li&gt;
-&lt;li&gt;git&lt;/li&gt;
-&lt;li&gt;github 계정&lt;/li&gt;
-&lt;/ul&gt;
-&lt;br /&gt;
-&lt;h4&gt;1️⃣ Gatsby 설치&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;node.js
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt;
+github 계정&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;1️⃣ Gatsby 설치&lt;/h5&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bashnolinenumbers&quot;&gt;&lt;pre class=&quot;language-bashnolinenumbers&quot;&gt;&lt;code class=&quot;language-bashnolinenumbers&quot;&gt;npm install — global gatsby-cli&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;br /&gt;
-&lt;h4&gt;2️⃣ Gatsby 프로젝트 만들기&lt;/h4&gt;
+&lt;h5&gt;2️⃣ Gatsby 프로젝트 만들기&lt;/h5&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bashnolinenumbers&quot;&gt;&lt;pre class=&quot;language-bashnolinenumbers&quot;&gt;&lt;code class=&quot;language-bashnolinenumbers&quot;&gt;gatsby new [프로젝트명] [테마] &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;테마는 생략 가능하지만 빠른 시작을 위해서는 &lt;a href=&quot;https://www.gatsbyjs.com/starters/?v=2&quot;&gt;여기&lt;/a&gt;에서 테마를 선택하는 것이 좋다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;br /&gt;
-&lt;h4&gt;3️⃣ Gatsby 개발모드&lt;/h4&gt;
+&lt;p&gt;  - 테마는 생략 가능하지만 빠른 시작을 위해서는 &lt;a href=&quot;https://www.gatsbyjs.com/starters/?v=2&quot;&gt;여기&lt;/a&gt;에서 테마를 선택하는 것이 좋다.&lt;/p&gt;
+&lt;h5&gt;3️⃣ Gatsby 개발모드&lt;/h5&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bashnolinenumbers&quot;&gt;&lt;pre class=&quot;language-bashnolinenumbers&quot;&gt;&lt;code class=&quot;language-bashnolinenumbers&quot;&gt;cd [프로젝트명]
 gatsby develop &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;br /&gt;
-&lt;h4&gt;4️⃣ Config 수정&lt;/h4&gt;
+&lt;h5&gt;4️⃣ Config 수정&lt;/h5&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bashnolinenumbers&quot;&gt;&lt;pre class=&quot;language-bashnolinenumbers&quot;&gt;&lt;code class=&quot;language-bashnolinenumbers&quot;&gt;siteMetadata: {
     siteTitleAlt: `Tinnia Blog`,
     author:`tinnia`,
@@ -32,40 +97,31 @@ gatsby develop &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
     siteHeadline:``,
     siteTitle:`Tinnia Blog`,
   },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;siteMetadata외에도 plugin 수정하기&lt;/li&gt;
-&lt;/ul&gt;
-&lt;br /&gt;
-&lt;h4&gt;5️⃣ package.json 수정&lt;/h4&gt;
+&lt;p&gt; - siteMetadata외에도 plugin 수정하기&lt;/p&gt;
+&lt;h5&gt;5️⃣ package.json 수정&lt;/h5&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bashnolinenumbers&quot;&gt;&lt;pre class=&quot;language-bashnolinenumbers&quot;&gt;&lt;code class=&quot;language-bashnolinenumbers&quot;&gt;&amp;quot;homepage&amp;quot;: &amp;quot;https://tinnia.github.io&amp;quot;,
 &amp;quot;scripts&amp;quot;: {
     &amp;quot;deploy&amp;quot;: &amp;quot;gatsby build &amp;amp;&amp;amp; gh-pages -d public -b master&amp;quot;,
     ...
 },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;br /&gt;
-&lt;h4&gt;6️⃣ Github repository 만들기&lt;/h4&gt;
+&lt;h5&gt;6️⃣ Github repository 만들기&lt;/h5&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bashnolinenumbers&quot;&gt;&lt;pre class=&quot;language-bashnolinenumbers&quot;&gt;&lt;code class=&quot;language-bashnolinenumbers&quot;&gt;[닉네임].github.io 라는 이름의 repo 만들기&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;br /&gt;
-&lt;h4&gt;7️⃣ Github 올리기&lt;/h4&gt;
+&lt;h5&gt;7️⃣ Github 올리기&lt;/h5&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bashnolinenumbers&quot;&gt;&lt;pre class=&quot;language-bashnolinenumbers&quot;&gt;&lt;code class=&quot;language-bashnolinenumbers&quot;&gt;git add .
 git commit -m &amp;quot;커밋명&amp;quot;
 git remote add origin &amp;quot;https://github.com/[닉네임]/[닉네임].github.io.git&amp;quot;
 git push origin -u master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;br /&gt;
-&lt;h4&gt;8️⃣ Git Branch 만들고 gh-pages 설치 후 Deploy 하기&lt;/h4&gt;
+&lt;h5&gt;8️⃣ Git Branch 만들고 gh-pages 설치 후 Deploy 하기&lt;/h5&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bashnolinenumbers&quot;&gt;&lt;pre class=&quot;language-bashnolinenumbers&quot;&gt;&lt;code class=&quot;language-bashnolinenumbers&quot;&gt;git checkout -b gh-pages
 npm install --save-dev gh-pages
 npm run deploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;br /&gt;
-&lt;h4&gt;9️⃣ 수정사항 커밋&lt;/h4&gt;
+&lt;h5&gt;9️⃣ 수정사항 커밋&lt;/h5&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bashnolinenumbers&quot;&gt;&lt;pre class=&quot;language-bashnolinenumbers&quot;&gt;&lt;code class=&quot;language-bashnolinenumbers&quot;&gt;git add .
 git commit -m &amp;quot;커밋명&amp;quot;
 git push origin -u gh-pages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;br /&gt;
-&lt;p&gt;📌 참고&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;테마 : &lt;a href=&quot;https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-minimal-blog&quot;&gt;https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-minimal-blog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://tinnia.github.io/hello-world/</link><guid isPermaLink="false">https://tinnia.github.io/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
+&lt;h6&gt;📌 참고&lt;/h6&gt;
+&lt;p&gt;     &lt;small&gt;&lt;a href=&quot;https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog&quot;&gt;React Theme - Gatsby Starter Blog&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://tinnia.github.io/hello-world/</link><guid isPermaLink="false">https://tinnia.github.io/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
 &lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
 &lt;p&gt;Oh, and here’s a great quote from this Wikipedia on
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
