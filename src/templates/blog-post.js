@@ -26,6 +26,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <h2 style={{ color:"#8C749F", marginBottom:3 }} itemProp="headline">{post.frontmatter.title}</h2>
           <small style={{ color:"#D2ACD1" }}>{post.frontmatter.category}</small> - <small>{post.frontmatter.date}</small>
         </header>
+        <hr />
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
