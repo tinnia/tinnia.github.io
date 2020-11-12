@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const StudyCategory = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes.filter(post => post.frontmatter.category === "정보처리기사" || post.frontmatter.category === "Adsp")
+  const posts = data.allMarkdownRemark.nodes.filter(post => post.frontmatter.category === "정보처리기사" || post.frontmatter.category === "ADsP")
 
   return (
     <Layout location={location} title={siteTitle}>
