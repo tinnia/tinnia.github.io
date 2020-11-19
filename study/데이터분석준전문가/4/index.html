@@ -1,0 +1,1478 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.d7081862c3c2f139f3f6.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}@font-face{font-family:BMEULJIROTTF;src:url(/static/BMEULJIROTTF-2e60d3cf05303717fc61a72a6da5f6cf.ttf) format("woff");font-weight:400;font-style:normal}@font-face{font-family:BMHANNAAir_ttf;src:url(/static/BMHANNAAir_ttf-e08a8deea489690784bb0d00f94010cf.ttf) format("woff");font-weight:400;font-style:normal}@font-face{font-family:BMHANNAPro;src:url(/static/BMHANNAPro-ad793ad851f7d160fa83b1ec1b9f1e64.ttf) format("woff");font-weight:400;font-style:normal}@font-face{font-family:TmoneyRoundWindExtraBold;src:url(/static/TmoneyRoundWindExtraBold-d02708fe7b85547d0a07376cf031207e.ttf) format("woff");font-weight:400;font-style:normal}@font-face{font-family:TmoneyRoundWindRegular;src:url(/static/TmoneyRoundWindRegular-96912108626be413e9cca0cf95092819.ttf) format("woff");font-weight:400;font-style:normal}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-4xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:"TmoneyRoundWindExtraBold";--fontFamily-serif:"TmoneyRoundWindRegular";--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:1.625;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:1.44rem;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--color-primary:#005b99;--color-text:#2e353f;--color-text-light:#4f5969;--color-heading:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5}*,:after,:before{box-sizing:border-box}html{line-height:var(--lineHeight-normal);font-size:var(--fontSize-root);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{font-family:var(--font-body);font-size:var(--fontSize-1);color:var(--color-text)}footer{padding:var(--spacing-6) var(--spacing-0)}hr{background:var(--color-accent);height:1px;border:0}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);margin-top:var(--spacing-12);margin-bottom:var(--spacing-6);line-height:var(--lineHeight-tight);letter-spacing:-.025em}h2,h3,h4,h5,h6{font-weight:var(--fontWeight-bold);color:var(--color-heading)}h1{font-weight:var(--fontWeight-black);font-size:var(--fontSize-6);color:var(--color-heading-black)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{line-height:var(--lineHeight-relaxed);--baseline-multiplier:0.179;--x-height-multiplier:0.35;margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{margin-left:var(--spacing-0);margin-right:var(--spacing-0);margin-bottom:var(--spacing-8);list-style-position:outside;list-style-image:none}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{color:var(--color-text-light);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);border-left:var(--spacing-1) solid var(--color-primary);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{width:100%;margin-bottom:var(--spacing-8);border-collapse:collapse;border-spacing:.25rem}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;max-width:var(--maxWidth-wrapper);padding:var(--spacing-10) var(--spacing-0)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12)}.main-heading{font-size:var(--fontSize-7);margin:0}.post-list-item{margin-bottom:var(--spacing-8);margin-top:var(--spacing-8)}.post-list-item p{margin-bottom:var(--spacing-0)}.post-list-item h2{font-size:var(--fontSize-4);color:var(--color-primary);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item header{margin-bottom:var(--spacing-4)}.header-link-home{font-weight:var(--fontWeight-bold);font-family:var(--font-heading);text-decoration:none;font-size:var(--fontSize-2)}.bio{display:flex;margin-bottom:var(--spacing-16)}.bio-avatar,.bio p{margin-bottom:var(--spacing-0)}.bio-avatar{margin-right:var(--spacing-4);min-width:50px;border-radius:100%}.blog-post header h1{margin:var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0)}.blog-post header p{font-size:var(--fontSize-2);font-family:var(--font-heading)}.blog-post-nav ul{margin:var(--spacing-0)}.gatsby-highlight{margin-bottom:var(--spacing-8)}@media (max-width:42rem){blockquote{padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);margin-left:var(--spacing-0)}ol,ul{list-style-position:inside}}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.25.1"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">[ADsP] 03.데이터 분석 | Tinnia Blog</title><meta data-react-helmet="true" name="description" content="ADsP 03.데이터 분석"/><meta data-react-helmet="true" property="og:title" content="[ADsP] 03.데이터 분석"/><meta data-react-helmet="true" property="og:description" content="ADsP 03.데이터 분석"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content=""/><meta data-react-helmet="true" name="twitter:title" content="[ADsP] 03.데이터 분석"/><meta data-react-helmet="true" name="twitter:description" content="ADsP 03.데이터 분석"/><link as="script" rel="preload" href="/webpack-runtime-8f1a0bc82b9652d45708.js"/><link as="script" rel="preload" href="/styles-1043fb1b9b9e69356781.js"/><link as="script" rel="preload" href="/framework-5a1b297d9adac74fe592.js"/><link as="script" rel="preload" href="/app-a7e0499c6144e09f5f8e.js"/><link as="script" rel="preload" href="/1bfc9850-39b2834b056e61febfa2.js"/><link as="script" rel="preload" href="/8315872a6bd24d3f4cff83e8b4c89ecf0bc7de58-21db177b2c0b5841a779.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-a605d2180a33fc4c235f.js"/><link as="fetch" rel="preload" href="/page-data\study\데이터분석준전문가\4\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/642825376.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data\app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header style="margin-bottom:5px" class="global-header"><a style="color:#C587AE" class="header-link-home" href="/">Tinnia Blog</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h2 style="color:#8C749F;margin-bottom:3px" itemProp="headline">[ADsP] 03.데이터 분석</h2><small style="color:#D2ACD1">ADsP</small> - <small>2020/Nov/19</small></header><hr/><section itemProp="articleBody"><p><span style="color:gray">내가 보려고 정리하는 ADsP</span></p>
+<h5>03. 데이터 분석</h5>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>1.데이터 분석</strong></td>
+<td align="left"><code class="language-text">요건정의 → 모델링 → 검증 및 테스트 → 적용</code></td>
+</tr>
+<tr>
+<td></td>
+<td align="left">요건은 비즈니스 이슈로부터 도출</td>
+</tr>
+<tr>
+<td>- 요건정의</td>
+<td align="left">배경, 주요이슈, 기대효과 파악 / 기초분석으로 타당성 확인 / 분석방법론 구축</td>
+</tr>
+<tr>
+<td>- 모델링</td>
+<td align="left">다양한 원천으로부터 분석 대상 데이터 획득</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>2. 비즈니스 수행준거</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 영향도나 효과산출</td>
+<td align="left">투자대비 효과 정량화해 TCO, ROI, NPV 등 산출</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">모델링에서는 Detection Rate가 증가하거나 Lift 개선돼 발생하는 정량적 효과 제시</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">시뮬레이션 통해 처리량, 대기시간 등을 통한 정량적 효과를 제시</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>3. 집단 간 측도</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 위치 측도</td>
+<td align="left">평균 / 중앙값</td>
+</tr>
+<tr>
+<td>* 중앙값</td>
+<td align="left">관측치 크기순으로 배열했을 때 전체의 중앙에 위치하는 수치 / 평균에 비해 이상치에 의한 영향 작음</td>
+</tr>
+<tr>
+<td>- 산포 측도</td>
+<td align="left">사분위수 범위</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>4. 자료 탐색</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 산점도 기준</td>
+<td align="left">선형 또는 비선형 관계 여부 / 이상점 존재 여부 / 자료의 충화 여부</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>5. 측정방법 - 통계</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 명목척도</td>
+<td align="left">어느 집단에 속해있는지 분류할 때 (성별, 출신지, 전화번호 )</td>
+</tr>
+<tr>
+<td>- 순서척도</td>
+<td align="left">특성이 서열관계를 관측하는 척도 (범위 )</td>
+</tr>
+<tr>
+<td>- 구간척도</td>
+<td align="left">가지고 있는 속성의 양을 측정(최빈값, 온도, 지수)</td>
+</tr>
+<tr>
+<td>- 비율척도</td>
+<td align="left">절대적 기준인 0 값 존재, 사칙연산 가능. 제일 많은 정보 가짐(나이, 소득, 가격, 표준편차)</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>6. 다중 회귀 분석</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>변수 선택 방법</strong></td>
+<td align="left">전진 선택 / 후진 제거 / 단계적 방법</td>
+</tr>
+<tr>
+<td>- 전진 선택</td>
+<td align="left">중요하다고 생각되는 설명변수 차례로 모형에 추가</td>
+</tr>
+<tr>
+<td>- 후진 제거</td>
+<td align="left">모든 설명변수 포함한 모형에서 종속변수 설명에 가장 적은 영향 주는 변수부터 제거</td>
+</tr>
+<tr>
+<td>- 단계별방법</td>
+<td align="left">전진선택법에 의해 변수 추가하면서 추가된 변수에 기인해 기존변수 중요도가 약화되면 제거</td>
+</tr>
+<tr>
+<td><strong>부작용</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 독립변수 많을 때 부작용</td>
+<td align="left">설명력 증가가 현저히 줄어듬 / 추정치의 표준오차 커짐 / 회귀식 적합도나 타당도 낮아짐</td>
+</tr>
+<tr>
+<td>- 다중공선성 존재시 해결법</td>
+<td align="left">안 중요한 변수 제거</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">자료부족이 원인일 경우 자료 보완</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">상관관계에 따라 변수 통합</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">분산팽창요인이 10을 넘는다면 다중공선성의 문제가 있는 것으로 판단</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">결정계수 값 높으나 독립변수 p-값이 커서 개별인자들이 유의하지 않을 경우 의심</td>
+</tr>
+<tr>
+<td><strong>영향 파악하기</strong></td>
+<td align="left"><code class="language-text">어떤 독립변수가 더 중요한지</code></td>
+</tr>
+<tr>
+<td></td>
+<td align="left">표준화 자료로 추정한 계수(coefficient)가 가장 큰 변수</td>
+</tr>
+<tr>
+<td><strong>실시 후 확인</strong></td>
+<td align="left">결정계수를 이용해 설명력 확인(높은 값일 수록 회귀식의 설명도 높음)</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">잔차그래프를 그려 모형이 데이터를 잘 적합하고 있는지 확인</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">F-통계량 확인을 통해 모형이 통계적으로 유의미한지 확인</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">t-통계량, p-값 등을 통해 유의미한지 확인</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>7. 의사결정나무</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 특징</td>
+<td align="left">비모수적 방법 / 설명이 용이 / 계산이 단순하고 빠름 / 잡음데이터에 민감하지 않음</td>
+</tr>
+<tr>
+<td>- 불순도 측도</td>
+<td align="left">지니계수 / 엔트로피 계수 / 분류오류율</td>
+</tr>
+<tr>
+<td>- 연관성 측도</td>
+<td align="left">감마계수</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>8. 지도학습</strong></td>
+<td align="left">= 교사 학습</td>
+</tr>
+<tr>
+<td>- 의미</td>
+<td align="left">주어진 독립변수 바탕으로 종속변수 예측</td>
+</tr>
+<tr>
+<td>- 분석방법</td>
+<td align="left">의사결정 나무 / 베이지안 분류 / 인공지능(신경망)분석 / C5.0 / 로지스틱회귀분석</td>
+</tr>
+<tr>
+<td>* 신경망 분석</td>
+<td align="left">은닉층과 은닉마디 적절한 개수 결정 어렵 / 효과적인 결합함수와 활성함수 선택해야함</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">독립변수 간 교호작용 쉽게 파악 못한다 / 간혹 최적해 도달 못할 수 있음</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>9. 비지도 학습</strong></td>
+<td align="left">= 비교사학습</td>
+</tr>
+<tr>
+<td>- 의미</td>
+<td align="left">독립변수간의 관계를 통해 의미있는 결과를 제시하는 학습법</td>
+</tr>
+<tr>
+<td>- 분석 방법</td>
+<td align="left">K-means 군집 / 군집분석 / Apriori / SOM</td>
+</tr>
+<tr>
+<td>* k-means</td>
+<td align="left">한 개체가 속해있던 군집에서 다른군집으로 재배치 가능 / 초기값 선택이 최종 군집선택에 영향 미침</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">초기 군집수 결정 어렵 / 각 데이터를 거리가 가까운 seed가 있는 군집으로 분류</td>
+</tr>
+<tr>
+<td>* Apriori</td>
+<td align="left">연관분석 수행하는 대표적인 1세대 알고리즘 / 빈발아이템 집합과 연관규칙 형태로 표현</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>10. 편상관</strong></td>
+<td align="left">변수 x, y사이의 연관성 살필 때, 제 3의 변수 z가 x와 y에 연관되어 있다고 가정할 때,<br />z에 조건화하여 x와 y간 상관계수를 산출할 때의 상관계수</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>11. 다차원 척도법</strong></td>
+<td align="left">여러 대상 간의 관계에 대한 수치적 자료로 유사성에 대한 측정치를 상대적 거리로 시각화</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>12. 텍스트마이닝</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 특징</td>
+<td align="left">corpus(텍스트 형태의 문서를 구조화해 분석할 수 있는 형태로 만든 것)</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">형태소 분석단계를 거쳐도 자동생성되지는 않음</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">문서 분류, 유사문서 그룹핑 등에 적용 가능</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">워드클라우드는 텍스트문서중 출현 단어의 횟수 기반으로 그려짐</td>
+</tr>
+<tr>
+<td>- 용어-문서 행렬</td>
+<td align="left">전처리 과정 : 불용어 처리 / 구두점 제거 / 빈칸 제거</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>13. 오피니언 마이닝</strong></td>
+<td align="left">= 감성분석 ( 소비자의 감성을 기업 경영에 활용하기 위해 나타난 방법)</td>
+</tr>
+<tr>
+<td>- 특징</td>
+<td align="left">문장에서 사용된 단어의 긍정 부정 빈도에 따라 평가</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">브랜드에 대한 평판 측정에서 긍정적인 추이가 증가하는지 여부 판단할 때 사용</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">각 문장이 긍정인지 부정인지는 주체에 따라 다르게 해석 가능</td>
+</tr>
+<tr>
+<td>- 절차</td>
+<td align="left">크롤링 → 필터링 → NLP → 감성분석</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>14. 사회연결망 분석</strong></td>
+<td align="left">개인과 집단들 간의 관계를 노드와 링크로 모델링해 위상구조와 확산 및 진화과정을 계량적분석</td>
+</tr>
+<tr>
+<td>- 방법</td>
+<td align="left">집합론적 방법 / 그래프 이론을 이용한 방법 / 행렬을 이용한 방법</td>
+</tr>
+<tr>
+<td><strong>분석 측도</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 연결정도중심성(degree)</td>
+<td align="left">한 노드 중심으로 얼마나 많은 edge가 연결 되었는지</td>
+</tr>
+<tr>
+<td>- 위세중심성</td>
+<td align="left">연결된 노드에 가중치 두어 일정의 위세 정도 나타냄</td>
+</tr>
+<tr>
+<td>- 근접중심성(closeness)</td>
+<td align="left">각 노드들간의 거리를 근거로 중심성을 측정</td>
+</tr>
+<tr>
+<td>- 매개중심성(betweeness)</td>
+<td align="left">전체 관계만을 고려했을 때, 중계자 여갈의 정도를 나타냄</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>15. 최적화 기법</strong></td>
+<td align="left">선형계획법(가장 많이 사용) / 담금질 / 동적 계획법 / 단순임의추출법</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>16. 난수생성법</strong></td>
+<td align="left">역변환법 / 합성법 / 채택-기각법</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>17. 상관관계</strong></td>
+<td align="left">중 높은 변수들이 회귀분석에 포함되었을 때 발생하는 문제점 해결방안</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">안 중요한 변수 제거 / 자료부족이 원인일 경우 자료 보완 / 상관관계에 따라 변수 통합</td>
+</tr>
+<tr>
+<td>- 피어슨</td>
+<td align="left">등간척도 이상으로 측정되는 두 변수들의 상관관계 측정</td>
+</tr>
+<tr>
+<td>- 스피어만</td>
+<td align="left">서열척도인 두 변수들의 상관관계 측정</td>
+</tr>
+<tr>
+<td><strong>상관계수</strong></td>
+<td align="left">표준화된 공분산 / 두 변수간의 선형관계쩡도와 방향을 수학적 수치로 정량화해 표시한 지수</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>18. ROC 그래프</strong></td>
+<td align="left">분류모형의 평가에 사용되는 그래프 / X축(1-특이도) , Y축(민감도)</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">ROC curve 45도에 가까울 수록 안좋음 / AUC 클수록 좋은 결과</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">ROC 분석 지원하는 ROCR패키지는 binary classification에서만 사용 가능</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>19. 연관성 분석</strong></td>
+<td align="left">= 장바구니 분석 = 서열 분석 (정형 데이터마이닝 기법)</td>
+</tr>
+<tr>
+<td>- 의미</td>
+<td align="left">기업의 DB에서 상품 구매, 서비스 등 일련의 사건들 간의 규칙 발견하기 위해 사용</td>
+</tr>
+<tr>
+<td><strong>EX) 빵 → 우유</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 신뢰도</td>
+<td align="left">빵과 우유 동시에 포함하는 수 / 빵을 포함하는 거래 수</td>
+</tr>
+<tr>
+<td>- 지지도</td>
+<td align="left">빵과 우유 동시에 포함하는 수 / 전체 거래 수</td>
+</tr>
+<tr>
+<td>- 향상도</td>
+<td align="left">빵과 우유 동시에 포함하는 수 / [빵 포함 * 우유 포함]</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>20. 군집방법</strong></td>
+<td align="left">모집단 사전정보 없는 경우 주어진 값 사이의 유사성 이용해 그룹화하여 각 집단의 성격 파악</td>
+</tr>
+<tr>
+<td>- 계층적 방법</td>
+<td align="left">linkage clustering / 가능한 결과물(dendrogram)</td>
+</tr>
+<tr>
+<td>- 비계층적 방법</td>
+<td align="left">응집분석(n개의 관측값을 각각 군집으로 하고 관측값 특성이 가까운 것끼리 순차적으로 합)</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">분할분석</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>21. 카이제곱 검정</strong></td>
+<td align="left">독립, 종속 변수가 모두 명목척도일 경우 서로 관련되어 있는지 분석하고 싶을 때 사용</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>22. 분포 검정</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 평균 검정</td>
+<td align="left">t-분포 / Z-분포</td>
+</tr>
+<tr>
+<td>- 분산 검정</td>
+<td align="left">F-분포</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>23. 가설 검정</strong></td>
+<td align="left">귀무가설 / 대립가설</td>
+</tr>
+<tr>
+<td>- 제 1종 오류</td>
+<td align="left">귀무가설이 옳은데도 귀무가설 기각하게 되는 오류</td>
+</tr>
+<tr>
+<td>- 제 2종 오류</td>
+<td align="left">귀무가설이 옳지 않은데도 이를 채택하는 오류</td>
+</tr>
+<tr>
+<td>- 기각역</td>
+<td align="left">기무가설 옳다는 전제하에 구한 검정통계량 분포에서 확률이 유의수준(알파)인 부분</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">일반적으로 제 1종 오류의 크기 고정</td>
+</tr>
+<tr>
+<td>- 유의확률</td>
+<td align="left">검정통계량이 실제관측값보다 대립가설 지지하는 방향으로 더욱 치우칠 확률(낮을수록 반증이 강함)</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>24. 잔차도로 판단</strong></td>
+<td align="left">잔차들 독립성은 판단 불가</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">잔차의 등분산성 확인 가능 / 이상값 존재 확인 가능 / 선형관계 확인 가능</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>25. 산점도</strong></td>
+<td align="left">상관계수를 도출 가능 / 그 패턴을 확인하기 위한 분석 / 선형관계 확인 가능</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>26. 다차원척도법(MDS)</strong></td>
+<td align="left">차원 많아지면 stress개선됨 / 차원해석은 주관적 통찰에 의존 / 소비자 인식 그림으로 표현</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>27. 회귀분석</strong></td>
+<td align="left">독립변수가 종속변수에 미치는 영향력 크기 파악해 변수들간의 관계성을 선형으로 가정</td>
+</tr>
+<tr>
+<td>- 가정</td>
+<td align="left">전차항이 정규분포 따름</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">독립변수와 종속변수가 선형관계</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">관측치의 잔차끼리 상관이 없음</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">독립변수의 모든 값에 대해 오차들의 분산이 일정</td>
+</tr>
+<tr>
+<td>- 잔차분석</td>
+<td align="left">잔차를 이용하여 가정을 검토 (선형성 / 등분산성 / 독립성 / 정규성 등)</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>28. 시계열 자료</strong></td>
+<td align="left">한 시점의 자료가 과거의 자료에 의존하는 형태를 모형화 (자료 독립 x)</td>
+</tr>
+<tr>
+<td>- 정상성</td>
+<td align="left">평균이 일정 / 분산이 시점에 의존 X / 공분산은 시차에만 의존</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>29. 주성분 분석</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 주성분수 선택시 고려</td>
+<td align="left">전체 변이의 공헌도 / 평균 고유값 / 스크리 그래프</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>30. 이상치 판정방법</strong></td>
+<td align="left">평균으로부터 표준편차의 3배가 넘는 범위의 데이터라는 기준으로 이상치 정의</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">데이터 크기순으로 나열해 가장 크거나 가장 작은 수치를 이상치로 판정</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">관련 알고리즘 : ESD / MADM</td>
+</tr>
+<tr>
+<td>- 군집 분석 이용</td>
+<td align="left">다른 데이터들과 거리상 떨어진 데이터를 이상치로 판정</td>
+</tr>
+<tr>
+<td>- 회귀 분석 이용</td>
+<td align="left">설명변수의 동일 수준의 다릊 관측치에 비해 종속변수 값이 상이한 점을 이상치로 판정</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>31. 데이터 분할</strong></td>
+<td align="left">데이터 분리 (구축용 / 검정용 / 시험용)</td>
+</tr>
+<tr>
+<td>(데이터 마이닝을 위한)</td>
+<td align="left">구축용데이터 : 초기의 데이터마이닝 모델을 만드는데 사용</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">검정용 데이터 : 구축된 모델의 과잉 또는 과소 맞춤 등에 대한 미세조정 절차 위해 사용</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">교차확인 : 구축용과 시험용을 번갈아가며 모형 평가</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>32. 분류분석</strong></td>
+<td align="left">군집분석과 달리 각 계급이 어떻게 정의되는지  미리 알아야함</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">데이터마이닝 기법 : K-NN / 의사결정 나무모형 / 신경망 모형</td>
+</tr>
+<tr>
+<td>- 의사결정나무모형</td>
+<td align="left">분할 후 생성된 노드들의 불순도 함수값의 감소가 가장 크게 일어나도록 분할이 진행됨</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">분류함수를 의사결정 규칙으로 이뤄진 나무모양으로 그리는 방법</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">목표변수의 범주를 몇 개의 등급으로 분류하는 데 활용 가능</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">매우 많은 예측변수 중 목표변수에 큰 영향을 미치는 변수 골라내는 데 활용 가능</td>
+</tr>
+<tr>
+<td>- 회귀나무 모형</td>
+<td align="left">목표변수가 연속형일 때 변수 예측하는 의사결정나무</td>
+</tr>
+<tr>
+<td>- 예</td>
+<td align="left">신용평가 대상자를 위험도에 따라 상중하로 분류하는 경우</td>
+</tr>
+<tr>
+<td>- 분류나무 모형</td>
+<td align="left">이산형 타깃변수를 예측하는 의사결정나무</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>33. 계절요인</strong></td>
+<td align="left">분해시계열 분석에서 요일마다 반복하는 등 고정된 주기에 따라 자료가 변화하는 요인</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>34. ARMA(정상시계열)</strong></td>
+<td align="left">과거시점의 관측자료(자기회귀;AR) + 과거시점의 백색잡음(이동평균;MA)의 선형결합</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>35. SVM</strong></td>
+<td align="left">자료들을 분리하는 초평면 중에서 자료들과 가장 거리가 먼 초평면 찾는 방법</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">여백을 최대화하여 일반화 능력을 극대화 하는 방법</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">직선으로부터 가장 가까운 샘플까지의 거리가 동일함</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">최적 파라미터 설정방법이 없음</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>36. 군집분석</strong></td>
+<td align="left">관측치 특성에 따라 여러 개의 베타적인 집단으로 나누는 분석법</td>
+</tr>
+<tr>
+<td><strong>척도</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 유클리드 거리</td>
+<td align="left">가장 널리 사용</td>
+</tr>
+<tr>
+<td>- 표준화 거리</td>
+<td align="left">관측단위의 영향을 없애기 위한 일반적인 해법</td>
+</tr>
+<tr>
+<td>- 맨하탄 거리</td>
+<td align="left">변수들이 연속형인 경우 사용할 수 있는 측도 중 이상치가 존재한다고 여겨지고<BR />제거할 수 없는 경우 사용가능한 로버스트한 측도</td>
+</tr>
+<tr>
+<td>- 마할라노비스 거리</td>
+<td align="left">변수들 간 상관관계가 있다고 판단될 때</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>37. 시뮬레이션</strong></td>
+<td align="left">주어진 조건 하에서 실제상황 속 모의실험 통해 정보 얻는 수리적 실험 기법</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">실제상황 수학적으로 모델화하고 프로그램에 저장한 후 일어날 모든 상황을 입력하면 나올 결과 예상</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">시뮬레이션 모형을 통해 여러가지 대안을 쉽게 비교할 수 있음</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">동적 시뮬레이션 모델은 시간에 따른 현상을 파악하기 위한 모델</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>38. 데이터 분석요건 도출</strong></td>
+<td align="left">이슈리스트 작성 → 핵심 이슈 정의 → 이슈 그루핑 → 해결방안 정의</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>39. 탐색적자료분석</strong></td>
+<td align="left">해당 비즈니스 이해와 분석요건에 대한 구체적팩트를 발견해 통찰 얻기위해 수행</td>
+</tr>
+<tr>
+<td>= EDA</td>
+<td align="left">분석목적과 요건, 데이터 특성 기반으로 적합한 분석기법 설정</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">설계한 분석모형 기준으로 높은 유의성 보유한 변수들 식별</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">EDA 통해 준비된 데이터의 가설 적합성과 충분성을 사전 검증</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>40. 모델성능 평가기준</strong></td>
+<td align="left">정확도 / 정밀도 / 민감도</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>41. 표본 추출법</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 단순랜덤추출법</td>
+<td align="left">N개의 원소 집단에서 n개의 번호 임의 선택해 표본으로 추출</td>
+</tr>
+<tr>
+<td>- 계통추출법</td>
+<td align="left">단순랜덤 추출 변형으로 n개의 계통으로 나눈 후 계통에서 표본 랜덤 추출</td>
+</tr>
+<tr>
+<td>- 집락추출법</td>
+<td align="left">모집단이 몇개의 집락으로 결합된 형태로 구성되어 있고, 원소들에게 일련번호 부여가능할 때</td>
+</tr>
+<tr>
+<td>- 층화추출법</td>
+<td align="left">이질적 원소들로 구성된 모집단에서 각 계층을 고루 대표할 수 있게 표본 추출</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>42. 데이터마이닝 추진</strong></td>
+<td align="left">목적 설정 → 데이터 준비 → 가공 → 기법 적용 → 검증</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>43. 확률분포</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 이산형</td>
+<td align="left">이항분포 / 포아송분포 / 기하분포</td>
+</tr>
+<tr>
+<td>- 연속형</td>
+<td align="left">지수분포</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>44. 신뢰구간</strong></td>
+<td align="left">신뢰수준 올라가거나 관측치 수 줄어들면 신뢰구간은 길어짐</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">점추정의 정확성 보완 / 모분산이 알려져 있지 않으면 t통계량 사용</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">주어진 신뢰수준 하에서 모수가 특정구간에 있을것이라고 선언하는 것</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>45. 시계열 분석</strong></td>
+<td align="left">외부인자와 관련해 계절적 패턴, 추세와 같은 요소 설명할 수 있는 모델 결정하는 것</td>
+</tr>
+<tr>
+<td><strong>구성요소</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 추세요인</td>
+<td align="left">자료가 어떤 특정형태를 취할 때 추세요인이 있다고 함</td>
+</tr>
+<tr>
+<td>- 계절요인</td>
+<td align="left">고정된 주기에 따라 자료가 변화할 경우</td>
+</tr>
+<tr>
+<td>- 순환요인</td>
+<td align="left">경제적이나 자연적 이유가 없이 안알려진 주기 가지고 자료가 변화할때</td>
+</tr>
+<tr>
+<td>- 불규칙 요인</td>
+<td align="left">추세, 계절, 순환요인으로 설명할 수 없는 회귀분석의 오차에 해당하는 요인</td>
+</tr>
+<tr>
+<td><strong>특징</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 추세</td>
+<td align="left">한 시점에서 다음 시점으로의 전반적인 패턴변화</td>
+</tr>
+<tr>
+<td>- 계절변동</td>
+<td align="left">짧은 기간 동안의 주기적인 패턴</td>
+</tr>
+<tr>
+<td>- 잡음</td>
+<td align="left">무작위적인 변동으로 보통 알 수 없는 이유로부터 발생</td>
+</tr>
+<tr>
+<td>- 수준</td>
+<td align="left">시계열의 평균값</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>46. QQplot</strong></td>
+<td align="left">45도에 가까울 수록 정규분포와 가까움</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>47. 데이터마이닝 수행</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 분류</td>
+<td align="left">이산형의 결과를 다룸</td>
+</tr>
+<tr>
+<td>- 추정</td>
+<td align="left">연속형의 값을 가지는 결과를 다룸</td>
+</tr>
+<tr>
+<td>- 예측</td>
+<td align="left">분류 또는 추정과 동일 / 미래의 행위를 분류하거나 미래의 값을 추정</td>
+</tr>
+<tr>
+<td>- 연관성규칙</td>
+<td align="left">어떤일이 함꼐 발생할 지를 판단</td>
+</tr>
+<tr>
+<td>- 군집화</td>
+<td align="left">이질적인 사람들의 모집단에서 다수의 동질적 하위집단들로 세분화하는 작업</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>48. buzz분석</strong></td>
+<td align="left">비정형 데이터마이닝 분석방법중 특정기간별 발생 문서량의 추이 분석하는 것</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>49. 모형평가</strong></td>
+<td align="left">어느 모형이 가장 좋은 예측력을 보유하고 있는지 비교분석</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">예측력 / 해석력 / 효율성 / 안정성 측면에서 평가</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">데이터 양 충분하지 않을 때 : CV</td>
+</tr>
+<tr>
+<td>- 과적합</td>
+<td align="left">매우 복잡한 모형을 사용해 학습오차를 매우 작게한 경우 예측오차가 매우 커질수 있는 현상</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>50. 분석기법</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 앙상블</td>
+<td align="left">여러 개의 모형 결합해 개별모형보다 좋은 예측성능 얻는 기법 / bagging, boosting, random forest</td>
+</tr>
+<tr>
+<td>- 차원 축소</td>
+<td align="left">고차원 자료를 변수들 간의 선형/비선형결합으로 생성된 기존변수보다 적은 수의 변수들로 근사시키기</td>
+</tr>
+<tr>
+<td>- 고차원회귀분석</td>
+<td align="left">독립변수가 관측치 개수에 비례해 증가하거나 많을 때, 종속변수에 영향 미치는<br />적은 개수의 독립변수의 선형결합으로 종속변수 예측하는 기법</td>
+</tr>
+<tr>
+<td>- 최적화</td>
+<td align="left">주어진 조건 하에서 달성하고자 하는 목표를 이루기 위한 의사결정 문제 모형화하고 이에 대한 해 구하기</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>51. 데이터 준비작업</strong></td>
+<td align="left">데이터 추출 → 데이터 정제 → 데이터 파생 → 데이터 분할</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>52. Corpus</strong></td>
+<td align="left">데이터의 정제, 통합, 선택, 변환 과정 거친 구조화된 단계 / 추가적 절차 없이 데이터마이닝에 활용가능</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>53. 확률 변수</strong></td>
+<td align="left">어느 특정값이 나타날 가능성이 확률적으로 주어지느 년수</td>
+</tr>
+<tr>
+<td>- 이산형</td>
+<td align="left">이산점에서 0 이아닌 확률변수</td>
+</tr>
+<tr>
+<td>- 연속형</td>
+<td align="left">가능한 값이 실수의 어느 특정구간 전체에 해당하는 확률변수</td>
+</tr>
+<tr>
+<td>- 확률분포</td>
+<td align="left">확률변수에 따라 어떻게 확률이 흩어져있는지 합이 1인 양수로 나타냄</td>
+</tr>
+<tr>
+<td>- 확률질량함수</td>
+<td align="left">각 이산점에서 확률의 크기를 표현하는 함수</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>54. 비교</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 이표본 비교</td>
+<td align="left">각 처리를 적용할 실험단위를 랜덤하게 하는 과정은 랜덤화의 과정으로 연구에서 가장 기본적</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">서로 다른 그룹에서의 관측값들은 독립적으로 관측된 것</td>
+</tr>
+<tr>
+<td>- 대응비교</td>
+<td align="left">두 모집단 평균 비교하기 위해 비교 대상의 쌍들을 조사하고 각 쌍내의 차를 이용해 추론</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>55. 주성분 개수알고리즘</strong></td>
+<td align="left">기준보다 큰 고유치 개수 이용 / 전체 분산 설명하는 비율이 기준치 넘는 주성분의 수를 이용</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">표본 공분산 행렬의 고유치 이용/ 변수들의 선형결합으로 이뤄진 주성분은 서로 독립</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>56. 기초통계량</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 표본평균</td>
+<td align="left">표본의 위치를 대표</td>
+</tr>
+<tr>
+<td>- 표본의 사분위수</td>
+<td align="left">중심위치</td>
+</tr>
+<tr>
+<td>- 사분위수 범위</td>
+<td align="left">표본의 산포</td>
+</tr>
+<tr>
+<td>- 상관 계수</td>
+<td align="left">두 특성의 선형의 관계 나타냄</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>57. 모수 검증</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 모수적 방법</td>
+<td align="left">관측된 자료로 구한 표본평균과 표본분산 등을 이용해 검정실시</td>
+</tr>
+<tr>
+<td>- 비모수적 방법</td>
+<td align="left">자료가 추출된 모집단의 분포에 대해 아무 제약 가하지 않고 검정 실시</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">관측된 자료가 특정 분포 따른다고 가정할 수 없을 때 사용</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">관측된 자료 수 많지 않거나 자료자체가 개체간의 서열관계를 나타내는 경우 사용</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>58. 변수 축소</strong></td>
+<td align="left">변수들의 선형결합으로 이뤄진 주성분은 서로 독립, 기존자료보다 적은 수의 주성분들로 변동 설명</td>
+</tr>
+<tr>
+<td>- 부분최소제곱법</td>
+<td align="left">독립, 종속 변수 변동성 잘 설명할 수 있는 변수 새로 설정하고 이들의 관계를 통해 인과관계 분석</td>
+</tr>
+<tr>
+<td>- 주성분 분석</td>
+<td align="left">다변량 자료분석에 이용 / 독립변수만 분석에 사용</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>59. 선형 계획법</strong></td>
+<td align="left">데이터가 1차함수로 주어졌을 때 목적함수에 대해 최적해를 얻는 방법 / 기본적 문제 해결 최적화기법</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>60. 표본</strong></td>
+<td align="left">모집단을 적절히 대표할 수 있는 일부 원소들을 뽑아 관찰파악해 모집단 유추, 추출한 모집단의 부분집합</td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<br />
+<h5>R Code</h5>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>1.결측치(NA)</strong></td>
+<td align="left">Amelia Ⅱ, Mice, mistools 등의 패키지를 사용해 결측값 처리 가능</td>
+</tr>
+<tr>
+<td>is.na()</td>
+<td align="left">NA가 존재하는 인덱스를 논리벡터 혹은 논리매트릭스로 추출</td>
+</tr>
+<tr>
+<td>na.omit()</td>
+<td align="left">NA가 존재하는(포함된) 관측치 제거</td>
+</tr>
+<tr>
+<td>na.rm()</td>
+<td align="left">해당 함수의 연산 중 NA를 무시하고 진행</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>2. 스크립트 추출</strong></td>
+<td align="left"><code class="language-text">DF : 데이터 프레임</code></td>
+</tr>
+<tr>
+<td>변수를 벡터로 추출</td>
+<td align="left">[[index]] / [[“변수명”]] / $변수명</td>
+</tr>
+<tr>
+<td>변수를 DF으로 추출</td>
+<td align="left">[index] / [“변수명”]</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>3. 통계량 계산</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 행 기준 통계량</td>
+<td align="left">apply(data, 1, 통계량)</td>
+</tr>
+<tr>
+<td>- 열 기준 통계량</td>
+<td align="left">apply(data, 2, 통계량)</td>
+</tr>
+<tr>
+<td>* 열 평균</td>
+<td align="left">apply(data, 2, mean) / sapply(data, mean) / lapply(data, mean) / colMeans(data)</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>4. 주성분 분석</strong></td>
+<td align="left">cumulative Proportion의 Comp열을 보고 판단</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>5. 시계열 모양 추정값</strong></td>
+<td align="left">AR계수는 ar1 아래 / MA계수는 ma1아래</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>6. R명령어</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- melt()</td>
+<td align="left">- argument에는 요약성 작업(sum, mean..) 불가능</td>
+</tr>
+<tr>
+<td>- ddply()</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- kmeans</td>
+<td align="left">군의 비계층적 구조를 보여줌 / 군의 개수는 사용자가 미리 설정</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">k개의 평균을 중심으로 군을 이루는 명령어 / 관측치와 k개의 중심간의 거리 계산해 군을 이룸</td>
+</tr>
+<tr>
+<td>- paste</td>
+<td align="left">문자열 혹은 벡터들을 지정된 구분자를 사용해 결합함</td>
+</tr>
+<tr>
+<td>- set.seed()</td>
+<td align="left">난수 발생시 동일한 난수가 발생되도록 초기화하는 함수</td>
+</tr>
+<tr>
+<td>- hist()</td>
+<td align="left">히스토그램</td>
+</tr>
+<tr>
+<td>- pairs()</td>
+<td align="left">산점도 행렬을 도식할 때</td>
+</tr>
+<tr>
+<td>- ggmap()</td>
+<td align="left">지도 기반 시각화</td>
+</tr>
+<tr>
+<td>- 군집분석</td>
+<td align="left">사전에 군집수 지정(fanny / kmeans / pam)  / 사전에 군집수 지정 x(hclust)</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>7. R패키지</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- reshape</td>
+<td align="left">데이터 구조를 쉽게 변형할 수 있는 패키지( melt(), cast() )</td>
+</tr>
+<tr>
+<td>- 중요변수의 선택에 활용</td>
+<td align="left">klaR(분류와 시각화 위한 패키지) / party(의사결정나무분석 위한 패키지)</td>
+</tr>
+<tr>
+<td>- sna</td>
+<td align="left">gden() : 네트워크 밀도 계산 (연결된 수 / 가능한 연결된 수)</td>
+</tr>
+<tr>
+<td>- 의사결정나무모형</td>
+<td align="left">rpart / party / maptree</td>
+</tr>
+<tr>
+<td>- 신경망모형</td>
+<td align="left">nnet</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>8. 데이터 유형</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- dataframe</td>
+<td align="left">숫자형 + 문자형 벡터 동시 사용 가능 / LIST 구조</td>
+</tr>
+<tr>
+<td>- matrix</td>
+<td align="left">차원을 가진 벡터 / 숫자와 문자형원소 함께 포함 불가능</td>
+</tr>
+<tr>
+<td>- list</td>
+<td align="left">각 요소는 [[]]로 접근 가능 / 각 요소는 서로 다른 모드의 객체를 포함할 수 있음</td>
+</tr>
+<tr>
+<td>- vector</td>
+<td align="left">모든 원소는 같은 모드를 가져야 함</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>9. 분포함수</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- dnorm</td>
+<td align="left">정규분포의 확률값</td>
+</tr>
+<tr>
+<td>- pnorm</td>
+<td align="left">정규분포의 누적분포함수</td>
+</tr>
+<tr>
+<td>- qnorm</td>
+<td align="left">정규분포의 백분위수</td>
+</tr>
+<tr>
+<td>- rnorm</td>
+<td align="left">정규분포의 난수발생</td>
+</tr>
+<tr>
+<td><BR /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>10. 회귀분석</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>- 변동성</td>
+<td align="left">multiple R-squared [%]</td>
+</tr>
+<tr>
+<td>- Pr(>| t |)</td>
+<td align="left">낮을 수록 유의한 설명변수</td>
+</tr>
+<tr>
+<td>- 피어슨 상관계수</td>
+<td align="left">R-squared의 루트 값에 기울기의 부호를 붙인 것</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>11. R 객체이름</strong></td>
+<td align="left">.뒤에 숫자가 나오면 안 됨</td>
+</tr>
+<tr>
+<td><br/></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>12. NAN</strong></td>
+<td align="left">0/0, Inf-Inf 의 결과 / 수학적으로 불가능한 수</td>
+</tr>
+<tr>
+<td><BR /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>13. P-값</strong></td>
+<td align="left">만약 0,01면, 귀무가설이 사실일 때 이러한 결과가 나올 확률이 0,01이라는 의미</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>14. seq</strong></td>
+<td align="left">seq(1,10,2) = seq(b=2,f=1,t=10) = 1:5*2-1</td>
+</tr>
+</tbody>
+</table>
+<div class="gatsby-highlight" data-language="r"><pre class="language-r"><code class="language-r"><span class="token operator">></span> ddply<span class="token punctuation">(</span>d<span class="token punctuation">,</span><span class="token string">"year"</span><span class="token punctuation">,</span>summarise<span class="token punctuation">,</span> mean.count <span class="token operator">=</span> mean<span class="token punctuation">(</span>count<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 의미</span>
+d라는 DF에 <span class="token string">'year'</span>라는 변수별로 count라는 변수의 평균을 구해
+mean.count라는 변수명으로 구성된 DF 생성하라</code></pre></div>
+<div class="gatsby-highlight" data-language="r"><pre class="language-r"><code class="language-r"><span class="token operator">></span> data
+ score gender
+<span class="token number">1</span>  <span class="token number">800</span>     <span class="token number">0</span>
+<span class="token number">2</span>  <span class="token number">750</span>     <span class="token number">1</span>
+<span class="token ellipsis">...</span>
+
+<span class="token comment"># 성별 간 성적의 차이를 상자그림(box plot)으로 시각화</span>
+<span class="token operator">></span> boxplot<span class="token punctuation">(</span>score <span class="token operator">~</span> gender<span class="token punctuation">,</span> data<span class="token punctuation">)</span></code></pre></div></section><hr/></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" style="text-decoration:None;color:#D2ACD1" href="/study/정보처리기사/10/"><strong><small style="color:#8C749F"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" size="10" height="10" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg> Before</small></strong> <!-- -->[정보처리기사] 10. 프로그래밍 언어 활용</a></li><li></li></ul></nav></main><footer>©<!-- -->2020<!-- -->, Built with<!-- --> <a style="color:#D2ACD1;text-decoration:None" href="https://tinnia.github.io">TINNIA</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/study/데이터분석준전문가/4/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-9ce6ac70d57c87e1b5f3.js"],"app":["/app-a7e0499c6144e09f5f8e.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-b0556ce5127c1a3e2490.js"],"component---src-pages-404-js":["/component---src-pages-404-js-3e55058c1b64c812dd89.js"],"component---src-pages-about-js":["/component---src-pages-about-js-c493883ecaee01e8e4e2.js"],"component---src-pages-algorithm-js":["/component---src-pages-algorithm-js-29614af83f31091592b6.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-4e7b2e0d277a86ba67a8.js"],"component---src-pages-index-js":["/component---src-pages-index-js-5abd8a56fb6f74950747.js"],"component---src-pages-study-js":["/component---src-pages-study-js-9b21911cfd536126c77d.js"],"component---src-pages-todo-js":["/component---src-pages-todo-js-cc876157bfb2b695fae5.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-4e83ae3246bc3bb42b79.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-a605d2180a33fc4c235f.js"]};/*]]>*/</script><script src="/polyfill-9ce6ac70d57c87e1b5f3.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-a605d2180a33fc4c235f.js" async=""></script><script src="/8315872a6bd24d3f4cff83e8b4c89ecf0bc7de58-21db177b2c0b5841a779.js" async=""></script><script src="/1bfc9850-39b2834b056e61febfa2.js" async=""></script><script src="/app-a7e0499c6144e09f5f8e.js" async=""></script><script src="/framework-5a1b297d9adac74fe592.js" async=""></script><script src="/styles-1043fb1b9b9e69356781.js" async=""></script><script src="/webpack-runtime-8f1a0bc82b9652d45708.js" async=""></script></body></html>
