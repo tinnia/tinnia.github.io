@@ -334,6 +334,10 @@
 <td align="left">집합론적 방법 / 그래프 이론을 이용한 방법 / 행렬을 이용한 방법</td>
 </tr>
 <tr>
+<td><strong>네트워크 구조 파악</strong></td>
+<td align="left">밀도 / 집중도 / 구조적 틈새</td>
+</tr>
+<tr>
 <td><strong>분석 측도</strong></td>
 <td align="left"></td>
 </tr>
@@ -451,11 +455,15 @@
 </tr>
 <tr>
 <td>- 비계층적 방법</td>
-<td align="left">응집분석(n개의 관측값을 각각 군집으로 하고 관측값 특성이 가까운 것끼리 순차적으로 합)</td>
+<td align="left">응집분석(n개의 관측값을 각각 군집으로 하고 관측값 특성이 가까운 것끼리 순차적으로 합) / 분할 분석</td>
+</tr>
+<tr>
+<td>* 비계층적 단점</td>
+<td align="left">가중치와 거리정의 어렵 / 초기 군집수 결정 어렵 / 최종군집 형태가 초기값에 민감</td>
 </tr>
 <tr>
 <td></td>
-<td align="left">분할분석</td>
+<td align="left">결과해석 어렵 / 군집화가 단계별로 변할 수 있음</td>
 </tr>
 <tr>
 <td><br /></td>
@@ -507,7 +515,15 @@
 </tr>
 <tr>
 <td>- 유의확률</td>
-<td align="left">검정통계량이 실제관측값보다 대립가설 지지하는 방향으로 더욱 치우칠 확률(낮을수록 반증이 강함)</td>
+<td align="left">검정통계량이 실제관측값보다 대립가설 지지하는 방향으로 더욱 치우칠 확률</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">귀무가설 하에서 계산 된 값(귀무가설 낮을수록 반증이 강함)</td>
+</tr>
+<tr>
+<td>- 검정력</td>
+<td align="left">대립가설 하에서 제 2종 오류 범하지 않을 확률</td>
 </tr>
 <tr>
 <td><br /></td>
@@ -674,6 +690,14 @@
 <td align="left">이산형 타깃변수를 예측하는 의사결정나무</td>
 </tr>
 <tr>
+<td>- 신경망모형</td>
+<td align="left">잡음에 민감하지 않음 / 모형결과 해석할 수 없음 / 비교적 정확도가 우수</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">훈련용 외에 실제 적용에서는 분류가 정확하지 않은 모형의 과대적합 현상 종종 발생</td>
+</tr>
+<tr>
 <td><br /></td>
 <td align="left"></td>
 </tr>
@@ -688,6 +712,10 @@
 <tr>
 <td><strong>34. ARMA(정상시계열)</strong></td>
 <td align="left">과거시점의 관측자료(자기회귀;AR) + 과거시점의 백색잡음(이동평균;MA)의 선형결합</td>
+</tr>
+<tr>
+<td>* ARIMA</td>
+<td align="left">비정상 시계열 변환이나 차분을 통해 정상시계열로 바꿔줄수 있고 이러한 모형 중 하나</td>
 </tr>
 <tr>
 <td><br /></td>
@@ -839,7 +867,7 @@
 </tr>
 <tr>
 <td>- 연속형</td>
-<td align="left">지수분포</td>
+<td align="left">지수분포 / 정규분포 / t-분포 / x^2-분포</td>
 </tr>
 <tr>
 <td><br /></td>
@@ -912,6 +940,10 @@
 <tr>
 <td><strong>46. QQplot</strong></td>
 <td align="left">45도에 가까울 수록 정규분포와 가까움</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">잔차의 정규성 여부 확인 가능</td>
 </tr>
 <tr>
 <td><br /></td>
@@ -1018,6 +1050,10 @@
 <td align="left">어느 특정값이 나타날 가능성이 확률적으로 주어지느 년수</td>
 </tr>
 <tr>
+<td></td>
+<td align="left">모집단의 특성값을 수의 집합 위의 확률에 대응 시켜줌</td>
+</tr>
+<tr>
 <td>- 이산형</td>
 <td align="left">이산점에서 0 이아닌 확률변수</td>
 </tr>
@@ -1075,7 +1111,7 @@
 </tr>
 <tr>
 <td>- 표본평균</td>
-<td align="left">표본의 위치를 대표</td>
+<td align="left">표본의 위치를 대표 / 데이터 합계를 데이터의 총 개수로 나눈 값</td>
 </tr>
 <tr>
 <td>- 표본의 사분위수</td>
@@ -1114,6 +1150,10 @@
 <td align="left">관측된 자료 수 많지 않거나 자료자체가 개체간의 서열관계를 나타내는 경우 사용</td>
 </tr>
 <tr>
+<td></td>
+<td align="left">부호검정 / 순위합검정 / 만-위트니 U 검정</td>
+</tr>
+<tr>
 <td><br /></td>
 <td align="left"></td>
 </tr>
@@ -1127,7 +1167,23 @@
 </tr>
 <tr>
 <td>- 주성분 분석</td>
+<td align="left">상관관계 있는 변수들을 결합해 상관관계 없는 변수로 분산 극대화 하는 변수</td>
+</tr>
+<tr>
+<td></td>
 <td align="left">다변량 자료분석에 이용 / 독립변수만 분석에 사용</td>
+</tr>
+<tr>
+<td>* 주성분분석</td>
+<td align="left">변수들 측정단위에 민감 / 측정단위가 서로 다를 경우 선형결합함수 크기에 영향미침</td>
+</tr>
+<tr>
+<td>(- 공분산행렬 문제점)</td>
+<td align="left">상관행렬 이용한 주성분분석은 표준화변수의 공분산행렬로부터 주성분 유도</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">고유값이 1보다 큰 주성분 개수 이용</td>
 </tr>
 <tr>
 <td><br /></td>
@@ -1146,60 +1202,84 @@
 <td align="left">모집단을 적절히 대표할 수 있는 일부 원소들을 뽑아 관찰파악해 모집단 유추, 추출한 모집단의 부분집합</td>
 </tr>
 <tr>
-<td></td>
+<td><br /></td>
 <td align="left"></td>
 </tr>
 <tr>
-<td></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
+<td><strong>61. 독립</strong></td>
+<td align="left">P(A∩B) ≠ 0(서로소 가능) / P(A|B) = A / P(B|A) = B / P(AUB) = P(A)+P(B)-P(A)P(B)</td>
 </tr>
 <tr>
 <td><br /></td>
 <td align="left"></td>
+</tr>
+<tr>
+<td><strong>62. 분류모형 평가</strong></td>
+<td align="left">\\\\\\\\\\\\\모형그룹 1(+) | 모형그룹 0(-)<br />실제그룹 1(+) |  TP(참 긍정)  | FN(거짓부정)<br />실제그룹 0(-) | FP(거짓긍정) | TN(참 부정)</td>
+</tr>
+<tr>
+<td>- 민감도</td>
+<td align="left">TP / (FN + TP)</td>
+</tr>
+<tr>
+<td>- 특이도</td>
+<td align="left">TN / (TN + FP)</td>
+</tr>
+<tr>
+<td>- 정확도</td>
+<td align="left">TP / (TP + FP)</td>
+</tr>
+<tr>
+<td>- 거짓부정률</td>
+<td align="left">FN / (TP + FN)</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>63. 스태밍</strong></td>
+<td align="left">전처리 과정중 변형된 단어형태에서 접사를 제거하고 그 단어의 원형 또는 어간을 찾아내는 것</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>64. 단어 문서 행렬</strong></td>
+<td align="left">텍스트마이닝 전처리 거친 후 문서번호와 단어 간 사용여부 또는 빈도수 이용해 만들어진 행렬</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>65. 선형회귀모형 적합 후</strong></td>
+<td align="left">선형성 / 독립성 / 등분산성 / 비상관성 / 정상성 확인해야함</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>66. 추정</strong></td>
+<td align="left">표본을 이용해 모집단의 특성치에 대한 추측값 제공하고 그 오차한계 제시하는 과정</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">각각의 확률분포는 분포의 형태 결정하는 평균, 분산 등의 모수 가짐</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">모수는 일반적으로 알려져 있지 않으며 표본추출에의해 미지의 모수 측정하게됨</td>
+</tr>
+<tr>
+<td>- 점 추정</td>
+<td align="left">모수가 특정한 값일것이라 선언 / 추정 정확도 판단 불가</td>
+</tr>
+<tr>
+<td>- 구간추정</td>
+<td align="left">모수가 특정 구간에 있을 것이라 선언 / 항상 추정량의 분포에 대한 전제가 주어져야함</td>
 </tr>
 </tbody>
 </table>
