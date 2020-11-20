@@ -114,6 +114,10 @@
 <td align="left"></td>
 </tr>
 <tr>
+<td>- 다중공선성</td>
+<td align="left">독립변수 간의 상관관계가 존재하는 경우</td>
+</tr>
+<tr>
 <td><strong>변수 선택 방법</strong></td>
 <td align="left">전진 선택 / 후진 제거 / 단계적 방법</td>
 </tr>
@@ -182,6 +186,10 @@
 <td align="left">t-통계량, p-값 등을 통해 유의미한지 확인</td>
 </tr>
 <tr>
+<td><strong>결정계수</strong></td>
+<td align="left">SSR / SST</td>
+</tr>
+<tr>
 <td><br /></td>
 <td align="left"></td>
 </tr>
@@ -200,6 +208,14 @@
 <tr>
 <td>- 연관성 측도</td>
 <td align="left">감마계수</td>
+</tr>
+<tr>
+<td>- 가지치기</td>
+<td align="left">오차를 크게 할 위험이 높거나 부적절한 추론규칙 가지고 있는 가지 혹은 불필요한 가지 제거 단계</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">과적합 문제 해결</td>
 </tr>
 <tr>
 <td><br /></td>
@@ -226,6 +242,10 @@
 <td align="left">독립변수 간 교호작용 쉽게 파악 못한다 / 간혹 최적해 도달 못할 수 있음</td>
 </tr>
 <tr>
+<td>- 로지스틱회귀분석</td>
+<td align="left">반응범수가 범주형인 경우에 적용</td>
+</tr>
+<tr>
 <td><br /></td>
 <td align="left"></td>
 </tr>
@@ -250,8 +270,32 @@
 <td align="left">초기 군집수 결정 어렵 / 각 데이터를 거리가 가까운 seed가 있는 군집으로 분류</td>
 </tr>
 <tr>
+<td></td>
+<td align="left">단점을 보완하기 위해 평균 대신 중앙값 사용</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">결정지을 때 : 집단 내 제곱합 사용</td>
+</tr>
+<tr>
+<td>- 절차</td>
+<td align="left">초기군집 k임의 설정 → 가장 가까운 군집에 할당<br />→ 각 군집평균으로 중심이동 → 군집중심 안변할 때까지 반복</td>
+</tr>
+<tr>
 <td>* Apriori</td>
 <td align="left">연관분석 수행하는 대표적인 1세대 알고리즘 / 빈발아이템 집합과 연관규칙 형태로 표현</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">보완하기 위해 만들어진 알고리즘 : FP-성장</td>
+</tr>
+<tr>
+<td>* SOM</td>
+<td align="left">고차원의 데이터를 이해하기 쉬운 저차원의 뉴런으로 정렬해 지도의 형태로 형상화 하는 것</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">승자 독점의 학습 규칙에 따라 학습</td>
 </tr>
 <tr>
 <td><br /></td>
@@ -338,6 +382,10 @@
 <td align="left">밀도 / 집중도 / 구조적 틈새</td>
 </tr>
 <tr>
+<td><strong>2원모드매트릭스</strong></td>
+<td align="left">행과 열에 다른 개체가 배열되는 매트릭스</td>
+</tr>
+<tr>
 <td><strong>분석 측도</strong></td>
 <td align="left"></td>
 </tr>
@@ -391,7 +439,7 @@
 </tr>
 <tr>
 <td>- 스피어만</td>
-<td align="left">서열척도인 두 변수들의 상관관계 측정</td>
+<td align="left">서열척도인 두 변수들의 상관관계 측정 / 비선형도 가능</td>
 </tr>
 <tr>
 <td><strong>상관계수</strong></td>
@@ -442,6 +490,10 @@
 <td align="left">빵과 우유 동시에 포함하는 수 / [빵 포함 * 우유 포함]</td>
 </tr>
 <tr>
+<td></td>
+<td align="left">1보다 크면 결과가 우수함</td>
+</tr>
+<tr>
 <td><br /></td>
 <td align="left"></td>
 </tr>
@@ -454,6 +506,10 @@
 <td align="left">linkage clustering / 가능한 결과물(dendrogram)</td>
 </tr>
 <tr>
+<td></td>
+<td align="left">와드 연결법 : 군집의 오차제곱합 활용</td>
+</tr>
+<tr>
 <td>- 비계층적 방법</td>
 <td align="left">응집분석(n개의 관측값을 각각 군집으로 하고 관측값 특성이 가까운 것끼리 순차적으로 합) / 분할 분석</td>
 </tr>
@@ -464,6 +520,10 @@
 <tr>
 <td></td>
 <td align="left">결과해석 어렵 / 군집화가 단계별로 변할 수 있음</td>
+</tr>
+<tr>
+<td>* 밀도기반군집기법</td>
+<td align="left">임의적 모양의 군집탐색에 효과적</td>
 </tr>
 <tr>
 <td><br /></td>
@@ -495,7 +555,7 @@
 </tr>
 <tr>
 <td><strong>23. 가설 검정</strong></td>
-<td align="left">귀무가설 / 대립가설</td>
+<td align="left">귀무가설 / 대립가설(증명하고 싶은 가설)</td>
 </tr>
 <tr>
 <td>- 제 1종 오류</td>
@@ -587,7 +647,7 @@
 </tr>
 <tr>
 <td><strong>28. 시계열 자료</strong></td>
-<td align="left">한 시점의 자료가 과거의 자료에 의존하는 형태를 모형화 (자료 독립 x)</td>
+<td align="left">시간의 흐름에 따라 관측 / 한 시점의 자료가 과거자료에 의존하는 형태 모형화 (자료 독립X)</td>
 </tr>
 <tr>
 <td>- 정상성</td>
@@ -656,6 +716,10 @@
 <tr>
 <td><strong>32. 분류분석</strong></td>
 <td align="left">군집분석과 달리 각 계급이 어떻게 정의되는지  미리 알아야함</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">집단을 세분화하는 기능이 있는 데이터마이닝 분석법</td>
 </tr>
 <tr>
 <td></td>
@@ -763,7 +827,7 @@
 </tr>
 <tr>
 <td>- 마할라노비스 거리</td>
-<td align="left">변수들 간 상관관계가 있다고 판단될 때</td>
+<td align="left">연속형 변수의 거리 중 표준화와 공분산 동시 만족하는 거리 / 변수들 간 상관관계가 있다고 판단될 때</td>
 </tr>
 <tr>
 <td><br /></td>
@@ -951,7 +1015,7 @@
 </tr>
 <tr>
 <td><strong>47. 데이터마이닝 수행</strong></td>
-<td align="left"></td>
+<td align="left">대용량 데이터에서 의미 있는 패턴을 파악하거나 예측하여 의사결정에 활용</td>
 </tr>
 <tr>
 <td>- 분류</td>
@@ -1055,7 +1119,7 @@
 </tr>
 <tr>
 <td>- 이산형</td>
-<td align="left">이산점에서 0 이아닌 확률변수</td>
+<td align="left">이산점에서 0 이아닌 확률변수 /  기댓값: E(x) = ∑ x * p(x)</td>
 </tr>
 <tr>
 <td>- 연속형</td>
@@ -1151,7 +1215,7 @@
 </tr>
 <tr>
 <td></td>
-<td align="left">부호검정 / 순위합검정 / 만-위트니 U 검정</td>
+<td align="left">부호검정(짝지어진 두개의 관찰치의 크고작음) / 순위합검정 / 만-위트니 U 검정</td>
 </tr>
 <tr>
 <td><br /></td>
@@ -1218,7 +1282,7 @@
 <td align="left">\\\\\\\\\\\\\모형그룹 1(+) | 모형그룹 0(-)<br />실제그룹 1(+) |  TP(참 긍정)  | FN(거짓부정)<br />실제그룹 0(-) | FP(거짓긍정) | TN(참 부정)</td>
 </tr>
 <tr>
-<td>- 민감도</td>
+<td>- 민감도(재현율)</td>
 <td align="left">TP / (FN + TP)</td>
 </tr>
 <tr>
@@ -1280,6 +1344,206 @@
 <tr>
 <td>- 구간추정</td>
 <td align="left">모수가 특정 구간에 있을 것이라 선언 / 항상 추정량의 분포에 대한 전제가 주어져야함</td>
+</tr>
+<tr>
+<td><BR /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>67. 실루엣</strong></td>
+<td align="left">군집분석의 품질평가 지표로 응집도와 분리도 계산하는 지표 / 군집간 거리 기준으로 군집분할성과 측정</td>
+</tr>
+<tr>
+<td><BR /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>68. 정상시계열</strong></td>
+<td align="left">시점에 상관없이 시계열의 특성이 일정하다</td>
+</tr>
+<tr>
+<td><strong>분해 시계열</strong></td>
+<td align="left">시계열에서 분리해서 분석하는 방법</td>
+</tr>
+<tr>
+<td><BR /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>69. 오분류표 F1값</strong></td>
+<td align="left">F1 = 2 * (재현율 * 정확도) /  (재현율 + 정확도)</td>
+</tr>
+<tr>
+<td>- F2</td>
+<td align="left">재현율에 2배 가중치를 부여하여 조화평균</td>
+</tr>
+<tr>
+<td><BR /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>70. 나이브베이지안분류</strong></td>
+<td align="left">베이즈 정리 활용한 분류방법 알고리즘</td>
+</tr>
+<tr>
+<td><BR /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>71. BMU</strong></td>
+<td align="left">SOM의 경쟁층의 프로토타입 벡터와의 거리를 계산하고 가장 가까운 프로토타입 벡터</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>72. 소프트맥스 함수</strong></td>
+<td align="left">목표치가 다범주인 경우 각 범주에 속할 사후 확률 제공</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>73. 등분산성 위배</strong></td>
+<td align="left">Auto 데이터에서 단순선형회귀분석시 발생가능</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>74. 병합적군집</strong></td>
+<td align="left">유사한 클러스터끼리 합쳐가면서 원하는 클러스터 개수가 될 때까지 진행</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>75. kappa</strong></td>
+<td align="left">(관찰된 일치율 - 우연에 의한 일치율) / (1 - 우연한 일치율)</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>76. 최소제곱법</strong></td>
+<td align="left">회귀모형의 계수 추정 방식</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>77. 차분</strong></td>
+<td align="left">현시점에서 전시점 자료를 빼는 것</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>78. 부스팅</strong></td>
+<td align="left">분류가 잘못된 데이터에 큰 가중치 부여하는 기법</td>
+</tr>
+<tr>
+<td>- lgbm</td>
+<td align="left">leaf-wise node 방식 사용</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>79. 오분류표 정확도</strong></td>
+<td align="left">(a + d) / (a + b + c + d)</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>80. 랜덤포레스트</strong></td>
+<td align="left">부분집합에서 모형을 생성하며 결합하는 방식</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">보험사에서 고객 데이터를 갱신해서 예측하려고 할 때 적절한 분석기법</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>81. 향상도 곡선</strong></td>
+<td align="left">랜덤모델과 비교하여 모델 성능 평가</td>
+</tr>
+<tr>
+<td><BR /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>82. Description</strong></td>
+<td align="left">사람, 상품에 관한 이해 증가시키기 위해 데이터가 가지고 있는 특징 나타내고 설명하는 기법</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>83. 일반화 가능성</strong></td>
+<td align="left">안정적인 결과를 제공하는지와 데이터를 확장하여 적용할 수 있는지 평가</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>84. CART</strong></td>
+<td align="left">목표변수가 이산형인 경우 지니지수, 연속형인 경우 분산감소량 사용하는 알고리즘</td>
+</tr>
+<tr>
+<td><BR /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>85. MIN-MAX정규화</strong></td>
+<td align="left">원데이터 분포 유지하면서 정규화</td>
+</tr>
+<tr>
+<td><BR /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>86. 코사인 유사도</strong></td>
+<td align="left">두 벡터 사이의 각도를 이용하여 벡터간의 유사 정도 측정하는 방식</td>
+</tr>
+<tr>
+<td><BR /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>87. lazy learning</strong></td>
+<td align="left">최근접 이웃모형</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>88. 통계량</strong></td>
+<td align="left">표본의 값</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>89. EM 알고리즘 해석</strong></td>
+<td align="left">반복횟수 2회만에 로그-가능도 함수가 최대가 됨을 알 수 있음</td>
 </tr>
 </tbody>
 </table>
@@ -1414,6 +1678,30 @@
 <td align="left">사전에 군집수 지정(fanny / kmeans / pam)  / 사전에 군집수 지정 x(hclust)</td>
 </tr>
 <tr>
+<td>- summary</td>
+<td align="left">연속변수의 최대, 최소, 중앙값 등과 범주변수의 범주 빈도 출력</td>
+</tr>
+<tr>
+<td>- dist()</td>
+<td align="left">지원하지 않는 것 : binary</td>
+</tr>
+<tr>
+<td>- plyr</td>
+<td align="left">multi-core사용해 반복문 사용하지 않고도 매우 빠르게 처리할 수 있는 함수</td>
+</tr>
+<tr>
+<td>- ldply()</td>
+<td align="left">입력은 리스트, 출력은 데이터프레임인 plyr 함수</td>
+</tr>
+<tr>
+<td>- 시그모이드</td>
+<td align="left">활성화 함수의 설명 / 결과값 : 0&#x3C;=y&#x3C;=1 (?문제인건가)</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">식 : y=1/1+exp(-z)</td>
+</tr>
+<tr>
 <td><br /></td>
 <td align="left"></td>
 </tr>
@@ -1442,6 +1730,10 @@
 <td align="left">nnet</td>
 </tr>
 <tr>
+<td>- 설치 순서</td>
+<td align="left">install.packages(‘패키지명’) → library(‘패키지명’) == install.packages(‘패키지명’) → library(패키지명)</td>
+</tr>
+<tr>
 <td><br /></td>
 <td align="left"></td>
 </tr>
@@ -1451,7 +1743,7 @@
 </tr>
 <tr>
 <td>- dataframe</td>
-<td align="left">숫자형 + 문자형 벡터 동시 사용 가능 / LIST 구조</td>
+<td align="left">숫자형 + 문자형 벡터 동시 사용 가능 / LIST 구조 / 각 열이 서로다른 타입</td>
 </tr>
 <tr>
 <td>- matrix</td>
@@ -1459,11 +1751,15 @@
 </tr>
 <tr>
 <td>- list</td>
-<td align="left">각 요소는 [[]]로 접근 가능 / 각 요소는 서로 다른 모드의 객체를 포함할 수 있음</td>
+<td align="left">각 요소는 [[]]로 접근 가능 / 각 요소는 서로 다른 모드의 객체를 포함할 수 있음 / 타입다른객체 하나로</td>
 </tr>
 <tr>
 <td>- vector</td>
-<td align="left">모든 원소는 같은 모드를 가져야 함</td>
+<td align="left">모든 원소는 같은 모드를 가져야 함 / 하나또는 그 이상의 스칼라 원소의 집합</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">문자형 벡터 (숫자, 문자, 논리연산자가 포함)</td>
 </tr>
 <tr>
 <td><br /></td>
@@ -1540,6 +1836,14 @@
 <tr>
 <td><strong>14. seq</strong></td>
 <td align="left">seq(1,10,2) = seq(b=2,f=1,t=10) = 1:5*2-1</td>
+</tr>
+<tr>
+<td><br /></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td><strong>15. 표준편자 구하기</strong></td>
+<td align="left">sd(a) = var(a)^(1/2) = sqrt(var(a))</td>
 </tr>
 </tbody>
 </table>
