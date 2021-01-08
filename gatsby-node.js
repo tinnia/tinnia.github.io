@@ -1,4 +1,5 @@
 const path = require(`path`)
+const _ = require('lodash')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
@@ -6,6 +7,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const tagTemplate = path.resolve("./src/templates/tags.js")
+  const categoryTemplate = path.resolve("./src/templates/categories.js")
+  const cateTagTemplate = path.resolve("./src/templates/cate-tag.js")
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
@@ -20,7 +24,35 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fields {
               slug
             }
+            frontmatter {
+              category
+              tags
+              path
+            }
           }
+        }
+        categoryGroup: allMarkdownRemark(limit: 2000) {
+          group(field: frontmatter___category) {
+            fieldValue
+          }
+        }
+        tagGroup1: allMarkdownRemark(limit: 2000, filter: {frontmatter: {category: {eq: "Algorithm"}}}) {
+          group(field: frontmatter___tags) {
+            fieldValue
+          }
+          distinct(field: frontmatter___category)
+        }
+        tagGroup2: allMarkdownRemark(limit: 2000, filter: {frontmatter: {category: {eq: "Portfolio"}}}) {
+          group(field: frontmatter___tags) {
+            fieldValue
+          }
+          distinct(field: frontmatter___category)
+        }
+        tagGroup3: allMarkdownRemark(limit: 2000, filter: {frontmatter: {category: {eq: "Study"}}}) {
+          group(field: frontmatter___tags) {
+            fieldValue
+          }
+          distinct(field: frontmatter___category)
         }
       }
     `
@@ -46,12 +78,74 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
 
       createPage({
-        path: post.fields.slug,
+        path: post.frontmatter.path,
         component: blogPost,
         context: {
           id: post.id,
           previousPostId,
           nextPostId,
+        },
+      })
+    })
+  }
+
+  const categories = result.data.categoryGroup.group
+  
+  if (categories.length > 0) {
+    categories.forEach(category => {
+      createPage({
+        path: `/${category.fieldValue}/`,
+        component: categoryTemplate,
+        context: {
+          category: category.fieldValue,
+        },
+      })
+    })
+  }
+  
+  const tag1 = result.data.tagGroup1.group
+  const cat1 = result.data.tagGroup1.distinct
+
+  if (tag1.length > 0) {
+    tag1.forEach(tag => {
+      createPage({
+        path: `/${cat1}/${tag.fieldValue}/`,
+        component: cateTagTemplate,
+        context: {
+          category: cat1,
+          tag: tag.fieldValue,
+        },
+      })
+    })
+  }
+
+  const tag2 = result.data.tagGroup2.group
+  const cat2 = result.data.tagGroup2.distinct
+
+  if (tag2.length > 0) {
+    tag2.forEach(tag => {
+      createPage({
+        path: `/${cat2}/${tag.fieldValue}/`,
+        component: cateTagTemplate,
+        context: {
+          category: cat2,
+          tag: tag.fieldValue,
+        },
+      })
+    })
+  }
+
+  const tag3 = result.data.tagGroup3.group
+  const cat3 = result.data.tagGroup3.distinct
+
+  if (tag3.length > 0) {
+    tag3.forEach(tag => {
+      createPage({
+        path: `/${cat3}/${tag.fieldValue}/`,
+        component: cateTagTemplate,
+        context: {
+          category: cat3,
+          tag: tag.fieldValue,
         },
       })
     })
