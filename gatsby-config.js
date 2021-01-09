@@ -73,6 +73,19 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
-    'gatsby-plugin-dark-mode'
+    'gatsby-plugin-dark-mode',
+    // sitemap.xml생성
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://tinnia.github.io/',
+        sitemap: 'https://tinnia.github.io/sitemap.xml',
+        policy: [{
+          userAgent: '*',
+          allow: '/'
+        }]
+      }
+    },
   ],
 }
