@@ -26,7 +26,7 @@ const TagsPage = ({
         <h2 style={{ textAlign: "center", color:"#C587AE", margin:20 }}>TAGs</h2>
         <ul style={{ textAlign:"center", padding:0 }}>
           {group.map(tag => {
-            if (tag.fieldValue === 'a-ds-p'||tag.fieldValue === 'certificate' ||tag.fieldValue === 'cs'){
+            if (tag.fieldValue === 'etc'||tag.fieldValue === 'certificate' ||tag.fieldValue === 'cs'){
               return (
                 <li style={{ listStyle:"none", padding:10 }} key={tag.fieldValue}>
                   <h6>

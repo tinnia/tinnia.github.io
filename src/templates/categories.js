@@ -17,7 +17,7 @@ const Categories = ({ pageContext, data, location }) => {
     if (category === 'Algorithm') {
         tags = ['ALL','BOJ','PROGRAMMERS','SWEA']
     } else if (category === 'Study') {
-        tags = ['ALL','ADsP','CERTIFICATE','CS']
+        tags = ['ALL','CERTIFICATE', 'CS', 'ETC']
     } else {
         tags =['ALL','PJT', 'KAGGLE', 'BLOG']
         // tags =['ALL','WEB','KOTLIN','KAGGLE', 'BLOG']

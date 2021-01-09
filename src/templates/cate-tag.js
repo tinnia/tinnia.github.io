@@ -18,11 +18,11 @@ const CateTag = ({ pageContext, data, location }) => {
   if (category === 'Algorithm') {
     tags = ['ALL','BOJ','PROGRAMMERS','SWEA']
   } else if (category === 'Study') {
-    tags = ['ALL','ADsP','CERTIFICATE','CS']
+    tags = ['ALL','CERTIFICATE', 'CS', 'ETC']
   } else {
-    if (currentTag ==='a-ds-p' || currentTag === 'certificate' || currentTag === 'cs') {
+    if (currentTag ==='cs' || currentTag === 'certificate' || currentTag === 'etc') {
       cate = 'Study'
-      tags = ['ALL','ADsP','CERTIFICATE','CS']
+      tags = ['ALL','CERTIFICATE', 'CS', 'ETC']
     } else if (currentTag ==='boj' || currentTag === 'programmers' || currentTag === 'swea') {
       cate = 'Algorithm'
       tags = ['ALL','BOJ','PROGRAMMERS','SWEA']

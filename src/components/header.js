@@ -8,7 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 class Header extends React.Component {
   render() {
     return (
-      <Navbar fixed="top" expand="lg">
+      <Navbar fixed="top" expand="lg" style={{ backgroundColor:"var(--bg)" }}>
         <Navbar.Brand href="/" style={{ color:"#897eff" }}>TINNIA</Navbar.Brand>
         <Navbar.Collapse className="justify-content-end">
           <ThemeToggler>
