@@ -1,6 +1,6 @@
 ---
 title: "[SSAFY] 삼성청년SW아카데미 3기 | 합격후기"
-date: "2019-12-267T13:41:32.169Z"
+date: "2019-12-26T13:41:32.169Z"
 path: "/Study/etc/6/"
 category: "Study"
 tags: ["etc"]

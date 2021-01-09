@@ -1,6 +1,6 @@
 ---
 title: "[SSAFY] 삼성청년SW아카데미 3기 | 면접"
-date: "2019-12-057T13:41:32.169Z"
+date: "2019-12-05T13:41:32.169Z"
 path: "/Study/etc/5/"
 category: "Study"
 tags: ["etc"]

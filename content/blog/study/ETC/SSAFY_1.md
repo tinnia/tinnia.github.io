@@ -1,6 +1,6 @@
 ---
 title: "[SSAFY] 삼성청년SW아카데미 3기 | 적성진단"
-date: "2019-11-117T13:41:32.169Z"
+date: "2019-11-17T13:41:32.169Z"
 path: "/Study/etc/2/"
 category: "Study"
 tags: ["etc"]
