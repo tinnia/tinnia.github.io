@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tinnia Blog]]></title><description><![CDATA[Welcome to Tinnia Blog]]></description><link>https://tinnia.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 09 Jan 2021 17:36:37 GMT</lastBuildDate><item><title><![CDATA[[Programmers/Python] 완주하지 못한 선수]]></title><description><![CDATA[문제 바로가기 문제 설명 수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다. 마라톤에 참여한 선수들의 이름이 담긴 배열 participant…]]></description><link>https://tinnia.github.io/algorithm/programmers/완주하지 못한 선수/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/완주하지 못한 선수/</guid><pubDate>Fri, 08 Jan 2021 13:57:32 GMT</pubDate><content:encoded>&lt;br /&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tinnia Blog]]></title><description><![CDATA[Welcome to Tinnia Blog]]></description><link>https://tinnia.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 09 Jan 2021 18:59:30 GMT</lastBuildDate><item><title><![CDATA[[Programmers/Python] 완주하지 못한 선수]]></title><description><![CDATA[문제 바로가기 문제 설명 수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다. 마라톤에 참여한 선수들의 이름이 담긴 배열 participant…]]></description><link>https://tinnia.github.io/algorithm/programmers/완주하지 못한 선수/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/완주하지 못한 선수/</guid><pubDate>Fri, 08 Jan 2021 13:57:32 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/68644?language=python3&quot; style=&quot;color:#C587AE;text-decoration:none;&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;문제 설명&lt;/h6&gt;
 &lt;p&gt;&lt;small&gt;수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다. 마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.&lt;/small&gt;&lt;/p&gt;
@@ -292,7 +292,29 @@ I 3186 6 111702 108909 437791 460849 808743 573893 A 6 902149 801457 885061 1123
         res &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
 
     &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;#{} {}&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;T&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;br /&gt;</content:encoded></item><item><title><![CDATA[PJT]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://tinnia.github.io/portfolio/pjt/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/pjt/</guid><pubDate>Sat, 19 Dec 2020 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
+&lt;br /&gt;</content:encoded></item><item><title><![CDATA[[Blog] 05. Google Adsense]]></title><description><![CDATA[너무 이르다고 생각이 들지만, 구글 애드센스를 미리 신청해볼까 하고 신청을 했었다.  다들 오래 걸릴 것이라고 생각하라고 하며, 구글 애드센스 고시에 합격하기 힘들다고 하셔서 겁도 많이 먹었는데,…]]></description><link>https://tinnia.github.io/portfolio/blog/7/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/7/</guid><pubDate>Tue, 05 Jan 2021 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;너무 이르다고 생각이 들지만, 구글 애드센스를 미리 신청해볼까 하고 신청을 했었다.  다들 오래 걸릴 것이라고 생각하라고 하며, 구글 애드센스 고시에 합격하기 힘들다고 하셔서 겁도 많이 먹었는데, 4일 만에 애드센스가 승인이 나버렸다. 사실 웹 관련 공부를 더 하고 깔끔한 블로그를 만든 뒤에나 합격할 줄 알았는데, 벌써 합격해버려서 요 며칠간 구글 애드센스 적용하는 방법을 또 배우고, 면접도 준비하느라 블로그가 너무 난잡해진 기분이다.  &lt;/p&gt;
+&lt;p&gt;오늘부터 또다시 공부해서 조금 더 나아진 블로그를 만들도록 해야겠다.  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;Google Adsense  &lt;/span&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;1. 신청  &lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;11월 21일&lt;/strong&gt; 이제 구글 애드센스에서 웹사이트를 입력하고 하며 애드센스에 사이트를 연결할 수 있게, 코드를 통해 블로그를 활성화해 줘야 한다고 합니다.  &lt;/p&gt;
+&lt;p&gt;신청하는 과정은 사실 별거 없었고, 블로그 &lt;strong&gt;head&lt;/strong&gt; 와 &lt;strong&gt;/head&lt;/strong&gt; 사이에 코드를 붙여넣고 기다리면 되었다.&lt;/p&gt;
+&lt;p&gt;사이트 검토에는 최대 3일이 소요된다고 하고, 완료되면 이메일로 알려준다는 화면이 뜨게 되면 신청 완료!  &lt;/p&gt;
+&lt;p&gt;보통 1차 승인이 나려면 10개 미만의 1500자에서 3000자 사이의 글이 있어야 한다고 하는데, 일단 블로그 관련 글을 4개 정도 올려 두었고 승인이 나기 전까지도 계속 글을 올렸다.
+&lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;2. 승인 &lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;images/adsense.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;11월 25일&lt;/strong&gt; 드디어 구글에서 메일이 왔습니다!!  &lt;/p&gt;
+&lt;p&gt;이제 사이트에 애드센스 광고를 게재하여 수익을 올릴 수 있습니다.  라는 글을 만나게 되었고, 이제 몇 시간 내에 관련 광고가 게재되기 시작한다고 하는데, 저는 다음날부터 확인할 수 있었습니다.  &lt;/p&gt;
+&lt;p&gt;뭔가 감동..근데 이게 구글 애드센스를 올리다 보니, 애드센스 홈페이지에 계속 들어가 보게 되더라고요.&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;3. 발전 중.. &lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;아니 저 광고는 열심히 올라가는데, 클릭수가 하나도 안 오르는 현상..&lt;br&gt;
+애드센스 조금 더 공부하고, 다시 해보려고 합니다.  &lt;/p&gt;
+&lt;p&gt;사실 트래픽이 너무 낮아 예상이 정확하지 않다고 하기도 하는데, 아직 블로그를 시작한 지는 3주 정도라서 큰 기대는 안해야겠다…&lt;br&gt;
+30일도 안 된 블로그라 많이 부족하지만, 점점 발전해 나가는 블로그가 되도록 열심히 공부해야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PJT]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://tinnia.github.io/portfolio/pjt/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/pjt/</guid><pubDate>Sat, 19 Dec 2020 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
 &lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
 &lt;p&gt;Oh, and here’s a great quote from this Wikipedia on
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
@@ -566,7 +588,7 @@ __double underscores__&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;컴파일 : 원시코드 파일을 기계어로 번역해 목적코드 파일에 저장하는 과정&lt;/li&gt;
 &lt;li&gt;링크 : 목적코드 파일과 라이브러리 파일을 하나로 합쳐 실행파일 생성하는 과정&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[ADsP] 03.데이터 분석]]></title><description><![CDATA[내가 보려고 정리하는 ADsP 03. 데이터 분석…]]></description><link>https://tinnia.github.io/study/데이터분석준전문가/4/</link><guid isPermaLink="false">https://tinnia.github.io/study/데이터분석준전문가/4/</guid><pubDate>Thu, 19 Nov 2020 05:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span style=&quot;color:gray&quot;&gt;내가 보려고 정리하는 ADsP&lt;/span&gt;&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[ADsP] 03.데이터 분석]]></title><description><![CDATA[내가 보려고 정리하는 ADsP 03. 데이터 분석…]]></description><link>https://tinnia.github.io/study/자격증/데이터분석준전문가_4/</link><guid isPermaLink="false">https://tinnia.github.io/study/자격증/데이터분석준전문가_4/</guid><pubDate>Thu, 19 Nov 2020 05:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span style=&quot;color:gray&quot;&gt;내가 보려고 정리하는 ADsP&lt;/span&gt;&lt;/p&gt;
 &lt;h5&gt;03. 데이터 분석&lt;/h5&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -2426,7 +2448,7 @@ mean.count라는 변수명으로 구성된 DF 생성하라&lt;/code&gt;&lt;/pre&
 &lt;span class=&quot;token ellipsis&quot;&gt;...&lt;/span&gt;
 
 &lt;span class=&quot;token comment&quot;&gt;# 성별 간 성적의 차이를 상자그림(box plot)으로 시각화&lt;/span&gt;
-&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; boxplot&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;score &lt;span class=&quot;token operator&quot;&gt;~&lt;/span&gt; gender&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; data&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[정보처리기사] 10. 프로그래밍 언어 활용]]></title><description><![CDATA[내가 보려고 정리하는 정보처리기사 10. 프로그래밍 언어 활용     1. 데이터 타입]]></description><link>https://tinnia.github.io/study/정보처리기사/10/</link><guid isPermaLink="false">https://tinnia.github.io/study/정보처리기사/10/</guid><pubDate>Tue, 17 Nov 2020 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span style=&quot;color:gray&quot;&gt;내가 보려고 정리하는 정보처리기사&lt;/span&gt;&lt;/p&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; boxplot&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;score &lt;span class=&quot;token operator&quot;&gt;~&lt;/span&gt; gender&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; data&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[정보처리기사] 10. 프로그래밍 언어 활용]]></title><description><![CDATA[내가 보려고 정리하는 정보처리기사 10. 프로그래밍 언어 활용     1. 데이터 타입]]></description><link>https://tinnia.github.io/study/자격증/정처기_10/</link><guid isPermaLink="false">https://tinnia.github.io/study/자격증/정처기_10/</guid><pubDate>Tue, 17 Nov 2020 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span style=&quot;color:gray&quot;&gt;내가 보려고 정리하는 정보처리기사&lt;/span&gt;&lt;/p&gt;
 &lt;h5&gt;10. 프로그래밍 언어 활용&lt;/h5&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -2785,7 +2807,7 @@ mean.count라는 변수명으로 구성된 DF 생성하라&lt;/code&gt;&lt;/pre&
 &lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content:encoded></item><item><title><![CDATA[[정보처리기사] 08.SQL 응용]]></title><description><![CDATA[내가 보려고 정리하는 정보처리기사 08. SQL 응용     1. DDL 스키마, 도메인, 테이블, 뷰 인덱스 정의하거나 변경 또는 삭제할 때 사용  CREATE / ALTER / DROP 다른 테이블로 정의 CREATE TABLE 재학생 AS…]]></description><link>https://tinnia.github.io/study/정보처리기사/8/</link><guid isPermaLink="false">https://tinnia.github.io/study/정보처리기사/8/</guid><pubDate>Tue, 17 Nov 2020 03:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span style=&quot;color:gray&quot;&gt;내가 보려고 정리하는 정보처리기사&lt;/span&gt;&lt;/p&gt;
+&lt;/table&gt;</content:encoded></item><item><title><![CDATA[[정보처리기사] 08.SQL 응용]]></title><description><![CDATA[내가 보려고 정리하는 정보처리기사 08. SQL 응용     1. DDL 스키마, 도메인, 테이블, 뷰 인덱스 정의하거나 변경 또는 삭제할 때 사용  CREATE / ALTER / DROP 다른 테이블로 정의 CREATE TABLE 재학생 AS…]]></description><link>https://tinnia.github.io/study/자격증/정처기_8/</link><guid isPermaLink="false">https://tinnia.github.io/study/자격증/정처기_8/</guid><pubDate>Tue, 17 Nov 2020 03:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span style=&quot;color:gray&quot;&gt;내가 보려고 정리하는 정보처리기사&lt;/span&gt;&lt;/p&gt;
 &lt;h5&gt;08. SQL 응용&lt;/h5&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -3144,7 +3166,7 @@ mean.count라는 변수명으로 구성된 DF 생성하라&lt;/code&gt;&lt;/pre&
 &lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content:encoded></item><item><title><![CDATA[[ADsP] 02.데이터 분석 기획]]></title><description><![CDATA[내가 보려고 정리하는 ADsP 02. 데이터 분석 기획     1.CLD  형태로 비즈니스 운영시나리오 상세화 - 좋은 CLD 목표 일치성 / 상호 강화 / 선순환구조 / 모델의 강건성 - 선택(Choice…]]></description><link>https://tinnia.github.io/study/데이터분석준전문가/3/</link><guid isPermaLink="false">https://tinnia.github.io/study/데이터분석준전문가/3/</guid><pubDate>Fri, 13 Nov 2020 05:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span style=&quot;color:gray&quot;&gt;내가 보려고 정리하는 ADsP&lt;/span&gt;&lt;/p&gt;
+&lt;/table&gt;</content:encoded></item><item><title><![CDATA[[ADsP] 02.데이터 분석 기획]]></title><description><![CDATA[내가 보려고 정리하는 ADsP 02. 데이터 분석 기획     1.CLD  형태로 비즈니스 운영시나리오 상세화 - 좋은 CLD 목표 일치성 / 상호 강화 / 선순환구조 / 모델의 강건성 - 선택(Choice…]]></description><link>https://tinnia.github.io/study/자격증/데이터분석준전문가_3/</link><guid isPermaLink="false">https://tinnia.github.io/study/자격증/데이터분석준전문가_3/</guid><pubDate>Fri, 13 Nov 2020 05:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span style=&quot;color:gray&quot;&gt;내가 보려고 정리하는 ADsP&lt;/span&gt;&lt;/p&gt;
 &lt;h5&gt;02. 데이터 분석 기획&lt;/h5&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -3696,7 +3718,7 @@ mean.count라는 변수명으로 구성된 DF 생성하라&lt;/code&gt;&lt;/pre&
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;br /&gt;</content:encoded></item><item><title><![CDATA[[ADsP] 01.데이터 이해]]></title><description><![CDATA[내가 보려고 정리하는 ADsP 01. 데이터 이해     1. 클라우드 컴퓨팅 빅데이터 분석에 경제성 제공  대규모 데이터가 모이는 곳  신속한 처리비용 하락   2. 빅데이터 가치산정 어려운 이유 반복적 재사용…]]></description><link>https://tinnia.github.io/study/데이터분석준전문가/2/</link><guid isPermaLink="false">https://tinnia.github.io/study/데이터분석준전문가/2/</guid><pubDate>Thu, 12 Nov 2020 03:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span style=&quot;color:gray&quot;&gt;내가 보려고 정리하는 ADsP&lt;/span&gt;&lt;/p&gt;
+&lt;br /&gt;</content:encoded></item><item><title><![CDATA[[ADsP] 01.데이터 이해]]></title><description><![CDATA[내가 보려고 정리하는 ADsP 01. 데이터 이해     1. 클라우드 컴퓨팅 빅데이터 분석에 경제성 제공  대규모 데이터가 모이는 곳  신속한 처리비용 하락   2. 빅데이터 가치산정 어려운 이유 반복적 재사용…]]></description><link>https://tinnia.github.io/study/자격증/데이터분석준전문가_2/</link><guid isPermaLink="false">https://tinnia.github.io/study/자격증/데이터분석준전문가_2/</guid><pubDate>Thu, 12 Nov 2020 03:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span style=&quot;color:gray&quot;&gt;내가 보려고 정리하는 ADsP&lt;/span&gt;&lt;/p&gt;
 &lt;h5&gt;01. 데이터 이해&lt;/h5&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -4308,7 +4330,7 @@ mean.count라는 변수명으로 구성된 DF 생성하라&lt;/code&gt;&lt;/pre&
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;br /&gt;</content:encoded></item><item><title><![CDATA[[ADsP] 00.시험 정보 및 준비]]></title><description><![CDATA[1.시험 정보 데이터분석 준전문가(ADsP : Advanced Data Analytics Semi-Professional) 데이터 이해에 대한 기본지식을 바탕으로 데이터분석 기획 및 데이터분석 등의 직무를 수행하는 실무자 1-1. ADsP…]]></description><link>https://tinnia.github.io/study/데이터분석준전문가/1/</link><guid isPermaLink="false">https://tinnia.github.io/study/데이터분석준전문가/1/</guid><pubDate>Wed, 11 Nov 2020 03:41:32 GMT</pubDate><content:encoded>&lt;h5&gt;1.시험 정보&lt;/h5&gt;
+&lt;br /&gt;</content:encoded></item><item><title><![CDATA[[ADsP] 00.시험 정보 및 준비]]></title><description><![CDATA[1.시험 정보 데이터분석 준전문가(ADsP : Advanced Data Analytics Semi-Professional) 데이터 이해에 대한 기본지식을 바탕으로 데이터분석 기획 및 데이터분석 등의 직무를 수행하는 실무자 1-1. ADsP…]]></description><link>https://tinnia.github.io/study/자격증/데이터분석준전문가_1/</link><guid isPermaLink="false">https://tinnia.github.io/study/자격증/데이터분석준전문가_1/</guid><pubDate>Wed, 11 Nov 2020 03:41:32 GMT</pubDate><content:encoded>&lt;h5&gt;1.시험 정보&lt;/h5&gt;
 &lt;h6&gt;&lt;span  style=&quot;color:#C587AE;&quot;&gt;데이터분석 준전문가(ADsP : Advanced Data Analytics Semi-Professional)&lt;/span&gt;&lt;/h6&gt;
 &lt;p&gt;데이터 이해에 대한 기본지식을 바탕으로 데이터분석 기획 및 데이터분석 등의 직무를 수행하는 실무자&lt;/p&gt;
 &lt;br /&gt;
@@ -4388,7 +4410,7 @@ mean.count라는 변수명으로 구성된 DF 생성하라&lt;/code&gt;&lt;/pre&
 &lt;p&gt;&lt;a href=&quot;https://m.blog.naver.com/lenacaruso/221149688600&quot; style=&quot;color:gray;text-decoration:none;&quot;&gt;2. 15회 복원&lt;/a&gt; &lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.dataedu.kr/%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%EB%B3%B5%EC%9B%90/&quot; style=&quot;color:gray;text-decoration:none;&quot;&gt;3. 16회 - 26회 복원&lt;/a&gt; - 로그인 필요&lt;/p&gt;
 &lt;br /&gt;</content:encoded></item><item><title><![CDATA[[Blog] 04. 페이지 만들기 - URL]]></title><description><![CDATA[URL로 쓸 수 없는 것  , , ,  와 같은 단어가 포함되면,
- ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.]]></description><link>https://tinnia.github.io/portfolio/blog/4/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/4/</guid><pubDate>Wed, 11 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h5&gt;URL로 쓸 수 없는 것&lt;/h5&gt;
+ ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.]]></description><link>https://tinnia.github.io/portfolio/blog/6/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/6/</guid><pubDate>Wed, 11 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h5&gt;URL로 쓸 수 없는 것&lt;/h5&gt;
 &lt;p&gt; &lt;code class=&quot;language-text&quot;&gt;advert&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;ad&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;doubleclick&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;click&lt;/code&gt; 와 같은 단어가 포함되면,
 ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.&lt;/p&gt;
 &lt;br /&gt;</content:encoded></item><item><title><![CDATA[[Programmers/Python] 가장 먼 노드]]></title><description><![CDATA[문제 바로가기 문제 설명  n개의 노드가 있는 그래프가 있습니다. 각 노드는 1부터 n까지 번호가 적혀있습니다.…]]></description><link>https://tinnia.github.io/algorithm/programmers/가장 먼 노드/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/가장 먼 노드/</guid><pubDate>Tue, 10 Nov 2020 23:51:32 GMT</pubDate><content:encoded>&lt;br /&gt;
@@ -4498,7 +4520,7 @@ ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.&lt;/p&gt
         &lt;span class=&quot;token keyword&quot;&gt;elif&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; lost1&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
             lost1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;remove&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lost1&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;br /&gt;</content:encoded></item><item><title><![CDATA[[Blog] 03. Font 바꾸기 & Icon 넣기]]></title><description><![CDATA[Gatsby + React Font 바꾸기  - local에서 폰트 바꾸기 1️⃣ 폰트 저장할 폴더 만들기  - src에 fonts 폴더 만들기 2️⃣ 원하는 폰트를 골라 다운로드하기  - 눈누에서 다운받음 3️⃣ style.css에서 수정…]]></description><link>https://tinnia.github.io/portfolio/blog/3/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/3/</guid><pubDate>Fri, 06 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React Font 바꾸기&lt;/h4&gt;
+&lt;br /&gt;</content:encoded></item><item><title><![CDATA[[Blog] 03. Font 바꾸기 & Icon 넣기]]></title><description><![CDATA[Gatsby + React Font 바꾸기  - local에서 폰트 바꾸기 1️⃣ 폰트 저장할 폴더 만들기  - src에 fonts 폴더 만들기 2️⃣ 원하는 폰트를 골라 다운로드하기  - 눈누에서 다운받음 3️⃣ style.css에서 수정…]]></description><link>https://tinnia.github.io/portfolio/blog/5/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/5/</guid><pubDate>Fri, 06 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React Font 바꾸기&lt;/h4&gt;
 &lt;p&gt; - local에서 폰트 바꾸기&lt;/p&gt;
 &lt;h5&gt;1️⃣ 폰트 저장할 폴더 만들기&lt;/h5&gt;
 &lt;p&gt; - src에 fonts 폴더 만들기&lt;/p&gt;
@@ -4545,7 +4567,7 @@ TmoneyRoundWindRegular.ttf&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   &lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;h3&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; Lets go &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;FaBeer &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;h3&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[Blog] 02. 페이지 만들기]]></title><description><![CDATA[Gatsby + React Todo 페이지 만들기 1️⃣ js파일 만들기  - src/pages에 todo.js 만들기 2️⃣ js 파일 원하는 모습으로 꾸미기]]></description><link>https://tinnia.github.io/portfolio/blog/2/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/2/</guid><pubDate>Wed, 04 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React Todo 페이지 만들기&lt;/h4&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[Blog] 02. 페이지 만들기]]></title><description><![CDATA[Gatsby + React Todo 페이지 만들기 1️⃣ js파일 만들기  - src/pages에 todo.js 만들기 2️⃣ js 파일 원하는 모습으로 꾸미기]]></description><link>https://tinnia.github.io/portfolio/blog/4/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/4/</guid><pubDate>Wed, 04 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React Todo 페이지 만들기&lt;/h4&gt;
 &lt;h5&gt;1️⃣ js파일 만들기&lt;/h5&gt;
 &lt;p&gt; - src/pages에 todo.js 만들기&lt;/p&gt;
 &lt;h5&gt;2️⃣ js 파일 원하는 모습으로 꾸미기&lt;/h5&gt;
@@ -4572,7 +4594,7 @@ export const pageQuery = graphql`
   query {
     ...
   }
-`&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[Blog] 01. Blog 제작]]></title><description><![CDATA[Gatsby + React + gh-pages로 블로그 만들기 ❤️ 준비 1️⃣ Gatsby 설치 2️⃣ Gatsby 프로젝트 만들기   - 테마는 생략 가능하지만 빠른 시작을 위해서는 여기에서 테마를 선택하는 것이 좋다. 3️⃣ Gatsby…]]></description><link>https://tinnia.github.io/portfolio/blog/1/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/1/</guid><pubDate>Sun, 25 Oct 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React + gh-pages로 블로그 만들기&lt;/h4&gt;
+`&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[Blog] 01. Blog 제작]]></title><description><![CDATA[Gatsby + React + gh-pages로 블로그 만들기 ❤️ 준비 1️⃣ Gatsby 설치 2️⃣ Gatsby 프로젝트 만들기   - 테마는 생략 가능하지만 빠른 시작을 위해서는 여기에서 테마를 선택하는 것이 좋다. 3️⃣ Gatsby…]]></description><link>https://tinnia.github.io/portfolio/blog/3/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/3/</guid><pubDate>Sun, 25 Oct 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React + gh-pages로 블로그 만들기&lt;/h4&gt;
 &lt;h6&gt;❤️ 준비&lt;/h6&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;node.js
 &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt;
@@ -4834,4 +4856,672 @@ __double underscores__&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This paragraph has some &lt;code class=&quot;language-text&quot;&gt;code&lt;/code&gt; in it.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;This paragraph has some `code` in it.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img src=&quot;https://placehold.it/200x50&quot; alt=&quot;Alt Text&quot; title=&quot;Image Title&quot;&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;![Alt Text](https://placehold.it/200x50 &amp;quot;Image Title&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;![Alt Text](https://placehold.it/200x50 &amp;quot;Image Title&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 합격후기]]></title><description><![CDATA[7. 합격 우와아아 12월 17일 오후 2시 1…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_4/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_4/</guid><pubDate>Invalid Date</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3fcf2bcc2793653b4ec30363d1044da2/0a47e/ssafy.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 137.34177215189874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAbCAIAAADzvTiPAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAFFklEQVQ4y3VUWWwTVxQdz3i8zdgzXpIAMSRCXb7oogihCpWPflQCUWiqllKoQJVaFUVCQGIcx2Txbo/HdryQhEAgCdBFlUCVilT1p5X6UVDVflQEcAghW4HExPUWL2PP0jc2idIF6drSvHln7r3nnnsgwQc9L3gfzMQ2skGM90ICDc1YsB8/b7h1XDdxWvPbSbLgQp6DBLd9EiZavzKyjQ2qxUcKYtxw1iFN9CmTduWyTcl64efk9KPFgc1MtK4SIouDW9iAqoYX/OvCB61LtRYeCGRj/fJirLE40MT6ZeUQCQ55r4Rff60G5gIqkIENaYQwLkYEE2I6gZZww5vZ4WaBhoWYVjyMgFc4168GN7kAVgVTCBPWsQFl2a961KNK2FRxM/bAopqzoHdNsgWrbMaCTnYqwWG8E5swYQWPTPDDlX6S90tB9QjTrwWfSdsQ3x5y7CAZ3kdQe/XXjxJjBzXRd4nrR9VfHNZ887E62qodbFUvnkFAw5WgpgqmkHJYJ5JEQWW3JOeAWa8kbpJ/+4n65zbV2If4tSPqOx1yIQgVXTAgnPNKQMOg8mdgpl8HmHzcq/zu2Ia/+tCUXXHPhP10jPj9hOb7T7VfHyZvtmF5O7LikPI0ylFSzgdXQoQIBr8ymCQFPepRXDhYN9WhuGsiZ7s0DzqJaTM+bcYmrZviVuNktzFhJwQaEWgU9MzWeub9SAXUQCE8jfADWu5svRCAxZFSEB8hhKgqObLzBn1o7vJH/LmteR++4tcVaG05oAYqEkdVCeuYSB0XwrMXX0td2ZUfeqFCK0qRhuTYztLoK/etxJdHNLfb9fdO6uLt2vlOdeKMKmtHWQ8MeELKEUNltGVxcEfxYgt7th6MAVDCBTFmYJNw3vjLKX33vubbHUTWga04lQIlAWzzPok4ZwDmImRi5O348PvLo7ufeLfm+42PvU35UOOCs1kYMv7Qpj/01rabx/UZG/a0B0vbFAUnWtOlCOYj5NLAzrmR1szVPYnR3ckr78XPvpO6un9pfH9pdHvOg0+d0eU8ioobKbmlRRdadktXwUCeYSJx/s340N7UxV1CQF7xSSuUjPNLgX64oCrn0dw31U1b6h+Y9TNm7YyZLLmkIqOiPL0QGFrmwrYF28aUz7DoMKTc5LJTt+zSLtm1SX9jyYk8PIHMnpJOn9bMWsi88xlyDawW2XZDrAcCAih7pFmHIuOQp+2KAqVmxnekr3+WvXaECxt4D3AFydrmiktf3UFNaaipNNgE6qzOHBVomchqGM8FjVOe7ZOulinLpsVufKkHLzjXyhZVjZSGX8xdej136dXiuZcmBvZODLXeGdyXCTeXgtoVO/rYjC51oU+s8ql2NNOnyDtlq5kpmA3ipVhjZvyN3GgLE9LfMzXcOW38o71x1qJN9ijTffJkr7xkh3Jh4/xXR5ed2IoNXs1MAZVryiFtfvjl4rmtgLw/rcR9c/1UZ/2c1bDQrUva8LQTA9rIBwy/xg48HD+cvdFWM7mqk9AKoCqwZWyIAAF2lQloygHwT4AA1gHUxkUNT706xx4iRW+8YGl90isHjPyfh/mg2mI8e0WtXgjI56nmBTt5+QN4stsATPLfvlnxwHknmnGgabus4ESKbuliD1ZwoYxXynpEVZciG7KxLUIAfE7yTzAFAQ3Md2F3O7Db7fh8l2KpW3Hr1IalXjzpxIo1VYKdoWVMtAGw8x/TrpkzXY01i6bWNyKpejjC+dG/AUBLMiwqcGk0AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/3fcf2bcc2793653b4ec30363d1044da2/0a47e/ssafy.png&quot;
+        srcset=&quot;/static/3fcf2bcc2793653b4ec30363d1044da2/c26ae/ssafy.png 158w,
+/static/3fcf2bcc2793653b4ec30363d1044da2/6bdcf/ssafy.png 315w,
+/static/3fcf2bcc2793653b4ec30363d1044da2/0a47e/ssafy.png 600w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;7. 합격&lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;우와아아 &lt;strong&gt;12월 17일 오후 2시 12분&lt;/strong&gt;에 합격발표가 났다. 홈페이지에서 입과 여부를 최종적으로 확정하고, 입학식 때 필요한 입학정보를 등록해야 했다.  &lt;/p&gt;
+&lt;p&gt;일주일 전에 난 결과지만, 입학정보 사진도 찾고 집도 찾아본다고 정신없는 일주일이 지나갔다.  &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4925c4e392c236af35b10662fad32e1b/1b747/ssafy11.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 88.60759493670886%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAIAAADUsmlHAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADLUlEQVQ4y4VS+2/bVBj1vwkSmkAIVesG3SaxwpAGQ5rEpojC1jEYoY+xtoi1GWu7dQsjXbI0D9t14hs/Y8fLO43j2L6273XWJuUmMH4Yonw6+nTulc53jr57KUMo6opaLIocTfMsLUuKpqqGXjF7/a7ZM3vWhFiKJD/Q7O/0QUQNr0tBRA7mFExJuRer0aXvf/z1yS79Ute7jVqnXmu3Oo1mu1pt1Oqtl9WmJiuxgjG9kT91Z/Ote8kPYvQ768wM61GGJIN0qiEDg6cNCdRUqZTfS/4el0BJU2QB8CUmRxfBZ3xwjnVnWWsmZ17h4RUAvxIxhXAYoIGhKJkn2xrgdBEoHC3SGZHJZhNPU/GteGz16l5lhg/Pcv5FgK8pg6sSvsCjy6WA8j3PdRyRyf22EF27NZ/c2gTZDJvc5dLJZ9sPYtH52zupM/zgfMH7QggiCppT0c0y+lwILoGAQsQ6HEAIDVVj9rJSsagLJYljVFBQ6fTOH88vcc40F8xw/pyK5zV8TUbRShhR8IWCT0HoOw60Hbdn2e1my5BKMkdzqYSYT5f3c3O8OVsKb5XRdRl9o6IbZXxbx4tG+LWCP+R8iiibrU6LoN1h9jLPtzcLmXQ+tfvi4f2VnPiJEM7y3o3yOO2XQkBsx1PK6LIQfETEZrfrOdB1XM+Fhqaz2TybzbHJxNrDx7P7DlkMcbjI+5+CgCyMRD1XCM5w/hTrn+UCSiprWztP488SP6+srm+sx2Ib9+4uLC4vfZzvTu2j04z7Xh5OMXCa9U4z3nnOe5+Gp7Lw7Qx8NwepeEGO/LL57f1HN9cf/fQ4sRRPrSUyKxnwA9dcAq3lUnuBb0f5cV8E7WUwJneK45u7QofyfH94dHQ8qdFoSPghwavBEPtHEwxf441j4PSpbt8OMIae37OsV4eH4xHHx0OC0ZicgAPLpkzbJg9tmmaj0bBt23Gcfr/veZ5lWYQPh8Pj/yiz/7d4gDEmAiJzXZd8GKIkgw4nQf5XHNbrdcMwKpWKruu1Wk0URVmWCalWq6STQUev9/KmGIXhX7bE05nUPylIBITQaDQ6yRm67sHBwck5/y3+E6EAmqXtG7o9AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/4925c4e392c236af35b10662fad32e1b/f058b/ssafy11.png&quot;
+        srcset=&quot;/static/4925c4e392c236af35b10662fad32e1b/c26ae/ssafy11.png 158w,
+/static/4925c4e392c236af35b10662fad32e1b/6bdcf/ssafy11.png 315w,
+/static/4925c4e392c236af35b10662fad32e1b/f058b/ssafy11.png 630w,
+/static/4925c4e392c236af35b10662fad32e1b/1b747/ssafy11.png 679w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;&lt;strong&gt;집 구하기&lt;/strong&gt;&lt;/span&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;합격발표가 나자마자 금요일에 바로 대전에 집을 구하러 올라갔다. 한밭대 주변과 충남대 궁동 주변에서 구할 수 있다고 하는데, 날짜가 애매해서 매물이 많이 없었다.  &lt;/p&gt;
+&lt;p&gt;그래서 여러 곳을 직접 발품 팔아서 구경도 하고 했는데, 맘에 드는 곳도 별로 없고 1월 4일 자에 입실할 수 있는 곳이 많이 없었다. &lt;/p&gt;
+&lt;p&gt;결국 부동산을 통해서 집을 구했다.ㅜㅜ&lt;/p&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;8. 사전학습&lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;오늘 SSAFY에서 메일이 왔다. 대전 셔틀버스 노선 안내도와 약도, 입학식장 위치 등을 담은 메일이다.  &lt;/p&gt;
+&lt;p&gt;입학식 및 오리엔테이션…1월 6일 오전 8시 반까지 도착이라늬…&lt;br&gt;
+셔틀버스가 몇 개 있었던 것 같은데, 1개로 줄어든 건지 사진에는 하나뿐이었다.&lt;br&gt;
+그리고 사전학습을 듣고 와야 하는데, 뭔가 기대되면서도 걱정 반 기대 반..&lt;/p&gt;
+&lt;p&gt;빨리 6일이 왔으면 좋겠다는 생각도 들지만, 직장인과 같이 오전 9시부터 오후 6시까지 일..?코딩을 하면서 지내야 한다고 생각하니까 걱정도 되기 시작했다.&lt;br&gt;
+그래도 하면서 규칙적인 습관도 만들고, 열심히 친구들과 같이 프로젝트도 해보는 경험을 할 수 있다는 것에 대한 기대감이 더 크다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 면접]]></title><description><![CDATA[6. Interview 2019년 12월…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_3/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_3/</guid><pubDate>Invalid Date</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3fcf2bcc2793653b4ec30363d1044da2/0a47e/ssafy.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 137.34177215189874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAbCAIAAADzvTiPAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAFFklEQVQ4y3VUWWwTVxQdz3i8zdgzXpIAMSRCXb7oogihCpWPflQCUWiqllKoQJVaFUVCQGIcx2Txbo/HdryQhEAgCdBFlUCVilT1p5X6UVDVflQEcAghW4HExPUWL2PP0jc2idIF6drSvHln7r3nnnsgwQc9L3gfzMQ2skGM90ICDc1YsB8/b7h1XDdxWvPbSbLgQp6DBLd9EiZavzKyjQ2qxUcKYtxw1iFN9CmTduWyTcl64efk9KPFgc1MtK4SIouDW9iAqoYX/OvCB61LtRYeCGRj/fJirLE40MT6ZeUQCQ55r4Rff60G5gIqkIENaYQwLkYEE2I6gZZww5vZ4WaBhoWYVjyMgFc4168GN7kAVgVTCBPWsQFl2a961KNK2FRxM/bAopqzoHdNsgWrbMaCTnYqwWG8E5swYQWPTPDDlX6S90tB9QjTrwWfSdsQ3x5y7CAZ3kdQe/XXjxJjBzXRd4nrR9VfHNZ887E62qodbFUvnkFAw5WgpgqmkHJYJ5JEQWW3JOeAWa8kbpJ/+4n65zbV2If4tSPqOx1yIQgVXTAgnPNKQMOg8mdgpl8HmHzcq/zu2Ia/+tCUXXHPhP10jPj9hOb7T7VfHyZvtmF5O7LikPI0ylFSzgdXQoQIBr8ymCQFPepRXDhYN9WhuGsiZ7s0DzqJaTM+bcYmrZviVuNktzFhJwQaEWgU9MzWeub9SAXUQCE8jfADWu5svRCAxZFSEB8hhKgqObLzBn1o7vJH/LmteR++4tcVaG05oAYqEkdVCeuYSB0XwrMXX0td2ZUfeqFCK0qRhuTYztLoK/etxJdHNLfb9fdO6uLt2vlOdeKMKmtHWQ8MeELKEUNltGVxcEfxYgt7th6MAVDCBTFmYJNw3vjLKX33vubbHUTWga04lQIlAWzzPok4ZwDmImRi5O348PvLo7ufeLfm+42PvU35UOOCs1kYMv7Qpj/01rabx/UZG/a0B0vbFAUnWtOlCOYj5NLAzrmR1szVPYnR3ckr78XPvpO6un9pfH9pdHvOg0+d0eU8ioobKbmlRRdadktXwUCeYSJx/s340N7UxV1CQF7xSSuUjPNLgX64oCrn0dw31U1b6h+Y9TNm7YyZLLmkIqOiPL0QGFrmwrYF28aUz7DoMKTc5LJTt+zSLtm1SX9jyYk8PIHMnpJOn9bMWsi88xlyDawW2XZDrAcCAih7pFmHIuOQp+2KAqVmxnekr3+WvXaECxt4D3AFydrmiktf3UFNaaipNNgE6qzOHBVomchqGM8FjVOe7ZOulinLpsVufKkHLzjXyhZVjZSGX8xdej136dXiuZcmBvZODLXeGdyXCTeXgtoVO/rYjC51oU+s8ql2NNOnyDtlq5kpmA3ipVhjZvyN3GgLE9LfMzXcOW38o71x1qJN9ijTffJkr7xkh3Jh4/xXR5ed2IoNXs1MAZVryiFtfvjl4rmtgLw/rcR9c/1UZ/2c1bDQrUva8LQTA9rIBwy/xg48HD+cvdFWM7mqk9AKoCqwZWyIAAF2lQloygHwT4AA1gHUxkUNT706xx4iRW+8YGl90isHjPyfh/mg2mI8e0WtXgjI56nmBTt5+QN4stsATPLfvlnxwHknmnGgabus4ESKbuliD1ZwoYxXynpEVZciG7KxLUIAfE7yTzAFAQ3Md2F3O7Db7fh8l2KpW3Hr1IalXjzpxIo1VYKdoWVMtAGw8x/TrpkzXY01i6bWNyKpejjC+dG/AUBLMiwqcGk0AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/3fcf2bcc2793653b4ec30363d1044da2/0a47e/ssafy.png&quot;
+        srcset=&quot;/static/3fcf2bcc2793653b4ec30363d1044da2/c26ae/ssafy.png 158w,
+/static/3fcf2bcc2793653b4ec30363d1044da2/6bdcf/ssafy.png 315w,
+/static/3fcf2bcc2793653b4ec30363d1044da2/0a47e/ssafy.png 600w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;6. Interview&lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;2019년 12월 4일&lt;/strong&gt; 대전에서 면접을 보게 되었다.&lt;br&gt;
+가서 보안서약서를 작성했기 때문에 자세한 것은 말할 수 없지만, 기록하면 내가 면접장에서 느낀 것들을 기억해낼 수 있을 것 같아서 적게 되었다.  &lt;/p&gt;
+&lt;p&gt;지방에서 올라가야 해서 기차를 타고 전날에 가서 하루를 자고 면접을 보러 가게 되었는데, 전날에 잠도 안 오고 뒤척이다가 늦게 잠들었다.   &lt;/p&gt;
+&lt;p&gt;그래도 다행히 늦지 않게 면접장에 도착했고, 정장을 입으신 분들이 반?반보다 조금 더?(약 3/5?????) 계셨던 것 같다. 나는 그냥 비즈니스 캐쥬얼로 입고 가긴 했는데, 진짜 복장은 그냥 단정하게만 입고 가면 되는 것 같아서 다음부터는 복장에 신경 쓰기보다는 면접을 좀 더 열심히 준비해야겠다고 생각했다.  &lt;/p&gt;
+&lt;p&gt;그리고 면접 때 준비해야 할 서류는 메일 받자마자 뽑아두시길..
+어떻게 될지 모르는 거니까 미리미리 준비합시다!(●’◡’●)&lt;/p&gt;
+&lt;p&gt;음, 근데 막상 가서 면접을 볼 때는 긴장이 많이 안 돼서 다행이었고, 그럭저럭 열심히 말을 열심히 했던 것 같다.&lt;br&gt;
+사실 면접에 관해서 얘기할 수 있는 게 한정적이라 딱히 말할 건 없는데, 일단 4기 도전기를 다시 찍을 수도 있으니까 느낌만 적자면..!!!   &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CT&lt;/strong&gt;는 사실 공부라고 하기엔 IQ테스트 느낌이니까 그냥 평소 실력대로 하고,&lt;br&gt;
+&lt;strong&gt;면접&lt;/strong&gt;은 평소 기업 면접을 준비하듯이 열심히 하고 말을 잘 정리해서 가면, 기업면접보다 분위기가 조금은 더 편한 곳에서 인터뷰처럼 할 수 있을 것 같다.  &lt;/p&gt;
+&lt;p&gt;그리고 면접이 끝나고, 같이 면접 보신 분들과 함께 근처에 대전의 명물(?) 성심당 본점에 들려서 빵도 사고.. 청년다방에서 떡볶이도 먹고ㅎㅎ&lt;/p&gt;
+&lt;p&gt;약 10일에서 14일 뒤에 면접결과가 나올 것이라고 &lt;strong&gt;예상&lt;/strong&gt;하고 있는데, 빨리 결과가 나왔으면 좋겠다..&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[Blog] 00. Blog를 위한 CSS]]></title><description><![CDATA[2. CSS  오늘은 CSS에 대해 배웠다.   먼저, html은 쉽게 배울 수 있지만, 가장 중요한 기초가 된다. 그리고, CSS는 HTML이 WEB의 정보에 집중할 수 있게, 디자인적 요소를 맡고 있다.   간단하게, 몇 가지 Tag…]]></description><link>https://tinnia.github.io/portfolio/blog/2/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/2/</guid><pubDate>Wed, 27 Nov 2019 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;2. CSS &lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;오늘은 &lt;strong&gt;CSS&lt;/strong&gt;에 대해 배웠다.  &lt;/p&gt;
+&lt;p&gt;먼저, html은 쉽게 배울 수 있지만, 가장 중요한 기초가 된다.&lt;br&gt;
+그리고, CSS는 HTML이 WEB의 정보에 집중할 수 있게, 디자인적 요소를 맡고 있다.  &lt;/p&gt;
+&lt;p&gt;간단하게, 몇 가지 &lt;strong&gt;Tag&lt;/strong&gt;를 배울 수 있었다.&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;1. 폰트 색상&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;font color = &amp;quot;red&amp;quot;&amp;gt; 빨강 &amp;lt;/font&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color = &quot;red&quot;&gt; 빨강 &lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;span style=&quot;color:#D9A493&quot;&gt; &lt;strong&gt;※ WEB에서 무시하게 하는 방법&lt;/strong&gt; &lt;/span&gt;
+: &lt;strong&gt;&amp;#x3C;!—&lt;/strong&gt; &lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;___&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt; &lt;strong&gt;—&gt;&lt;/strong&gt; 사용  &lt;/p&gt;
+&lt;br&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;2. CSS코드로 인식 시키기&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;style&amp;gt; css코드로 인식 &amp;lt;/style&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&quot;color:#D9A493&quot;&gt; &lt;strong&gt;HTML&lt;/strong&gt; &lt;/span&gt; : 모든 tag 하나하나 수정해야함&lt;br&gt;
+&lt;span style=&quot;color:#D9A493&quot;&gt; &lt;strong&gt;CSS&lt;/strong&gt; &lt;/span&gt; : 공통된 tag 하나만 수정해도 다 변경됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;=&gt; CSS가 효율적이다. &lt;/p&gt;
+&lt;br&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;3. ‘a’(링크) 색상 변경&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;style&amp;gt;
+  a {
+     color : red;
+     }
+&amp;lt;/style&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;4. ‘a’(링크) 밑줄&lt;/span&gt;&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;밑줄 X&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;style&amp;gt;
+  a {
+     text-decoration : none;
+     }
+&amp;lt;/style&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;밑줄 O&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;style&amp;gt;
+  a {
+     text-decoration : underline;
+     }
+&amp;lt;/style&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;5. 폰트 크기&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;style&amp;gt;
+  a {
+     font-size : 45px;
+     }
+&amp;lt;/style&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;6. 정렬&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;style&amp;gt;
+  a {
+     text-align : center;
+     }
+&amp;lt;/style&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt; &lt;span style=&quot;color:#D9A493&quot;&gt; &lt;strong&gt;※ 모든 링크(Black), 방문했던 페이지(Gray), 현재 페이지(Red)&lt;/strong&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;style&amp;gt;
+  .saw {
+       color : gray;
+       }
+  .active {
+       color : red;
+          }
+&amp;lt;/style&amp;gt;
+
+&amp;lt;body&amp;gt;
+  &amp;lt;ol&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;링크&amp;quot; class=&amp;quot;saw&amp;quot; &amp;gt; HTML &amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;링크&amp;quot; class=&amp;quot;saw active&amp;quot; &amp;gt; CSS &amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;/ol&amp;gt;
+&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span style=&quot;color:#D9A493&quot;&gt;&lt;strong&gt;style의 .saw와 .active가 순서가 바뀌면 .active가 적용이 안됨.&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;
+그래서, &lt;strong&gt;class=“saw active”&lt;/strong&gt;를 &lt;strong&gt;class=“saw” id=“active”&lt;/strong&gt;로 바꿔준다.&lt;br&gt;
+그리고 style의 &lt;strong&gt;.active&lt;/strong&gt;를 &lt;strong&gt;#active&lt;/strong&gt;로 바꿔준다면 순서에 상관 없이 적용시킬 수 있다. &lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;color:#D9A493&quot;&gt;&lt;strong&gt;CSS코드 적용 순서&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;
+id(#) → class(.) → Tag(a,h1,ol…)&lt;/p&gt;
+&lt;br&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;7. 테두리&lt;/span&gt;&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;Block level element : 화면 전체를 테두리로 쓰는 것. &lt;strong&gt;ex) h1&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;style&amp;gt;
+  h1 {
+     border-width : 5px;
+     border-color : black;
+     border-style : solid;
+     }
+&amp;lt;/style&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;inline element : 부분을 테두리로 쓰는 것. &lt;strong&gt;ex) a&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;style&amp;gt;
+  h1 {
+     border-width : 5px;
+     border-color : black;
+     border-style : solid;
+     }
+&amp;lt;/style&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&quot;color:#D9A493&quot;&gt; &lt;strong&gt;부분 → 전체&lt;/strong&gt; &lt;/span&gt; : {} 안에 &lt;strong&gt;display : block;&lt;/strong&gt; 입력&lt;br&gt;
+&lt;span style=&quot;color:#D9A493&quot;&gt; &lt;strong&gt;전체 → 부분&lt;/strong&gt; &lt;/span&gt; : {} 안에 &lt;strong&gt;display : inline;&lt;/strong&gt; 입력  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;  
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&quot;color:#D9A493&quot;&gt; &lt;strong&gt;테두리 선택자 중복 없이 줄이기&lt;/strong&gt; &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;style&amp;gt;
+  h1 {
+     border : 5px black solid;
+     }
+&amp;lt;/style&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;콘텐츠와 테두리 사이 간격 조정 : {} 안에 &lt;strong&gt;padding : 20px;&lt;/strong&gt; 입력  &lt;/li&gt;
+&lt;li&gt;테두리와 테두리 사이 간격 조정 : {} 안에 &lt;strong&gt;margin : 20px;&lt;/strong&gt; 입력  &lt;/li&gt;
+&lt;li&gt;테두리 가로 길이 조정 : {} 안에 &lt;strong&gt;width : 100px;&lt;/strong&gt; 입력  &lt;/li&gt;
+&lt;li&gt;밑에만 테두리 지정 : {} 안에 &lt;strong&gt;border-bottom : 5px solid red;&lt;/strong&gt; 입력  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;  
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&quot;color:#D9A493&quot;&gt;&lt;strong&gt;의미 없이 디자인만을 위한 그룹 설정 tag&lt;/strong&gt;&lt;/span&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;div&amp;gt;____&amp;lt;/div&amp;gt; : 화면 전체
+&amp;lt;span&amp;gt; ____ &amp;lt;/span&amp;gt; : 부분&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;8. 좌우로 나누고, 테두리 설정&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;style&amp;gt;
+  #grid {
+     border : 1px black solid;
+     display : grid;
+     grid-template-colums : 150px 1fr; (&amp;#39;포스트&amp;#39;는 150px로 고정, &amp;#39;블로그&amp;#39;는 페이지 크기에 따라)
+     }
+  div {
+     border : 5px red solid;
+     }
+&amp;lt;/style&amp;gt;
+
+&amp;lt;body&amp;gt;
+  &amp;lt;div id=&amp;quot;grid&amp;quot;&amp;gt;
+    &amp;lt;div&amp;gt; 포스트 &amp;lt;/div&amp;gt;
+    &amp;lt;div&amp;gt; 블로그 &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;9. 미디어 쿼리&lt;/span&gt;&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;화면이 800px보다 크다면,  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  @media(min-width:800px) {
+    div {
+       display : none;
+       }
+    }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;화면이 800px보다 작으면,  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  @media(max-width:800px) {
+    #grid {
+       display : block;  (800px보다 작으면, 화면 전체를 사용)
+         }
+    ol {
+       border-right : none;  (800px보다 작으면, 테두리 없앰)
+      }
+    }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;span style=&quot;color:#D9A493&quot;&gt;**모든 웹페이지 공통적으로 수정하는 방법**&lt;/span&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;style.css&amp;quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;지정한 style을 &lt;strong&gt;style.css&lt;/strong&gt;로 저장하고, 그것을 불러와서 적용시키는 방법이다.&lt;br&gt;
+이 방법을 사용하면, 전체 페이지를 수정하지 않고 &lt;strong&gt;style.css&lt;/strong&gt;만 수정하면 된다.&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.opentutorials.org/course/1&quot;&gt;생활코딩&lt;/a&gt;에서 더 자세한 내용을 확인할 수 있다. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[[Blog] 00. Blog를 위한 HTML]]></title><description><![CDATA[블로그를 시작하게 되었을 때, html 수정을 많이 할 것이라는 생각은 못 했던 것 같다. 물론 수정을 하더라도, 구글이나 네이버에 검색하면 바로바로 나올 것이라고 생각했는데… 생각외로 Hugo를 사용하여 Github…]]></description><link>https://tinnia.github.io/portfolio/blog/1/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/1/</guid><pubDate>Tue, 26 Nov 2019 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;블로그를 시작하게 되었을 때, html 수정을 많이 할 것이라는 생각은 못 했던 것 같다.&lt;br&gt;
+물론 수정을 하더라도, 구글이나 네이버에 검색하면 바로바로 나올 것이라고 생각했는데…&lt;br&gt;
+생각외로 Hugo를 사용하여 Github 블로그를 만든 분들이 많이 없었다. &lt;strong&gt;깃허브 블로그&lt;/strong&gt; 라고 검색하면, 지킬을 활용한 블로그들이 대다수이기 때문에 찾기도 힘들다.&lt;br&gt;
+하지만 현재는 나도 Hugo 대신 Gatsby를 활용한 블로그를 꾸미고 있다.&lt;/p&gt;
+&lt;p&gt;부족하지만 그래도 잘 돌아가고 있는 블로그…&lt;/p&gt;
+&lt;p&gt;그래서 나는 &lt;strong&gt;html&lt;/strong&gt;과 &lt;strong&gt;css&lt;/strong&gt; 등 웹에 사용되는 여러 가지를 배우기로 했다.&lt;br&gt;
+바로 &lt;a href=&quot;https://www.opentutorials.org/course/1&quot;&gt;생활코딩&lt;/a&gt;에서!&lt;/p&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;1. HTML&lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;오늘은 &lt;strong&gt;html의 기초&lt;/strong&gt;와 &lt;strong&gt;tag&lt;/strong&gt;에 관해 배웠다.  &lt;/p&gt;
+&lt;p&gt;먼저, html은 쉽게 배울 수 있지만, 가장 중요한 기초가 된다.  &lt;/p&gt;
+&lt;p&gt;간단하게, 몇 가지 &lt;strong&gt;Tag&lt;/strong&gt;를 알게 되었다.  &lt;/p&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;1. 진하게&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;strong&amp;gt; 강조 &amp;lt;/strong&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;강조&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;2. 밑줄&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;u&amp;gt; 밑줄 &amp;lt;/u&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;u&gt; 밑줄 &lt;/u&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;3. 진하게 밑줄&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;strong&amp;gt; 진하게 &amp;lt;u&amp;gt;밑줄&amp;lt;/u&amp;gt; &amp;lt;/strong&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt; 진하게 &lt;u&gt;밑줄&lt;/u&gt; &lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;4. 제목&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;h1&amp;gt; Title &amp;lt;/h1&amp;gt;
+&amp;lt;h2&amp;gt; Title &amp;lt;/h2&amp;gt;
+&amp;lt;h3&amp;gt; Title &amp;lt;/h3&amp;gt;
+&amp;lt;h4&amp;gt; Title &amp;lt;/h4&amp;gt;
+&amp;lt;h5&amp;gt; Title &amp;lt;/h5&amp;gt;
+&amp;lt;h6&amp;gt; Title &amp;lt;/h6&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h1&gt; Title &lt;/h1&gt;  
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt; Title &lt;/h2&gt;  
+&lt;h3&gt; Title &lt;/h3&gt;  
+&lt;h4&gt; Title &lt;/h4&gt;  
+&lt;h5&gt; Title &lt;/h5&gt;  
+&lt;h6&gt; Title &lt;/h6&gt;  
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;5. 단락&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;첫 번째 문장 &amp;lt;br&amp;gt; 두 번째 문장 &amp;lt;br&amp;gt; &amp;lt;br&amp;gt; 두 번째 단락  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;첫 번째 문장 &lt;br&gt; 두 번째 문장 &lt;br&gt; &lt;br&gt; 두 번째 단락  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;p&amp;gt; 첫 번째 단락 &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; 두 번째 단락 &amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt; 첫 번째 단락 &lt;/p&gt; &lt;p&gt; 두 번째 단락 &lt;/p&gt;  
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;p&amp;gt; 첫 번째 단락 &amp;lt;/p&amp;gt; &amp;lt;p style=&amp;quot;margin-top:45px;&amp;quot;&amp;gt; 두 번째 단락 &amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt; 첫 번째 단락 &lt;/p&gt; &lt;p style=&quot;margin-top:45px;&quot;&gt; 두 번째 단락 &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;6. 이미지&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;img src=&amp;quot;../../images/example.jpg&amp;quot; width=&amp;quot;100%&amp;quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;img src=&quot;../../images/example.jpg&quot; width=&quot;100%&quot;&gt;  
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;7. 목차&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;ul&amp;gt;
+	&amp;lt;li&amp;gt;HTML&amp;lt;/li&amp;gt;
+	&amp;lt;li&amp;gt;CSS&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+	&lt;li&gt;HTML&lt;/li&gt;
+	&lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;  
+&lt;p&gt;&lt;strong&gt;- Numbering&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;ol&amp;gt;
+	&amp;lt;li&amp;gt;HTML&amp;lt;/li&amp;gt;
+	&amp;lt;li&amp;gt;CSS&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+	&lt;li&gt;HTML&lt;/li&gt;
+	&lt;li&gt;CSS&lt;/li&gt;
+&lt;/ol&gt;  
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;8. 기본&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;!Doctype html&amp;gt; //문서가 html로 구성되었음을 설명  
+
+&amp;lt;html&amp;gt;
+
+  &amp;lt;head&amp;gt; //본문 설명
+  &amp;lt;/head&amp;gt;
+
+  &amp;lt;body&amp;gt; //본문  
+  &amp;lt;/body&amp;gt;
+
+&amp;lt;html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;head와 /head 사이 내용&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;title&amp;gt;제목&amp;lt;/title&amp;gt;
+&amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; // utf-8 방식으로 문서 리딩&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;9. 링크&lt;/span&gt;&lt;/h6&gt;
+&lt;p&gt;&lt;strong&gt;1) 현재 탭에 열기&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;a href=&amp;quot;https://tinnia.github.io&amp;quot;&amp;gt; 내 블로그 &amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://tinnia.github.io&quot;&gt; 내 블로그 &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2) 새 탭에 열기&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;a href=&amp;quot;https://tinnia.github.io&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt; 내 블로그 &amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://tinnia.github.io&quot; target=&quot;_blank&quot;&gt; 내 블로그 &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;3) 누르지 않고 사이트 정보 확인하기&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;a href=&amp;quot;https://tinnia.github.io&amp;quot; title=&amp;quot;내 블로그&amp;quot;&amp;gt; 내 블로그 &amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://tinnia.github.io&quot; title=&quot;내 블로그&quot;&gt; 내 블로그 &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;10. 목차 이동&lt;/span&gt;&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;h3&amp;gt;&amp;lt;a href=&amp;quot;../../index.html&amp;quot;&amp;gt;BLOG&amp;lt;/a&amp;gt;&amp;lt;/h3&amp;gt;
+
+&amp;lt;ol&amp;gt;
+	&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;../../../blog/post1&amp;quot;&amp;gt;blog 만들기 1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;../../../blog/post2&amp;quot;&amp;gt;blog 만들기 2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;../../../blog/post3&amp;quot;&amp;gt;blog 만들기 3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a href=&quot;../../index.html&quot;&gt;BLOG&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+	&lt;li&gt;&lt;a href=&quot;../../../blog/post1&quot;&gt;blog 만들기 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;../../../blog/post2&quot;&gt;blog 만들기 2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;../../../blog/post3&quot;&gt;blog 만들기 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;html은 가볍게 이 정도로 알아두었는데, 이 정도만 배워도 내 블로그의 &lt;strong&gt;index.html&lt;/strong&gt;의 전반적인 내용을 알아볼 수 있었다. 내가 알아볼 수 있는 tag들이 생기니까 더 관심이 가고, 빨리 다른 tag와 설명까지 배워야겠다고 생각했다.  &lt;/p&gt;
+&lt;p&gt;내일은 CSS를 통해 HTML을 좀 더 다양한 형태로 수정할 수 있을 거라 생각된다.  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 사전학습]]></title><description><![CDATA[11월 16일 12시에 SW적성진단을 쳤다.   1과목인 수리/추리 논리는 진짜 정말 잘 친 것 같아서 걱정이 없었는데, 문제는…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_2/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_2/</guid><pubDate>Invalid Date</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3fcf2bcc2793653b4ec30363d1044da2/0a47e/ssafy.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 137.34177215189874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAbCAIAAADzvTiPAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAFFklEQVQ4y3VUWWwTVxQdz3i8zdgzXpIAMSRCXb7oogihCpWPflQCUWiqllKoQJVaFUVCQGIcx2Txbo/HdryQhEAgCdBFlUCVilT1p5X6UVDVflQEcAghW4HExPUWL2PP0jc2idIF6drSvHln7r3nnnsgwQc9L3gfzMQ2skGM90ICDc1YsB8/b7h1XDdxWvPbSbLgQp6DBLd9EiZavzKyjQ2qxUcKYtxw1iFN9CmTduWyTcl64efk9KPFgc1MtK4SIouDW9iAqoYX/OvCB61LtRYeCGRj/fJirLE40MT6ZeUQCQ55r4Rff60G5gIqkIENaYQwLkYEE2I6gZZww5vZ4WaBhoWYVjyMgFc4168GN7kAVgVTCBPWsQFl2a961KNK2FRxM/bAopqzoHdNsgWrbMaCTnYqwWG8E5swYQWPTPDDlX6S90tB9QjTrwWfSdsQ3x5y7CAZ3kdQe/XXjxJjBzXRd4nrR9VfHNZ887E62qodbFUvnkFAw5WgpgqmkHJYJ5JEQWW3JOeAWa8kbpJ/+4n65zbV2If4tSPqOx1yIQgVXTAgnPNKQMOg8mdgpl8HmHzcq/zu2Ia/+tCUXXHPhP10jPj9hOb7T7VfHyZvtmF5O7LikPI0ylFSzgdXQoQIBr8ymCQFPepRXDhYN9WhuGsiZ7s0DzqJaTM+bcYmrZviVuNktzFhJwQaEWgU9MzWeub9SAXUQCE8jfADWu5svRCAxZFSEB8hhKgqObLzBn1o7vJH/LmteR++4tcVaG05oAYqEkdVCeuYSB0XwrMXX0td2ZUfeqFCK0qRhuTYztLoK/etxJdHNLfb9fdO6uLt2vlOdeKMKmtHWQ8MeELKEUNltGVxcEfxYgt7th6MAVDCBTFmYJNw3vjLKX33vubbHUTWga04lQIlAWzzPok4ZwDmImRi5O348PvLo7ufeLfm+42PvU35UOOCs1kYMv7Qpj/01rabx/UZG/a0B0vbFAUnWtOlCOYj5NLAzrmR1szVPYnR3ckr78XPvpO6un9pfH9pdHvOg0+d0eU8ioobKbmlRRdadktXwUCeYSJx/s340N7UxV1CQF7xSSuUjPNLgX64oCrn0dw31U1b6h+Y9TNm7YyZLLmkIqOiPL0QGFrmwrYF28aUz7DoMKTc5LJTt+zSLtm1SX9jyYk8PIHMnpJOn9bMWsi88xlyDawW2XZDrAcCAih7pFmHIuOQp+2KAqVmxnekr3+WvXaECxt4D3AFydrmiktf3UFNaaipNNgE6qzOHBVomchqGM8FjVOe7ZOulinLpsVufKkHLzjXyhZVjZSGX8xdej136dXiuZcmBvZODLXeGdyXCTeXgtoVO/rYjC51oU+s8ql2NNOnyDtlq5kpmA3ipVhjZvyN3GgLE9LfMzXcOW38o71x1qJN9ijTffJkr7xkh3Jh4/xXR5ed2IoNXs1MAZVryiFtfvjl4rmtgLw/rcR9c/1UZ/2c1bDQrUva8LQTA9rIBwy/xg48HD+cvdFWM7mqk9AKoCqwZWyIAAF2lQloygHwT4AA1gHUxkUNT706xx4iRW+8YGl90isHjPyfh/mg2mI8e0WtXgjI56nmBTt5+QN4stsATPLfvlnxwHknmnGgabus4ESKbuliD1ZwoYxXynpEVZciG7KxLUIAfE7yTzAFAQ3Md2F3O7Db7fh8l2KpW3Hr1IalXjzpxIo1VYKdoWVMtAGw8x/TrpkzXY01i6bWNyKpejjC+dG/AUBLMiwqcGk0AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/3fcf2bcc2793653b4ec30363d1044da2/0a47e/ssafy.png&quot;
+        srcset=&quot;/static/3fcf2bcc2793653b4ec30363d1044da2/c26ae/ssafy.png 158w,
+/static/3fcf2bcc2793653b4ec30363d1044da2/6bdcf/ssafy.png 315w,
+/static/3fcf2bcc2793653b4ec30363d1044da2/0a47e/ssafy.png 600w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+#### &lt;span style=&quot;color:#6D838C&quot;&gt;4. SW적성진단 결과&lt;/span&gt;  
+&lt;p&gt;&lt;strong&gt;11월 16일 12시&lt;/strong&gt;에 SW적성진단을 쳤다.  &lt;/p&gt;
+&lt;p&gt;1과목인 수리/추리 논리는 진짜 정말 잘 친 것 같아서 걱정이 없었는데, 문제는 2과목의 컴퓨팅사고력 문제였다.&lt;/p&gt;
+&lt;p&gt;정말 많이 걱정했는데, 다행히도 커트라인 안에는 들었던 것 같다.  &lt;/p&gt;
+&lt;h3&gt;&lt;span style=&quot;color:#D9A493&quot;&gt;&lt;strong&gt;합격!!!!&lt;/strong&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;블로그의 후기를 보면, 과목당 70% 정도는 맞아야 하는 것 같다는 얘기도 있어서 사실 큰 기대는 하지 않았다.&lt;br&gt;
+그리고 그저께 꿈에 불합격이라는 꿈을 꿨다.ㅠㅠ
+못 푼 문제가 많아서 그럴 것이라고 예상은 했지만, 막상 꿈에서 불합격이라고 하니까 우울했었는데…&lt;br&gt;
+다행히도 오늘 합격이라는 결과를 받게 되었다.  &lt;/p&gt;
+&lt;p&gt;감사합니다ㅠㅠㅠ&lt;/p&gt;
+&lt;p&gt;1과목의 영향이 크지 않았나..하는 생각이 든다.  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;5. 온라인 사전학습&lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;바로 면접에 들어갈 줄 알았는데, 온라인으로 사전학습을 들어야 했습니다.&lt;/p&gt;
+&lt;p&gt;E-mail 로 받은 내용은&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IT트렌드, 창의/열정, SW기초 등 관련 분야의 지식을 얻을 수 있는 유익한 시간&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;이라는 말이었다.  &lt;/p&gt;
+&lt;p&gt;일단 듣고 면접을 준비해야겠다는 마인드로 열심히 아이패드에 필기도 했다..ㅎㅎ&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 서류지원]]></title><description><![CDATA[삼성 SW 아카데미 3기 모집 지원 요강 대상 : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자 모집기간 : 2019.10.28. ~ 11.11. 교육기간 : 2020.01.06. ~ 12.31. 교육장소 : 전국…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_0/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_0/</guid><pubDate>Mon, 11 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;삼성 SW 아카데미 3기 모집&lt;/span&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;지원 요강&lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;대상&lt;/span&gt;&lt;/strong&gt; : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자&lt;br&gt;
+&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;모집기간&lt;/span&gt;&lt;/strong&gt; : 2019.10.28. ~ 11.11.&lt;br&gt;
+&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;교육기간&lt;/span&gt;&lt;/strong&gt; : 2020.01.06. ~ 12.31.&lt;br&gt;
+&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;교육장소&lt;/span&gt;&lt;/strong&gt; : 전국 4개 지역 (서울, 대전, 광주, 구미)  &lt;/p&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;지원 내용&lt;/span&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;SW 교육 무료 제공 및 교육지원비 月 100만 원 지급  &lt;/li&gt;
+&lt;li&gt;성적우수자 삼성전자 해외연구소 실습기회 부여  &lt;/li&gt;
+&lt;li&gt;진로상담 및 개인별 취업지원 서비스 제공  &lt;/li&gt;
+&lt;li&gt;교육 중 삼성 SW TEST 응시기회 제공  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;지원방법 및 모집내용&lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;지원방법 및 자세한 모집내용은 &lt;a href=&quot;www.SSAFY.com&quot;&gt;SW아카데미&lt;/a&gt;에서 확인바랍니다.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;E-MAIL : SSAFY@multicampus.com  &lt;/li&gt;
+&lt;li&gt;전화 : 02-3429-5100  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;1. 자기소개서&lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;코딩에 관심이 생기고, 배우고 싶다는 생각이 많아서 삼성SW아카데미에 지원하게 되었다.&lt;br&gt;
+4개 지역 중 1지망은 대전, 2지망은 구미로 지원을 했다.  &lt;del&gt;제발 붙었으면..ㅠㅠ&lt;/del&gt;  &lt;/p&gt;
+&lt;p&gt;그리고 자기소개서를 작성하면 되는데, SW관련 경험이 없어서 걱정이 되었다.&lt;br&gt;
+&lt;strong&gt;YOUTUBE&lt;/strong&gt;나 &lt;strong&gt;후기&lt;/strong&gt;를 보고 찾아봤는데, 반은 광고고 반은 SW관련 전공을 공부하신 분들이라 비전공자에 대한 다양한 정보를 얻을 수 없었다. 아직 3기라 그런건가..?  &lt;/p&gt;
+&lt;p&gt;어쨌든, 최대한 나의 SW관련 경험을 토대로 자기소개서를 작성하였다.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;자기소개서 항목&lt;/span&gt;&lt;/strong&gt;  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;본 과정의 지원동기와 향후 진로에 대해 SW관련 경험을 중심으로 상세히 작성해 주시기 바랍니다.  &lt;/li&gt;
+&lt;li&gt;공모전, 대외활동, 프로젝트 등 장기간에 걸쳐 과제를 완수했던 경험 또는 실패했던 사례에 대해서 상세히 작성해주시기 바랍니다.  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;1번에는 나의 연구실 경험과 교내의 MATLAB수업을 통해 배운 점들을 작성하며, SW에 관한 흥미와 열정을 작성했다.&lt;br&gt;
+2번에는 연구실에서 경험한 연구와 더불어 그로 인해 배우게 된 점과 공동과제를 성공적으로 발전시킨 경험을 작성했다.  &lt;/p&gt;
+&lt;p&gt;남들에 비해 다양한 스펙을 가진 것은 아니지만, 그래도 대학 생활동안 열심히 살았고 다양한 경험을 하기 위해 노력했었다. 컴퓨터와 관련이 없는 학과지만, 컴퓨터에 대한 관심을 놓지 않고 ITQ, 컴활, 워드 등 다양한 자격증을 공부했었다.  &lt;/p&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;2. SW적성진단 준비&lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;아, 그리고 자기소개서에 &lt;strong&gt;희망지역&lt;/strong&gt;과 &lt;strong&gt;적성진단 응시시간&lt;/strong&gt;을 체크하는 것이 있다.&lt;br&gt;
+10시와 12시 중에 나는 &lt;strong&gt;11월 16일 12시&lt;/strong&gt;에 진단일정을 정했다.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;소요시간&lt;/span&gt;&lt;/strong&gt;  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;수리/추리 논리 능력진단 (30분)  &lt;/li&gt;
+&lt;li&gt;Computational Thinking 진단 (30분)  &lt;/li&gt;
+&lt;li&gt;1과 2 사이에 5분의 준비시간이 있음.  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;수리/추리 논리는 그간의 삼성 SSAT를 준비하면서 쌓은 지식으로 자신이 있었는데, Computational Thinking 진단?????진짜 이런 건 처음 들었고, 처음으로 풀게 되었다.  &lt;/p&gt;
+&lt;p&gt;그리고 아직 3기라 그런지 정보가 정말 많이 없었다. 그래서 문제 출제 방식이 어떻게 되는 지 알 수 없었고, 걱정이 많이 되었다.  그래서 서점에 가서 알고리즘과 관련된 책을 보기도 하고, 유튜브로 문제도 보기도 했는데 여전히 모르겠다.  &lt;/p&gt;
+&lt;p&gt;그래서 그냥 나의 능력을 믿고 시험을 치기로 했다. (•̀ᴗ•́)و ̑̑  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[[42seoul] 서류지원 + 적성진단]]></title><description><![CDATA[42SEOUL 지원 요강 지원대상 : 2020년 1월 1일 기준 민법상 성인 또는 2020년 3월 1일 기준 고졸 이상의 학력자 모집기간 : 2019.11.01. ~ 11.30. 접수방법 : 온라인 접수 교육기간 :…]]></description><link>https://tinnia.github.io/study/ETC/42SEOUL_0/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/42SEOUL_0/</guid><pubDate>Invalid Date</pubDate><content:encoded>&lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;42SEOUL&lt;/span&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;지원 요강&lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;지원대상&lt;/span&gt;&lt;/strong&gt; : 2020년 1월 1일 기준 민법상 성인 또는 2020년 3월 1일 기준 고졸 이상의 학력자&lt;br&gt;
+&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;모집기간&lt;/span&gt;&lt;/strong&gt; : 2019.11.01. ~ 11.30.&lt;br&gt;
+&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;접수방법&lt;/span&gt;&lt;/strong&gt; : &lt;a href=&quot;www.innovationacademy.kr&quot;&gt;온라인 접수&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;교육기간&lt;/span&gt;&lt;/strong&gt; : 2년간&lt;/p&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;선발 프로세스&lt;/span&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;온라인 신청 및 테스트&lt;/span&gt;&lt;/strong&gt; : 기억력 테스트 + 논리력 테스트  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;체크인&lt;/span&gt;&lt;/strong&gt; : 온라인 테스트 합격자에 한하여 본인 확인 및 신청 조건 해당 여부 확인  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;1개월 집중교육&lt;/span&gt;&lt;/strong&gt; : 1개월 오프라인 과정으로 그 후에 에꼴24 본 과정에 돌입  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;1. 지원 &lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;www.innovationacademy.kr&quot;&gt;42seoul&lt;/a&gt;에서 지원하면 된다. 자기소개서도 없었고, 단순히 일단 지원하는 것이었다.&lt;br&gt;
+그래서 오늘 지원을 하고 바로 온라인 테스트를 치게 되었다.  &lt;/p&gt;
+&lt;p&gt; &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/38dca52b5ff90f72f232ced912cb549e/f058b/42.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.43037974683544%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABoklEQVQoz4VSTW/aQBCd2fXX2l7b2HEoIjQECaQIjMGC9NIKgw+0ICHuXLm0N34A16iKUimX9FDlxCXKf+DHZQxUDShSn95h5Z15M++tAQDq9bqu63AMIYTnusTA9x0pfa/gSkcKoXke3N3jnyd8/J3XGYZBzYwxRDwSUBUwdNA1qsgPwiCiZWLBwyBA34c4jqfT6XK5jKKI6kkib0NgpiAi56goJwSGgDuuVqvNZrNer5vN5sfLS8uy6E6RNqddcpH/odFo7D3npZzlfINTL2/huq6UslgsBn4Qlj444Vm1Wi3tUC6Xbdt+p4es0TASpW3H4/EgTT+PhmmWdTvd+XyepulsNptMJrVajfopedM0OeeHXSgYy0JpQ7vdHo5GrTjuduIvN/3Zt6+f+v0kSbIsGwwGrVZrsVjQodfrhWG4t8Y0TfUcIK2LSuU6iuipxXkRKxUsXzDbZrvYaRQZVlVVoYT/PgSagjty/wV+PTxst9vnl5er7z/g9ie7u4ckORg7ASKzLSbEvxTJUhAEBc/j9CdICY4DqvpO2og0ELWjq1eHTTNFGq4xPgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/38dca52b5ff90f72f232ced912cb549e/f058b/42.png&quot;
+        srcset=&quot;/static/38dca52b5ff90f72f232ced912cb549e/c26ae/42.png 158w,
+/static/38dca52b5ff90f72f232ced912cb549e/6bdcf/42.png 315w,
+/static/38dca52b5ff90f72f232ced912cb549e/f058b/42.png 630w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;  &lt;/p&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;2. 온라인 테스트 &lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;이것도 테스트가 2개가 있었다.&lt;br&gt;
+&lt;strong&gt;TEST1&lt;/strong&gt;은 4분 동안 기억력 테스트로 진행하는 것이고,&lt;br&gt;
+&lt;strong&gt;TEST2&lt;/strong&gt;은 2시간 동안 논리력 테스트를 진행하는 것이다.  &lt;/p&gt;
+&lt;p&gt;TEST1은 진짜 얼마 못했던 것 같다. 그냥 시작했는데, 생각외로 너무 간단한 테스트이면서도 당황스러웠다. 그래도 나름 괜찮게 풀어서 일단 넘어갔다.  &lt;/p&gt;
+&lt;p&gt;그런데 문제는 TEST2!!!&lt;br&gt;
+처음에는 문제 오류 뜬 줄 알고 몇 번이나 껐다 켰다…&lt;br&gt;
+그리고 한 25분 지나서야 규칙을 깨닫고 1단계를 넘겼다.
+유튜브나 블로그 후기들을 보고 시험을 치는 것을 추천한다.
+어쨌든 그래도 적응을 하고 난 뒤에는 나름 5~10분 사이에 레벨을 올릴 수 있었다. 그렇게 13단계까지 했나..  &lt;/p&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;3. 온라인 테스트 결과 &lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;결과는 48시간 이내에 이메일로 온다고 하길래 기다렸더니, 오늘 바로 합격 메일이 왔다.  &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 526px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3dfc87302d6dbd1b8a3ef9b78eb9a01f/2d7ab/42%20test.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 108.22784810126582%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAIAAABPIytRAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB/klEQVQ4y5WT65LBQBCF8/R+egp/PA9FIYm4LREiEmQRyX6ZQzbW1l5OqTbT09fTHat4Rp7nyPV63Ww2G43GYrGolK+wvnXe7XatVqvdbq9Wq9PpdD6f/+Rcx+FwoITNZoP/7863Gq7Xa70cgPJL/U/Obwaz2SwMw+l0Sk6u2+3Wtm0kZ7qot2DlNfBwuVyuBjoLlJ1lGUrO9eQ/9VynsPJRmrszwZIkSdMUCUPI/X4fRRES5c9xrTiOJ5PJfD6n1fF4zGCDIJgaoKFtCA8MiMgI0SAhr3RG2+v1cMMfB8dxOHe7Xceg3+/rlQSdTofrYDDATLSVmZfLJUzizIE8UOr7PlekcqKnivkDlKC2LZrkjgNSZWPKlXAcmJCiYKYRkAxqIL901gCpCul5Hs6u6zJYatNBT+ICY1agItKCVbRaAFL5BrCCkhaoRRq9kpP8Sls6wxvFHI/H5AHCVWeK1OFgwFNsQNtcyyUhkiaMlig8ILGTQ2XKnlH27gHs785cMAoN0GKEdWSAXq+MmfjKobh3Z30PksPhkG7pczQaQZthkUHyW7I4TAMb+ufJ0roSW52LLRJSAkp4on7fL1w3c5ybbWeedw6CDc6YWfqMMRU3FEOIigIpwzBK0wsbCc1mL4tPtvVtaIcrwtUwzZt/6np//dTK9aQHPLVYxX/wAb6G4HN55/9GAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/3dfc87302d6dbd1b8a3ef9b78eb9a01f/2d7ab/42%20test.png&quot;
+        srcset=&quot;/static/3dfc87302d6dbd1b8a3ef9b78eb9a01f/c26ae/42%20test.png 158w,
+/static/3dfc87302d6dbd1b8a3ef9b78eb9a01f/6bdcf/42%20test.png 315w,
+/static/3dfc87302d6dbd1b8a3ef9b78eb9a01f/2d7ab/42%20test.png 526w&quot;
+        sizes=&quot;(max-width: 526px) 100vw, 526px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;span style=&quot;color:#D9A493&quot;&gt;&lt;strong&gt;합격!!!!&lt;/strong&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;사실 요즘 합격이라는 단어가 너무 듣고 싶어서 자격증을 하나 더 공부해볼까 생각도 했다. 자존감이 많이 떨어진 것 같은 요즘ㅠ&lt;br&gt;
+나에게 내려진 단비 같은 &lt;strong&gt;합격&lt;/strong&gt;이라는 글자&lt;/p&gt;
+&lt;p&gt;감사합니다.감솨합니다.  &lt;/p&gt;
+&lt;p&gt;알고보니 TEST1과 TEST2에서 Lv.10이상까지 가면 대부분 합격인 것 같았다. 나도 15레벨과 13레벨까지 간 것 같다. 좀 더 일찍 알았으면 1기에 할 수 있었을텐데 아쉽다.  &lt;/p&gt;
+&lt;p&gt;그렇게 하고 나서 이제 체크인 날짜를 정해야 한다.  너무 많은 지원자가 일찍 지원해서 1기는 기회가 없었고ㅠ&lt;br&gt;
+2기,3기 중에 고민해야 했다.  &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 540px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/065ba41c61e4df26a5af5684fc0ea06d/07484/42%201%EA%B8%B0.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 110.12658227848102%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAIAAABPIytRAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACrUlEQVQ4y22UiXLjIBBE9f//t+tYtyVAIHRYl23ZTmof4Lg2VZmyVATRM9PdQyJrbS1kluVZnrdt+3w+7/f7vu93H4/HPSz33yKapnkYBmBNo21nL5frhefq3sSyrG69bSHdg2SvpG4RsbssC3ilVFme8oIopZRFeZJKJUmqtRFSzvO8bds0Teu6smaxbZfoer3xh+06pZrydIqThP6rqj4cPk5EVammaa0typJ9NjjZaC2EPJ/P0e3mwdaChDlv+qcL8MQxjmXTqEZTnO7o9dPH19cXnVP5Os8LnGshKJTlRZplNEwdKRVaGtPSFBn7vtda98NAJYrPy+I5r0vfDw5cVZCkJAv6h3xdC6MNb7QABh624/nMeSSI6JlV65N1fc9WEJn9xYdvza2RNxj58OHUpiMpJEXIbYyBT7D38R17OO2tRqDwDouIo5Q6T1OHjI6aNm1Le1Al8Kzr3BptQ4b/B8YJxgc+oyfFj3HCD/4fxxjm8NfGIBje+LcgL19ZQ+0FbluGVOBT6ayt6cDhhEDzcJSW3kMCf1QA6MCoh7GAmLA4SeM4YX04HukFJIbBRTUc4Wn6wVUm2YraMGHIhmHEQ6bH+OAQhcdxhHBVC1x4U/3BmXNMUp4X/FDIj85LbefN4xkWb5HfEW7VRAXuE6w620EMVui/+cDf1Qc7b3tfFjqr9p0RoDHAbrxzOihgypyiGdMOaeE0U4g0jGO4gqwdmAa40liFMHlRolaSZtibphlyoxxJuRno3XlFaBPzMOwHmDqlv3dUJlGWZdQHrI1WHgwAPDTxlU4h4sB0QjJ8AuNTOKvpwJnUaHczhaAgF6PzFwNT6NyBQZISnW1rGU3rouOhF/zjE5hpnpHp+S3Y8y0YdnueKVX+/D1AFanc/6M8ZyfNcg4wSL9a9Q/bM8VLSeareAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/065ba41c61e4df26a5af5684fc0ea06d/07484/42%201%EA%B8%B0.png&quot;
+        srcset=&quot;/static/065ba41c61e4df26a5af5684fc0ea06d/c26ae/42%201%EA%B8%B0.png 158w,
+/static/065ba41c61e4df26a5af5684fc0ea06d/6bdcf/42%201%EA%B8%B0.png 315w,
+/static/065ba41c61e4df26a5af5684fc0ea06d/07484/42%201%EA%B8%B0.png 540w&quot;
+        sizes=&quot;(max-width: 540px) 100vw, 540px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;그렇게 체크인 등록까지 마치고, 이제 기다리는 일만 남았다.ㅎㅎ&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 적성진단]]></title><description><![CDATA[삼성 SW 아카데미 3기 모집 지원 요강 대상 : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자 모집기간 : 2019.10.28. ~ 11.11. 교육기간 : 2020.01.06. ~ 12.31. 교육장소 : 전국…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_1/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_1/</guid><pubDate>Invalid Date</pubDate><content:encoded>&lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;삼성 SW 아카데미 3기 모집&lt;/span&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;지원 요강&lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;대상&lt;/span&gt;&lt;/strong&gt; : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자&lt;br&gt;
+&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;모집기간&lt;/span&gt;&lt;/strong&gt; : 2019.10.28. ~ 11.11.&lt;br&gt;
+&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;교육기간&lt;/span&gt;&lt;/strong&gt; : 2020.01.06. ~ 12.31.&lt;br&gt;
+&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;교육장소&lt;/span&gt;&lt;/strong&gt; : 전국 4개 지역 (서울, 대전, 광주, 구미)  &lt;/p&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;지원 내용&lt;/span&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;SW 교육 무료 제공 및 교육지원비 月 100만 원 지급  &lt;/li&gt;
+&lt;li&gt;성적우수자 삼성전자 해외연구소 실습기회 부여  &lt;/li&gt;
+&lt;li&gt;진로상담 및 개인별 취업지원 서비스 제공  &lt;/li&gt;
+&lt;li&gt;교육 중 삼성 SW TEST 응시기회 제공  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;지원방법 및 모집내용&lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;지원방법 및 자세한 모집내용은 &lt;a href=&quot;www.SSAFY.com&quot;&gt;SW아카데미&lt;/a&gt;에서 확인바랍니다.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;E-MAIL : SSAFY@multicampus.com  &lt;/li&gt;
+&lt;li&gt;전화 : 02-3429-5100  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;3. SW적성진단 &lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;10시와 12시 중에 나는 &lt;strong&gt;11월 16일 12시&lt;/strong&gt;에 일정을 정하고 시험을 봤다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;소요시간&lt;/span&gt;&lt;/strong&gt;  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;수리/추리 논리 능력진단 (30분)  &lt;/li&gt;
+&lt;li&gt;Computational Thinking 진단 (30분)  &lt;/li&gt;
+&lt;li&gt;1과 2 사이에 5분의 준비시간이 있었다. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;수리/추리 논리는 GSAT을 공부한 덕분에 쉽게 풀 수 있었다.
+2과목은 처음 접해보는 영역이였는데, 정말 공부해서 되는 게 아니라 수학적 사고가 필요한 시험이었다.&lt;/p&gt;
+&lt;p&gt;어쨌든 시험은 끝났고, 만약 이번에 3기에 붙지 않아도 4기 지원이 남아있다는 생각으로 미리 코딩 공부를 조금 해 볼 계획이다.&lt;/p&gt;</content:encoded></item></channel></rss>
