@@ -1,46 +1,408 @@
+/* 폰트 */
+/* font-family: 'TmoneyRoundWindRegular'; */
+/* font-family: 'TmoneyRoundWindExtraBold'; */
+/* font-family: 'GmarketSansBold'; */
+
+/* 색상 */
+/* 빨       핑       노       하        파
+#D97B59  #F2D4C2  #F2CA99  #789EBF  #5D84A6 */
+
+
 * {
-    /* font-family: 'TmoneyRoundWindRegular'; */
-    font-family: 'TmoneyRoundWindExtraBold';
-    max-width:56rem;
-    margin:auto;
+  font-family: 'Katuri';
+  margin:auto;
 }
 
-ul, 
-ol {
-    padding:0,
+main {
+  max-width:56rem;
+  margin:10rem auto;
 }
 
 
+.inPage main {
+  margin: 7rem auto 0 auto;
+}
+
+.inPage h1 {
+  margin:0;
+  color:#F2CA99;
+  font-size:1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  color:#D97B59;
+}
+
+a, Link {
+  text-decoration: none;
+  color:#789EBF;
+}
+
+a:hover, Link:hover {
+  text-decoration: none;
+  color:#5D84A6;
+}
+
+label, p, span {
+  margin:0;
+}
+
+ul, ol, li {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+
+.utterances {
+  min-width: 100%;
+}
+
+/* Post Nav Button */
+.navButton {
+  padding: 0.9rem;
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+}
+
+.navButton:hover {
+  box-shadow: var(--toggleHover);
+}
+
+.cate {
+  display: flex;
+  height: 150px;
+  line-height: 150px;
+  padding: 0 3rem;
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+}
+
+.cateTitle {
+  line-height: 150px;
+}
+
+.cateLogo {
+  margin-right: 0;
+}
+
+.cateBody {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.catePost {
+  width: 76%;
+  margin: 0 2rem 0 0;
+  padding: 0.7rem 1rem;
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+}
+
+.catePostList {
+  margin:0.3rem 0;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.catePostList:hover {
+  border-radius: 13px;
+  box-shadow: var(--toggleHover);
+}
+
+.catePostListItem {
+  display: flex;
+  padding:0.3rem;
+  margin: 0.3rem 0 0 0;
+  border-bottom: 1px solid var(--hr);
+}
+
+.catePostListItemImg {
+  padding: 0.3rem;
+  margin: 0 1rem 0 0;
+  width:40px;
+  height: 40px;
+  color:#D97B59;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  background-color: #F2D4C2;
+  box-shadow: var(--toggleShadow);
+}
+
+.catePostListItemTitle {
+  margin-left: 0;
+}
+
+.catePostListItemTitle h4 {
+  color:#F2CA99;
+}
+
+.catePostListItemTitle small {
+  color:var(--text);
+}
+
+
+/* Category Button */
+.cateButtonGroup {
+  margin:0 0 auto auto;
+  width: 20%;
+}
+
+.cate-box {
+  display: none;
+}
+
+.cate-label {
+  cursor: pointer;
+  display:flex;
+  color:#D97B59;
+  width:100%;
+  margin:0 auto 1rem auto;
+  padding:0.7rem;
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+}
+
+.cate-label:hover {
+  box-shadow: var(--toggleHover);
+}
+
+.cate-box:checked+label {
+  box-shadow: var(--toggleHover);
+}
+
+.cate-logo {
+  margin-left: 0;
+}
+
+
+.mainCat {
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+  margin:20rem auto;
+  padding:1.5rem 2rem;
+  text-align: center;
+}
+
+.mainCat:hover {
+  box-shadow: var(--toggleHover);
+}
+
+.mainName {
+  margin-top: 1rem;
+}
+
+.mainTag {
+  text-align: center;
+  margin: 4rem;
+}
+
+
+/* Theme Mode */
 .light {
-    color: #212121;
-    background-color: #fafafa;
-    
-    --text:#474747;
-    --bg:#fafafa;
-    --selecttext:#d6d6d6;
-    --selectbg:#30303090;
-    /* --header:linear-gradient( to right, #897eff, #8eaffd); */
-    --boxshadow:0px 0px 10px #43394450;
+  color: #212121;
+  background-color: #f3f3f3;
+  
+  --headerBg: #fafafaea;
+  --hr: #ececec;
+  --text:#b9b9b9;
+  --bg: #fafafa;
+  --selecttext:#d6d6d6;
+  --selectbg:#30303090;
+  --imgBg:#323232;
+  --boxshadow:0px 0px 10px #43394450;
+  --comment: 'github-light';
+  --imgShadow:  6px 6px 8px #c9b0a1, -6px -6px 8px #fff8e3;
+  --toggleShadow:6px 6px 8px #dadada, -6px -6px 8px #ffffff;
+  --toggleHover:  inset 6px 6px 8px #dadada, inset -6px -6px 8px #ffffff;
+  --headerShadow: inset 0px 4px 6px #ffffff, inset 0px -4px 6px #dadada, 0px -2px 6px #f0f0f0;
 }
 
 .dark {
-    color:#dbdbdb;
-    background-color: #212121;
-    
-    --text:#d6d6d6;
-    --bg:#303030;
-    --selecttext:#474747;
-    --selectbg:#fafafa90;
-    /* --header:linear-gradient( to right, #9966ff, #ffb0ff); */
-    --boxshadow:0px 0px 10px #d1d1d148; 
+  color:#dbdbdb;
+  background-color: #323232;
+
+  --headerBg: #323232ea;
+  --hr: #3a3a3a;
+  --text:#979797;
+  --bg: #323232;  
+  --imgBg: #fafafa;
+  --selecttext:#474747;
+  --selectbg:#fafafa90;
+  --boxshadow:0px 0px 10px #d1d1d148; 
+  --comment: 'photon-dark';
+  --imgShadow: inset 6px 6px 8px #c9b0a1, inset -6px -6px 8px #fff8e3;
+  --toggleShadow:6px 6px 8px #2b2b2b, -6px -6px 8px #3b3b3b;
+  --toggleHover:  inset 6px 6px 8px #2b2b2b, inset -6px -6px 8px #3b3b3b;
+  --headerShadow:  inset 0px 4px 6px #2b2b2b, inset 0px -4px 6px #3b3b3b, 0px 2px 6px #2a2a2a;
 }
 
-.switchToggle input[type=checkbox]{height: 0; width: 0; visibility: hidden; position: absolute; }
-.switchToggle label {cursor: pointer; text-indent: -9999px; width: 60px; max-width: 52px; height: 26px; background: #ebebeb; display: block; border-radius: 100px; position: relative; }
-.switchToggle label:after {content: ''; position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: #9966ff; border-radius: 100px; }
-.switchToggle input:checked + label, .switchToggle input:checked + input + label  {background: #3d3d3d; }
-.switchToggle input + label:before, .switchToggle input + input + label:before {content: '\f6c4'; position: absolute; top: 5px; left: 35px; width: 26px; height: 26px; border-radius: 90px; transition: 0.3s; text-indent: 0; color: #fff; }
-.switchToggle input:checked + label:before, .switchToggle input:checked + input + label:before {content: '\f6c3'; position: absolute; top: 5px; left: 10px; width: 26px; height: 26px; border-radius: 90px; transition: 0.3s; text-indent: 0; color:#fff; }
-.switchToggle input:checked + label:after, .switchToggle input:checked + input + label:after {left: calc(100% - 2px); transform: translateX(-100%); }
-.switchToggle label:active:after {width: 60px; } 
-.toggle-switchArea { margin: 10px 0 10px 0; }
+
+
+/* Header */
+.header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header .headerInline {
+  height: 150px;
+  display: flex;
+  min-width:56rem;
+}
+
+.inPage .header .headerInline {
+  height: 80px;
+  display: flex;
+  min-width:56rem;
+}
+
+/* Header Scrolled */
+.header.scrolled {
+  background-color: var(--headerBg);
+  backdrop-filter: blur(5px);
+  box-shadow: var(--headerShadow);
+}
+
+.header.scrolled .headerInline {
+  height: 80px;
+}
+
+
+/* Title */
+.title {
+  display: flex;
+  margin:0;
+  align-items: center;
+}
+
+
+/* Theme Toggle */
+.toggle {
+  margin-right:0;
+}
+
+.switchLabel {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 0;
+  height: 50px;
+  width: 50px;
+  font-size: 1.5rem;
+  color: rgb(255, 208, 0);
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+}
+
+.switchLabel:hover {
+  cursor: pointer;
+  box-shadow: var(--toggleHover);
+}
+
+.invisible {
+  display: none;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footerButton {
+  display: flex;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  margin: 2rem 0.8rem;
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+}
+
+.footerButton:hover {
+  cursor: pointer;
+  box-shadow: var(--toggleHover);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Markdown */
+article.blog-post section li {
+  margin-left:2rem;
+}
+
+article.blog-post section table {
+  min-width: 95%;
+  margin:1.5rem auto;
+}
+
+article.blog-post section td,
+article.blog-post section th {
+  border:2px solid darkgray;
+  padding:0.5rem;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  text-align:center;
+  align-content: center;
+}
+
+
+article.blog-post section pre {
+  margin:1rem;
+  padding:0;
+}
+
+article.blog-post section pre code {
+  margin:0;
+  padding:1rem 0;
+}
+
+article.blog-post section pre code span {
+  font-family: 'GoyangIlsan';
+}
+
+
+
+
+
+
+/* Mobile */
+@media ( max-width: 768px ) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .header.scrolled .headerInline {
+    height: 70px;
+  }
+  
+  .header .headerInline {
+    display: flex;
+    min-width:90%;
+    margin:auto;
+  }
+  
+  .switchLabel {
+    width:37px;
+    height:37px;
+    font-size: 1rem;
+  }
+}

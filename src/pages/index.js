@@ -12,7 +12,6 @@ import SEO from "../components/seo"
 
 const BlogIndex = ({
   data: {
-    allMarkdownRemark: { group },
     site: {
       siteMetadata: { title },
     },
@@ -20,46 +19,38 @@ const BlogIndex = ({
 }) => {
   return (
     <Layout location={location} title={title}>
-      <SEO title="Tags" />
-      <div style={{ textAlign:"center" }} className="global-wrapper" >
+      <SEO title={title} />
+      <div>
         <div style={{height:"100%", lineHeight:"100%"}}>
-          <Row style={{paddingTop:100, paddingLeft:100, paddingRight:100, margin:0}}>
-            <Col xs={12} md={6} style={{padding:0}}>
-              <div style={{margin:30, paddingTop:40, paddingBottom:40 , backgroundColor:"var(--bg)", borderRadius:10, boxShadow:"var(--boxshadow)"}}>
-                <Link style={{ textDecoration: 'none', fontWeight:"bold" }} to="/Algorithm">
-                  <h6 style={{ marginBottom:20 }}><img src={algo} width="60" height="60" alt="logo" /></h6>
-                  <h6 style={{ color:"var(--text)" }}>ALGORITHM</h6>
-                </Link>
-              </div>
+          <Row>
+            <Col className="mainCat" xs={12} md={2}>
+              <a href="/Algorithm">
+                <img src={algo} width="60" height="60" alt="logo" />
+                <div className="mainName">ALGORITHM</div>
+              </a>
             </Col>
-            <Col xs={12} md={6} style={{padding:0}}>
-              <div style={{margin:30, paddingTop:40, paddingBottom:40 , backgroundColor:"var(--bg)", borderRadius:10, boxShadow:"var(--boxshadow)"}}>
-                <Link style={{ textDecoration: 'none', fontWeight:"bold" }} to="/Study">
-                  <h6 style={{ marginBottom:20 }}><img src={study} width="60" height="60" alt="logo" /></h6>
-                  <h6 style={{ color:"var(--text)" }}>STUDY</h6>
-                </Link>
-              </div>
+            <Col className="mainCat" xs={12} md={2}>
+              <a href="/Study">
+                <img src={study} width="60" height="60" alt="logo" />
+                <div className="mainName">STUDY</div>
+              </a>
             </Col>
-            <Col xs={12} md={6} style={{padding:0}}>
-              <div style={{margin:30, paddingTop:40, paddingBottom:40 , backgroundColor:"var(--bg)", borderRadius:10, boxShadow:"var(--boxshadow)"}}>
-                <Link style={{ textDecoration: 'none', fontWeight:"bold" }} to="/Portfolio">
-                  <h6 style={{ marginBottom:20 }}><img src={portfolio} width="60" height="60" alt="logo" /></h6>
-                  <h6 style={{ color:"var(--text)" }}>PORTFOLIO</h6>
-                </Link>
-              </div>
+            <Col className="mainCat" xs={12} md={2}>
+              <a href="/Portfolio">
+                <img src={portfolio} width="60" height="60" alt="logo" />
+                <div className="mainName">PORTFOLIO</div>
+              </a>
             </Col>
-            <Col xs={12} md={6} style={{padding:0}}>
-              <div style={{margin:30, paddingTop:40, paddingBottom:40 , backgroundColor:"var(--bg)", borderRadius:10, boxShadow:"var(--boxshadow)"}}>
-                <Link style={{ textDecoration: 'none', fontWeight:"bold", color:"var(--color)" }} to="/about">
-                  <h6 style={{ marginBottom:20 }}><img src={about} width="60" height="60" alt="logo" /></h6>
-                  <h6 style={{ color:"var(--text)" }}>ABOUT</h6>
-                </Link>
-              </div>
+            <Col className="mainCat" xs={12} md={2}>
+              <a href="/about">
+                <img src={about} width="60" height="60" alt="logo" />
+                <div className="mainName">ABOUT</div>
+              </a>
             </Col>
           </Row>
         </div>
-        <div>
-          <h6><AiOutlineTags /><Link style={{ textDecoration:"none", color:"var(--color)" }} to="/tags">TAG</Link></h6>
+        <div className="mainTag">
+          <a href="/tags"><AiOutlineTags />TAG</a>
         </div>
       </div>
     </Layout>
@@ -73,19 +64,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "YYYY/MMM/DD")
-          title
-          description
-        }
       }
     }
   }

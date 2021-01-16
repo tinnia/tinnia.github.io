@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
+import Comments from "../components/comments"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -18,21 +19,25 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        style={{ marginTop:20, marginBottom:20 }}
+        style={{ textAlign:"left", marginTop:20, marginBottom:20 }}
         className="blog-post"
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header style={{ textAlign:"center", marginBottom:30 }}>
-          <h2 style={{ color:"#8C749F", marginBottom:3 }} itemProp="headline">{post.frontmatter.title}</h2>
-          <small style={{ color:"#D2ACD1" }}>{post.frontmatter.category}</small> - <small>{post.frontmatter.date}</small>
+        <header style={{ marginBottom:30 }}>
+          <h2 style={{ marginBottom:3 }} itemProp="headline">{post.frontmatter.title}</h2>
+          <small>{post.frontmatter.category}</small> - <small>{post.frontmatter.date}</small>
         </header>
         <section
-          style={{ backgroundColor:"var(--bg)", borderRadius:10, boxShadow:"var(--boxshadow)",textAlign:"left", margin:0, padding:20 }}
+          style={{ textAlign:"left", margin:0 }}
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
+        <Comments />
       </article>
+
+
+
       <nav className="blog-post-nav">
         <ul
           style={{
@@ -45,16 +50,16 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.frontmatter.path} rel="prev" style={{ textDecoration:"None", color: "#D2ACD1", fontWeight:"bold" }}>
-                <strong><small style={{ color: "#8C749F", fontWeight:"bold" }}><FaChevronLeft size="10" /> Before</small></strong> {previous.frontmatter.title}
-              </Link>
+              <a className="navButton" href={previous.frontmatter.path} rel="prev">
+                <small style={{ fontWeight:"bold" }}><FaChevronLeft size="10" /> Before</small> {previous.frontmatter.title}
+              </a>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.frontmatter.path} rel="next" style={{ textDecoration:"None", color: "#D2ACD1", fontWeight:"bold" }}>
-                {next.frontmatter.title} <strong><small style={{ color: "#8C749F", fontWeight:"bold" }}>After <FaChevronRight size="10" /></small></strong>
-              </Link>
+              <a className="navButton" href={next.frontmatter.path} rel="prev">
+                {next.frontmatter.title} <strong><small style={{ fontWeight:"bold" }}>After <FaChevronRight size="10" /></small></strong>
+              </a>
             )}
           </li>
         </ul>

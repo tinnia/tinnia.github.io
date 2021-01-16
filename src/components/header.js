@@ -1,32 +1,59 @@
-import React from 'react'
-// import { Link } from "gatsby"
+import React, { useState, useEffect } from 'react'
+import useSiteMeta from '../hooks/useSiteMeta'
+// import useTheme from '../hooks/useTheme'
 
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-import { Navbar } from 'react-bootstrap'
-import { FaInstagram } from "react-icons/fa";
+import { RiSunFill, RiMoonClearFill } from 'react-icons/ri'
+// import { darkTheme, lightTheme } from '../theme'
+// import { ThemeProvider } from 'react-bootstrap'
 
-class Header extends React.Component {
-  render() {
+
+const Header = () => {
+    const site = useSiteMeta()
+    const [scrolled, setScrolled] = useState(false)
+    let isChecked = localStorage.getItem('theme') === 'dark' ? true : false;
+    
+    useEffect(() => {
+        const handleScroll = () => {
+            if (!scrolled && window.scrollY > 30) {
+                setScrolled(true);
+            } else if (scrolled && window.scrollY <= 30) {
+                setScrolled(false);
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, [scrolled])
+    
     return (
-      <Navbar fixed="top" expand="lg" style={{ backgroundColor:"var(--bg)" }}>
-        <Navbar.Brand href="/" style={{ color:"#897eff" }}>TINNIA</Navbar.Brand>
-        <Navbar.Collapse className="justify-content-end">
-          <ThemeToggler>
-            {({ theme, toggleTheme }) => (
-              <div className="switchToggle">
-                <input id="switch"
-                  type="checkbox"
-                  onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-                  checked={theme === 'dark'}
-                  />
-                <label style={{ margin:0 }} htmlFor="switch" />
-              </div>
-            )}
-          </ThemeToggler>
-        </Navbar.Collapse>
-      </Navbar>
+        <header className={scrolled ? 'header scrolled' : 'header'}>
+            <div className="headerInline">
+                <div className="title">
+                    <a href="/" style={{ textDecoration:"none" }}><h1>{site.siteMetadata.title}</h1></a>
+                </div>
+                <div className="toggle">
+                    <ThemeToggler>
+                        {({ theme, toggleTheme }) => (
+                            <div className="switchToggle">
+                                <input id="switch"
+                                    className="invisible"
+                                    type="checkbox"
+                                    onChange={e => {toggleTheme(e.target.checked ? 'dark' : 'light');isChecked=e.target.checked;}}
+                                    checked={theme === 'dark'}
+                                />
+                                <label className={`switchLabel`} htmlFor="switch">
+                                    { isChecked ? <RiMoonClearFill /> : <RiSunFill /> }
+                                </label>
+                            </div>
+                        )}
+                    </ThemeToggler>                   
+                </div>
+            </div>
+        </header>
     )
-  }
 }
 
 export default Header;

@@ -3,14 +3,15 @@ title: "[SSAFY] 삼성청년SW아카데미 3기 | 합격후기"
 date: "2019-12-26T13:41:32.169Z"
 path: "/Study/etc/6/"
 category: "Study"
-tags: ["etc"]
+ci: "ETC"
+cat: "ETC"
+tags: ["ETC","SSAFY"]
 description: "[SSAFY] 삼성청년SW아카데미 3기 | 합격후기"
 ---
 
 ![img](images/ssafy.png)
 
 <hr />
-
 #### <span style="color:#6D838C">7. 합격</span>  
 
 우와아아 **12월 17일 오후 2시 12분**에 합격발표가 났다. 홈페이지에서 입과 여부를 최종적으로 확정하고, 입학식 때 필요한 입학정보를 등록해야 했다.  

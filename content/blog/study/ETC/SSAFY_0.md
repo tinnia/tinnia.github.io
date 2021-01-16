@@ -3,7 +3,9 @@ title: "[SSAFY] 삼성청년SW아카데미 3기 | 서류지원"
 date: "2019-11-11T13:41:32.169Z"
 path: "/Study/etc/1/"
 category: "Study"
-tags: ["etc"]
+ci: "ETC"
+cat: "ETC"
+tags: ["ETC","SSAFY"]
 description: "[SSAFY] 삼성청년SW아카데미 3기 | 서류지원"
 ---
 

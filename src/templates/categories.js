@@ -1,65 +1,140 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-
-// Components
-import kebabCase from "lodash/kebabCase"
-import { ButtonGroup, Button } from 'react-bootstrap'
+import React, { useState, useEffect } from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import algorithm from "../../content/assets/algorithm.png"
+import study from "../../content/assets/study.png"
+import portfolio from "../../content/assets/portfolio.png"
+import Boj from "../../public/img/boj.png"
+import Swea from "../../public/img/swea.png"
+import Programmers from '../../public/img/programmers.png'
+import All from '../../public/img/list.png'
+
 const Categories = ({ pageContext, data, location }) => {
-    const siteTitle = data.site.siteMetadata?.title || `Title`
+    const siteTitle = data.site.siteMetadata.title
     const { category } = pageContext
     const { nodes } = data.allMarkdownRemark
-    let tags
+    const cats = [data.cats.group.map((cat)=> cat.fieldValue)][0]
 
-    if (category === 'Algorithm') {
-        tags = ['ALL','BOJ','PROGRAMMERS','SWEA']
-    } else if (category === 'Study') {
-        tags = ['ALL','CERTIFICATE', 'CS', 'ETC']
-    } else {
-        tags =['ALL','PJT', 'KAGGLE', 'BLOG']
-        // tags =['ALL','WEB','KOTLIN','KAGGLE', 'BLOG']
+    const Algorithm = algorithm, Study = study, Portfolio = portfolio
+    const BOJ = Boj, SWEA = Swea, PROGRAMMERS = Programmers
+    const logo = eval(category)
+
+    const [cnt, setCnt] = useState(0)
+    const [, setCheck] = useState(false)
+    const [posts, setPosts] = useState({})
+    const [select, setSelect] = useState(Object.values(posts).flat())
+    
+
+    useEffect(() => {
+        if (Object.keys(posts).length === 0) {
+            for (var i=0;i<cats.length;i++) {
+                posts[cats[i]] = nodes.filter(node => node.frontmatter.cat === cats[i])
+            }
+            setPosts(posts)
+        }
+        const tmp = Object.values(posts).flat()
+        setSelect(tmp)
+    }, [cnt])
+
+
+    const changePosts = (isChecked, cat) => {
+        if (isChecked) {
+            if (Object.keys(posts).length === cats.length) {
+                for (var i=0;i<cats.length;i++) {
+                    if (cats[i] !== cat) {
+                        delete posts[cats[i]]
+                    }
+                }
+                setPosts(posts)
+            } else {
+                posts[cat] = nodes.filter(node => node.frontmatter.cat === cat)
+                setPosts(posts)
+            }
+        } else {
+            delete posts[cat]
+            setPosts(posts)
+        }
     }
 
+    
+    const checkCat = (check, cat) => {
+        setCnt(cnt+1)
+        setCheck(!check)
+        changePosts(check, cat)
+    }    
+    
+    
     return (
         <Layout location={location} title={siteTitle}>
-            <SEO title="All posts" />
+            <SEO title={category} />
             <div>
-                <h2 style={{ textAlign: "center", color:"#C587AE", margin:20 }}>{category}</h2>
-                <div style={{ backgroundColor:"var(--bg)", borderRadius:10, boxShadow:"var(--boxshadow)", marginBottom:30, padding:20  }}>
-                    <ButtonGroup style={{ boxShadow:"var(--boxshadow)", width:"100%" }}>
-                        {tags.map(tag=> {
-                            const tmp = tag === 'ALL' ? "" : kebabCase(tag)
-                            const url = '/' + category + '/' + tmp
+                <div className="cate">
+                    <h2 className="cateTitle">{category}</h2>
+                    <img className="cateLogo" src={logo} width="70" height="70" alt="logo" />
+                </div>
+                <div className="cateBody">
+                    <div className="catePost">
+                        {select.map(post => {
                             return(
-                                <Button key={tag} variant="light" style={tag==='ALL' ? {fontWeight:"bold", color:"var(--text)", border:0, backgroundColor:"#C587AE"} : {color:"var(--text)", backgroundColor:"var(--bg)", border:0, fontWeight:"bold"}} href={url}>{tag}</Button>
-                                )
-                        })}
-                    </ButtonGroup>
-                    <ol style={{ listStyle: `none`, textAlign:"left", marginTop:50 }}>
-                        {nodes.map(post => {
-                            const title = post.frontmatter.title
-                            return(
-                                <li key={post.fields.slug}>
-                                    <article className="post-list-item" itemScope itemType="http://schema.org/Article">
-                                    <header>
-                                        <h2 style={{ marginBottom: 0 }}>
-                                        <Link style={{ color: "#8C749F" }} to={post.frontmatter.path} itemProp="url">
-                                            <span itemProp="headline">{title}</span>
-                                        </Link>
-                                        </h2>
-                                        <small>{post.frontmatter.date}</small>
-                                    </header>
-                                    <section>
-                                        <p dangerouslySetInnerHTML={{ __html: post.frontmatter.description }} itemProp="description" />
-                                    </section>
-                                    </article>
-                                </li>
+                                <a href={post.frontmatter.path} key={post.frontmatter.path}>
+                                    <div className="catePostList">
+                                        <div className="catePostListItem">
+                                            <div className="catePostListItemImg">
+                                                {post.frontmatter.ci}
+                                            </div>
+                                            <div className="catePostListItemTitle">
+                                                <h4>{post.frontmatter.title}</h4>
+                                                <small>{post.frontmatter.date}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             )
                         })}
-                    </ol>
+                        {/* {tmp.map(post => (
+                            console.log(tmp)
+
+                            <div key={post}>
+                                {post}
+                            </div>
+                            <a href={post.frontmatter.path} key={post.frontmatter.path}>
+                                <div className="catePostList">
+                                    <div className="catePostListItem">
+                                        <div className="catePostListItemImg">
+                                            {post.frontmatter.ci}
+                                        </div>
+                                        <div className="catePostListItemTitle">
+                                            <h4>{post.frontmatter.title}</h4>
+                                            <small>{post.frontmatter.date}</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        ))} */}
+                    </div>
+                    <div className="cateButtonGroup">
+                        {cats.map((cat)=> {
+                            let catLogo
+                            if (cat === 'CERTIFICATE' || cat==='CS' || cat==='ETC' || cat==='BLOG' || cat==='KAGGLE' || cat==='PJT') {
+                                catLogo = All
+                            } else {
+                                catLogo = eval(cat)
+                            }
+                            console.log(catLogo)
+                            return(
+                                <div>   
+                                    <input id={cat} className="cate-box" type="checkbox" onClick={(e)=> checkCat(e.target.checked, cat)} key={cat} />
+                                    <label for={cat} className="cate-label">
+                                        <img className="cate-logo" src={catLogo} width="20" height="20" alt="logo" />
+                                        {cat}
+                                    </label>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         </Layout>
@@ -76,24 +151,36 @@ export const pageQuery = graphql`
         }
     }
     allMarkdownRemark(
-      limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { category: { eq: $category } } }
     ) {
       totalCount
       nodes {
-        fields{
-            slug
-        }
         frontmatter {
-          date(formatString: "YYYY/MMM/DD")
-          title
+          date(formatString: "MMMM d, yyyy")
           category
+          title
+          ci
+          cat
           tags
-          description
           path
         }
       }
+    }
+    cats: allMarkdownRemark(filter: { frontmatter: { category: { eq: $category } } }) {
+        group(field: frontmatter___cat) {
+            fieldValue
+            nodes {
+                frontmatter {
+                  category
+                  title
+                  ci
+                  cat
+                  tags
+                  path
+                }
+            }
+        }
     }
   }
 `

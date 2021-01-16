@@ -3,7 +3,9 @@ title: "[SSAFY] 삼성청년SW아카데미 3기 | 사전학습"
 date: "2019-11-22T13:41:32.169Z"
 path: "/Study/etc/4/"
 category: "Study"
-tags: ["etc"]
+ci: "ETC"
+cat: "ETC"
+tags: ["ETC","SSAFY"]
 description: "[SSAFY] 삼성청년SW아카데미 3기 | 사전학습"
 ---
 

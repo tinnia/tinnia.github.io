@@ -37,8 +37,8 @@ const CateTag = ({ pageContext, data, location }) => {
     <Layout location={location} title={siteTitle}>
         <SEO title="All posts" />
         <div>
-          <h2 style={{ textAlign: "center", color:"#C587AE", margin:20 }}>{category}</h2>
-          <div style={{ backgroundColor:"var(--bg)", borderRadius:10, boxShadow:"var(--boxshadow)", marginBottom:30, padding:20  }}>
+          <h2 style={{ margin:20 }}>{category}</h2>
+          <div style={{ marginBottom:30, padding:20  }}>
             <ButtonGroup style={{ boxShadow:"var(--boxshadow)", width:"100%" }}>
               {tags.map(tag=> {
                 const tmp = tag === 'ALL' ? "" : kebabCase(tag)
@@ -48,24 +48,25 @@ const CateTag = ({ pageContext, data, location }) => {
                 )
               })}
             </ButtonGroup>
-            <ol style={{ listStyle: `none`, textAlign:"left", marginTop:50 }}>
+            <ol style={{ marginTop:50 }}>
               {nodes.map(post => {
                 const title = post.frontmatter.title
                 return(
-                  <li key={post.fields.slug}>
+                  <li style={{ marginTop:20, marginBottom:20 }} key={post.fields.slug}>
                     <article className="post-list-item" itemScope itemType="http://schema.org/Article">
                     <header>
-                      <h2 style={{ marginBottom: 0 }}>
-                      <Link style={{ color: "#8C749F" }} to={post.frontmatter.path} itemProp="url">
+                      <h3 style={{ marginBottom: 0 }}>
+                      <Link to={post.frontmatter.path} itemProp="url">
                         <span itemProp="headline">{title}</span>
                       </Link>
-                      </h2>
+                      </h3>
                       <small>{post.frontmatter.date}</small>
                     </header>
                     <section>
                       <p dangerouslySetInnerHTML={{ __html: post.frontmatter.description }} itemProp="description" />
                     </section>
                     </article>
+                    <hr />
                   </li>
                 )
               })}

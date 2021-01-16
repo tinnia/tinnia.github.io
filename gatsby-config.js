@@ -1,15 +1,43 @@
+const meta = require('./gatsby-meta-config');
+
 module.exports = {
   siteMetadata: {
-    title: `Tinnia Blog`,
-    author: {
-      name: `@Tinnia`,
-      summary: `I'm Tinnia, a Full Stack Developer 🚀 from Repubilc of Korea.`,
-    },
-    description: `Welcome to Tinnia Blog`,
-    siteUrl: `https://tinnia.github.io/`,
-    social: {
-      instagram: `tinnia_story`,
-    },
+    title: meta.title,
+    author: meta.author.name,
+    description: meta.description,
+    siteUrl: meta.siteUrl,
+    lang: meta.lang,
+    postTitle: 'All',
+    navLinks: [
+      {
+        link:'/',
+        name:'HOME'
+      },
+      {
+        link:'/about',
+        name:'ABOUT'
+      },
+      {
+        link: meta.links.github,
+        name:'GITHUB'
+      },
+      {
+        link: meta.links.instagram,
+        name:'INSTAGRAM'
+      },
+      {
+        link: meta.links.notion,
+        name:'NOTION'
+      },
+      {
+        link: meta.links.linkedin,
+        name:'LINKEDIN'
+      },
+    ],
+    adsense:{
+      adClient: 'ca-pub-5373443176805821',
+      adSlot:'4000980067'
+    }
   },
   plugins: [
     {
@@ -33,13 +61,16 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              linkImagesToOriginal: false,
             },
           },
           {
-            resolve: `gatsby-remark-responsive-iframe`,
+            resolve: `gatsby-remark-vscode`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              theme: {
+                default: 'Monokai Dimmed',
+                dark: 'Monokai Dimmed'
+              }
             },
           },
           `gatsby-remark-prismjs`,
@@ -48,20 +79,11 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Tinnia Blog`,
-        short_name: `Tinnia Blog`,
+        name: meta.title,
+        short_name:  meta.title,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -69,13 +91,19 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`,
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
+
+    'gatsby-plugin-dark-mode',
+    `gatsby-plugin-fontawesome-css`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
-    'gatsby-plugin-dark-mode',
-    // sitemap.xml생성
+    
+    // Create Sitemap, Feed, Robots
     'gatsby-plugin-sitemap',
+    `gatsby-plugin-feed`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
@@ -87,10 +115,19 @@ module.exports = {
         }]
       }
     },
+
+    // Google Adsense
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
         publisherId: `ca-pub-5373443176805821`
+      },
+    },
+    // Google Analytics
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-152576250-1`
       },
     },
   ],

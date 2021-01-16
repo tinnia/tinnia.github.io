@@ -3,14 +3,15 @@ title: "[SSAFY] 삼성청년SW아카데미 3기 | 면접"
 date: "2019-12-05T13:41:32.169Z"
 path: "/Study/etc/5/"
 category: "Study"
-tags: ["etc"]
+ci: "ETC"
+cat: "ETC"
+tags: ["ETC","SSAFY"]
 description: "[SSAFY] 삼성청년SW아카데미 3기 | 면접"
 ---
 
 ![img](images/ssafy.png)
 
 <hr />
-
 #### <span style="color:#6D838C">6. Interview</span>  
 
 **2019년 12월 4일** 대전에서 면접을 보게 되었다.  
