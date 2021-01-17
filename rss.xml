@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tinnia Blog]]></title><description><![CDATA[Welcome to Tinnia Blog]]></description><link>https://tinnia.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 14 Jan 2021 18:54:03 GMT</lastBuildDate><item><title><![CDATA[[Programmers/Python] 완주하지 못한 선수]]></title><description><![CDATA[문제 바로가기 문제 설명 수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다. 마라톤에 참여한 선수들의 이름이 담긴 배열 participant…]]></description><link>https://tinnia.github.io/algorithm/programmers/완주하지 못한 선수/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/완주하지 못한 선수/</guid><pubDate>Fri, 08 Jan 2021 13:57:32 GMT</pubDate><content:encoded>&lt;br /&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tinnia Blog]]></title><description><![CDATA[Welcome to Tinnia Blog]]></description><link>https://tinnia.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 17 Jan 2021 15:57:34 GMT</lastBuildDate><item><title><![CDATA[완주하지 못한 선수]]></title><description><![CDATA[문제 바로가기 문제 설명 수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다. 마라톤에 참여한 선수들의 이름이 담긴 배열 participant…]]></description><link>https://tinnia.github.io/algorithm/programmers/완주하지 못한 선수/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/완주하지 못한 선수/</guid><pubDate>Fri, 08 Jan 2021 13:57:32 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/68644?language=python3&quot; style=&quot;color:#C587AE;text-decoration:none;&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;문제 설명&lt;/h6&gt;
 &lt;p&gt;&lt;small&gt;수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다. 마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.&lt;/small&gt;&lt;/p&gt;
@@ -178,7 +178,7 @@ return list(answer.keys())[0]&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Programmers/Python] 두 개 뽑아서 더하기]]></title><description><![CDATA[문제 바로가기 문제 설명 정수 배열 numbers가 주어집니다. numbers에서 서로 다른 인덱스에 있는 두 개의 수를 뽑아 더해서 만들 수 있는 모든 수를 배열에 오름차순으로 담아 return 하도록 solution…]]></description><link>https://tinnia.github.io/algorithm/programmers/두 개 뽑아서 더하기/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/두 개 뽑아서 더하기/</guid><pubDate>Fri, 08 Jan 2021 13:53:32 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[두 개 뽑아서 더하기]]></title><description><![CDATA[문제 바로가기 문제 설명 정수 배열 numbers가 주어집니다. numbers에서 서로 다른 인덱스에 있는 두 개의 수를 뽑아 더해서 만들 수 있는 모든 수를 배열에 오름차순으로 담아 return 하도록 solution…]]></description><link>https://tinnia.github.io/algorithm/programmers/두 개 뽑아서 더하기/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/두 개 뽑아서 더하기/</guid><pubDate>Fri, 08 Jan 2021 13:53:32 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/68644?language=python3&quot; style=&quot;color:#C587AE;text-decoration:none;&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;문제 설명&lt;/h6&gt;
 &lt;p&gt;&lt;small&gt;정수 배열 numbers가 주어집니다. numbers에서 서로 다른 인덱스에 있는 두 개의 수를 뽑아 더해서 만들 수 있는 모든 수를 배열에 오름차순으로 담아 return 하도록 solution 함수를 완성해주세요.&lt;/small&gt;&lt;/p&gt;
@@ -351,7 +351,7 @@ return list(answer.keys())[0]&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Programmers/Python] 크레인 인형뽑기 게임]]></title><description><![CDATA[문제 바로가기 제한사항  board 배열은 2차원 배열로 크기는 5 x 5 이상 30 x 30 이하입니다.  board의 각 칸에는 0 이상 100 이하인 정수가 담겨있습니다.  0은 빈 칸을 나타냅니다.  1 ~ 10…]]></description><link>https://tinnia.github.io/algorithm/programmers/크레인 인형뽑기 게임/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/크레인 인형뽑기 게임/</guid><pubDate>Fri, 08 Jan 2021 13:51:32 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[크레인 인형뽑기 게임]]></title><description><![CDATA[문제 바로가기 제한사항  board 배열은 2차원 배열로 크기는 5 x 5 이상 30 x 30 이하입니다.  board의 각 칸에는 0 이상 100 이하인 정수가 담겨있습니다.  0은 빈 칸을 나타냅니다.  1 ~ 10…]]></description><link>https://tinnia.github.io/algorithm/programmers/크레인 인형뽑기 게임/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/크레인 인형뽑기 게임/</guid><pubDate>Fri, 08 Jan 2021 13:51:32 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/64061&quot; style=&quot;color:#C587AE;text-decoration:none;&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;제한사항&lt;/h6&gt;
 &lt;ul&gt;
@@ -522,8 +522,7 @@ return list(answer.keys())[0]&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SWEA/Python/D3] 1289. 원재의 메모리 복구하기]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이 단순 비교]]></description><link>https://tinnia.github.io/algorithm/swea/1289/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/1289/</guid><pubDate>Fri, 08 Jan 2021 05:59:32 GMT</pubDate><content:encoded>&lt;br /&gt;
-&lt;p&gt;&lt;a href=&quot;https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV19AcoKI9sCFAZN&amp;categoryId=AV19AcoKI9sCFAZN&amp;categoryType=CODE&quot; style=&quot;color:#C587AE;text-decoration:none;&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[원재의 메모리 복구하기]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이 단순 비교]]></description><link>https://tinnia.github.io/algorithm/swea/1289/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/1289/</guid><pubDate>Fri, 08 Jan 2021 05:59:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV19AcoKI9sCFAZN&amp;categoryId=AV19AcoKI9sCFAZN&amp;categoryType=CODE&quot; style=&quot;color:#C587AE;text-decoration:none;&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;입력&lt;/h6&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;0011&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
@@ -670,7 +669,7 @@ return list(answer.keys())[0]&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SWEA/Python/D3] 1217. 거듭 제곱]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이 단순 비교]]></description><link>https://tinnia.github.io/algorithm/swea/1217/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/1217/</guid><pubDate>Fri, 08 Jan 2021 03:59:32 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[거듭 제곱]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이 단순 비교]]></description><link>https://tinnia.github.io/algorithm/swea/1217/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/1217/</guid><pubDate>Fri, 08 Jan 2021 03:59:32 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://swexpertacademy.com/main/code/problem/problemSolver.do?contestProbId=AV14dUIaAAUCFAYD&quot; style=&quot;color:#C587AE;text-decoration:none;&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;입력&lt;/h6&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
@@ -823,7 +822,7 @@ return list(answer.keys())[0]&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SWEA/Python/D3] 1215. 회문1]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이 단순 비교]]></description><link>https://tinnia.github.io/algorithm/swea/1215/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/1215/</guid><pubDate>Fri, 08 Jan 2021 02:59:32 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[회문1]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이 단순 비교]]></description><link>https://tinnia.github.io/algorithm/swea/1215/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/1215/</guid><pubDate>Fri, 08 Jan 2021 02:59:32 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14QpAaAAwCFAYi&amp;categoryId=AV14QpAaAAwCFAYi&amp;categoryType=CODE&quot; style=&quot;color:#C587AE;text-decoration:none;&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;입력&lt;/h6&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;4&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
@@ -982,7 +981,7 @@ return list(answer.keys())[0]&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SWEA/Python/D3] 1230. 암호문3]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이 단순 비교]]></description><link>https://tinnia.github.io/algorithm/swea/1230/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/1230/</guid><pubDate>Thu, 07 Jan 2021 23:59:32 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[암호문3]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이 단순 비교]]></description><link>https://tinnia.github.io/algorithm/swea/1230/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/1230/</guid><pubDate>Thu, 07 Jan 2021 23:59:32 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14zIwqAHwCFAYD&amp;categoryId=AV14zIwqAHwCFAYD&amp;categoryType=CODE&quot; style=&quot;color:#C587AE;text-decoration:none;&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;입력&lt;/h6&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;3198&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
@@ -1143,7 +1142,7 @@ return list(answer.keys())[0]&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SWEA/Python/D3] 3431. 준환이의 운동관리]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이 단순 비교]]></description><link>https://tinnia.github.io/algorithm/swea/3431/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/3431/</guid><pubDate>Thu, 07 Jan 2021 23:51:32 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[준환이의 운동관리]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이 단순 비교]]></description><link>https://tinnia.github.io/algorithm/swea/3431/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/3431/</guid><pubDate>Thu, 07 Jan 2021 23:51:32 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWE_ZXcqAAMDFAV2&amp;categoryId=AWE_ZXcqAAMDFAV2&amp;categoryType=CODE&quot; style=&quot;color:#C587AE;text-decoration:none;&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;입력&lt;/h6&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;3&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
@@ -1292,7 +1291,7 @@ return list(answer.keys())[0]&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Blog] 05. Google Adsense]]></title><description><![CDATA[너무 이르다고 생각이 들지만, 구글 애드센스를 미리 신청해볼까 하고 신청을 했었다.  다들 오래 걸릴 것이라고 생각하라고 하며, 구글 애드센스 고시에 합격하기 힘들다고 하셔서 겁도 많이 먹었는데,…]]></description><link>https://tinnia.github.io/portfolio/blog/7/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/7/</guid><pubDate>Tue, 05 Jan 2021 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;너무 이르다고 생각이 들지만, 구글 애드센스를 미리 신청해볼까 하고 신청을 했었다.  다들 오래 걸릴 것이라고 생각하라고 하며, 구글 애드센스 고시에 합격하기 힘들다고 하셔서 겁도 많이 먹었는데, 4일 만에 애드센스가 승인이 나버렸다. 사실 웹 관련 공부를 더 하고 깔끔한 블로그를 만든 뒤에나 합격할 줄 알았는데, 벌써 합격해버려서 요 며칠간 구글 애드센스 적용하는 방법을 또 배우고, 면접도 준비하느라 블로그가 너무 난잡해진 기분이다.  &lt;/p&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[05. Google Adsense]]></title><description><![CDATA[너무 이르다고 생각이 들지만, 구글 애드센스를 미리 신청해볼까 하고 신청을 했었다.  다들 오래 걸릴 것이라고 생각하라고 하며, 구글 애드센스 고시에 합격하기 힘들다고 하셔서 겁도 많이 먹었는데,…]]></description><link>https://tinnia.github.io/portfolio/blog/7/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/7/</guid><pubDate>Tue, 05 Jan 2021 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;너무 이르다고 생각이 들지만, 구글 애드센스를 미리 신청해볼까 하고 신청을 했었다.  다들 오래 걸릴 것이라고 생각하라고 하며, 구글 애드센스 고시에 합격하기 힘들다고 하셔서 겁도 많이 먹었는데, 4일 만에 애드센스가 승인이 나버렸다. 사실 웹 관련 공부를 더 하고 깔끔한 블로그를 만든 뒤에나 합격할 줄 알았는데, 벌써 합격해버려서 요 며칠간 구글 애드센스 적용하는 방법을 또 배우고, 면접도 준비하느라 블로그가 너무 난잡해진 기분이다.  &lt;/p&gt;
 &lt;p&gt;오늘부터 또다시 공부해서 조금 더 나아진 블로그를 만들도록 해야겠다.  &lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;Google Adsense  &lt;/span&gt;&lt;/h2&gt;
@@ -1843,7 +1842,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[CS] Java]]></title><description><![CDATA[Java 분류  Java SE Java의 핵심 API와 기능들 제공 Java EE 기업에서 운영하는 서버페이지에 특화 Java ME 임베디드 시스템 환경에 특화 JavaFX 데스크톱 애플리케이션 개발 및 배포 Java C/C++ 다중 상속 X…]]></description><link>https://tinnia.github.io/study/CS/1/</link><guid isPermaLink="false">https://tinnia.github.io/study/CS/1/</guid><pubDate>Fri, 27 Nov 2020 03:41:32 GMT</pubDate><content:encoded>&lt;h5&gt;&lt;/h5&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[CS] Java]]></title><description><![CDATA[Java Java 분류  Java SE Java의 핵심 API와 기능들 제공 Java EE 기업에서 운영하는 서버페이지에 특화 Java ME 임베디드 시스템 환경에 특화 JavaFX 데스크톱 애플리케이션 개발 및 배포 Java C/C++ 다중 상속 X…]]></description><link>https://tinnia.github.io/study/CS/1/</link><guid isPermaLink="false">https://tinnia.github.io/study/CS/1/</guid><pubDate>Fri, 27 Nov 2020 03:41:32 GMT</pubDate><content:encoded>&lt;h5&gt;Java&lt;/h5&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -6236,14 +6235,6 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;br /&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td align=&quot;center&quot;&gt;제27회 데이터분석 준전문가 자격검정&lt;/td&gt;
 &lt;td align=&quot;center&quot;&gt;09.07 ~ 10.26&lt;/td&gt;
 &lt;td align=&quot;center&quot;&gt;~11.04&lt;/td&gt;
@@ -6268,7 +6259,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
 &lt;td align=&quot;right&quot;&gt;1과목&lt;/td&gt;
 &lt;td align=&quot;center&quot;&gt;데이터 이해&lt;/td&gt;
 &lt;td&gt;1. 데이터 이해&lt;br /&gt;2. 데이터 가치와 미래&lt;br /&gt;3. 가치창조 위한 데이터 사이언스와 전략 인사이트&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;&lt;br /&gt;8 + 2&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;8 + 2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&quot;right&quot;&gt;2과목&lt;/td&gt;
@@ -6280,7 +6271,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
 &lt;td align=&quot;right&quot;&gt;3과목&lt;/td&gt;
 &lt;td align=&quot;center&quot;&gt;데이터 분석&lt;/td&gt;
 &lt;td&gt;1. R 기초와 데이터 마트&lt;br /&gt;2. 통계 분석&lt;br /&gt;3. 정형 데이터 마이닝&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;&lt;br /&gt;24 + 6&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;24 + 6&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -6387,7 +6378,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Blog] 04. 페이지 만들기 - URL]]></title><description><![CDATA[URL로 쓸 수 없는 것  , , ,  와 같은 단어가 포함되면,
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[04. 페이지 만들기 - URL]]></title><description><![CDATA[URL로 쓸 수 없는 것  , , ,  와 같은 단어가 포함되면,
  ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.]]></description><link>https://tinnia.github.io/portfolio/blog/6/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/6/</guid><pubDate>Wed, 11 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h5&gt;URL로 쓸 수 없는 것&lt;/h5&gt;
 &lt;p&gt; &lt;code class=&quot;language-text&quot;&gt;advert&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;ad&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;doubleclick&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;click&lt;/code&gt; 와 같은 단어가 포함되면,
 ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.&lt;/p&gt;
@@ -6481,7 +6472,7 @@ ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.&lt;/p&gt
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Programmers/Python] 가장 먼 노드]]></title><description><![CDATA[문제 바로가기 문제 설명  n개의 노드가 있는 그래프가 있습니다. 각 노드는 1부터 n까지 번호가 적혀있습니다.…]]></description><link>https://tinnia.github.io/algorithm/programmers/가장 먼 노드/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/가장 먼 노드/</guid><pubDate>Tue, 10 Nov 2020 23:51:32 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[가장 먼 노드]]></title><description><![CDATA[문제 바로가기 문제 설명  n개의 노드가 있는 그래프가 있습니다. 각 노드는 1부터 n까지 번호가 적혀있습니다.…]]></description><link>https://tinnia.github.io/algorithm/programmers/가장 먼 노드/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/가장 먼 노드/</guid><pubDate>Tue, 10 Nov 2020 23:51:32 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/49189&quot; style=&quot;color:#C587AE;text-decoration:none;&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;문제 설명&lt;/h6&gt;
 &lt;p&gt;&lt;small&gt; n개의 노드가 있는 그래프가 있습니다. 각 노드는 1부터 n까지 번호가 적혀있습니다. 1번 노드에서 가장 멀리 떨어진 노드의 갯수를 구하려고 합니다. 가장 멀리 떨어진 노드란 최단경로로 이동했을 때 간선의 개수가 가장 많은 노드들을 의미합니다.&lt;/small&gt;&lt;/p&gt;
@@ -6656,7 +6647,7 @@ ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.&lt;/p&gt
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Programmers/Python] 체육복]]></title><description><![CDATA[…]]></description><link>https://tinnia.github.io/algorithm/programmers/체육복/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/체육복/</guid><pubDate>Tue, 10 Nov 2020 23:41:32 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[체육복]]></title><description><![CDATA[…]]></description><link>https://tinnia.github.io/algorithm/programmers/체육복/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/체육복/</guid><pubDate>Tue, 10 Nov 2020 23:41:32 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42862&quot; style=&quot;color:#C587AE;text-decoration:none;&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;문제 설명&lt;/h6&gt;
 &lt;p&gt;&lt;small&gt; 점심시간에 도둑이 들어, 일부 학생이 체육복을 도난당했습니다. 다행히 여벌 체육복이 있는 학생이 이들에게 체육복을 빌려주려 합니다. 학생들의 번호는 체격 순으로 매겨져 있어, 바로 앞번호의 학생이나 바로 뒷번호의 학생에게만 체육복을 빌려줄 수 있습니다. 예를 들어, 4번 학생은 3번 학생이나 5번 학생에게만 체육복을 빌려줄 수 있습니다. 체육복이 없으면 수업을 들을 수 없기 때문에 체육복을 적절히 빌려 최대한 많은 학생이 체육수업을 들어야 합니다.&lt;/small&gt;&lt;/p&gt;
@@ -6834,7 +6825,7 @@ ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.&lt;/p&gt
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Blog] 03. Font 바꾸기 & Icon 넣기]]></title><description><![CDATA[Gatsby + React Font 바꾸기  - local에서 폰트 바꾸기 1️⃣ 폰트 저장할 폴더 만들기  - src에 fonts 폴더 만들기 2️⃣ 원하는 폰트를 골라 다운로드하기  - 눈누에서 다운받음 3️⃣ style.css에서 수정…]]></description><link>https://tinnia.github.io/portfolio/blog/5/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/5/</guid><pubDate>Fri, 06 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React Font 바꾸기&lt;/h4&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[03. Font 바꾸기 & Icon 넣기]]></title><description><![CDATA[Gatsby + React Font 바꾸기  - local에서 폰트 바꾸기 1️⃣ 폰트 저장할 폴더 만들기  - src에 fonts 폴더 만들기 2️⃣ 원하는 폰트를 골라 다운로드하기  - 눈누에서 다운받음 3️⃣ style.css에서 수정…]]></description><link>https://tinnia.github.io/portfolio/blog/5/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/5/</guid><pubDate>Fri, 06 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React Font 바꾸기&lt;/h4&gt;
 &lt;p&gt; - local에서 폰트 바꾸기&lt;/p&gt;
 &lt;h5&gt;1️⃣ 폰트 저장할 폴더 만들기&lt;/h5&gt;
 &lt;p&gt; - src에 fonts 폴더 만들기&lt;/p&gt;
@@ -6871,7 +6862,7 @@ ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.&lt;/p&gt
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;./src/fonts.css&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;br /&gt;
 &lt;hr /&gt;
-&lt;h4&gt;Gatsby + React Icon 넣기&lt;/h4&gt;
+#### Gatsby + React Icon 넣기
 &lt;h5&gt;1️⃣ npm 설치&lt;/h5&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;4&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;npm install react-icons --save&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;h5&gt;2️⃣ 사용하기&lt;/h5&gt;
@@ -7011,7 +7002,7 @@ ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.&lt;/p&gt
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Blog] 02. 페이지 만들기]]></title><description><![CDATA[Gatsby + React Todo 페이지 만들기 1️⃣ js파일 만들기  - src/pages에 todo.js 만들기 2️⃣ js 파일 원하는 모습으로 꾸미기]]></description><link>https://tinnia.github.io/portfolio/blog/4/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/4/</guid><pubDate>Wed, 04 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React Todo 페이지 만들기&lt;/h4&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[02. 페이지 만들기]]></title><description><![CDATA[Gatsby + React Todo 페이지 만들기 1️⃣ js파일 만들기  - src/pages에 todo.js 만들기 2️⃣ js 파일 원하는 모습으로 꾸미기]]></description><link>https://tinnia.github.io/portfolio/blog/4/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/4/</guid><pubDate>Wed, 04 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React Todo 페이지 만들기&lt;/h4&gt;
 &lt;h5&gt;1️⃣ js파일 만들기&lt;/h5&gt;
 &lt;p&gt; - src/pages에 todo.js 만들기&lt;/p&gt;
 &lt;h5&gt;2️⃣ js 파일 원하는 모습으로 꾸미기&lt;/h5&gt;
@@ -7166,7 +7157,7 @@ ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.&lt;/p&gt
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Blog] 01. Blog 제작]]></title><description><![CDATA[Gatsby + React + gh-pages로 블로그 만들기 ❤️ 준비 1️⃣ Gatsby 설치 2️⃣ Gatsby 프로젝트 만들기   - 테마는 생략 가능하지만 빠른 시작을 위해서는 여기에서 테마를 선택하는 것이 좋다. 3️⃣ Gatsby…]]></description><link>https://tinnia.github.io/portfolio/blog/3/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/3/</guid><pubDate>Sun, 25 Oct 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React + gh-pages로 블로그 만들기&lt;/h4&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[01. Blog 제작]]></title><description><![CDATA[Gatsby + React + gh-pages로 블로그 만들기 ❤️ 준비 1️⃣ Gatsby 설치 2️⃣ Gatsby 프로젝트 만들기   - 테마는 생략 가능하지만 빠른 시작을 위해서는 여기에서 테마를 선택하는 것이 좋다. 3️⃣ Gatsby…]]></description><link>https://tinnia.github.io/portfolio/blog/3/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/3/</guid><pubDate>Sun, 25 Oct 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React + gh-pages로 블로그 만들기&lt;/h4&gt;
 &lt;h6&gt;❤️ 준비&lt;/h6&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;shell&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;node.js&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;npm&lt;/span&gt;&lt;/span&gt;
@@ -7658,7 +7649,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 합격후기]]></title><description><![CDATA[7. 합격 우와아아 12월 17일 오후 2시 1…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_4/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_4/</guid><pubDate>Thu, 26 Dec 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 합격후기]]></title><description><![CDATA[우와아아 12월 17일 오후 2시 1…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_4/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_4/</guid><pubDate>Thu, 26 Dec 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
     &gt;
@@ -7680,7 +7671,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
       /&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;7. 합격&lt;/span&gt;&lt;/h4&gt;
+#### &lt;span style=&quot;color:#6D838C&quot;&gt;7. 합격&lt;/span&gt;  
 &lt;p&gt;우와아아 &lt;strong&gt;12월 17일 오후 2시 12분&lt;/strong&gt;에 합격발표가 났다. 홈페이지에서 입과 여부를 최종적으로 확정하고, 입학식 때 필요한 입학정보를 등록해야 했다.  &lt;/p&gt;
 &lt;p&gt;일주일 전에 난 결과지만, 입학정보 사진도 찾고 집도 찾아본다고 정신없는 일주일이 지나갔다.  &lt;/p&gt;
 &lt;p&gt;&lt;span
@@ -7807,7 +7798,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 면접]]></title><description><![CDATA[6. Interview 2019년 12월…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_3/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_3/</guid><pubDate>Thu, 05 Dec 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 면접]]></title><description><![CDATA[2019년 12월…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_3/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_3/</guid><pubDate>Thu, 05 Dec 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
     &gt;
@@ -7829,7 +7820,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
       /&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;6. Interview&lt;/span&gt;&lt;/h4&gt;
+#### &lt;span style=&quot;color:#6D838C&quot;&gt;6. Interview&lt;/span&gt;  
 &lt;p&gt;&lt;strong&gt;2019년 12월 4일&lt;/strong&gt; 대전에서 면접을 보게 되었다.&lt;br&gt;
 가서 보안서약서를 작성했기 때문에 자세한 것은 말할 수 없지만, 기록하면 내가 면접장에서 느낀 것들을 기억해낼 수 있을 것 같아서 적게 되었다.  &lt;/p&gt;
 &lt;p&gt;지방에서 올라가야 해서 기차를 타고 전날에 가서 하루를 자고 면접을 보러 가게 되었는데, 전날에 잠도 안 오고 뒤척이다가 늦게 잠들었다.   &lt;/p&gt;
@@ -7931,7 +7922,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Blog] 00. Blog를 위한 CSS]]></title><description><![CDATA[2. CSS  오늘은 CSS에 대해 배웠다.   먼저, html은 쉽게 배울 수 있지만, 가장 중요한 기초가 된다. 그리고, CSS는 HTML이 WEB의 정보에 집중할 수 있게, 디자인적 요소를 맡고 있다.   간단하게, 몇 가지 Tag…]]></description><link>https://tinnia.github.io/portfolio/blog/2/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/2/</guid><pubDate>Wed, 27 Nov 2019 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;2. CSS &lt;/span&gt;&lt;/h4&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[00. Blog를 위한 CSS]]></title><description><![CDATA[2. CSS  오늘은 CSS에 대해 배웠다.   먼저, html은 쉽게 배울 수 있지만, 가장 중요한 기초가 된다. 그리고, CSS는 HTML이 WEB의 정보에 집중할 수 있게, 디자인적 요소를 맡고 있다.   간단하게, 몇 가지 Tag…]]></description><link>https://tinnia.github.io/portfolio/blog/2/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/2/</guid><pubDate>Wed, 27 Nov 2019 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;2. CSS &lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;오늘은 &lt;strong&gt;CSS&lt;/strong&gt;에 대해 배웠다.  &lt;/p&gt;
 &lt;p&gt;먼저, html은 쉽게 배울 수 있지만, 가장 중요한 기초가 된다.&lt;br&gt;
 그리고, CSS는 HTML이 WEB의 정보에 집중할 수 있게, 디자인적 요소를 맡고 있다.  &lt;/p&gt;
@@ -8216,7 +8207,7 @@ id(#) → class(.) → Tag(a,h1,ol…)&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Blog] 00. Blog를 위한 HTML]]></title><description><![CDATA[블로그를 시작하게 되었을 때, html 수정을 많이 할 것이라는 생각은 못 했던 것 같다. 물론 수정을 하더라도, 구글이나 네이버에 검색하면 바로바로 나올 것이라고 생각했는데… 생각외로 Hugo를 사용하여 Github…]]></description><link>https://tinnia.github.io/portfolio/blog/1/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/1/</guid><pubDate>Tue, 26 Nov 2019 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;블로그를 시작하게 되었을 때, html 수정을 많이 할 것이라는 생각은 못 했던 것 같다.&lt;br&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[00. Blog를 위한 HTML]]></title><description><![CDATA[블로그를 시작하게 되었을 때, html 수정을 많이 할 것이라는 생각은 못 했던 것 같다. 물론 수정을 하더라도, 구글이나 네이버에 검색하면 바로바로 나올 것이라고 생각했는데… 생각외로 Hugo를 사용하여 Github…]]></description><link>https://tinnia.github.io/portfolio/blog/1/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/1/</guid><pubDate>Tue, 26 Nov 2019 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;블로그를 시작하게 되었을 때, html 수정을 많이 할 것이라는 생각은 못 했던 것 같다.&lt;br&gt;
 물론 수정을 하더라도, 구글이나 네이버에 검색하면 바로바로 나올 것이라고 생각했는데…&lt;br&gt;
 생각외로 Hugo를 사용하여 Github 블로그를 만든 분들이 많이 없었다. &lt;strong&gt;깃허브 블로그&lt;/strong&gt; 라고 검색하면, 지킬을 활용한 블로그들이 대다수이기 때문에 찾기도 힘들다.&lt;br&gt;
 하지만 현재는 나도 Hugo 대신 Gatsby를 활용한 블로그를 꾸미고 있다.&lt;/p&gt;
@@ -8259,7 +8250,7 @@ id(#) → class(.) → Tag(a,h1,ol…)&lt;/p&gt;
 &lt;h4&gt; Title &lt;/h4&gt;  
 &lt;h5&gt; Title &lt;/h5&gt;  
 &lt;h6&gt; Title &lt;/h6&gt;  
-&lt;h6&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;5. 단락&lt;/span&gt;&lt;/h6&gt;
+###### &lt;span style=&quot;color:#819BA6&quot;&gt;5. 단락&lt;/span&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;4&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;첫 번째 문장 &amp;lt;br&amp;gt; 두 번째 문장 &amp;lt;br&amp;gt; &amp;lt;br&amp;gt; 두 번째 단락  &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;첫 번째 문장 &lt;br&gt; 두 번째 문장 &lt;br&gt; &lt;br&gt; 두 번째 단락  &lt;/li&gt;
@@ -8775,7 +8766,7 @@ id(#) → class(.) → Tag(a,h1,ol…)&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 적성진단]]></title><description><![CDATA[삼성 SW 아카데미 3기 모집 지원 요강 대상 : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자 모집기간 : 2019.10.28. ~ 11.11. 교육기간 : 2020.01.06. ~ 12.31. 교육장소 : 전국…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_1/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_1/</guid><pubDate>Sun, 17 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;삼성 SW 아카데미 3기 모집&lt;/span&gt;&lt;/h2&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 적성진단]]></title><description><![CDATA[삼성 SW 아카데미 3기 모집 지원 요강 대상 : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자 모집기간 : 2019.10.28. ~ 11.11. 교육기간 : 2020.01.06. ~ 12.31. 교육장소 : 전국…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_1/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_1/</guid><pubDate>Sun, 17 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;삼성 SW 아카데미 3기 모집&lt;/h2&gt;
 &lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;지원 요강&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;대상&lt;/span&gt;&lt;/strong&gt; : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자&lt;br&gt;
 &lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;모집기간&lt;/span&gt;&lt;/strong&gt; : 2019.10.28. ~ 11.11.&lt;br&gt;
