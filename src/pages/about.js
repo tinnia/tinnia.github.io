@@ -1,16 +1,17 @@
 import React from "react"
+import useSiteMeta from '../hooks/useSiteMeta'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const AboutPage = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
+const AboutPage = ({ location }) => {
+  const site = useSiteMeta()
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={site.siteMetadata.title}>
       <SEO title="About" />
-      <div style={{ marginTop:20, textAlign:"center" }}>
-        <h2 style={{ color:"#8C749F" }} >About Me</h2>
+      <div style={{ marginTop:20 }}>
+        <h2>About Me</h2>
         <p style={{ marginTop:50 }}>Hi.</p>
       </div>
     </Layout>
@@ -18,13 +19,3 @@ const AboutPage = ({ data, location }) => {
 }
 
 export default AboutPage
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

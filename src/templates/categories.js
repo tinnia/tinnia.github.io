@@ -7,16 +7,16 @@ import SEO from "../components/seo"
 import algorithm from "../../content/assets/algorithm.png"
 import study from "../../content/assets/study.png"
 import portfolio from "../../content/assets/portfolio.png"
-import Boj from "../../public/img/boj.png"
-import Swea from "../../public/img/swea.png"
-import Programmers from '../../public/img/programmers.png'
-import All from '../../public/img/list.png'
+import Boj from "../../content/assets/boj.png"
+import Swea from "../../content/assets/swea.png"
+import Programmers from '../../content/assets/programmers.png'
+import All from '../../content/assets/folder.png'
 
 const Categories = ({ pageContext, data, location }) => {
-    const siteTitle = data.site.siteMetadata.title
     const { category } = pageContext
-    const { nodes } = data.allMarkdownRemark
-    const cats = [data.cats.group.map((cat)=> cat.fieldValue)][0]
+    const site = data.site
+    const nodes = data.cats.nodes
+    const catGroup = [data.cats.group.map((cat)=> cat.fieldValue)][0]
 
     const Algorithm = algorithm, Study = study, Portfolio = portfolio
     const BOJ = Boj, SWEA = Swea, PROGRAMMERS = Programmers
@@ -30,8 +30,8 @@ const Categories = ({ pageContext, data, location }) => {
 
     useEffect(() => {
         if (Object.keys(posts).length === 0) {
-            for (var i=0;i<cats.length;i++) {
-                posts[cats[i]] = nodes.filter(node => node.frontmatter.cat === cats[i])
+            for (var i=0;i<catGroup.length;i++) {
+                posts[catGroup[i]] = nodes.filter(node => node.frontmatter.cat === catGroup[i])
             }
             setPosts(posts)
         }
@@ -42,10 +42,10 @@ const Categories = ({ pageContext, data, location }) => {
 
     const changePosts = (isChecked, cat) => {
         if (isChecked) {
-            if (Object.keys(posts).length === cats.length) {
-                for (var i=0;i<cats.length;i++) {
-                    if (cats[i] !== cat) {
-                        delete posts[cats[i]]
+            if (Object.keys(posts).length === catGroup.length) {
+                for (var i=0;i<catGroup.length;i++) {
+                    if (catGroup[i] !== cat) {
+                        delete posts[catGroup[i]]
                     }
                 }
                 setPosts(posts)
@@ -68,7 +68,7 @@ const Categories = ({ pageContext, data, location }) => {
     
     
     return (
-        <Layout location={location} title={siteTitle}>
+        <Layout location={location} title={site.siteMetadata.title}>
             <SEO title={category} />
             <div>
                 <div className="cate">
@@ -94,40 +94,19 @@ const Categories = ({ pageContext, data, location }) => {
                                 </a>
                             )
                         })}
-                        {/* {tmp.map(post => (
-                            console.log(tmp)
-
-                            <div key={post}>
-                                {post}
-                            </div>
-                            <a href={post.frontmatter.path} key={post.frontmatter.path}>
-                                <div className="catePostList">
-                                    <div className="catePostListItem">
-                                        <div className="catePostListItemImg">
-                                            {post.frontmatter.ci}
-                                        </div>
-                                        <div className="catePostListItemTitle">
-                                            <h4>{post.frontmatter.title}</h4>
-                                            <small>{post.frontmatter.date}</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        ))} */}
                     </div>
                     <div className="cateButtonGroup">
-                        {cats.map((cat)=> {
+                        {catGroup.map((cat)=> {
                             let catLogo
                             if (cat === 'CERTIFICATE' || cat==='CS' || cat==='ETC' || cat==='BLOG' || cat==='KAGGLE' || cat==='PJT') {
                                 catLogo = All
                             } else {
                                 catLogo = eval(cat)
                             }
-                            console.log(catLogo)
                             return(
-                                <div>   
-                                    <input id={cat} className="cate-box" type="checkbox" onClick={(e)=> checkCat(e.target.checked, cat)} key={cat} />
-                                    <label for={cat} className="cate-label">
+                                <div key={cat}>   
+                                    <input id={cat} className="cate-box" type="checkbox" onClick={(e)=> checkCat(e.target.checked, cat)} />
+                                    <label htmlFor={cat} className="cate-label">
                                         <img className="cate-logo" src={catLogo} width="20" height="20" alt="logo" />
                                         {cat}
                                     </label>
@@ -143,6 +122,7 @@ const Categories = ({ pageContext, data, location }) => {
 
 
 export default Categories
+
 export const pageQuery = graphql`
   query($category: String) {     
     site {
@@ -150,25 +130,23 @@ export const pageQuery = graphql`
             title
         }
     }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { category: { eq: $category } } }
-    ) {
-      totalCount
-      nodes {
-        frontmatter {
-          date(formatString: "MMMM d, yyyy")
-          category
-          title
-          ci
-          cat
-          tags
-          path
+    cats: allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC }
+        filter: { frontmatter: { category: { eq: $category } } }) {
+        totalCount
+        nodes {
+            frontmatter {
+            date(formatString: "MMMM d, yyyy")
+            category
+            title
+            ci
+            cat
+            tags
+            path
+            }
         }
-      }
-    }
-    cats: allMarkdownRemark(filter: { frontmatter: { category: { eq: $category } } }) {
         group(field: frontmatter___cat) {
+            totalCount
             fieldValue
             nodes {
                 frontmatter {

@@ -10,24 +10,24 @@ const Layout = ({ location, children }) => {
   
   if (isRootPath) {
     return (
-      <div>
-        <Header />
-        <main>
-          {children}
-          <Adsense />
-        </main>
-      </div>
+        <div className="blur rootPage">
+          <Header />
+          <main>
+            {children}
+            <Adsense />
+          </main>
+        </div>
     )
   } else {
-    return (
-      <div className="inPage">
-        <Header />
-        <main>
-          {children}
-          <Adsense />
-        </main>
-        <Footer />
-      </div>
+    return (      
+        <div className="blur inPage">
+          <Header />
+          <main>
+            {children}
+            <Adsense />
+          </main>
+          <Footer />
+        </div>
     )
   }
 }

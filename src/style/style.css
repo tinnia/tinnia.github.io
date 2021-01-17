@@ -36,11 +36,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a, Link {
   text-decoration: none;
-  color:#789EBF;
+  color:#789EBF !important;
 }
 
 a:hover, Link:hover {
-  text-decoration: none;
+  text-decoration: none !important;
   color:#5D84A6;
 }
 
@@ -178,6 +178,52 @@ ul, ol, li {
 }
 
 
+.postHeader {
+  width:100%;
+  height: 150px;
+  margin:0 auto 1rem auto;
+  padding:2.5rem;
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+}
+
+.postHeader small {
+  color:#F2D4C2;
+}
+
+.postBody {
+  width:100%;
+  height: 100%;
+  margin:1.5rem auto;
+  padding:1.5rem;
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+}
+
+
+
+
+.comment {
+  margin:1.5rem auto;
+  padding:1.5rem;
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+}
+
+
+
+/* Comment */
+.utterances {
+  min-width: 100%;
+}
+
+
+
+
+
+
+
+
 .mainCat {
   border-radius: 13px;
   box-shadow: var(--toggleShadow);
@@ -198,6 +244,7 @@ ul, ol, li {
   text-align: center;
   margin: 4rem;
 }
+
 
 
 /* Theme Mode */
@@ -310,6 +357,8 @@ ul, ol, li {
   display: none;
 }
 
+
+
 /* Footer */
 .footer {
   display: flex;
@@ -332,77 +381,3 @@ ul, ol, li {
   box-shadow: var(--toggleHover);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Markdown */
-article.blog-post section li {
-  margin-left:2rem;
-}
-
-article.blog-post section table {
-  min-width: 95%;
-  margin:1.5rem auto;
-}
-
-article.blog-post section td,
-article.blog-post section th {
-  border:2px solid darkgray;
-  padding:0.5rem;
-  font-size: 0.9rem;
-  font-weight: lighter;
-  text-align:center;
-  align-content: center;
-}
-
-
-article.blog-post section pre {
-  margin:1rem;
-  padding:0;
-}
-
-article.blog-post section pre code {
-  margin:0;
-  padding:1rem 0;
-}
-
-article.blog-post section pre code span {
-  font-family: 'GoyangIlsan';
-}
-
-
-
-
-
-
-/* Mobile */
-@media ( max-width: 768px ) {
-  h1 {
-    font-size: 1.5rem;
-  }
-  
-  .header.scrolled .headerInline {
-    height: 70px;
-  }
-  
-  .header .headerInline {
-    display: flex;
-    min-width:90%;
-    margin:auto;
-  }
-  
-  .switchLabel {
-    width:37px;
-    height:37px;
-    font-size: 1rem;
-  }
-}

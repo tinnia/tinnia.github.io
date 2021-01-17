@@ -1,16 +1,22 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+
+import SEO from "../components/seo"
+import Layout from "../components/layout"
+import Comments from "../components/comments"
+
+import Boj from "../../content/assets/boj.png"
+import Swea from "../../content/assets/swea.png"
+import Programmers from '../../content/assets/programmers.png'
 
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-import Comments from "../components/comments"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const BlogPostTemplate = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata.title
   const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
+  const { previous, next } = data    
+  const BOJ = Boj, SWEA = Swea, PROGRAMMERS = Programmers
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -19,26 +25,27 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        style={{ textAlign:"left", marginTop:20, marginBottom:20 }}
-        className="blog-post"
         itemScope
         itemType="http://schema.org/Article"
+        className="blog-post"
       >
-        <header style={{ marginBottom:30 }}>
-          <h2 style={{ marginBottom:3 }} itemProp="headline">{post.frontmatter.title}</h2>
-          <small>{post.frontmatter.category}</small> - <small>{post.frontmatter.date}</small>
+        <header className="postHeader">
+          <div>
+            <h2 itemProp="headline">{post.frontmatter.title}</h2>
+            <small>{post.frontmatter.category}</small> - <small>{post.frontmatter.date}</small>
+          </div>
+          {/* <div className="">
+            {post.frontmatter.ci}
+          </div> */}
         </header>
-        <section
-          style={{ textAlign:"left", margin:0 }}
+        <section className="postBody"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
         <Comments />
       </article>
 
-
-
-      <nav className="blog-post-nav">
+      {/* <nav className="blog-post-nav">
         <ul
           style={{
             display: `flex`,
@@ -63,7 +70,7 @@ const BlogPostTemplate = ({ data, location }) => {
             )}
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </Layout>
   )
 }
@@ -73,8 +80,6 @@ export default BlogPostTemplate
 export const pageQuery = graphql`
   query BlogPostBySlug(
     $id: String!
-    $previousPostId: String
-    $nextPostId: String
   ) {
     site {
       siteMetadata {
@@ -88,26 +93,10 @@ export const pageQuery = graphql`
       frontmatter {
         title
         category
+        ci
+        cat
         date(formatString: "YYYY/MMM/DD")
         description
-      }
-    }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        path
-      }
-    }
-    next: markdownRemark(id: { eq: $nextPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        path
       }
     }
   }

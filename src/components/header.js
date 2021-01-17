@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import useSiteMeta from '../hooks/useSiteMeta'
-// import useTheme from '../hooks/useTheme'
 
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { RiSunFill, RiMoonClearFill } from 'react-icons/ri'
-// import { darkTheme, lightTheme } from '../theme'
-// import { ThemeProvider } from 'react-bootstrap'
 
 
 const Header = () => {

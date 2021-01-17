@@ -1,11 +1,7 @@
-import React, { createRef, useContext, useEffect } from 'react';
-import ThemeContext from '../store/themeContext';
+import React, { createRef, useEffect } from 'react';
 
 const Comments = () => {
-  const theme = useContext(ThemeContext);
-  // console.log(theme)
   const commentRef = createRef();
-  // const currentTheme = theme === 'dark' ? 'photon-dark' : 'github-light';
   const currentTheme = 'photon-dark'
 
   useEffect(() => {
@@ -13,10 +9,10 @@ const Comments = () => {
     const utterancesConfig = {
       src: 'https://utteranc.es/client.js',
       repo: 'tinnia/blog-comment',
+      async: true,
       theme: currentTheme,
       label: '💬 comment',
       'issue-term': 'pathname',
-      async: true,
       crossorigin: 'anonymous',
     };
 
@@ -28,12 +24,10 @@ const Comments = () => {
   }, [currentTheme, commentRef]);
 
   return (
-    <section>
-      <div className="container comments">
-        <div className="title">Comments</div>
-        <div className="utterances" ref={commentRef}></div>
-      </div>
-    </section>
+    <div className="comment">
+      <h5>Comments</h5>
+      <div className="utterances" ref={commentRef}></div>
+    </div>
   );
 };
 

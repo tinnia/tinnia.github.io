@@ -9,7 +9,7 @@ tags: ["ETC","SSAFY"]
 description: "[SSAFY] 삼성청년SW아카데미 3기 | 적성진단"
 ---
 
-## <span style="color:#505F66">삼성 SW 아카데미 3기 모집</span>  
+## 삼성 SW 아카데미 3기 모집
 
 #### <span style="color:#6D838C">지원 요강</span>
 

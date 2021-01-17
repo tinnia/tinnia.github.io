@@ -1,34 +1,34 @@
 @font-face {
     font-family: 'BMEULJIROTTF';
-    src: url('./fonts/BMEULJIROTTF.ttf') format('woff');
+    src: url('../fonts/BMEULJIROTTF.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BMHANNAAir_ttf';
-    src: url('./fonts/BMHANNAAir_ttf.ttf') format('woff');
+    src: url('../fonts/BMHANNAAir_ttf.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BMHANNAPro';
-    src: url('./fonts/BMHANNAPro.ttf') format('woff');
+    src: url('../fonts/BMHANNAPro.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TmoneyRoundWindExtraBold';
-    src: url('./fonts/TmoneyRoundWindExtraBold.ttf') format('woff');
+    src: url('../fonts/TmoneyRoundWindExtraBold.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TmoneyRoundWindRegular';
-    src: url('./fonts/TmoneyRoundWindRegular.ttf') format('woff');
+    src: url('../fonts/TmoneyRoundWindRegular.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
 }

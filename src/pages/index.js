@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import useSiteMeta from '../hooks/useSiteMeta'
 
 import algo from "../../content/assets/algorithm.png"
 import study from "../../content/assets/study.png"
@@ -10,16 +10,12 @@ import { Row, Col } from 'react-bootstrap'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const BlogIndex = ({
-  data: {
-    site: {
-      siteMetadata: { title },
-    },
-  }, location
-}) => {
+const BlogIndex = ({ location }) => {
+  const site = useSiteMeta()
+
   return (
-    <Layout location={location} title={title}>
-      <SEO title={title} />
+    <Layout location={location} title={site.siteMetadata.title}>
+      <SEO title={site.siteMetadata.title} />
       <div>
         <div style={{height:"100%", lineHeight:"100%"}}>
           <Row>

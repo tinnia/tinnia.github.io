@@ -6,10 +6,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   // Define a template for blog post
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  const tagTemplate = path.resolve("./src/templates/tags.js")
   const categoryTemplate = path.resolve("./src/templates/categories.js")
-  const cateTagTemplate = path.resolve("./src/templates/cate-tag.js")
+  const blogPost = path.resolve(`./src/templates/blog-post.js`)
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
@@ -36,24 +34,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fieldValue
           }
         }
-        tagGroup1: allMarkdownRemark(limit: 2000, filter: {frontmatter: {category: {eq: "Algorithm"}}}) {
-          group(field: frontmatter___tags) {
-            fieldValue
-          }
-          distinct(field: frontmatter___category)
-        }
-        tagGroup2: allMarkdownRemark(limit: 2000, filter: {frontmatter: {category: {eq: "Portfolio"}}}) {
-          group(field: frontmatter___tags) {
-            fieldValue
-          }
-          distinct(field: frontmatter___category)
-        }
-        tagGroup3: allMarkdownRemark(limit: 2000, filter: {frontmatter: {category: {eq: "Study"}}}) {
-          group(field: frontmatter___tags) {
-            fieldValue
-          }
-          distinct(field: frontmatter___category)
-        }
       }
     `
   )
@@ -71,7 +51,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
-
   if (posts.length > 0) {
     posts.forEach((post, index) => {
       const previousPostId = index === 0 ? null : posts[index - 1].id
@@ -89,6 +68,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   }
 
+  // Create Category Pages
   const categories = result.data.categoryGroup.group
   
   if (categories.length > 0) {
@@ -102,62 +82,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
-  
-  const tag1 = result.data.tagGroup1.group
-  const cat1 = result.data.tagGroup1.distinct
-
-  if (tag1.length > 0) {
-    tag1.forEach(tag => {
-      createPage({
-        path: `/${cat1}/${tag.fieldValue}/`,
-        component: cateTagTemplate,
-        context: {
-          category: cat1,
-          tag: tag.fieldValue,
-        },
-      })
-    })
-  }
-
-  const tag2 = result.data.tagGroup2.group
-  const cat2 = result.data.tagGroup2.distinct
-
-  if (tag2.length > 0) {
-    tag2.forEach(tag => {
-      createPage({
-        path: `/${cat2}/${tag.fieldValue}/`,
-        component: cateTagTemplate,
-        context: {
-          category: cat2,
-          tag: tag.fieldValue,
-        },
-      })
-    })
-  }
-
-  const tag3 = result.data.tagGroup3.group
-  const cat3 = result.data.tagGroup3.distinct
-
-  if (tag3.length > 0) {
-    tag3.forEach(tag => {
-      createPage({
-        path: `/${cat3}/${tag.fieldValue}/`,
-        component: cateTagTemplate,
-        context: {
-          category: cat3,
-          tag: tag.fieldValue,
-        },
-      })
-    })
-  }
 }
+
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
-
     createNodeField({
       name: `slug`,
       node,
@@ -165,6 +97,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
@@ -179,16 +112,11 @@ exports.createSchemaCustomization = ({ actions }) => {
     type SiteSiteMetadata {
       author: Author
       siteUrl: String
-      social: Social
     }
 
     type Author {
       name: String
       summary: String
-    }
-
-    type Social {
-      twitter: String
     }
 
     type MarkdownRemark implements Node {
