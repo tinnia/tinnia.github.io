@@ -8,8 +8,10 @@ import { RiSunFill, RiMoonClearFill } from 'react-icons/ri'
 const Header = () => {
     const site = useSiteMeta()
     const [scrolled, setScrolled] = useState(false)
-    let isChecked = localStorage.getItem('theme') === 'dark' ? true : false;
-    
+    let isChecked
+    if (typeof window !== `undefined`) {
+        isChecked = localStorage.getItem('theme') === 'dark' ? true : false;
+    }
     useEffect(() => {
         const handleScroll = () => {
             if (!scrolled && window.scrollY > 30) {

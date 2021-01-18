@@ -12,6 +12,13 @@ import Swea from "../../content/assets/swea.png"
 import Programmers from '../../content/assets/programmers.png'
 import All from '../../content/assets/folder.png'
 
+
+function date_Desc(a,b) {
+    var dateA = new Date(a.frontmatter.date).getTime()
+    var dateB = new Date(b.frontmatter.date).getTime()
+    return dateA < dateB ? 1 : -1;
+}
+
 const Categories = ({ pageContext, data, location }) => {
     const { category } = pageContext
     const site = data.site
@@ -29,13 +36,15 @@ const Categories = ({ pageContext, data, location }) => {
     
 
     useEffect(() => {
+        let tmp
         if (Object.keys(posts).length === 0) {
             for (var i=0;i<catGroup.length;i++) {
                 posts[catGroup[i]] = nodes.filter(node => node.frontmatter.cat === catGroup[i])
             }
             setPosts(posts)
         }
-        const tmp = Object.values(posts).flat()
+        tmp = Object.values(posts).flat()
+        tmp = tmp.sort(date_Desc)
         setSelect(tmp)
     }, [cnt])
 
@@ -98,7 +107,7 @@ const Categories = ({ pageContext, data, location }) => {
                     <div className="cateButtonGroup">
                         {catGroup.map((cat)=> {
                             let catLogo
-                            if (cat === 'CERTIFICATE' || cat==='CS' || cat==='ETC' || cat==='BLOG' || cat==='KAGGLE' || cat==='PJT') {
+                            if (cat === 'CERTIFICATE' || cat==='CS' || cat==='ETC' || cat==='BLOG' || cat==='KAGGLE' || cat==='PJT' || cat==='ERROR') {
                                 catLogo = All
                             } else {
                                 catLogo = eval(cat)
@@ -130,19 +139,35 @@ export const pageQuery = graphql`
             title
         }
     }
+    allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC }
+        filter: { frontmatter: { category: { eq: $category } } }) {
+        totalCount
+        nodes {
+            frontmatter {
+                date(formatString: "yyyy/MM/DD")
+                category
+                title
+                ci
+                cat
+                tags
+                path
+            }
+        }
+    }
     cats: allMarkdownRemark(
         sort: { fields: [frontmatter___date], order: DESC }
         filter: { frontmatter: { category: { eq: $category } } }) {
         totalCount
         nodes {
             frontmatter {
-            date(formatString: "MMMM d, yyyy")
-            category
-            title
-            ci
-            cat
-            tags
-            path
+                date(formatString: "yyyy/MM/DD")
+                category
+                title
+                ci
+                cat
+                tags
+                path
             }
         }
         group(field: frontmatter___cat) {
