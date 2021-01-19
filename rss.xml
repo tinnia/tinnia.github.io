@@ -1,4 +1,140 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tinnia Blog]]></title><description><![CDATA[Welcome to Tinnia Blog]]></description><link>https://tinnia.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 18 Jan 2021 16:56:56 GMT</lastBuildDate><item><title><![CDATA[[Professional] 조합]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이 처음 풀이 - 시간초과…똥막대기 코드였다..ㅎㅎ 정답]]></description><link>https://tinnia.github.io/algorithm/swea/5607/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/5607/</guid><pubDate>Mon, 18 Jan 2021 18:53:32 GMT</pubDate><content:encoded>&lt;br /&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tinnia Blog]]></title><description><![CDATA[Welcome to Tinnia Blog]]></description><link>https://tinnia.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 19 Jan 2021 03:19:54 GMT</lastBuildDate><item><title><![CDATA[페르마의 소정리]]></title><description><![CDATA[관련 문제 [Professional] 조합 페르마의 소정리 정의 p가 소수 a가 정수이고, a와 p가 서로소일 때, 식이 성립된다. 위의 식을 변형시키기 위해 양쪽에 a^(-1)을 곱한다. 활용 SWEA에 있는 Professional…]]></description><link>https://tinnia.github.io/algorithm/기타/페르마의 소정리/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/기타/페르마의 소정리/</guid><pubDate>Tue, 19 Jan 2021 01:59:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;small&gt;관련 문제&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://tinnia.github.io/Algorithm/swea/5607/&quot;&gt;[Professional] 조합&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;br /&gt;
+&lt;h3&gt;페르마의 소정리&lt;/h3&gt;
+&lt;br /&gt;
+&lt;h5&gt;정의&lt;/h5&gt;
+&lt;p&gt;p가 소수 a가 정수이고, a와 p가 서로소일 때, 식이 성립된다.&lt;/p&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;markdown&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;1 = a^(p-1) % p&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;위의 식을 변형시키기 위해 양쪽에 &lt;strong&gt;a^(-1)&lt;/strong&gt;을 곱한다.&lt;/p&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;markdown&quot; data-index=&quot;1&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;a^(-1) % p = a^(p-2) % p&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;
+&lt;h5&gt;활용&lt;/h5&gt;
+&lt;p&gt;SWEA에 있는 &lt;strong&gt;[Professional] 조합&lt;/strong&gt;문제를 풀다가 페르마의 소정리에 대해 알게되었다. &lt;/p&gt;
+&lt;p&gt;nCr % p 에 적용하기 위해 페르마의 소정리를 변형시키는 방법을 배웠다.&lt;/p&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;markdown&quot; data-index=&quot;2&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;nCr % p&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;= (n! / ((n-r)!r!)) % p		// 보기 쉽게 n! = A, (n-r)!r! = B 로 치환&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;= (A / B) % p&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;= (A * B^(-1)) % p&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;= (A % p) * (B^(-1) % p) 	# 위에서 변형시킨 식을 활용&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;= (A % p) * (B^(p-2) % p)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;= (A * B^(p-2)) % p&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;
+&lt;p&gt;위의 식을 활용하여 &lt;a href=&quot;https://tinnia.github.io/Algorithm/swea/5607/&quot;&gt;[Professional] 조합&lt;/a&gt; 문제를 풀 수 있었다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+  .monokai-dimmed {
+    background-color: #1e1e1e;
+    color: #c5c8c6;
+  }
+  .monokai-dimmed .mtk1 { color: #C5C8C6FF; }
+  .monokai-dimmed .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+  }
+  
+  /* Monokai Dimmed */
+  @media (prefers-color-scheme: dark) {
+    .grvsc-mm-tuw09S {
+      background-color: #1e1e1e;
+      color: #c5c8c6;
+    }
+    .grvsc-mm-tuw09S .mtk1 { color: #C5C8C6FF; }
+    .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
+      background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+      box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+    }
+  }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Professional] 조합]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이 처음 풀이 - 시간초과…똥막대기 코드였다..ㅎㅎ 정답]]></description><link>https://tinnia.github.io/algorithm/swea/5607/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/5607/</guid><pubDate>Mon, 18 Jan 2021 18:53:32 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXGKdbqczEDFAUo&amp;categoryId=AWXGKdbqczEDFAUo&amp;categoryType=CODE&quot; style=&quot;color:#C587AE;text-decoration:none;&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;입력&lt;/h6&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
@@ -23,13 +159,12 @@
 &lt;br /&gt;
 &lt;p&gt;정답&lt;/p&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;3&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk10&quot;&gt;nCr&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;mod&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    lst &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; [&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; (n&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    lst[&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    lst &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; [&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; (n&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, n&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        lst[i] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; lst[i&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; mod&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    A &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; lst[n]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    B &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(lst[r], (mod&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;), mod) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; mod&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    C &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(lst[n&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;r], (mod&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;), mod) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; mod&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    B &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(lst[r], (mod&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;), mod)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    C &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(lst[n&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;r], (mod&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;), mod)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; (A &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; B &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; C) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; mod&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
@@ -8662,7 +8797,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 합격후기]]></title><description><![CDATA[우와아아 12월 17일 오후 2시 1…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_4/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_4/</guid><pubDate>Thu, 26 Dec 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 합격후기]]></title><description><![CDATA[우와아아 12월 17일 오후 2시 1…]]></description><link>https://tinnia.github.io/portfolio/ETC/SSAFY_4/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/ETC/SSAFY_4/</guid><pubDate>Thu, 26 Dec 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
     &gt;
@@ -8811,7 +8946,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 면접]]></title><description><![CDATA[2019년 12월…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_3/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_3/</guid><pubDate>Thu, 05 Dec 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 면접]]></title><description><![CDATA[2019년 12월…]]></description><link>https://tinnia.github.io/portfolio/ETC/SSAFY_3/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/ETC/SSAFY_3/</guid><pubDate>Thu, 05 Dec 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
     &gt;
@@ -9462,7 +9597,7 @@ id(#) → class(.) → Tag(a,h1,ol…)&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 사전학습]]></title><description><![CDATA[11월 16일 12시에 SW적성진단을 쳤다.   1과목인 수리/추리 논리는 진짜 정말 잘 친 것 같아서 걱정이 없었는데, 문제는…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_2/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_2/</guid><pubDate>Fri, 22 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 사전학습]]></title><description><![CDATA[11월 16일 12시에 SW적성진단을 쳤다.   1과목인 수리/추리 논리는 진짜 정말 잘 친 것 같아서 걱정이 없었는데, 문제는…]]></description><link>https://tinnia.github.io/portfolio/ETC/SSAFY_2/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/ETC/SSAFY_2/</guid><pubDate>Fri, 22 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
     &gt;
@@ -9591,7 +9726,7 @@ id(#) → class(.) → Tag(a,h1,ol…)&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[42seoul] 서류지원 + 적성진단]]></title><description><![CDATA[42SEOUL 지원 요강 지원대상 : 2020년 1월 1일 기준 민법상 성인 또는 2020년 3월 1일 기준 고졸 이상의 학력자 모집기간 : 2019.11.01. ~ 11.30. 접수방법 : 온라인 접수 교육기간 :…]]></description><link>https://tinnia.github.io/study/ETC/42SEOUL_0/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/42SEOUL_0/</guid><pubDate>Sun, 17 Nov 2019 15:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;42SEOUL&lt;/span&gt;&lt;/h2&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[42seoul] 서류지원 + 적성진단]]></title><description><![CDATA[42SEOUL 지원 요강 지원대상 : 2020년 1월 1일 기준 민법상 성인 또는 2020년 3월 1일 기준 고졸 이상의 학력자 모집기간 : 2019.11.01. ~ 11.30. 접수방법 : 온라인 접수 교육기간 :…]]></description><link>https://tinnia.github.io/portfolio/ETC/42SEOUL_0/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/ETC/42SEOUL_0/</guid><pubDate>Sun, 17 Nov 2019 15:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;42SEOUL&lt;/span&gt;&lt;/h2&gt;
 &lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;지원 요강&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;지원대상&lt;/span&gt;&lt;/strong&gt; : 2020년 1월 1일 기준 민법상 성인 또는 2020년 3월 1일 기준 고졸 이상의 학력자&lt;br&gt;
 &lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;모집기간&lt;/span&gt;&lt;/strong&gt; : 2019.11.01. ~ 11.30.&lt;br&gt;
@@ -9779,7 +9914,7 @@ id(#) → class(.) → Tag(a,h1,ol…)&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 적성진단]]></title><description><![CDATA[삼성 SW 아카데미 3기 모집 지원 요강 대상 : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자 모집기간 : 2019.10.28. ~ 11.11. 교육기간 : 2020.01.06. ~ 12.31. 교육장소 : 전국…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_1/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_1/</guid><pubDate>Sun, 17 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;삼성 SW 아카데미 3기 모집&lt;/h2&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 적성진단]]></title><description><![CDATA[삼성 SW 아카데미 3기 모집 지원 요강 대상 : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자 모집기간 : 2019.10.28. ~ 11.11. 교육기간 : 2020.01.06. ~ 12.31. 교육장소 : 전국…]]></description><link>https://tinnia.github.io/portfolio/ETC/SSAFY_1/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/ETC/SSAFY_1/</guid><pubDate>Sun, 17 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;삼성 SW 아카데미 3기 모집&lt;/h2&gt;
 &lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;지원 요강&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;대상&lt;/span&gt;&lt;/strong&gt; : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자&lt;br&gt;
 &lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;모집기간&lt;/span&gt;&lt;/strong&gt; : 2019.10.28. ~ 11.11.&lt;br&gt;
@@ -9899,7 +10034,7 @@ id(#) → class(.) → Tag(a,h1,ol…)&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 서류지원]]></title><description><![CDATA[삼성 SW 아카데미 3기 모집 지원 요강 대상 : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자 모집기간 : 2019.10.28. ~ 11.11. 교육기간 : 2020.01.06. ~ 12.31. 교육장소 : 전국…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_0/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_0/</guid><pubDate>Mon, 11 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;삼성 SW 아카데미 3기 모집&lt;/span&gt;&lt;/h2&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 서류지원]]></title><description><![CDATA[삼성 SW 아카데미 3기 모집 지원 요강 대상 : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자 모집기간 : 2019.10.28. ~ 11.11. 교육기간 : 2020.01.06. ~ 12.31. 교육장소 : 전국…]]></description><link>https://tinnia.github.io/portfolio/ETC/SSAFY_0/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/ETC/SSAFY_0/</guid><pubDate>Mon, 11 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;삼성 SW 아카데미 3기 모집&lt;/span&gt;&lt;/h2&gt;
 &lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;지원 요강&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;대상&lt;/span&gt;&lt;/strong&gt; : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자&lt;br&gt;
 &lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;모집기간&lt;/span&gt;&lt;/strong&gt; : 2019.10.28. ~ 11.11.&lt;br&gt;
