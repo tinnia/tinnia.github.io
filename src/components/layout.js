@@ -14,7 +14,7 @@ const Layout = ({ location, children }) => {
           <Header />
           <main>
             {children}
-            <Adsense />
+            <Adsense client='ca-pub-5373443176805821' slot='4000980067' />
           </main>
         </div>
     )
@@ -24,7 +24,7 @@ const Layout = ({ location, children }) => {
           <Header />
           <main>
             {children}
-            <Adsense />
+            <Adsense client='ca-pub-5373443176805821' slot='4000980067' />
           </main>
           <Footer />
         </div>

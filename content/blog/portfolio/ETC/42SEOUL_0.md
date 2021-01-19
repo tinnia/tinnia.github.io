@@ -1,8 +1,8 @@
 ---
 title: "[42seoul] 서류지원 + 적성진단"
 date: "2019-11-17T15:41:32.169Z"
-path: "/Study/etc/3/"
-category: "Study"
+path: "/Portfolio/etc/3/"
+category: "Portfolio"
 ci: "ETC"
 cat: "ETC"
 tags: ["ETC","42Seoul"]

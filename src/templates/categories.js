@@ -107,7 +107,7 @@ const Categories = ({ pageContext, data, location }) => {
                     <div className="cateButtonGroup">
                         {catGroup.map((cat)=> {
                             let catLogo
-                            if (cat === 'CERTIFICATE' || cat==='CS' || cat==='ETC' || cat==='BLOG' || cat==='KAGGLE' || cat==='PJT' || cat==='ERROR') {
+                            if (cat === 'CERTIFICATE' || cat==='CS' || cat==='ETC' || cat==='BLOG' || cat==='KAGGLE' || cat==='PJT' || cat==='ERROR' || cat==="REFERENCE") {
                                 catLogo = All
                             } else {
                                 catLogo = eval(cat)

@@ -1,8 +1,77 @@
 /* Markdown */
-article.blog-post section li {
-    margin-left:2rem;
+article.blog-post section h1,
+article.blog-post section h2,
+article.blog-post section h3,
+article.blog-post section h4,
+article.blog-post section h6{
+    color:#F2CA99;
+    margin:1rem 0;
+    padding:0;
 }
 
+article.blog-post section h5 {
+    color:#F2CA99;
+    margin:3rem 0 1rem 0;
+    padding:0;
+}
+
+
+article.blog-post section p {
+    margin:0;
+    padding:0 0.5rem;
+}
+
+article.blog-post section p,
+article.blog-post section small,
+article.blog-post section li,
+article.blog-post section strong, del {
+    font-family:'GoyangIlsan';
+    line-height:1.8;
+}
+
+article.blog-post section ul,
+article.blog-post section ol {
+    margin:0;
+    padding:0;
+}
+
+article.blog-post section li {
+    margin:1rem 0 1rem 2rem;
+    list-style: disc;
+}
+
+
+
+/* Code Block */
+article.blog-post section pre {
+    margin:1rem;
+    padding:0;
+}
+
+article.blog-post section pre code {
+    margin:0;
+    padding:1rem 0;
+}
+
+article.blog-post section pre code span {
+    font-family: 'GoyangIlsan';
+    line-height:1.7;
+}
+
+
+
+
+
+/* Image */
+article.blog-post section img, 
+article.blog-post section span img,
+article.blog-post section span span {
+    margin:1.5rem auto;
+}
+
+
+
+/* Table */
 article.blog-post section table {
     min-width: 95%;
     margin:1.5rem auto;
@@ -16,19 +85,4 @@ article.blog-post section th {
     font-weight: lighter;
     text-align:center;
     align-content: center;
-}
-
-
-article.blog-post section pre {
-    margin:1rem;
-    padding:0;
-}
-
-article.blog-post section pre code {
-    margin:0;
-    padding:1rem 0;
-}
-
-article.blog-post section pre code span {
-    font-family: 'GoyangIlsan';
 }
