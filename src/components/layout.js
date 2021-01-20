@@ -10,22 +10,26 @@ const Layout = ({ location, children }) => {
   
   if (isRootPath) {
     return (
-        <div className="blur rootPage">
+        <div className="drag rootPage">
           <Header />
           <main>
             {children}
-            <Adsense client='ca-pub-5373443176805821' slot='4000980067' />
           </main>
+          <div>
+            <Adsense />
+          </div>
         </div>
     )
   } else {
     return (      
-        <div className="blur inPage">
+        <div className="drag inPage">
           <Header />
           <main>
             {children}
-            <Adsense client='ca-pub-5373443176805821' slot='4000980067' />
           </main>
+          <div>
+            <Adsense />
+          </div>
           <Footer />
         </div>
     )

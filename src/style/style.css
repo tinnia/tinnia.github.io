@@ -18,6 +18,14 @@ main {
   margin:10rem auto;
 }
 
+.drag {
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 
 .inPage main {
   margin: 7rem auto 0 auto;
