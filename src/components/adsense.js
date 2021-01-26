@@ -3,7 +3,9 @@ import React, { Component } from "react"
 class Adsense extends Component {
 
     componentDidMount() {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
+        window.onload = function() {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        }
     }
 
     render() {

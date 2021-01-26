@@ -115,14 +115,7 @@ module.exports = {
         }]
       }
     },
-
-    // Google Adsense
-    {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: `ca-pub-5373443176805821`
-      },
-    },
+    
     // Google Analytics
     {
       resolve: `gatsby-plugin-google-analytics`,

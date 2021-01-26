@@ -9,8 +9,9 @@ import Boj from "../../content/assets/boj.png"
 import Swea from "../../content/assets/swea.png"
 import Programmers from '../../content/assets/programmers.png'
 
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
+// import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
+// import Adsense from 'react-adsense'
+// import Adsense from "../components/adsense.js"
 
 const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -44,7 +45,13 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         <Comments />
       </article>
-
+      {/* <Adsense /> */}
+      {/* <Adsense.Google
+        style={{ display:'block' }}
+        client="ca-pub-5373443176805821"
+        slot="2323966733"
+        format="auto"
+        responsive="true" /> */}
       {/* <nav className="blog-post-nav">
         <ul
           style={{

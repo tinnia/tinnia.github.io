@@ -10,6 +10,13 @@ import portfolio from "../../content/assets/portfolio.png"
 import Boj from "../../content/assets/boj.png"
 import Swea from "../../content/assets/swea.png"
 import Programmers from '../../content/assets/programmers.png'
+import Certificate from '../../content/assets/certificate.png'
+import Cs from '../../content/assets/cs.png'
+import Blog from '../../content/assets/gatsby.png'
+import Etc from '../../content/assets/more.png'
+import Error from '../../content/assets/error.png'
+import Pjt from '../../content/assets/project.png'
+import Reference from '../../content/assets/reference.png'
 import All from '../../content/assets/folder.png'
 
 
@@ -26,7 +33,9 @@ const Categories = ({ pageContext, data, location }) => {
     const catGroup = [data.cats.group.map((cat)=> cat.fieldValue)][0]
 
     const Algorithm = algorithm, Study = study, Portfolio = portfolio
-    const BOJ = Boj, SWEA = Swea, PROGRAMMERS = Programmers
+    const BOJ = Boj, SWEA = Swea, PROGRAMMERS = Programmers, REFERENCE = Reference
+    const CERTIFICATE = Certificate, CS = Cs, ERROR = Error
+    const BLOG = Blog, ETC = Etc, PJT = Pjt
     const logo = eval(category)
 
     const [cnt, setCnt] = useState(0)
@@ -107,7 +116,7 @@ const Categories = ({ pageContext, data, location }) => {
                     <div className="cateButtonGroup">
                         {catGroup.map((cat)=> {
                             let catLogo
-                            if (cat === 'CERTIFICATE' || cat==='CS' || cat==='ETC' || cat==='BLOG' || cat==='KAGGLE' || cat==='PJT' || cat==='ERROR' || cat==="REFERENCE") {
+                            if (cat==='KAGGLE' || cat==="ML") {
                                 catLogo = All
                             } else {
                                 catLogo = eval(cat)

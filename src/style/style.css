@@ -15,7 +15,7 @@
 
 main {
   max-width:56rem;
-  margin:10rem auto;
+  margin:10rem auto 0rem auto;
 }
 
 .drag {
@@ -235,7 +235,7 @@ ul, ol, li {
 .mainCat {
   border-radius: 13px;
   box-shadow: var(--toggleShadow);
-  margin:20rem auto;
+  margin:8rem auto;
   padding:1.5rem 2rem;
   text-align: center;
 }
@@ -250,7 +250,19 @@ ul, ol, li {
 
 .mainTag {
   text-align: center;
-  margin: 4rem;
+  margin: auto;
+}
+
+
+.recentTitle {
+  margin:4rem 1.5rem;
+}
+
+.recentPosts {
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+  margin:2rem 1.5rem;
+  padding:1rem;
 }
 
 

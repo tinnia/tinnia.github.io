@@ -2,7 +2,6 @@ import React from "react"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
-import Adsense from "../components/adsense"
 
 const Layout = ({ location, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -15,9 +14,6 @@ const Layout = ({ location, children }) => {
           <main>
             {children}
           </main>
-          <div>
-            <Adsense />
-          </div>
         </div>
     )
   } else {
@@ -27,9 +23,6 @@ const Layout = ({ location, children }) => {
           <main>
             {children}
           </main>
-          <div>
-            <Adsense />
-          </div>
           <Footer />
         </div>
     )
