@@ -1,4 +1,1361 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tinnia Blog]]></title><description><![CDATA[Welcome to Tinnia Blog]]></description><link>https://tinnia.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 07 Feb 2021 12:22:48 GMT</lastBuildDate><item><title><![CDATA[트리 순회]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이]]></description><link>https://tinnia.github.io/algorithm/boj/1991/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/boj/1991/</guid><pubDate>Sun, 07 Feb 2021 01:13:32 GMT</pubDate><content:encoded>&lt;br /&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tinnia Blog]]></title><description><![CDATA[Welcome to Tinnia Blog]]></description><link>https://tinnia.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 08 Feb 2021 18:22:12 GMT</lastBuildDate><item><title><![CDATA[수식 최대화]]></title><description><![CDATA[문제 바로가기 입출력 expression result  60420  300 💻 풀이 도저히 안풀려서 블로그를 참고하였다…참고]]></description><link>https://tinnia.github.io/algorithm/programmers/수식 최대화/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/수식 최대화/</guid><pubDate>Mon, 08 Feb 2021 16:14:46 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/67257&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h6&gt;입출력&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;expression&lt;/th&gt;
+&lt;th&gt;result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;100-200*300-500+20&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;60420&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;50*6-3*2&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;h5&gt;&lt;h5 style=&quot;color:#C587AE;&quot;&gt;💻 풀이&lt;/h5&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;도저히 안풀려서 블로그를 참고하였다…&lt;a href=&quot;https://fullmoon1344.tistory.com/103&quot;&gt;참고&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk10&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;rule&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;expression&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; idx &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;eval&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(expression))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; rule[idx] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;*&amp;#39;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        res &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;eval&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;*&amp;#39;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;.join([func(rule, idx &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, i) &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; expression.split(&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;*&amp;#39;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;)]))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; rule[idx] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;+&amp;#39;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        res &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;eval&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;+&amp;#39;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;.join([func(rule, idx &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, i) &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; expression.split(&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;+&amp;#39;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;)]))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; rule[idx] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;-&amp;#39;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        res &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;eval&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;-&amp;#39;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;.join([func(rule, idx &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, i) &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; expression.split(&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;-&amp;#39;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;)]))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(res)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk10&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;expression&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    answer &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    rules &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; [(&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;*&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;+&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;), (&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;*&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;+&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;), (&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;+&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;*&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;), (&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;+&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;*&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;), (&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;+&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;*&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;), (&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;*&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;+&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;)]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; rule &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; rules:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        answer &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(answer, &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(func(rule, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, expression))))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; answer&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+  .monokai-dimmed {
+    background-color: #1e1e1e;
+    color: #c5c8c6;
+  }
+  .monokai-dimmed .mtk11 { color: #9872A2; }
+  .monokai-dimmed .mtk1 { color: #C5C8C6FF; }
+  .monokai-dimmed .mtk10 { color: #CE6700; }
+  .monokai-dimmed .mtk3 { color: #6089B4; }
+  .monokai-dimmed .mtk15 { color: #676867; }
+  .monokai-dimmed .mtk13 { color: #C7444A; }
+  .monokai-dimmed .mtk8 { color: #9AA83A; }
+  .monokai-dimmed .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+  }
+  
+  /* Monokai Dimmed */
+  @media (prefers-color-scheme: dark) {
+    .grvsc-mm-tuw09S {
+      background-color: #1e1e1e;
+      color: #c5c8c6;
+    }
+    .grvsc-mm-tuw09S .mtk11 { color: #9872A2; }
+    .grvsc-mm-tuw09S .mtk1 { color: #C5C8C6FF; }
+    .grvsc-mm-tuw09S .mtk10 { color: #CE6700; }
+    .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
+    .grvsc-mm-tuw09S .mtk15 { color: #676867; }
+    .grvsc-mm-tuw09S .mtk13 { color: #C7444A; }
+    .grvsc-mm-tuw09S .mtk8 { color: #9AA83A; }
+    .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
+      background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+      box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+    }
+  }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[3차] n진수 게임]]></title><description><![CDATA[문제 바로가기 입출력 n t m p result 2 4 2 1 0111 16 16 2 1 02468ACE11111111 16 16 2 2 13579BDF01234567 💻 풀이]]></description><link>https://tinnia.github.io/algorithm/programmers/[3차] n진수 게임/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/[3차] n진수 게임/</guid><pubDate>Mon, 08 Feb 2021 15:44:46 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/17687&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h6&gt;입출력&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;n&lt;/th&gt;
+&lt;th&gt;t&lt;/th&gt;
+&lt;th&gt;m&lt;/th&gt;
+&lt;th&gt;p&lt;/th&gt;
+&lt;th&gt;result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0111&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;02468ACE11111111&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;13579BDF01234567&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;h5&gt;&lt;h5 style=&quot;color:#C587AE;&quot;&gt;💻 풀이&lt;/h5&gt;&lt;/h5&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk10&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    answer &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;0&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    nums &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;0123456789ABCDEF&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    num &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(answer) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; t &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; m:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        tmp &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; num&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        tmp_ans &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; tmp:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            tmp_ans &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; nums[tmp &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; n] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; tmp_ans&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            tmp &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;//=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        answer &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; tmp_ans&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        num &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; answer[p &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:t &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; m:m]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+  .monokai-dimmed {
+    background-color: #1e1e1e;
+    color: #c5c8c6;
+  }
+  .monokai-dimmed .mtk11 { color: #9872A2; }
+  .monokai-dimmed .mtk1 { color: #C5C8C6FF; }
+  .monokai-dimmed .mtk10 { color: #CE6700; }
+  .monokai-dimmed .mtk3 { color: #6089B4; }
+  .monokai-dimmed .mtk15 { color: #676867; }
+  .monokai-dimmed .mtk8 { color: #9AA83A; }
+  .monokai-dimmed .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+  }
+  
+  /* Monokai Dimmed */
+  @media (prefers-color-scheme: dark) {
+    .grvsc-mm-tuw09S {
+      background-color: #1e1e1e;
+      color: #c5c8c6;
+    }
+    .grvsc-mm-tuw09S .mtk11 { color: #9872A2; }
+    .grvsc-mm-tuw09S .mtk1 { color: #C5C8C6FF; }
+    .grvsc-mm-tuw09S .mtk10 { color: #CE6700; }
+    .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
+    .grvsc-mm-tuw09S .mtk15 { color: #676867; }
+    .grvsc-mm-tuw09S .mtk8 { color: #9AA83A; }
+    .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
+      background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+      box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+    }
+  }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[후보키]]></title><description><![CDATA[문제 바로가기 입출력 relation result  2 💻 풀이]]></description><link>https://tinnia.github.io/algorithm/programmers/후보키/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/후보키/</guid><pubDate>Mon, 08 Feb 2021 15:32:46 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42890&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h6&gt;입출력&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;relation&lt;/th&gt;
+&lt;th&gt;result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;[[&amp;quot;100&amp;quot;,&amp;quot;ryan&amp;quot;,&amp;quot;music&amp;quot;,&amp;quot;2&amp;quot;],[&amp;quot;200&amp;quot;,&amp;quot;apeach&amp;quot;,&amp;quot;math&amp;quot;,&amp;quot;2&amp;quot;],[&amp;quot;300&amp;quot;,&amp;quot;tube&amp;quot;,&amp;quot;computer&amp;quot;,&amp;quot;3&amp;quot;],[&amp;quot;400&amp;quot;,&amp;quot;con&amp;quot;,&amp;quot;computer&amp;quot;,&amp;quot;4&amp;quot;],[&amp;quot;500&amp;quot;,&amp;quot;muzi&amp;quot;,&amp;quot;music&amp;quot;,&amp;quot;3&amp;quot;],[&amp;quot;600&amp;quot;,&amp;quot;apeach&amp;quot;,&amp;quot;music&amp;quot;,&amp;quot;2&amp;quot;]]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;h5&gt;&lt;h5 style=&quot;color:#C587AE;&quot;&gt;💻 풀이&lt;/h5&gt;&lt;/h5&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; itertools &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; combinations&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk10&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;relation&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    answer &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    l &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(relation[&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;])&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    stack &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; []&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, l&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        relate &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; combinations(&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(l), i)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; j &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; relate:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            tmp &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; [&lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;tuple&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(r[k] &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; k &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; j) &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; r &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; relation]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(tmp)) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(relation):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;                stack.append(j)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        ans &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; []&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        visit &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; [&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(stack)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;not&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; visit:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;break&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        visit[i] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; j &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(i&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(stack)):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; visit[j] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(stack[i]) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(stack[i]) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(stack[j])):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;                visit[j] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;                ans.append(stack[j])&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        stack &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; ans&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        answer &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; answer&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+  .monokai-dimmed {
+    background-color: #1e1e1e;
+    color: #c5c8c6;
+  }
+  .monokai-dimmed .mtk11 { color: #9872A2; }
+  .monokai-dimmed .mtk1 { color: #C5C8C6FF; }
+  .monokai-dimmed .mtk10 { color: #CE6700; }
+  .monokai-dimmed .mtk3 { color: #6089B4; }
+  .monokai-dimmed .mtk15 { color: #676867; }
+  .monokai-dimmed .mtk13 { color: #C7444A; }
+  .monokai-dimmed .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+  }
+  
+  /* Monokai Dimmed */
+  @media (prefers-color-scheme: dark) {
+    .grvsc-mm-tuw09S {
+      background-color: #1e1e1e;
+      color: #c5c8c6;
+    }
+    .grvsc-mm-tuw09S .mtk11 { color: #9872A2; }
+    .grvsc-mm-tuw09S .mtk1 { color: #C5C8C6FF; }
+    .grvsc-mm-tuw09S .mtk10 { color: #CE6700; }
+    .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
+    .grvsc-mm-tuw09S .mtk15 { color: #676867; }
+    .grvsc-mm-tuw09S .mtk13 { color: #C7444A; }
+    .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
+      background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+      box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+    }
+  }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[1차] 캐시]]></title><description><![CDATA[문제 바로가기 입출력 캐시크기(cacheSize) 도시이름(cities) 실행시간 3 Jeju, Pangyo, Seoul, NewYork, LA, Jeju, Pangyo, Seoul, NewYork, LA 50 3 Jeju, Pangyo, Seoul…]]></description><link>https://tinnia.github.io/algorithm/programmers/[1차] 캐시/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/[1차] 캐시/</guid><pubDate>Mon, 08 Feb 2021 15:22:46 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/17680&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h6&gt;입출력&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;캐시크기(cacheSize)&lt;/th&gt;
+&lt;th&gt;도시이름(cities)&lt;/th&gt;
+&lt;th&gt;실행시간&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;[Jeju, Pangyo, Seoul, NewYork, LA, Jeju, Pangyo, Seoul, NewYork, LA]&lt;/td&gt;
+&lt;td&gt;50&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;[Jeju, Pangyo, Seoul, Jeju, Pangyo, Seoul, Jeju, Pangyo, Seoul]&lt;/td&gt;
+&lt;td&gt;21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;[Jeju, Pangyo, Seoul, NewYork, LA, SanFrancisco, Seoul, Rome, Paris, Jeju, NewYork, Rome]&lt;/td&gt;
+&lt;td&gt;60&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;[Jeju, Pangyo, Seoul, NewYork, LA, SanFrancisco, Seoul, Rome, Paris, Jeju, NewYork, Rome]&lt;/td&gt;
+&lt;td&gt;52&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;[Jeju, Pangyo, NewYork, newyork]&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;[Jeju, Pangyo, Seoul, NewYork, LA]&lt;/td&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;h5&gt;&lt;h5 style=&quot;color:#C587AE;&quot;&gt;💻 풀이&lt;/h5&gt;&lt;/h5&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk10&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;cacheSize&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;cities&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; cacheSize &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(cities) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    cache &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; []&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    answer &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; cities:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i.lower() &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; cache:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            answer &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            cache.pop(cache.index(i.lower()))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            cache.append(i.lower())&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            answer &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(cache) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; cacheSize:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;                cache.pop(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            cache.append(i.lower())&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; answer&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+  .monokai-dimmed {
+    background-color: #1e1e1e;
+    color: #c5c8c6;
+  }
+  .monokai-dimmed .mtk11 { color: #9872A2; }
+  .monokai-dimmed .mtk1 { color: #C5C8C6FF; }
+  .monokai-dimmed .mtk10 { color: #CE6700; }
+  .monokai-dimmed .mtk3 { color: #6089B4; }
+  .monokai-dimmed .mtk15 { color: #676867; }
+  .monokai-dimmed .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+  }
+  
+  /* Monokai Dimmed */
+  @media (prefers-color-scheme: dark) {
+    .grvsc-mm-tuw09S {
+      background-color: #1e1e1e;
+      color: #c5c8c6;
+    }
+    .grvsc-mm-tuw09S .mtk11 { color: #9872A2; }
+    .grvsc-mm-tuw09S .mtk1 { color: #C5C8C6FF; }
+    .grvsc-mm-tuw09S .mtk10 { color: #CE6700; }
+    .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
+    .grvsc-mm-tuw09S .mtk15 { color: #676867; }
+    .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
+      background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+      box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+    }
+  }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[1차] 프렌즈4블록]]></title><description><![CDATA[문제 바로가기 입출력 m n board answer 4 5 CCBDE, AAADE, AAABF, CCBBF 14 6 6 TTTANT, RRFACC, RRRFCC, TRRRAA, TTMMMF, TMMTTJ 15 💻 풀이]]></description><link>https://tinnia.github.io/algorithm/programmers/[1차] 프렌즈4블록/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/[1차] 프렌즈4블록/</guid><pubDate>Mon, 08 Feb 2021 15:18:46 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/17679&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h6&gt;입출력&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;m&lt;/th&gt;
+&lt;th&gt;n&lt;/th&gt;
+&lt;th&gt;board&lt;/th&gt;
+&lt;th&gt;answer&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;[CCBDE, AAADE, AAABF, CCBBF]&lt;/td&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;[TTTANT, RRFACC, RRRFCC, TRRRAA, TTMMMF, TMMTTJ]&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;h5&gt;&lt;h5 style=&quot;color:#C587AE;&quot;&gt;💻 풀이&lt;/h5&gt;&lt;/h5&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk10&quot;&gt;findBlock&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    tmp &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, n):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; j &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, m):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; board[i][j] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; board[i][j &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; board[i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;][j] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; board[i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;][j &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;                tmp.update([(i, j), (i, j &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;), (i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, j), (i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, j &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;)])&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i, j &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; tmp:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        board[i][j] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(n):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        board[i] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; [&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;] &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; board[i].count(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; [j &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; j &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; board[i] &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; j &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(tmp)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk10&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    answer &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    board &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;zip&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;board)))  &lt;/span&gt;&lt;span class=&quot;mtk4&quot;&gt;# board -90도 회전&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(board)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        tmp &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; findBlock(m, n, board)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; tmp &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; answer&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        answer &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; tmp&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+  .monokai-dimmed {
+    background-color: #1e1e1e;
+    color: #c5c8c6;
+  }
+  .monokai-dimmed .mtk11 { color: #9872A2; }
+  .monokai-dimmed .mtk1 { color: #C5C8C6FF; }
+  .monokai-dimmed .mtk10 { color: #CE6700; }
+  .monokai-dimmed .mtk3 { color: #6089B4; }
+  .monokai-dimmed .mtk15 { color: #676867; }
+  .monokai-dimmed .mtk13 { color: #C7444A; }
+  .monokai-dimmed .mtk4 { color: #9A9B99; }
+  .monokai-dimmed .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+  }
+  
+  /* Monokai Dimmed */
+  @media (prefers-color-scheme: dark) {
+    .grvsc-mm-tuw09S {
+      background-color: #1e1e1e;
+      color: #c5c8c6;
+    }
+    .grvsc-mm-tuw09S .mtk11 { color: #9872A2; }
+    .grvsc-mm-tuw09S .mtk1 { color: #C5C8C6FF; }
+    .grvsc-mm-tuw09S .mtk10 { color: #CE6700; }
+    .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
+    .grvsc-mm-tuw09S .mtk15 { color: #676867; }
+    .grvsc-mm-tuw09S .mtk13 { color: #C7444A; }
+    .grvsc-mm-tuw09S .mtk4 { color: #9A9B99; }
+    .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
+      background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+      box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+    }
+  }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[예상 대진표]]></title><description><![CDATA[문제 바로가기 입출력 N A B answer 8 4 7 3 💻 풀이]]></description><link>https://tinnia.github.io/algorithm/programmers/예상 대진표/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/예상 대진표/</guid><pubDate>Mon, 08 Feb 2021 14:58:46 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/12985&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h6&gt;입출력&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;answer&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;h5&gt;&lt;h5 style=&quot;color:#C587AE;&quot;&gt;💻 풀이&lt;/h5&gt;&lt;/h5&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk10&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    answer &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        answer &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; (a &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; a &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; b) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;or&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; (a &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; a &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; b):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; answer&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        a &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; a &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; a &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        b &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; b &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; b &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+  .monokai-dimmed {
+    background-color: #1e1e1e;
+    color: #c5c8c6;
+  }
+  .monokai-dimmed .mtk11 { color: #9872A2; }
+  .monokai-dimmed .mtk1 { color: #C5C8C6FF; }
+  .monokai-dimmed .mtk10 { color: #CE6700; }
+  .monokai-dimmed .mtk3 { color: #6089B4; }
+  .monokai-dimmed .mtk15 { color: #676867; }
+  .monokai-dimmed .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+  }
+  
+  /* Monokai Dimmed */
+  @media (prefers-color-scheme: dark) {
+    .grvsc-mm-tuw09S {
+      background-color: #1e1e1e;
+      color: #c5c8c6;
+    }
+    .grvsc-mm-tuw09S .mtk11 { color: #9872A2; }
+    .grvsc-mm-tuw09S .mtk1 { color: #C5C8C6FF; }
+    .grvsc-mm-tuw09S .mtk10 { color: #CE6700; }
+    .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
+    .grvsc-mm-tuw09S .mtk15 { color: #676867; }
+    .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
+      background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+      box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+    }
+  }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[1차] 뉴스 클러스터링]]></title><description><![CDATA[문제 바로가기 입출력 str1 str2 answer FRANCE french 16384 handshake shake hands 65536 aa1+aa2 AAAA12 43690 E=M*C^2 e=m*c^2 65536 💻 풀이]]></description><link>https://tinnia.github.io/algorithm/programmers/[1차] 뉴스 클러스터링/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/[1차] 뉴스 클러스터링/</guid><pubDate>Mon, 08 Feb 2021 14:38:46 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/17677&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h6&gt;입출력&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;str1&lt;/th&gt;
+&lt;th&gt;str2&lt;/th&gt;
+&lt;th&gt;answer&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;FRANCE&lt;/td&gt;
+&lt;td&gt;french&lt;/td&gt;
+&lt;td&gt;16384&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;handshake&lt;/td&gt;
+&lt;td&gt;shake hands&lt;/td&gt;
+&lt;td&gt;65536&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;aa1+aa2&lt;/td&gt;
+&lt;td&gt;AAAA12&lt;/td&gt;
+&lt;td&gt;43690&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;E=M*C^2&lt;/td&gt;
+&lt;td&gt;e=m*c^2&lt;/td&gt;
+&lt;td&gt;65536&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;h5&gt;&lt;h5 style=&quot;color:#C587AE;&quot;&gt;💻 풀이&lt;/h5&gt;&lt;/h5&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; collections &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; Counter&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk10&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;str1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;str2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    str1 &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; [str1[i:i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;].lower() &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(str1) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;) &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; str1[i].isalpha() &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; str1[i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;].isalpha()]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    str2 &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; [str2[i:i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;].lower() &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(str2) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;) &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; str2[i].isalpha() &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; str2[i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;].isalpha()]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    cnt1, cnt2 &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; Counter(str1), Counter(str2)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    tmp1, tmp2 &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(str1) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(str2), &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(str1) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(str2)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(tmp2) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;65536&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    a &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(cnt1[i], cnt2[i]) &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; tmp1])&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    b &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(cnt1[i], cnt2[i]) &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; tmp2])&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(a &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; b &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;65536&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+  .monokai-dimmed {
+    background-color: #1e1e1e;
+    color: #c5c8c6;
+  }
+  .monokai-dimmed .mtk11 { color: #9872A2; }
+  .monokai-dimmed .mtk1 { color: #C5C8C6FF; }
+  .monokai-dimmed .mtk10 { color: #CE6700; }
+  .monokai-dimmed .mtk3 { color: #6089B4; }
+  .monokai-dimmed .mtk15 { color: #676867; }
+  .monokai-dimmed .mtk13 { color: #C7444A; }
+  .monokai-dimmed .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+  }
+  
+  /* Monokai Dimmed */
+  @media (prefers-color-scheme: dark) {
+    .grvsc-mm-tuw09S {
+      background-color: #1e1e1e;
+      color: #c5c8c6;
+    }
+    .grvsc-mm-tuw09S .mtk11 { color: #9872A2; }
+    .grvsc-mm-tuw09S .mtk1 { color: #C5C8C6FF; }
+    .grvsc-mm-tuw09S .mtk10 { color: #CE6700; }
+    .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
+    .grvsc-mm-tuw09S .mtk15 { color: #676867; }
+    .grvsc-mm-tuw09S .mtk13 { color: #C7444A; }
+    .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
+      background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+      box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+    }
+  }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[점프와 순간 이동]]></title><description><![CDATA[문제 바로가기 입출력 N result 5 2 6 2 5000 5 💻 풀이]]></description><link>https://tinnia.github.io/algorithm/programmers/점프와 순간 이동/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/점프와 순간 이동/</guid><pubDate>Mon, 08 Feb 2021 13:38:46 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/12980&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h6&gt;입출력&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N&lt;/th&gt;
+&lt;th&gt;result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5000&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;h5&gt;&lt;h5 style=&quot;color:#C587AE;&quot;&gt;💻 풀이&lt;/h5&gt;&lt;/h5&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk10&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    ans &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; n:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; n &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            n &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            ans &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;            n &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;//=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; ans&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+  .monokai-dimmed {
+    background-color: #1e1e1e;
+    color: #c5c8c6;
+  }
+  .monokai-dimmed .mtk11 { color: #9872A2; }
+  .monokai-dimmed .mtk1 { color: #C5C8C6FF; }
+  .monokai-dimmed .mtk10 { color: #CE6700; }
+  .monokai-dimmed .mtk3 { color: #6089B4; }
+  .monokai-dimmed .mtk15 { color: #676867; }
+  .monokai-dimmed .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+  }
+  
+  /* Monokai Dimmed */
+  @media (prefers-color-scheme: dark) {
+    .grvsc-mm-tuw09S {
+      background-color: #1e1e1e;
+      color: #c5c8c6;
+    }
+    .grvsc-mm-tuw09S .mtk11 { color: #9872A2; }
+    .grvsc-mm-tuw09S .mtk1 { color: #C5C8C6FF; }
+    .grvsc-mm-tuw09S .mtk10 { color: #CE6700; }
+    .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
+    .grvsc-mm-tuw09S .mtk15 { color: #676867; }
+    .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
+      background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+      box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+    }
+  }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[트리 순회]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이]]></description><link>https://tinnia.github.io/algorithm/boj/1991/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/boj/1991/</guid><pubDate>Sun, 07 Feb 2021 01:13:32 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/1991&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;입력&lt;/h6&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;7&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
