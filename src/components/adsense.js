@@ -4,7 +4,7 @@ class Adsense extends Component {
 
     componentDidMount() {
         window.onload = function() {
-            (adsbygoogle = window.adsbygoogle || []).push({});
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
         }
     }
 
