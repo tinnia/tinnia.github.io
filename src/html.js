@@ -21,6 +21,7 @@ export default class HTML extends React.Component {
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
           />
+          <meta name="google-site-verification" content="QoZnUVbcIuUy9kOMV6aoRfCocnBSHr4ILTvLs3qsOYM" />
           <script data-ad-client="ca-pub-5373443176805821" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         </head>
         <body {...this.props.bodyAttributes}>
