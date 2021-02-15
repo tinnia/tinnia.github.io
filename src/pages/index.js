@@ -6,7 +6,7 @@ import algo from "../../content/assets/algorithm.png"
 import study from "../../content/assets/study.png"
 import portfolio from "../../content/assets/portfolio.png"
 import about from "../../content/assets/about.png"
-import { AiOutlineTags } from "react-icons/ai"
+// import { AiOutlineTags } from "react-icons/ai"
 import { Row, Col } from 'react-bootstrap'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -67,9 +67,9 @@ const BlogIndex = ({ location, data }) => {
             })}
           </div>
         </div>
-        <div className="mainTag">
+        {/* <div className="mainTag">
           <a href="/tags"><AiOutlineTags />TAG</a>
-        </div>
+        </div> */}
       </div>
     </Layout>
   )
