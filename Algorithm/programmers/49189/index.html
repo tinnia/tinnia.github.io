@@ -491,18 +491,9 @@ void function() {
 
   setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'))
 }()
-    </script><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="drag inPage"><header class="header"><div class="headerInline"><div class="title"><a href="/" style="text-decoration:none"><h1>Tinnia Blog</h1></a></div><div class="toggle"><div class="switchToggle"><input type="checkbox" id="switch" class="invisible"/><label class="switchLabel" for="switch"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"></path></g></svg></label></div></div></div></header><main><article itemscope="" itemType="http://schema.org/Article" class="blog-post"><header class="postHeader"><div><h2 itemProp="headline">가장 먼 노드</h2><small>Algorithm</small> - <small>2020/Nov/10</small></div></header><section class="postBody" itemProp="articleBody"><br />
-<p><a href="https://programmers.co.kr/learn/courses/30/lessons/49189" style="color:#C587AE;text-decoration:none;"><small>문제 바로가기</small></a></p>
-<h6>문제 설명</h6>
-<p><small> n개의 노드가 있는 그래프가 있습니다. 각 노드는 1부터 n까지 번호가 적혀있습니다. 1번 노드에서 가장 멀리 떨어진 노드의 갯수를 구하려고 합니다. 가장 멀리 떨어진 노드란 최단경로로 이동했을 때 간선의 개수가 가장 많은 노드들을 의미합니다.</small></p>
-<p><small> 노드의 개수 n, 간선에 대한 정보가 담긴 2차원 배열 vertex가 매개변수로 주어질 때, 1번 노드로부터 가장 멀리 떨어진 노드가 몇 개인지를 return 하도록 solution 함수를 작성해주세요.</small></p>
-<h6>제한사항</h6>
-<ul>
-<li><small>노드의 개수 n은 2 이상 20,000 이하입니다.</small></li>
-<li><small>간선은 양방향이며 총 1개 이상 50,000개 이하의 간선이 있습니다.</small></li>
-<li><small>vertex 배열 각 행 [a, b]는 a번 노드와 b번 노드 사이에 간선이 있다는 의미입니다.</small></li>
-</ul>
-<h6>입출력 예</h6>
+    </script><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="drag inPage"><header class="header"><div class="headerInline"><div class="title"><a href="/" style="text-decoration:none"><h1>Tinnia Blog</h1></a></div><div class="toggle"><div class="switchToggle"><input type="checkbox" id="switch" class="invisible"/><label class="switchLabel" for="switch"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"></path></g></svg></label></div></div></div></header><main><article itemscope="" itemType="http://schema.org/Article" class="blog-post"><header class="postHeader"><div><h2 itemProp="headline">가장 먼 노드</h2><small>Algorithm</small> - <small>2021/Feb/24</small></div></header><section class="postBody" itemProp="articleBody"><br />
+<p><a href="https://programmers.co.kr/learn/courses/30/lessons/49189"><small>문제 바로가기</small></a></p>
+<h6>입출력</h6>
 <table>
 <thead>
 <tr>
@@ -521,26 +512,21 @@ void function() {
 </table>
 <br />
 <h5><h5 style="color:#C587AE;">💻 풀이</h5></h5>
-<p>​	setdefaultdict로 양방향 노드를 파악하고, deque를 활용해 최고 깊이를 찾았다.</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="0"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk11">from</span><span class="mtk1"> collections </span><span class="mtk11">import</span><span class="mtk1"> deque</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk11">def</span><span class="mtk1"> </span><span class="mtk10">solution</span><span class="mtk1">(</span><span class="mtk3">n</span><span class="mtk1">, </span><span class="mtk3">edge</span><span class="mtk1">):</span></span></span>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="0"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk11">def</span><span class="mtk1"> </span><span class="mtk10">solution</span><span class="mtk1">(</span><span class="mtk3">n</span><span class="mtk1">, </span><span class="mtk3">edge</span><span class="mtk1">):</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    route </span><span class="mtk15">=</span><span class="mtk1"> </span><span class="mtk13">dict</span><span class="mtk1">()</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    </span><span class="mtk11">for</span><span class="mtk1"> st, ed </span><span class="mtk15">in</span><span class="mtk1"> edge:</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        route.setdefault(st, []).append(ed)</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        route.setdefault(ed, []).append(st)</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        </span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    visit </span><span class="mtk15">=</span><span class="mtk1"> [</span><span class="mtk15">-</span><span class="mtk3">1</span><span class="mtk1">] </span><span class="mtk15">*</span><span class="mtk1"> (n </span><span class="mtk15">+</span><span class="mtk1"> </span><span class="mtk3">1</span><span class="mtk1">)</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    Q </span><span class="mtk15">=</span><span class="mtk1"> deque()</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    Q.append((</span><span class="mtk3">1</span><span class="mtk1">,</span><span class="mtk3">0</span><span class="mtk1">))     </span><span class="mtk4"># (노드 번호, 깊이)</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    </span><span class="mtk11">while</span><span class="mtk1"> Q:</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        idx, d </span><span class="mtk15">=</span><span class="mtk1"> Q.popleft()</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        visit[idx] </span><span class="mtk15">=</span><span class="mtk1"> d</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        </span><span class="mtk11">for</span><span class="mtk1"> i </span><span class="mtk15">in</span><span class="mtk1"> route[idx]:</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">            </span><span class="mtk11">if</span><span class="mtk1"> visit[i] </span><span class="mtk15">==</span><span class="mtk1"> </span><span class="mtk15">-</span><span class="mtk3">1</span><span class="mtk1">:</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">                visit[i] </span><span class="mtk15">=</span><span class="mtk1"> d</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">                Q.append((i, d</span><span class="mtk15">+</span><span class="mtk3">1</span><span class="mtk1">))</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        d </span><span class="mtk15">+=</span><span class="mtk1"> </span><span class="mtk3">1</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        route.setdefault(st </span><span class="mtk15">-</span><span class="mtk1"> </span><span class="mtk3">1</span><span class="mtk1">, []).append(ed </span><span class="mtk15">-</span><span class="mtk1"> </span><span class="mtk3">1</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        route.setdefault(ed </span><span class="mtk15">-</span><span class="mtk1"> </span><span class="mtk3">1</span><span class="mtk1">, []).append(st </span><span class="mtk15">-</span><span class="mtk1"> </span><span class="mtk3">1</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    stack </span><span class="mtk15">=</span><span class="mtk1"> [</span><span class="mtk3">0</span><span class="mtk1">]</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    visit </span><span class="mtk15">=</span><span class="mtk1"> [</span><span class="mtk3">0</span><span class="mtk1">] </span><span class="mtk15">*</span><span class="mtk1"> n</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    visit[</span><span class="mtk3">0</span><span class="mtk1">] </span><span class="mtk15">=</span><span class="mtk1"> </span><span class="mtk3">1</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    </span><span class="mtk11">while</span><span class="mtk1"> stack:</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        tmp </span><span class="mtk15">=</span><span class="mtk1"> stack.pop(</span><span class="mtk3">0</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        </span><span class="mtk11">for</span><span class="mtk1"> i </span><span class="mtk15">in</span><span class="mtk1"> route[tmp]:</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">            </span><span class="mtk11">if</span><span class="mtk1"> visit[i] </span><span class="mtk15">==</span><span class="mtk1"> </span><span class="mtk3">0</span><span class="mtk1">:</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">                stack.append(i)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">                visit[i] </span><span class="mtk15">=</span><span class="mtk1"> visit[tmp] </span><span class="mtk15">+</span><span class="mtk1"> </span><span class="mtk3">1</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    </span><span class="mtk11">return</span><span class="mtk1"> visit.count(</span><span class="mtk11">max</span><span class="mtk1">(visit))</span></span></span></code></pre>
 <br />
 <style class="grvsc-styles">
@@ -642,7 +628,6 @@ void function() {
   .monokai-dimmed .mtk3 { color: #6089B4; }
   .monokai-dimmed .mtk15 { color: #676867; }
   .monokai-dimmed .mtk13 { color: #C7444A; }
-  .monokai-dimmed .mtk4 { color: #9A9B99; }
   .monokai-dimmed .grvsc-line-highlighted::before {
     background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
     box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
@@ -660,7 +645,6 @@ void function() {
     .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
     .grvsc-mm-tuw09S .mtk15 { color: #676867; }
     .grvsc-mm-tuw09S .mtk13 { color: #C7444A; }
-    .grvsc-mm-tuw09S .mtk4 { color: #9A9B99; }
     .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
       background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
