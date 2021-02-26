@@ -456,7 +456,7 @@
 
 .fad.fa-inverse {
   color: #fff;
-}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link as="script" rel="preload" href="/webpack-runtime-6e86a397c01f9c9d0629.js"/><link as="script" rel="preload" href="/styles-1043fb1b9b9e69356781.js"/><link as="script" rel="preload" href="/framework-acd7498685eeb36e39da.js"/><link as="script" rel="preload" href="/app-12785f812767f7b3ded9.js"/><link as="script" rel="preload" href="/d0447323-e2b7f9939fa4a6914dbd.js"/><link as="script" rel="preload" href="/78e521c3-819c86278cd6cd922daf.js"/><link as="script" rel="preload" href="/62087da74b67b61ece2c402890e415d7d1dd1d88-6019a264d8b56dc66039.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-9a142e0ee4b1df18937b.js"/><link as="fetch" rel="preload" href="/page-data\Study\ml\3\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2151210303.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data\app-data.json" crossorigin="anonymous"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/><meta name="google-site-verification" content="QoZnUVbcIuUy9kOMV6aoRfCocnBSHr4ILTvLs3qsOYM"/><script data-ad-client="ca-pub-5373443176805821" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head><body><script>
+}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link as="script" rel="preload" href="/webpack-runtime-2810673e883325f2e150.js"/><link as="script" rel="preload" href="/styles-1043fb1b9b9e69356781.js"/><link as="script" rel="preload" href="/framework-acd7498685eeb36e39da.js"/><link as="script" rel="preload" href="/app-12785f812767f7b3ded9.js"/><link as="script" rel="preload" href="/d0447323-e2b7f9939fa4a6914dbd.js"/><link as="script" rel="preload" href="/78e521c3-819c86278cd6cd922daf.js"/><link as="script" rel="preload" href="/62087da74b67b61ece2c402890e415d7d1dd1d88-6019a264d8b56dc66039.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-9a142e0ee4b1df18937b.js"/><link as="fetch" rel="preload" href="/page-data\Study\ml\3\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2151210303.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data\app-data.json" crossorigin="anonymous"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/><meta name="google-site-verification" content="QoZnUVbcIuUy9kOMV6aoRfCocnBSHr4ILTvLs3qsOYM"/><script data-ad-client="ca-pub-5373443176805821" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head><body><script>
 void function() {
   window.__onThemeChange = function() {}
 
@@ -501,59 +501,54 @@ void function() {
 <pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="0"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk11">import</span><span class="mtk1"> matplotlib.pyplot </span><span class="mtk11">as</span><span class="mtk1"> plt</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 보통 plt라는 별칭으로 호출</span></span></span></code></pre>
 <br />
-<h5>사용해본 코드</h5>
-<ul>
-<li>
-<p>기본</p>
+<h5>함수</h5>
+<h6>기본</h6>
 <pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="1"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">X </span><span class="mtk15">=</span><span class="mtk1"> </span><span class="mtk11">range</span><span class="mtk1">(</span><span class="mtk3">100</span><span class="mtk1">)</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">Y </span><span class="mtk15">=</span><span class="mtk1"> </span><span class="mtk11">range</span><span class="mtk1">(</span><span class="mtk3">100</span><span class="mtk1">)</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.plot(X, Y)</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.show()</span></span></span></code></pre>
-</li>
-<li>
-<p>color</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="2"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.plot(X, Y, </span><span class="mtk3">color</span><span class="mtk15">=</span><span class="mtk8">&quot;#ff0022&quot;</span><span class="mtk1">)</span></span></span></code></pre>
-</li>
-<li>
-<p>linestyle</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="3"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.plot(X, Y, </span><span class="mtk3">ls</span><span class="mtk15">=</span><span class="mtk8">&quot;dashed&quot;</span><span class="mtk1">)</span></span></span></code></pre>
-</li>
-<li>
-<p>title</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="4"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.title(</span><span class="mtk8">&#39;Title&#39;</span><span class="mtk1">)</span></span></span></code></pre>
-</li>
-<li>
-<p>legend = 범례</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="5"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.plot(X1, Y1, </span><span class="mtk3">label</span><span class="mtk15">=</span><span class="mtk8">&#39;line1&#39;</span><span class="mtk1">)</span></span></span>
+<h6>xlabel, ylabel</h6>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="2"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.xlabel(</span><span class="mtk8">&#39;X values&#39;</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.ylabel(</span><span class="mtk8">&#39;Y values&#39;</span><span class="mtk1">)</span></span></span></code></pre>
+<h6>color</h6>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="3"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.plot(X, Y, </span><span class="mtk3">color</span><span class="mtk15">=</span><span class="mtk8">&quot;#ff0022&quot;</span><span class="mtk1">)</span></span></span></code></pre>
+<h6>linestyle</h6>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="4"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.plot(X, Y, </span><span class="mtk3">ls</span><span class="mtk15">=</span><span class="mtk8">&quot;dashed&quot;</span><span class="mtk1">)		</span><span class="mtk4"># line 모양</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.plot(x, y, </span><span class="mtk8">&#39;m:&#39;</span><span class="mtk1">, </span><span class="mtk3">linewidth</span><span class="mtk15">=</span><span class="mtk3">9</span><span class="mtk1">)	</span><span class="mtk4"># line 두께</span></span></span></code></pre>
+<h6>title</h6>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="5"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.title(</span><span class="mtk8">&#39;Title&#39;</span><span class="mtk1">)</span></span></span></code></pre>
+<h6>legend = 범례</h6>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="6"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.plot(X1, Y1, </span><span class="mtk3">label</span><span class="mtk15">=</span><span class="mtk8">&#39;line1&#39;</span><span class="mtk1">)</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.plot(X2, Y2, </span><span class="mtk3">label</span><span class="mtk15">=</span><span class="mtk8">&#39;line2&#39;</span><span class="mtk1">)</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.legend(</span><span class="mtk3">shadow</span><span class="mtk15">=</span><span class="mtk7">True</span><span class="mtk1">, </span><span class="mtk3">fancybox</span><span class="mtk15">=</span><span class="mtk7">True</span><span class="mtk1">, </span><span class="mtk3">loc</span><span class="mtk15">=</span><span class="mtk8">&quot;lower right&quot;</span><span class="mtk1">)</span></span></span></code></pre>
-</li>
-<li>
-<p>grid</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="6"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.grid(</span><span class="mtk7">True</span><span class="mtk1">, </span><span class="mtk3">lw</span><span class="mtk15">=</span><span class="mtk3">0.4</span><span class="mtk1">, </span><span class="mtk3">ls</span><span class="mtk15">=</span><span class="mtk8">&#39;--&#39;</span><span class="mtk1">, </span><span class="mtk3">c</span><span class="mtk15">=</span><span class="mtk8">&#39;.90&#39;</span><span class="mtk1">)</span></span></span></code></pre>
-</li>
-<li>
-<p>xylim = xy축 범위 설정</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="7"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.xlim(</span><span class="mtk15">-</span><span class="mtk3">100</span><span class="mtk1">,</span><span class="mtk3">100</span><span class="mtk1">)</span></span></span>
+<h6>grid</h6>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="7"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.grid(</span><span class="mtk7">True</span><span class="mtk1">, </span><span class="mtk3">lw</span><span class="mtk15">=</span><span class="mtk3">0.4</span><span class="mtk1">, </span><span class="mtk3">ls</span><span class="mtk15">=</span><span class="mtk8">&#39;--&#39;</span><span class="mtk1">, </span><span class="mtk3">c</span><span class="mtk15">=</span><span class="mtk8">&#39;.90&#39;</span><span class="mtk1">)</span></span></span></code></pre>
+<h6>xylim = xy축 범위 설정</h6>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="8"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.xlim(</span><span class="mtk15">-</span><span class="mtk3">100</span><span class="mtk1">,</span><span class="mtk3">100</span><span class="mtk1">)</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.ylim(</span><span class="mtk15">-</span><span class="mtk3">100</span><span class="mtk1">,</span><span class="mtk3">100</span><span class="mtk1">)</span></span></span></code></pre>
-</li>
-<li>
-<p>scatter</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="8"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.scatter(data1[:,</span><span class="mtk3">0</span><span class="mtk1">], data1[:,</span><span class="mtk3">1</span><span class="mtk1">], </span><span class="mtk3">s</span><span class="mtk15">=</span><span class="mtk1">area, </span><span class="mtk3">c</span><span class="mtk15">=</span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">, </span><span class="mtk3">marker</span><span class="mtk15">=</span><span class="mtk8">&#39;x&#39;</span><span class="mtk1">)	</span><span class="mtk4"># s로 데이터 크기 지정, marker로 모양 지정</span></span></span></code></pre>
-</li>
-<li>
-<p>bar</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="9"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.bar(X, Y, </span><span class="mtk3">width</span><span class="mtk15">=</span><span class="mtk3">0.5</span><span class="mtk1">)</span></span></span></code></pre>
-</li>
-<li>
-<p>histogram</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="10"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.hist(X, </span><span class="mtk3">bins</span><span class="mtk15">=</span><span class="mtk3">100</span><span class="mtk1">)</span></span></span></code></pre>
-</li>
-<li>
-<p>boxplot</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="11"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.boxplot(data)</span></span></span></code></pre>
-</li>
+<h6>scatter(점 그래프)</h6>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="9"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.scatter(data1[:,</span><span class="mtk3">0</span><span class="mtk1">], data1[:,</span><span class="mtk3">1</span><span class="mtk1">], </span><span class="mtk3">s</span><span class="mtk15">=</span><span class="mtk1">area, </span><span class="mtk3">c</span><span class="mtk15">=</span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">, </span><span class="mtk3">marker</span><span class="mtk15">=</span><span class="mtk8">&#39;x&#39;</span><span class="mtk1">)	</span><span class="mtk4"># s로 데이터 크기 지정, marker로 모양 지정</span></span></span></code></pre>
+<h6>bar</h6>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="10"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.bar(X, Y, </span><span class="mtk3">width</span><span class="mtk15">=</span><span class="mtk3">0.5</span><span class="mtk1">)</span></span></span></code></pre>
+<h6>histogram(히스토그램)</h6>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="11"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.hist(X, </span><span class="mtk3">bins</span><span class="mtk15">=</span><span class="mtk3">100</span><span class="mtk1">, </span><span class="mtk3">alpha</span><span class="mtk15">=</span><span class="mtk3">0.3</span><span class="mtk1">)	</span><span class="mtk4"># bins로 bar 개수 조정 / alpha 로 투명도 조절</span></span></span></code></pre>
+<h6>boxplot</h6>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="12"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.boxplot(data)</span></span></span></code></pre>
+<h6>subplot</h6>
+<ul>
+<li>여러 그래프 출력</li>
 </ul>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="13"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.subplot(</span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk3">1</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.plot(x, y, </span><span class="mtk8">&#39;r&#39;</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.subplot(</span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk3">2</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.plot(x, y, </span><span class="mtk8">&#39;g&#39;</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.subplot(</span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk3">3</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.plot(y, x, </span><span class="mtk8">&#39;k&#39;</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.subplot(</span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk3">4</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.plot(x, np.exp(x), </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">)</span></span></span></code></pre>
 <style class="grvsc-styles">
   .grvsc-container {
     overflow: auto;
@@ -693,4 +688,4 @@ void function() {
       
       
       
-      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/Study/ml/3/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-ee162a79e6fb9c3f0154.js"],"app":["/app-12785f812767f7b3ded9.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"],"component---src-pages-404-js":["/component---src-pages-404-js-c1104dfad94a26ad0609.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b04c4c440ab57b4ef0c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-19329747a7c8324040ce.js"],"component---src-pages-todo-js":["/component---src-pages-todo-js-e25ce3e2ef5dd63aabae.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-80dd521feaed2c8f4935.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-9a142e0ee4b1df18937b.js"],"component---src-templates-categories-js":["/component---src-templates-categories-js-ad2af47b5cc0d125388e.js"]};/*]]>*/</script><script src="/polyfill-ee162a79e6fb9c3f0154.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-9a142e0ee4b1df18937b.js" async=""></script><script src="/62087da74b67b61ece2c402890e415d7d1dd1d88-6019a264d8b56dc66039.js" async=""></script><script src="/78e521c3-819c86278cd6cd922daf.js" async=""></script><script src="/d0447323-e2b7f9939fa4a6914dbd.js" async=""></script><script src="/app-12785f812767f7b3ded9.js" async=""></script><script src="/framework-acd7498685eeb36e39da.js" async=""></script><script src="/styles-1043fb1b9b9e69356781.js" async=""></script><script src="/webpack-runtime-6e86a397c01f9c9d0629.js" async=""></script><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/Study/ml/3/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-ee162a79e6fb9c3f0154.js"],"app":["/app-12785f812767f7b3ded9.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"],"component---src-pages-404-js":["/component---src-pages-404-js-c1104dfad94a26ad0609.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b04c4c440ab57b4ef0c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-19329747a7c8324040ce.js"],"component---src-pages-todo-js":["/component---src-pages-todo-js-e25ce3e2ef5dd63aabae.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-80dd521feaed2c8f4935.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-9a142e0ee4b1df18937b.js"],"component---src-templates-categories-js":["/component---src-templates-categories-js-436b5bbd5689a98a9424.js"]};/*]]>*/</script><script src="/polyfill-ee162a79e6fb9c3f0154.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-9a142e0ee4b1df18937b.js" async=""></script><script src="/62087da74b67b61ece2c402890e415d7d1dd1d88-6019a264d8b56dc66039.js" async=""></script><script src="/78e521c3-819c86278cd6cd922daf.js" async=""></script><script src="/d0447323-e2b7f9939fa4a6914dbd.js" async=""></script><script src="/app-12785f812767f7b3ded9.js" async=""></script><script src="/framework-acd7498685eeb36e39da.js" async=""></script><script src="/styles-1043fb1b9b9e69356781.js" async=""></script><script src="/webpack-runtime-2810673e883325f2e150.js" async=""></script><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>
