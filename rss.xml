@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tinnia Blog]]></title><description><![CDATA[Welcome to Tinnia Blog]]></description><link>https://tinnia.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 26 Feb 2021 09:44:33 GMT</lastBuildDate><item><title><![CDATA[Crawling - Selenium 모듈]]></title><description><![CDATA[Selenium 크롤링계의 끝판왕.. BeautifulSoup로 크롤링이 되지 않아서 Selenium 모듈을 사용하여 크롤링 했음 (네이버 hsk…]]></description><link>https://tinnia.github.io/study/크롤링/3/</link><guid isPermaLink="false">https://tinnia.github.io/study/크롤링/3/</guid><pubDate>Fri, 26 Feb 2021 16:41:32 GMT</pubDate><content:encoded>&lt;h3&gt;Selenium&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tinnia Blog]]></title><description><![CDATA[Welcome to Tinnia Blog]]></description><link>https://tinnia.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 27 Feb 2021 05:43:57 GMT</lastBuildDate><item><title><![CDATA[Crawling - Selenium 모듈]]></title><description><![CDATA[Selenium 크롤링계의 끝판왕.. BeautifulSoup로 크롤링이 되지 않아서 Selenium 모듈을 사용하여 크롤링 했음 (네이버 hsk…]]></description><link>https://tinnia.github.io/project/WEB/Crawling (3)/</link><guid isPermaLink="false">https://tinnia.github.io/project/WEB/Crawling (3)/</guid><pubDate>Fri, 26 Feb 2021 16:41:32 GMT</pubDate><content:encoded>&lt;h3&gt;Selenium&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;크롤링계의 끝판왕..&lt;/li&gt;
 &lt;li&gt;BeautifulSoup로 크롤링이 되지 않아서 Selenium 모듈을 사용하여 크롤링 했음 (네이버 hsk단어장 크롤링)&lt;/li&gt;
@@ -538,241 +538,7 @@
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[HTTP 상태 코드]]></title><description><![CDATA[HTTP 상태 코드 출처 요약 Status 의미 1xx (정보) 요청을 받았으며 프로세스를 계속한다 2xx (성공) 요청을 성공적으로 받았으며 인식했고 수용하였다 3xx (리다이렉션) 요청 완료를 위해 추가 작업 조치가 필요하다 4xx…]]></description><link>https://tinnia.github.io/study/WEB/HTTP 상태코드/</link><guid isPermaLink="false">https://tinnia.github.io/study/WEB/HTTP 상태코드/</guid><pubDate>Fri, 26 Feb 2021 14:42:32 GMT</pubDate><content:encoded>&lt;h3&gt;HTTP 상태 코드&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C&quot;&gt;출처&lt;/a&gt;&lt;/p&gt;
-&lt;h6&gt;요약&lt;/h6&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Status&lt;/th&gt;
-&lt;th&gt;의미&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1xx (정보)&lt;/td&gt;
-&lt;td&gt;요청을 받았으며 프로세스를 계속한다&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2xx (성공)&lt;/td&gt;
-&lt;td&gt;요청을 성공적으로 받았으며 인식했고 수용하였다&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3xx (리다이렉션)&lt;/td&gt;
-&lt;td&gt;요청 완료를 위해 추가 작업 조치가 필요하다&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;4xx (클라이언트 오류)&lt;/td&gt;
-&lt;td&gt;요청의 문법이 잘못되었거나 요청을 처리할 수 없다&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;5xx (서버 오류)&lt;/td&gt;
-&lt;td&gt;서버가 명백히 유효한 요청에 대해 충족을 실패했다&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;앞으로 코드를 접할 때마다 계속 업데이트 할 예정&lt;/strong&gt;&lt;/p&gt;
-&lt;h6&gt;1xx ( 조건부 응답)&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;사실 아직까지는 1xx 상태를 본 적이 없다.ㅎㅎ&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h6&gt;2xx (성공)&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;나를 편_안하게 만들어주는 2XX코드!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Code&lt;/th&gt;
-&lt;th&gt;구분&lt;/th&gt;
-&lt;th&gt;의미&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;200&lt;/td&gt;
-&lt;td&gt;OK&lt;/td&gt;
-&lt;td&gt;단순 성공&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;201&lt;/td&gt;
-&lt;td&gt;Created&lt;/td&gt;
-&lt;td&gt;요청이 성공적으로 수행되었고, 리소스가 새로 생성됨 (회원가입과 같이 새롭게 생성된 것)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h6&gt;3xx (리다이렉션 완료)&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;요청 끝내기 위해 추가로 동작을 해야함&lt;/li&gt;
-&lt;li&gt;사실 얘도..블로그 만들면서 구글애널리틱스에서 보기만 했다. &lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Code&lt;/th&gt;
-&lt;th&gt;구분&lt;/th&gt;
-&lt;th&gt;의미&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;301&lt;/td&gt;
-&lt;td&gt;Moved Permanetly&lt;/td&gt;
-&lt;td&gt;요청한 페이지를 새 위치로 영구적으로 이동함. 자동 리다이렉션&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h6&gt;4xx (요청 오류)&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;클라이언트 오류 (개발할 때 Frontend가 잘못한 것 이라고 생각하니 편했다.)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Code&lt;/th&gt;
-&lt;th&gt;구분&lt;/th&gt;
-&lt;th&gt;의미&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;400&lt;/td&gt;
-&lt;td&gt;Bad Request&lt;/td&gt;
-&lt;td&gt;그냥 잘못한 것. 코드를 다 찾아보고 고쳐야 함&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;401&lt;/td&gt;
-&lt;td&gt;Unauthorized&lt;/td&gt;
-&lt;td&gt;인증되지 않은 사용자. 보통 로그인이 필요한데 로그인을 안 했을 때 발생&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;403&lt;/td&gt;
-&lt;td&gt;Forbidden&lt;/td&gt;
-&lt;td&gt;보통 401과 비슷한데 어쨋든 접근이 금지된 리소스를 요청했다는 것을 의미함&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;404&lt;/td&gt;
-&lt;td&gt;Not Found&lt;/td&gt;
-&lt;td&gt;어휴..그냥 요청한 리소스 자체가 존재하지 않다는 의미&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h6&gt;5xx (서버 오류)&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;서버 오류 (개발할 때 Backend가 잘못한 것 이라고 생각하니 편했다.)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Code&lt;/th&gt;
-&lt;th&gt;구분&lt;/th&gt;
-&lt;th&gt;의미&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;500&lt;/td&gt;
-&lt;td&gt;Internal Server Error&lt;/td&gt;
-&lt;td&gt;알 수 없는 백엔드 에러&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;502&lt;/td&gt;
-&lt;td&gt;Bad Gateway&lt;/td&gt;
-&lt;td&gt;백엔드가 아무런 응답을 주지 않음. 보통 다시 백엔드를 켰다.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;프로젝트를 진행할 때 많은 에러가 발생했다고 생각했는데, 왜 기억이 안날까.. 앞으로 계속 프로젝트를 진행하면서 기록을 해야겠다.&lt;/p&gt;
-&lt;style class=&quot;grvsc-styles&quot;&gt;
-  .grvsc-container {
-    overflow: auto;
-    position: relative;
-    -webkit-overflow-scrolling: touch;
-    padding-top: 1rem;
-    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
-    padding-bottom: 1rem;
-    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
-    border-radius: 8px;
-    border-radius: var(--grvsc-border-radius, 8px);
-    font-feature-settings: normal;
-    line-height: 1.4;
-  }
-  
-  .grvsc-code {
-    display: table;
-  }
-  
-  .grvsc-line {
-    display: table-row;
-    box-sizing: border-box;
-    width: 100%;
-    position: relative;
-  }
-  
-  .grvsc-line &gt; * {
-    position: relative;
-  }
-  
-  .grvsc-gutter-pad {
-    display: table-cell;
-    padding-left: 0.75rem;
-    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
-  }
-  
-  .grvsc-gutter {
-    display: table-cell;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  .grvsc-gutter::before {
-    content: attr(data-content);
-  }
-  
-  .grvsc-source {
-    display: table-cell;
-    padding-left: 1.5rem;
-    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
-    padding-right: 1.5rem;
-    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
-  }
-  
-  .grvsc-source:empty::after {
-    content: &apos; &apos;;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  .grvsc-gutter + .grvsc-source {
-    padding-left: 0.75rem;
-    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
-  }
-  
-  /* Line transformer styles */
-  
-  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
-    content: &apos; &apos;;
-    position: absolute;
-    width: 100%;
-  }
-  
-  .grvsc-line-diff-add::before {
-    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
-  }
-  
-  .grvsc-line-diff-del::before {
-    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
-  }
-  
-  .grvsc-line-number {
-    padding: 0 2px;
-    text-align: right;
-    opacity: 0.7;
-  }
-  
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[Crawling - Beautifulsoup 모듈]]></title><description><![CDATA[Beautifulsoup 모듈 find 함수 특정 html 태그를 검색하기 위해 사용 특징 처음 발견한 하나의 태그 반환 특정 class나 id를 가진 데이터를 반환할 수 있음 find_all 함수 조건에 맞는 모든 tag를 리스트로 return…]]></description><link>https://tinnia.github.io/study/크롤링/2/</link><guid isPermaLink="false">https://tinnia.github.io/study/크롤링/2/</guid><pubDate>Fri, 26 Feb 2021 13:41:32 GMT</pubDate><content:encoded>&lt;h3&gt;Beautifulsoup&lt;/h3&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[Crawling - Beautifulsoup 모듈]]></title><description><![CDATA[Beautifulsoup 모듈 find 함수 특정 html 태그를 검색하기 위해 사용 특징 처음 발견한 하나의 태그 반환 특정 class나 id를 가진 데이터를 반환할 수 있음 find_all 함수 조건에 맞는 모든 tag를 리스트로 return…]]></description><link>https://tinnia.github.io/project/WEB/Crawling (2)/</link><guid isPermaLink="false">https://tinnia.github.io/project/WEB/Crawling (2)/</guid><pubDate>Fri, 26 Feb 2021 13:41:32 GMT</pubDate><content:encoded>&lt;h3&gt;Beautifulsoup&lt;/h3&gt;
 &lt;h5&gt;모듈&lt;/h5&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; bs4 &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; BeautifulSoup&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;h5&gt;find 함수&lt;/h5&gt;
@@ -1009,7 +775,7 @@
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[Python - API를 활용해 Crawling하기]]></title><description><![CDATA[API 사용하기 Request 모듈 get 요청 post 요청 민감한 데이터를 전달할 때 사용 (로그인..) Header 데이터 이용 동일하게 크롤링을 했는데 크롤링이 되지 않을 때 이용 단순 url로만 크롤링이 안될 때… 기본적으로 user…]]></description><link>https://tinnia.github.io/study/크롤링/1/</link><guid isPermaLink="false">https://tinnia.github.io/study/크롤링/1/</guid><pubDate>Fri, 26 Feb 2021 11:41:32 GMT</pubDate><content:encoded>&lt;h3&gt;API 사용하기&lt;/h3&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[Crawling - API 활용]]></title><description><![CDATA[API 사용하기 Request 모듈 get 요청 post 요청 민감한 데이터를 전달할 때 사용 (로그인..) Header 데이터 이용 동일하게 크롤링을 했는데 크롤링이 되지 않을 때 이용 단순 url로만 크롤링이 안될 때… 기본적으로 user…]]></description><link>https://tinnia.github.io/project/WEB/Crawling (1)/</link><guid isPermaLink="false">https://tinnia.github.io/project/WEB/Crawling (1)/</guid><pubDate>Fri, 26 Feb 2021 11:41:32 GMT</pubDate><content:encoded>&lt;h3&gt;API 사용하기&lt;/h3&gt;
 &lt;h5&gt;Request&lt;/h5&gt;
 &lt;h6&gt;모듈&lt;/h6&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; requests&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -1974,6 +1740,240 @@
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[HTTP 상태 코드]]></title><description><![CDATA[HTTP 상태 코드 출처 요약 Status 의미 1xx (정보) 요청을 받았으며 프로세스를 계속한다 2xx (성공) 요청을 성공적으로 받았으며 인식했고 수용하였다 3xx (리다이렉션) 요청 완료를 위해 추가 작업 조치가 필요하다 4xx…]]></description><link>https://tinnia.github.io/project/WEB/HTTP 상태코드/</link><guid isPermaLink="false">https://tinnia.github.io/project/WEB/HTTP 상태코드/</guid><pubDate>Thu, 25 Feb 2021 14:42:32 GMT</pubDate><content:encoded>&lt;h3&gt;HTTP 상태 코드&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C&quot;&gt;출처&lt;/a&gt;&lt;/p&gt;
+&lt;h6&gt;요약&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Status&lt;/th&gt;
+&lt;th&gt;의미&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1xx (정보)&lt;/td&gt;
+&lt;td&gt;요청을 받았으며 프로세스를 계속한다&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2xx (성공)&lt;/td&gt;
+&lt;td&gt;요청을 성공적으로 받았으며 인식했고 수용하였다&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3xx (리다이렉션)&lt;/td&gt;
+&lt;td&gt;요청 완료를 위해 추가 작업 조치가 필요하다&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4xx (클라이언트 오류)&lt;/td&gt;
+&lt;td&gt;요청의 문법이 잘못되었거나 요청을 처리할 수 없다&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5xx (서버 오류)&lt;/td&gt;
+&lt;td&gt;서버가 명백히 유효한 요청에 대해 충족을 실패했다&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;앞으로 코드를 접할 때마다 계속 업데이트 할 예정&lt;/strong&gt;&lt;/p&gt;
+&lt;h6&gt;1xx ( 조건부 응답)&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;사실 아직까지는 1xx 상태를 본 적이 없다.ㅎㅎ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6&gt;2xx (성공)&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;나를 편_안하게 만들어주는 2XX코드!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;구분&lt;/th&gt;
+&lt;th&gt;의미&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;200&lt;/td&gt;
+&lt;td&gt;OK&lt;/td&gt;
+&lt;td&gt;단순 성공&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;201&lt;/td&gt;
+&lt;td&gt;Created&lt;/td&gt;
+&lt;td&gt;요청이 성공적으로 수행되었고, 리소스가 새로 생성됨 (회원가입과 같이 새롭게 생성된 것)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h6&gt;3xx (리다이렉션 완료)&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;요청 끝내기 위해 추가로 동작을 해야함&lt;/li&gt;
+&lt;li&gt;사실 얘도..블로그 만들면서 구글애널리틱스에서 보기만 했다. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;구분&lt;/th&gt;
+&lt;th&gt;의미&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;301&lt;/td&gt;
+&lt;td&gt;Moved Permanetly&lt;/td&gt;
+&lt;td&gt;요청한 페이지를 새 위치로 영구적으로 이동함. 자동 리다이렉션&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h6&gt;4xx (요청 오류)&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;클라이언트 오류 (개발할 때 Frontend가 잘못한 것 이라고 생각하니 편했다.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;구분&lt;/th&gt;
+&lt;th&gt;의미&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;400&lt;/td&gt;
+&lt;td&gt;Bad Request&lt;/td&gt;
+&lt;td&gt;그냥 잘못한 것. 코드를 다 찾아보고 고쳐야 함&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;401&lt;/td&gt;
+&lt;td&gt;Unauthorized&lt;/td&gt;
+&lt;td&gt;인증되지 않은 사용자. 보통 로그인이 필요한데 로그인을 안 했을 때 발생&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;403&lt;/td&gt;
+&lt;td&gt;Forbidden&lt;/td&gt;
+&lt;td&gt;보통 401과 비슷한데 어쨋든 접근이 금지된 리소스를 요청했다는 것을 의미함&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;404&lt;/td&gt;
+&lt;td&gt;Not Found&lt;/td&gt;
+&lt;td&gt;어휴..그냥 요청한 리소스 자체가 존재하지 않다는 의미&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h6&gt;5xx (서버 오류)&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;서버 오류 (개발할 때 Backend가 잘못한 것 이라고 생각하니 편했다.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;구분&lt;/th&gt;
+&lt;th&gt;의미&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;500&lt;/td&gt;
+&lt;td&gt;Internal Server Error&lt;/td&gt;
+&lt;td&gt;알 수 없는 백엔드 에러&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;502&lt;/td&gt;
+&lt;td&gt;Bad Gateway&lt;/td&gt;
+&lt;td&gt;백엔드가 아무런 응답을 주지 않음. 보통 다시 백엔드를 켰다.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;프로젝트를 진행할 때 많은 에러가 발생했다고 생각했는데, 왜 기억이 안날까.. 앞으로 계속 프로젝트를 진행하면서 기록을 해야겠다.&lt;/p&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
 &lt;/style&gt;</content:encoded></item><item><title><![CDATA[줄 서는 방법]]></title><description><![CDATA[문제 바로가기 입출력 n k result 3 5 3,1,2 💻 풀이 단순 list를 heapify로 heap으로 바꾸기]]></description><link>https://tinnia.github.io/algorithm/programmers/줄 서는 방법/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/줄 서는 방법/</guid><pubDate>Thu, 25 Feb 2021 12:53:46 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/12936&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;입출력&lt;/h6&gt;
@@ -27296,6 +27296,162 @@
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[농작물 수확하기]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이]]></description><link>https://tinnia.github.io/algorithm/swea/2805/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/2805/</guid><pubDate>Sun, 31 Jan 2021 13:45:32 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&amp;contestProbId=AV7GLXqKAWYDFAXB&amp;categoryId=AV7GLXqKAWYDFAXB&amp;categoryType=CODE&amp;problemTitle=&amp;orderBy=FIRST_REG_DATETIME&amp;selectCodeLang=PYTHON&amp;select-1=3&amp;pageSize=10&amp;pageIndex=7&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h6&gt;입력&lt;/h6&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;14054&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;44250&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;02032&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;51204&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;52212&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h6&gt;출력&lt;/h6&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;1&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk4&quot;&gt;#1 23&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;
+&lt;h5&gt;&lt;h5 style=&quot;color:#C587AE;&quot;&gt;💻 풀이&lt;/h5&gt;&lt;/h5&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;2&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; T &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;()) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    N &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;())&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    board &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; [&lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;())) &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; _ &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(N)]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    ans &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    st, ed &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; N &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, N &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(N &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        ans &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(board[i][st:ed])&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        st &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        ed &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(N &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, N):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        ans &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(board[i][st:ed])&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        st &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        ed &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;#&lt;/span&gt;&lt;span class=&quot;mtk5&quot;&gt;{}&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk5&quot;&gt;{}&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;.format(T, ans))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+  .monokai-dimmed {
+    background-color: #1e1e1e;
+    color: #c5c8c6;
+  }
+  .monokai-dimmed .mtk1 { color: #C5C8C6FF; }
+  .monokai-dimmed .mtk4 { color: #9A9B99; }
+  .monokai-dimmed .mtk11 { color: #9872A2; }
+  .monokai-dimmed .mtk15 { color: #676867; }
+  .monokai-dimmed .mtk3 { color: #6089B4; }
+  .monokai-dimmed .mtk13 { color: #C7444A; }
+  .monokai-dimmed .mtk8 { color: #9AA83A; }
+  .monokai-dimmed .mtk5 { color: #8080FF; }
+  .monokai-dimmed .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+  }
+  
+  /* Monokai Dimmed */
+  @media (prefers-color-scheme: dark) {
+    .grvsc-mm-tuw09S {
+      background-color: #1e1e1e;
+      color: #c5c8c6;
+    }
+    .grvsc-mm-tuw09S .mtk1 { color: #C5C8C6FF; }
+    .grvsc-mm-tuw09S .mtk4 { color: #9A9B99; }
+    .grvsc-mm-tuw09S .mtk11 { color: #9872A2; }
+    .grvsc-mm-tuw09S .mtk15 { color: #676867; }
+    .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
+    .grvsc-mm-tuw09S .mtk13 { color: #C7444A; }
+    .grvsc-mm-tuw09S .mtk8 { color: #9AA83A; }
+    .grvsc-mm-tuw09S .mtk5 { color: #8080FF; }
+    .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
+      background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+      box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+    }
+  }
 &lt;/style&gt;</content:encoded></item><item><title><![CDATA[최장 경로]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이]]></description><link>https://tinnia.github.io/algorithm/swea/2814/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/2814/</guid><pubDate>Sun, 31 Jan 2021 13:45:32 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&amp;contestProbId=AV7GOPPaAeMDFAXB&amp;categoryId=AV7GOPPaAeMDFAXB&amp;categoryType=CODE&amp;problemTitle=&amp;orderBy=FIRST_REG_DATETIME&amp;selectCodeLang=PYTHON&amp;select-1=3&amp;pageSize=10&amp;pageIndex=7&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;입력&lt;/h6&gt;
@@ -27458,162 +27614,6 @@
     .grvsc-mm-tuw09S .mtk10 { color: #CE6700; }
     .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
     .grvsc-mm-tuw09S .mtk15 { color: #676867; }
-    .grvsc-mm-tuw09S .mtk13 { color: #C7444A; }
-    .grvsc-mm-tuw09S .mtk8 { color: #9AA83A; }
-    .grvsc-mm-tuw09S .mtk5 { color: #8080FF; }
-    .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
-      background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
-      box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
-    }
-  }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[농작물 수확하기]]></title><description><![CDATA[문제 바로가기 입력 출력 💻 풀이]]></description><link>https://tinnia.github.io/algorithm/swea/2805/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/swea/2805/</guid><pubDate>Sun, 31 Jan 2021 13:45:32 GMT</pubDate><content:encoded>&lt;br /&gt;
-&lt;p&gt;&lt;a href=&quot;https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&amp;contestProbId=AV7GLXqKAWYDFAXB&amp;categoryId=AV7GLXqKAWYDFAXB&amp;categoryType=CODE&amp;problemTitle=&amp;orderBy=FIRST_REG_DATETIME&amp;selectCodeLang=PYTHON&amp;select-1=3&amp;pageSize=10&amp;pageIndex=7&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h6&gt;입력&lt;/h6&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;14054&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;44250&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;02032&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;51204&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;52212&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h6&gt;출력&lt;/h6&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;1&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk4&quot;&gt;#1 23&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;br /&gt;
-&lt;h5&gt;&lt;h5 style=&quot;color:#C587AE;&quot;&gt;💻 풀이&lt;/h5&gt;&lt;/h5&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;2&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; T &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;()) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    N &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;())&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    board &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; [&lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;())) &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; _ &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(N)]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    ans &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    st, ed &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; N &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, N &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(N &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        ans &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(board[i][st:ed])&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        st &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        ed &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; i &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(N &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, N):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        ans &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(board[i][st:ed])&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        st &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        ed &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;        &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;#&lt;/span&gt;&lt;span class=&quot;mtk5&quot;&gt;{}&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk5&quot;&gt;{}&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;.format(T, ans))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;style class=&quot;grvsc-styles&quot;&gt;
-  .grvsc-container {
-    overflow: auto;
-    position: relative;
-    -webkit-overflow-scrolling: touch;
-    padding-top: 1rem;
-    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
-    padding-bottom: 1rem;
-    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
-    border-radius: 8px;
-    border-radius: var(--grvsc-border-radius, 8px);
-    font-feature-settings: normal;
-    line-height: 1.4;
-  }
-  
-  .grvsc-code {
-    display: table;
-  }
-  
-  .grvsc-line {
-    display: table-row;
-    box-sizing: border-box;
-    width: 100%;
-    position: relative;
-  }
-  
-  .grvsc-line &gt; * {
-    position: relative;
-  }
-  
-  .grvsc-gutter-pad {
-    display: table-cell;
-    padding-left: 0.75rem;
-    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
-  }
-  
-  .grvsc-gutter {
-    display: table-cell;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  .grvsc-gutter::before {
-    content: attr(data-content);
-  }
-  
-  .grvsc-source {
-    display: table-cell;
-    padding-left: 1.5rem;
-    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
-    padding-right: 1.5rem;
-    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
-  }
-  
-  .grvsc-source:empty::after {
-    content: &apos; &apos;;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  .grvsc-gutter + .grvsc-source {
-    padding-left: 0.75rem;
-    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
-  }
-  
-  /* Line transformer styles */
-  
-  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
-    content: &apos; &apos;;
-    position: absolute;
-    width: 100%;
-  }
-  
-  .grvsc-line-diff-add::before {
-    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
-  }
-  
-  .grvsc-line-diff-del::before {
-    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
-  }
-  
-  .grvsc-line-number {
-    padding: 0 2px;
-    text-align: right;
-    opacity: 0.7;
-  }
-  
-  .monokai-dimmed {
-    background-color: #1e1e1e;
-    color: #c5c8c6;
-  }
-  .monokai-dimmed .mtk1 { color: #C5C8C6FF; }
-  .monokai-dimmed .mtk4 { color: #9A9B99; }
-  .monokai-dimmed .mtk11 { color: #9872A2; }
-  .monokai-dimmed .mtk15 { color: #676867; }
-  .monokai-dimmed .mtk3 { color: #6089B4; }
-  .monokai-dimmed .mtk13 { color: #C7444A; }
-  .monokai-dimmed .mtk8 { color: #9AA83A; }
-  .monokai-dimmed .mtk5 { color: #8080FF; }
-  .monokai-dimmed .grvsc-line-highlighted::before {
-    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
-    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
-  }
-  
-  /* Monokai Dimmed */
-  @media (prefers-color-scheme: dark) {
-    .grvsc-mm-tuw09S {
-      background-color: #1e1e1e;
-      color: #c5c8c6;
-    }
-    .grvsc-mm-tuw09S .mtk1 { color: #C5C8C6FF; }
-    .grvsc-mm-tuw09S .mtk4 { color: #9A9B99; }
-    .grvsc-mm-tuw09S .mtk11 { color: #9872A2; }
-    .grvsc-mm-tuw09S .mtk15 { color: #676867; }
-    .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
     .grvsc-mm-tuw09S .mtk13 { color: #C7444A; }
     .grvsc-mm-tuw09S .mtk8 { color: #9AA83A; }
     .grvsc-mm-tuw09S .mtk5 { color: #8080FF; }
@@ -28262,7 +28262,7 @@
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Project #1] Spring Boot 비밀번호 암호화]]></title><description><![CDATA[Project #1 Everywhere Scrap Spring Boot + MongoDB 비밀번호 암호화 Security - Bcrypt 비밀번호를 암호화하는 것은 다양한 방법이 있지만, Bcrypt…]]></description><link>https://tinnia.github.io/portfolio/pjt/1-4/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/pjt/1-4/</guid><pubDate>Mon, 25 Jan 2021 23:15:32 GMT</pubDate><content:encoded>&lt;h6&gt;Project #1 Everywhere Scrap&lt;/h6&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Project #1] Spring Boot 비밀번호 암호화]]></title><description><![CDATA[Project #1 Everywhere Scrap Spring Boot + MongoDB 비밀번호 암호화 Security - Bcrypt 비밀번호를 암호화하는 것은 다양한 방법이 있지만, Bcrypt…]]></description><link>https://tinnia.github.io/project/pjt/EWS (4)/</link><guid isPermaLink="false">https://tinnia.github.io/project/pjt/EWS (4)/</guid><pubDate>Mon, 25 Jan 2021 23:15:32 GMT</pubDate><content:encoded>&lt;h6&gt;Project #1 Everywhere Scrap&lt;/h6&gt;
 &lt;h4&gt;Spring Boot + MongoDB 비밀번호 암호화&lt;/h4&gt;
 &lt;hr /&gt;
 &lt;h5&gt;Security - Bcrypt&lt;/h5&gt;
@@ -29092,7 +29092,7 @@
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Project #1] Spring Boot + JWT Token]]></title><description><![CDATA[Project #1 Everywhere Scrap Spring Boot + JWT Token Security - JWT Token  토큰으로 로그인을 진행하기 위해 jwt token을 활용한 방법을 쓰게 되었다. 과정 Maven Dependency…]]></description><link>https://tinnia.github.io/portfolio/pjt/1-3/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/pjt/1-3/</guid><pubDate>Sun, 24 Jan 2021 23:15:32 GMT</pubDate><content:encoded>&lt;h6&gt;Project #1 Everywhere Scrap&lt;/h6&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Project #1] Spring Boot + JWT Token]]></title><description><![CDATA[Project #1 Everywhere Scrap Spring Boot + JWT Token Security - JWT Token  토큰으로 로그인을 진행하기 위해 jwt token을 활용한 방법을 쓰게 되었다. 과정 Maven Dependency…]]></description><link>https://tinnia.github.io/project/pjt/EWS (3)/</link><guid isPermaLink="false">https://tinnia.github.io/project/pjt/EWS (3)/</guid><pubDate>Sun, 24 Jan 2021 23:15:32 GMT</pubDate><content:encoded>&lt;h6&gt;Project #1 Everywhere Scrap&lt;/h6&gt;
 &lt;h4&gt;Spring Boot + JWT Token&lt;/h4&gt;
 &lt;hr /&gt;
 &lt;h5&gt;Security - JWT Token&lt;/h5&gt;
@@ -29340,7 +29340,7 @@
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Project #1] Spring Boot와 MongoDB 연동]]></title><description><![CDATA[Project #1 Everywhere Scrap 프로젝트 개발 환경 설정 Back End - Spring Boot npm 설치 yarn 설치 jdk 설치 Java 환경 변수 설정 Maven 설치 - apache-maven-3.6.3-bin.zip…]]></description><link>https://tinnia.github.io/portfolio/pjt/1-2/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/pjt/1-2/</guid><pubDate>Sat, 23 Jan 2021 23:15:32 GMT</pubDate><content:encoded>&lt;h6&gt;Project #1 Everywhere Scrap&lt;/h6&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Project #1] Spring Boot와 MongoDB 연동]]></title><description><![CDATA[Project #1 Everywhere Scrap 프로젝트 개발 환경 설정 Back End - Spring Boot npm 설치 yarn 설치 jdk 설치 Java 환경 변수 설정 Maven 설치 - apache-maven-3.6.3-bin.zip…]]></description><link>https://tinnia.github.io/project/pjt/EWS (2)/</link><guid isPermaLink="false">https://tinnia.github.io/project/pjt/EWS (2)/</guid><pubDate>Sat, 23 Jan 2021 23:15:32 GMT</pubDate><content:encoded>&lt;h6&gt;Project #1 Everywhere Scrap&lt;/h6&gt;
 &lt;h4&gt;프로젝트 개발 환경 설정&lt;/h4&gt;
 &lt;hr /&gt;
 &lt;h5&gt;Back End - Spring Boot&lt;/h5&gt;
@@ -30505,7 +30505,7 @@
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Project #1] 프로젝트 기획]]></title><description><![CDATA[Project #1 Everywhere Scrap 프로젝트 기획 프로젝트 주제 기사 스크랩 스크랩 주제 : 사회 / 경제 / IT, 과학 프로젝트 이름 : Everywhere Scrap 프로젝트 기간 3주 (2020.01.18 ~ 2020.02.0…]]></description><link>https://tinnia.github.io/portfolio/pjt/1-1/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/pjt/1-1/</guid><pubDate>Fri, 22 Jan 2021 21:15:32 GMT</pubDate><content:encoded>&lt;h6&gt;Project #1 Everywhere Scrap&lt;/h6&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Project #1] 프로젝트 기획]]></title><description><![CDATA[Project #1 Everywhere Scrap 프로젝트 기획 프로젝트 주제 기사 스크랩 스크랩 주제 : 사회 / 경제 / IT, 과학 프로젝트 이름 : Everywhere Scrap 프로젝트 기간 3주 (2020.01.18 ~ 2020.02.0…]]></description><link>https://tinnia.github.io/project/pjt/EWS (1)/</link><guid isPermaLink="false">https://tinnia.github.io/project/pjt/EWS (1)/</guid><pubDate>Fri, 22 Jan 2021 21:15:32 GMT</pubDate><content:encoded>&lt;h6&gt;Project #1 Everywhere Scrap&lt;/h6&gt;
 &lt;h4&gt;프로젝트 기획&lt;/h4&gt;
 &lt;hr /&gt;
 &lt;h5&gt;프로젝트 주제&lt;/h5&gt;
@@ -31256,153 +31256,6 @@
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[핸드폰 번호 가리기]]></title><description><![CDATA[문제 바로가기 입출력 phone_number return 01033334444 ***4444 027778888 *8888 💻 풀이]]></description><link>https://tinnia.github.io/algorithm/programmers/핸드폰 번호 가리기/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/핸드폰 번호 가리기/</guid><pubDate>Thu, 21 Jan 2021 23:47:46 GMT</pubDate><content:encoded>&lt;br /&gt;
-&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/12948&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h6&gt;입출력&lt;/h6&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;phone_number&lt;/th&gt;
-&lt;th&gt;return&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;01033334444&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;***&lt;/strong&gt;4444&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;027778888&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;*&lt;/strong&gt;8888&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;br /&gt;
-&lt;h5&gt;&lt;h5 style=&quot;color:#C587AE;&quot;&gt;💻 풀이&lt;/h5&gt;&lt;/h5&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk10&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;phone_number&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;*&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(phone_number)&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; phone_number[&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;br /&gt;
-&lt;style class=&quot;grvsc-styles&quot;&gt;
-  .grvsc-container {
-    overflow: auto;
-    position: relative;
-    -webkit-overflow-scrolling: touch;
-    padding-top: 1rem;
-    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
-    padding-bottom: 1rem;
-    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
-    border-radius: 8px;
-    border-radius: var(--grvsc-border-radius, 8px);
-    font-feature-settings: normal;
-    line-height: 1.4;
-  }
-  
-  .grvsc-code {
-    display: table;
-  }
-  
-  .grvsc-line {
-    display: table-row;
-    box-sizing: border-box;
-    width: 100%;
-    position: relative;
-  }
-  
-  .grvsc-line &gt; * {
-    position: relative;
-  }
-  
-  .grvsc-gutter-pad {
-    display: table-cell;
-    padding-left: 0.75rem;
-    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
-  }
-  
-  .grvsc-gutter {
-    display: table-cell;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  .grvsc-gutter::before {
-    content: attr(data-content);
-  }
-  
-  .grvsc-source {
-    display: table-cell;
-    padding-left: 1.5rem;
-    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
-    padding-right: 1.5rem;
-    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
-  }
-  
-  .grvsc-source:empty::after {
-    content: &apos; &apos;;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  .grvsc-gutter + .grvsc-source {
-    padding-left: 0.75rem;
-    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
-  }
-  
-  /* Line transformer styles */
-  
-  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
-    content: &apos; &apos;;
-    position: absolute;
-    width: 100%;
-  }
-  
-  .grvsc-line-diff-add::before {
-    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
-  }
-  
-  .grvsc-line-diff-del::before {
-    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
-  }
-  
-  .grvsc-line-number {
-    padding: 0 2px;
-    text-align: right;
-    opacity: 0.7;
-  }
-  
-  .monokai-dimmed {
-    background-color: #1e1e1e;
-    color: #c5c8c6;
-  }
-  .monokai-dimmed .mtk11 { color: #9872A2; }
-  .monokai-dimmed .mtk1 { color: #C5C8C6FF; }
-  .monokai-dimmed .mtk10 { color: #CE6700; }
-  .monokai-dimmed .mtk3 { color: #6089B4; }
-  .monokai-dimmed .mtk8 { color: #9AA83A; }
-  .monokai-dimmed .mtk15 { color: #676867; }
-  .monokai-dimmed .grvsc-line-highlighted::before {
-    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
-    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
-  }
-  
-  /* Monokai Dimmed */
-  @media (prefers-color-scheme: dark) {
-    .grvsc-mm-tuw09S {
-      background-color: #1e1e1e;
-      color: #c5c8c6;
-    }
-    .grvsc-mm-tuw09S .mtk11 { color: #9872A2; }
-    .grvsc-mm-tuw09S .mtk1 { color: #C5C8C6FF; }
-    .grvsc-mm-tuw09S .mtk10 { color: #CE6700; }
-    .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
-    .grvsc-mm-tuw09S .mtk8 { color: #9AA83A; }
-    .grvsc-mm-tuw09S .mtk15 { color: #676867; }
-    .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
-      background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
-      box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
-    }
-  }
 &lt;/style&gt;</content:encoded></item><item><title><![CDATA[하샤드 수]]></title><description><![CDATA[문제 바로가기 입출력 arr return 10 true 12 true 11 false 13 false 💻 풀이]]></description><link>https://tinnia.github.io/algorithm/programmers/하샤드 수/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/하샤드 수/</guid><pubDate>Thu, 21 Jan 2021 23:47:46 GMT</pubDate><content:encoded>&lt;br /&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/12947&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h6&gt;입출력&lt;/h6&gt;
@@ -31558,6 +31411,153 @@
     .grvsc-mm-tuw09S .mtk15 { color: #676867; }
     .grvsc-mm-tuw09S .mtk13 { color: #C7444A; }
     .grvsc-mm-tuw09S .mtk7 { color: #408080; }
+    .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
+      background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+      box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+    }
+  }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[핸드폰 번호 가리기]]></title><description><![CDATA[문제 바로가기 입출력 phone_number return 01033334444 ***4444 027778888 *8888 💻 풀이]]></description><link>https://tinnia.github.io/algorithm/programmers/핸드폰 번호 가리기/</link><guid isPermaLink="false">https://tinnia.github.io/algorithm/programmers/핸드폰 번호 가리기/</guid><pubDate>Thu, 21 Jan 2021 23:47:46 GMT</pubDate><content:encoded>&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/12948&quot;&gt;&lt;small&gt;문제 바로가기&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h6&gt;입출력&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;phone_number&lt;/th&gt;
+&lt;th&gt;return&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01033334444&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;***&lt;/strong&gt;4444&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;027778888&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;*&lt;/strong&gt;8888&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;h5&gt;&lt;h5 style=&quot;color:#C587AE;&quot;&gt;💻 풀이&lt;/h5&gt;&lt;/h5&gt;
+&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;python&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;def&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk10&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;phone_number&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;):&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;*&amp;quot;&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mtk11&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;(phone_number)&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;) &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; phone_number[&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;:]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+  .monokai-dimmed {
+    background-color: #1e1e1e;
+    color: #c5c8c6;
+  }
+  .monokai-dimmed .mtk11 { color: #9872A2; }
+  .monokai-dimmed .mtk1 { color: #C5C8C6FF; }
+  .monokai-dimmed .mtk10 { color: #CE6700; }
+  .monokai-dimmed .mtk3 { color: #6089B4; }
+  .monokai-dimmed .mtk8 { color: #9AA83A; }
+  .monokai-dimmed .mtk15 { color: #676867; }
+  .monokai-dimmed .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+  }
+  
+  /* Monokai Dimmed */
+  @media (prefers-color-scheme: dark) {
+    .grvsc-mm-tuw09S {
+      background-color: #1e1e1e;
+      color: #c5c8c6;
+    }
+    .grvsc-mm-tuw09S .mtk11 { color: #9872A2; }
+    .grvsc-mm-tuw09S .mtk1 { color: #C5C8C6FF; }
+    .grvsc-mm-tuw09S .mtk10 { color: #CE6700; }
+    .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
+    .grvsc-mm-tuw09S .mtk8 { color: #9AA83A; }
+    .grvsc-mm-tuw09S .mtk15 { color: #676867; }
     .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
       background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
@@ -37133,7 +37133,7 @@
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Side Project #1] 네이버 HSK 단어장 웹 스크래핑]]></title><description><![CDATA[Side Project #1 HSK…]]></description><link>https://tinnia.github.io/portfolio/pjt/HskWord/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/pjt/HskWord/</guid><pubDate>Tue, 19 Jan 2021 21:15:32 GMT</pubDate><content:encoded>&lt;h6&gt;Side Project #1&lt;/h6&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Side Project #1] 네이버 HSK 단어장 웹 스크래핑]]></title><description><![CDATA[Side Project #1 HSK…]]></description><link>https://tinnia.github.io/project/pjt/HskWord/</link><guid isPermaLink="false">https://tinnia.github.io/project/pjt/HskWord/</guid><pubDate>Tue, 19 Jan 2021 21:15:32 GMT</pubDate><content:encoded>&lt;h6&gt;Side Project #1&lt;/h6&gt;
 &lt;h4&gt;HSK 단어장 웹 스크래핑&lt;/h4&gt;
 &lt;hr /&gt;
 &lt;h5&gt;크롤링과 스크래핑의 차이&lt;/h5&gt;
@@ -39201,7 +39201,7 @@
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[07. 뉴모피즘(Neumorphism) 테마]]></title><description><![CDATA[Neumorphism…]]></description><link>https://tinnia.github.io/portfolio/blog/9/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/9/</guid><pubDate>Mon, 18 Jan 2021 01:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Neumorphism&lt;/h4&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[09. 뉴모피즘(Neumorphism) 테마]]></title><description><![CDATA[Neumorphism…]]></description><link>https://tinnia.github.io/project/pjt/blog (9)/</link><guid isPermaLink="false">https://tinnia.github.io/project/pjt/blog (9)/</guid><pubDate>Mon, 18 Jan 2021 01:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Neumorphism&lt;/h4&gt;
 &lt;p&gt;객체와 배경간의 구분을 그림자로만 구별하여 볼륨감 있고, 뭔가 클릭하고 싶어지는 느낌을 받게하는 디자인&lt;/p&gt;
 &lt;br /&gt;
 &lt;h5&gt;장점&lt;/h5&gt;
@@ -39240,15 +39240,15 @@
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;1&quot;
-        title=&quot;1&quot;
-        src=&quot;/static/80175574e44b45bce58c2c46e3583c9d/a6d36/1.png&quot;
-        srcset=&quot;/static/80175574e44b45bce58c2c46e3583c9d/222b7/1.png 163w,
-/static/80175574e44b45bce58c2c46e3583c9d/ff46a/1.png 325w,
-/static/80175574e44b45bce58c2c46e3583c9d/a6d36/1.png 650w,
-/static/80175574e44b45bce58c2c46e3583c9d/e548f/1.png 975w,
-/static/80175574e44b45bce58c2c46e3583c9d/3c492/1.png 1300w,
-/static/80175574e44b45bce58c2c46e3583c9d/9277d/1.png 2555w&quot;
+        alt=&quot;9 1&quot;
+        title=&quot;9 1&quot;
+        src=&quot;/static/80175574e44b45bce58c2c46e3583c9d/a6d36/9-1.png&quot;
+        srcset=&quot;/static/80175574e44b45bce58c2c46e3583c9d/222b7/9-1.png 163w,
+/static/80175574e44b45bce58c2c46e3583c9d/ff46a/9-1.png 325w,
+/static/80175574e44b45bce58c2c46e3583c9d/a6d36/9-1.png 650w,
+/static/80175574e44b45bce58c2c46e3583c9d/e548f/9-1.png 975w,
+/static/80175574e44b45bce58c2c46e3583c9d/3c492/9-1.png 1300w,
+/static/80175574e44b45bce58c2c46e3583c9d/9277d/9-1.png 2555w&quot;
         sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -39261,12 +39261,12 @@
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;  --toggleShadow:&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk5&quot;&gt;#dadada&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;-6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;-6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk5&quot;&gt;#ffffff&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;  --toggleHover:  &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;inset&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk5&quot;&gt;#dadada&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;inset&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;-6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;-6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk5&quot;&gt;#ffffff&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;img style=&quot;display:block;margin:auto;&quot; src=&quot;/c6de199d9932cc6c63942fd1daa857e8/3.gif&quot;&gt;
+&lt;img style=&quot;display:block;margin:auto;&quot; src=&quot;/c6de199d9932cc6c63942fd1daa857e8/9-3.gif&quot;&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;css&quot; data-index=&quot;1&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk12&quot;&gt;.dark&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; {&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;  --toggleShadow:&lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk5&quot;&gt;#2b2b2b&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;-6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;-6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk5&quot;&gt;#3b3b3b&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;  --toggleHover:  &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;inset&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk5&quot;&gt;#2b2b2b&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;mtk13&quot;&gt;inset&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;-6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;-6&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk5&quot;&gt;#3b3b3b&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;img style=&quot;display: block; margin: auto;&quot; src=&quot;/758e49987d5ba1479fd2a8791ddf4d27/2-1610907682018.gif&quot;&gt;
+&lt;img style=&quot;display: block; margin: auto;&quot; src=&quot;/758e49987d5ba1479fd2a8791ddf4d27/9-2.gif&quot;&gt;
 &lt;br /&gt;
 &lt;p&gt;사실 아직 덜 꾸민 블로그지만, 적당히 꾸민 것 같으니 앞으로는 알고리즘 공부나 자격증 등을 공부하는 것에 시간을 더 투자해야겠다는 생각이 들었다. 주말을 이용해 블로그를 꾸며야겠다.&lt;/p&gt;
 &lt;style class=&quot;grvsc-styles&quot;&gt;
@@ -39390,7 +39390,7 @@
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[ERROR::adsbygoogle.push()]]></title><description><![CDATA[ERROR adsbygoogle.push() 발생 Google Adsense 코드 loading 에러 원인 - 해결 나의 경우]]></description><link>https://tinnia.github.io/study/ERROR/2/</link><guid isPermaLink="false">https://tinnia.github.io/study/ERROR/2/</guid><pubDate>Sun, 17 Jan 2021 13:46:32 GMT</pubDate><content:encoded>&lt;h5&gt;ERROR&lt;/h5&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[ERROR::adsbygoogle.push()]]></title><description><![CDATA[ERROR adsbygoogle.push() 발생 Google Adsense 코드 loading 에러 원인 - 해결 나의 경우]]></description><link>https://tinnia.github.io/project/ERROR/2/</link><guid isPermaLink="false">https://tinnia.github.io/project/ERROR/2/</guid><pubDate>Sun, 17 Jan 2021 13:46:32 GMT</pubDate><content:encoded>&lt;h5&gt;ERROR&lt;/h5&gt;
 &lt;p&gt;adsbygoogle.push()&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h6&gt;발생&lt;/h6&gt;
@@ -39530,7 +39530,7 @@
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[ERROR::localStorage is not defined]]></title><description><![CDATA[ERROR localStorage is not defined 발생 gatsby develop 상태에서는 잘 돌아가던 코드가 build를 한 이후에 제대로 작동하지 않음 원인 React 서버의 랜더링 문제 때문이었는데 window, document…]]></description><link>https://tinnia.github.io/study/ERROR/1/</link><guid isPermaLink="false">https://tinnia.github.io/study/ERROR/1/</guid><pubDate>Sun, 17 Jan 2021 13:41:32 GMT</pubDate><content:encoded>&lt;h5&gt;ERROR&lt;/h5&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[ERROR::localStorage is not defined]]></title><description><![CDATA[ERROR localStorage is not defined 발생 gatsby develop 상태에서는 잘 돌아가던 코드가 build를 한 이후에 제대로 작동하지 않음 원인 React 서버의 랜더링 문제 때문이었는데 window, document…]]></description><link>https://tinnia.github.io/project/ERROR/1/</link><guid isPermaLink="false">https://tinnia.github.io/project/ERROR/1/</guid><pubDate>Sun, 17 Jan 2021 13:41:32 GMT</pubDate><content:encoded>&lt;h5&gt;ERROR&lt;/h5&gt;
 &lt;p&gt;localStorage is not defined&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h6&gt;발생&lt;/h6&gt;
@@ -40972,7 +40972,7 @@ return list(answer.keys())[0]&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[05. Google Adsense]]></title><description><![CDATA[너무 이르다고 생각이 들지만, 구글 애드센스를 미리 신청해볼까 하고 신청을 했었다.  다들 오래 걸릴 것이라고 생각하라고 하며, 구글 애드센스 고시에 합격하기 힘들다고 하셔서 겁도 많이 먹었는데,…]]></description><link>https://tinnia.github.io/portfolio/blog/7/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/7/</guid><pubDate>Tue, 05 Jan 2021 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;너무 이르다고 생각이 들지만, 구글 애드센스를 미리 신청해볼까 하고 신청을 했었다.  다들 오래 걸릴 것이라고 생각하라고 하며, 구글 애드센스 고시에 합격하기 힘들다고 하셔서 겁도 많이 먹었는데, 4일 만에 애드센스가 승인이 나버렸다. 사실 웹 관련 공부를 더 하고 깔끔한 블로그를 만든 뒤에나 합격할 줄 알았는데, 벌써 합격해버려서 요 며칠간 구글 애드센스 적용하는 방법을 또 배우고, 면접도 준비하느라 블로그가 너무 난잡해진 기분이다.  &lt;/p&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[07. Google Adsense]]></title><description><![CDATA[너무 이르다고 생각이 들지만, 구글 애드센스를 미리 신청해볼까 하고 신청을 했었다.  다들 오래 걸릴 것이라고 생각하라고 하며, 구글 애드센스 고시에 합격하기 힘들다고 하셔서 겁도 많이 먹었는데,…]]></description><link>https://tinnia.github.io/project/pjt/blog (7)/</link><guid isPermaLink="false">https://tinnia.github.io/project/pjt/blog (7)/</guid><pubDate>Tue, 05 Jan 2021 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;너무 이르다고 생각이 들지만, 구글 애드센스를 미리 신청해볼까 하고 신청을 했었다.  다들 오래 걸릴 것이라고 생각하라고 하며, 구글 애드센스 고시에 합격하기 힘들다고 하셔서 겁도 많이 먹었는데, 4일 만에 애드센스가 승인이 나버렸다. 사실 웹 관련 공부를 더 하고 깔끔한 블로그를 만든 뒤에나 합격할 줄 알았는데, 벌써 합격해버려서 요 며칠간 구글 애드센스 적용하는 방법을 또 배우고, 면접도 준비하느라 블로그가 너무 난잡해진 기분이다.  &lt;/p&gt;
 &lt;p&gt;오늘부터 또다시 공부해서 조금 더 나아진 블로그를 만들도록 해야겠다.  &lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;Google Adsense  &lt;/span&gt;&lt;/h2&gt;
@@ -41084,7 +41084,7 @@ return list(answer.keys())[0]&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[06. Dark Mode 구현]]></title><description><![CDATA[…]]></description><link>https://tinnia.github.io/portfolio/blog/8/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/8/</guid><pubDate>Tue, 05 Jan 2021 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.com/plugins/gatsby-plugin-dark-mode/&quot;&gt;공식사이트&lt;/a&gt;의 다크모드를 활용해 구현하였다.&lt;/p&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[08. Dark Mode 구현]]></title><description><![CDATA[…]]></description><link>https://tinnia.github.io/project/pjt/blog (8)/</link><guid isPermaLink="false">https://tinnia.github.io/project/pjt/blog (8)/</guid><pubDate>Tue, 05 Jan 2021 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.com/plugins/gatsby-plugin-dark-mode/&quot;&gt;공식사이트&lt;/a&gt;의 다크모드를 활용해 구현하였다.&lt;/p&gt;
 &lt;br /&gt;
 &lt;h5&gt;설치&lt;/h5&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;npm install gatsby-plugin-dark-mode&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -41292,7 +41292,7 @@ return list(answer.keys())[0]&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Kaggle] 01. kaggle]]></title><link>https://tinnia.github.io/portfolio/kaggle/1/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/kaggle/1/</guid><pubDate>Tue, 15 Dec 2020 02:15:32 GMT</pubDate><content:encoded>&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;kaggle&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[Kaggle] 01. kaggle]]></title><link>https://tinnia.github.io/project/kaggle/1/</link><guid isPermaLink="false">https://tinnia.github.io/project/kaggle/1/</guid><pubDate>Tue, 15 Dec 2020 02:15:32 GMT</pubDate><content:encoded>&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;sh&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk1&quot;&gt;kaggle&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;style class=&quot;grvsc-styles&quot;&gt;
   .grvsc-container {
     overflow: auto;
@@ -45940,8 +45940,8 @@ return list(answer.keys())[0]&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[04. 페이지 만들기 - URL]]></title><description><![CDATA[URL로 쓸 수 없는 것  , , ,  와 같은 단어가 포함되면,
- ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.]]></description><link>https://tinnia.github.io/portfolio/blog/6/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/6/</guid><pubDate>Wed, 11 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h5&gt;URL로 쓸 수 없는 것&lt;/h5&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[06. 페이지 만들기 - URL]]></title><description><![CDATA[URL로 쓸 수 없는 것  , , ,  와 같은 단어가 포함되면,
+ ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.]]></description><link>https://tinnia.github.io/project/pjt/blog (6)/</link><guid isPermaLink="false">https://tinnia.github.io/project/pjt/blog (6)/</guid><pubDate>Wed, 11 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h5&gt;URL로 쓸 수 없는 것&lt;/h5&gt;
 &lt;p&gt; &lt;code class=&quot;language-text&quot;&gt;advert&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;ad&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;doubleclick&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;click&lt;/code&gt; 와 같은 단어가 포함되면,
 ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.&lt;/p&gt;
 &lt;br /&gt;
@@ -46212,7 +46212,7 @@ ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.&lt;/p&gt
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[03. Font 바꾸기 & Icon 넣기]]></title><description><![CDATA[Gatsby + React Font 바꾸기  - local에서 폰트 바꾸기 1️⃣ 폰트 저장할 폴더 만들기  - src에 fonts 폴더 만들기 2️⃣ 원하는 폰트를 골라 다운로드하기  - 눈누에서 다운받음 3️⃣ style.css에서 수정…]]></description><link>https://tinnia.github.io/portfolio/blog/5/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/5/</guid><pubDate>Fri, 06 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React Font 바꾸기&lt;/h4&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[05. Font 바꾸기 & Icon 넣기]]></title><description><![CDATA[Gatsby + React Font 바꾸기  - local에서 폰트 바꾸기 1️⃣ 폰트 저장할 폴더 만들기  - src에 fonts 폴더 만들기 2️⃣ 원하는 폰트를 골라 다운로드하기  - 눈누에서 다운받음 3️⃣ style.css에서 수정…]]></description><link>https://tinnia.github.io/project/pjt/blog (5)/</link><guid isPermaLink="false">https://tinnia.github.io/project/pjt/blog (5)/</guid><pubDate>Fri, 06 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React Font 바꾸기&lt;/h4&gt;
 &lt;p&gt; - local에서 폰트 바꾸기&lt;/p&gt;
 &lt;h5&gt;1️⃣ 폰트 저장할 폴더 만들기&lt;/h5&gt;
 &lt;p&gt; - src에 fonts 폴더 만들기&lt;/p&gt;
@@ -46389,7 +46389,7 @@ ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.&lt;/p&gt
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[02. 페이지 만들기]]></title><description><![CDATA[Gatsby + React Todo 페이지 만들기 1️⃣ js파일 만들기  - src/pages에 todo.js 만들기 2️⃣ js 파일 원하는 모습으로 꾸미기]]></description><link>https://tinnia.github.io/portfolio/blog/4/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/4/</guid><pubDate>Wed, 04 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React Todo 페이지 만들기&lt;/h4&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[04. 페이지 만들기]]></title><description><![CDATA[Gatsby + React Todo 페이지 만들기 1️⃣ js파일 만들기  - src/pages에 todo.js 만들기 2️⃣ js 파일 원하는 모습으로 꾸미기]]></description><link>https://tinnia.github.io/project/pjt/blog (4)/</link><guid isPermaLink="false">https://tinnia.github.io/project/pjt/blog (4)/</guid><pubDate>Wed, 04 Nov 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React Todo 페이지 만들기&lt;/h4&gt;
 &lt;h5&gt;1️⃣ js파일 만들기&lt;/h5&gt;
 &lt;p&gt; - src/pages에 todo.js 만들기&lt;/p&gt;
 &lt;h5&gt;2️⃣ js 파일 원하는 모습으로 꾸미기&lt;/h5&gt;
@@ -46544,7 +46544,7 @@ ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.&lt;/p&gt
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[01. Blog 제작]]></title><description><![CDATA[Gatsby + React + gh-pages로 블로그 만들기 ❤️ 준비 1️⃣ Gatsby 설치 2️⃣ Gatsby 프로젝트 만들기   - 테마는 생략 가능하지만 빠른 시작을 위해서는 여기에서 테마를 선택하는 것이 좋다. 3️⃣ Gatsby…]]></description><link>https://tinnia.github.io/portfolio/blog/3/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/3/</guid><pubDate>Sun, 25 Oct 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React + gh-pages로 블로그 만들기&lt;/h4&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[03. Blog 제작]]></title><description><![CDATA[Gatsby + React + gh-pages로 블로그 만들기 ❤️ 준비 1️⃣ Gatsby 설치 2️⃣ Gatsby 프로젝트 만들기   - 테마는 생략 가능하지만 빠른 시작을 위해서는 여기에서 테마를 선택하는 것이 좋다. 3️⃣ Gatsby…]]></description><link>https://tinnia.github.io/project/pjt/blog (3)/</link><guid isPermaLink="false">https://tinnia.github.io/project/pjt/blog (3)/</guid><pubDate>Sun, 25 Oct 2020 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;Gatsby + React + gh-pages로 블로그 만들기&lt;/h4&gt;
 &lt;h6&gt;❤️ 준비&lt;/h6&gt;
 &lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;shell&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;node.js&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;npm&lt;/span&gt;&lt;/span&gt;
@@ -46709,334 +46709,7 @@ ADBLOCK과 같은 프로그램에 의해 사이트가 막히게 된다.&lt;/p&gt
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[HELLO WORLD]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://tinnia.github.io/hello-world/</link><guid isPermaLink="false">https://tinnia.github.io/hello-world/</guid><pubDate>Thu, 15 Oct 2020 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
-&lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
-&lt;p&gt;Oh, and here’s a great quote from this Wikipedia on
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A salted duck egg is a Chinese preserved food product made by soaking duck
-eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-charcoal paste. The eggs may also be sold with the salted paste removed,
-wrapped in plastic, and vacuum packed. From the salt curing process, the
-salted duck eggs have a briny aroma, a gelatin-like egg white and a
-firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 74.84662576687117%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEEBf/aAAwDAQACEAMQAAABgik0dXC//8QAGRABAAMBAQAAAAAAAAAAAAAAAQACEhEy/9oACAEBAAEFAkqW2DlnRj73yf/EABcRAQADAAAAAAAAAAAAAAAAAAAREkH/2gAIAQMBAT8B1WX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQL/2gAIAQIBAT8Bi6f/xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRISIxMv/aAAgBAQAGPwK9GNocyS8hCj//xAAbEAADAQADAQAAAAAAAAAAAAABESEAMUGBof/aAAgBAQABPyGxNMfrLHmCDZmAzzvJJDjEQCHv/9oADAMBAAIAAwAAABDIL//EABYRAQEBAAAAAAAAAAAAAAAAAAERAP/aAAgBAwEBPxARhylZv//EABgRAAIDAAAAAAAAAAAAAAAAAAABESFR/9oACAECAQE/EFoktI//xAAdEAEBAAICAwEAAAAAAAAAAAABEQAxIWFBcYHh/9oACAEBAAE/EEbMLQ0fMHDVaPIXyI4pk4JUnWacNCtO8ojDE9TGIYES7/Jn/9k=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Chinese Salty Egg&quot;
-        title=&quot;Chinese Salty Egg&quot;
-        src=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/6aca1/salty_egg.jpg&quot;
-        srcset=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/d2f63/salty_egg.jpg 163w,
-/static/8058f3f26913fea3b6a89a73344fe94a/c989d/salty_egg.jpg 325w,
-/static/8058f3f26913fea3b6a89a73344fe94a/6aca1/salty_egg.jpg 650w,
-/static/8058f3f26913fea3b6a89a73344fe94a/7c09c/salty_egg.jpg 975w,
-/static/8058f3f26913fea3b6a89a73344fe94a/01ab0/salty_egg.jpg 1300w,
-/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg 2048w&quot;
-        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;You can also write code blocks here!&lt;/p&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;js&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk11&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;saltyDuckEgg&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk15&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mtk1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt;&amp;quot;chinese preserved food product&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;left&quot;&gt;Number&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;Title&lt;/th&gt;
-&lt;th align=&quot;right&quot;&gt;Year&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;1&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Harry Potter and the Philosopher’s Stone&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;2001&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;2&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Harry Potter and the Chamber of Secrets&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;2002&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;3&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Harry Potter and the Prisoner of Azkaban&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;2004&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;a href=&quot;https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md&quot;&gt;View raw (TEST.md)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This is a paragraph.&lt;/p&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;1&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;This is a paragraph.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h1&gt;Header 1&lt;/h1&gt;
-&lt;h2&gt;Header 2&lt;/h2&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;2&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;Header 1&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;========&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;Header 2&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;--------&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h1&gt;Header 1&lt;/h1&gt;
-&lt;h2&gt;Header 2&lt;/h2&gt;
-&lt;h3&gt;Header 3&lt;/h3&gt;
-&lt;h4&gt;Header 4&lt;/h4&gt;
-&lt;h5&gt;Header 5&lt;/h5&gt;
-&lt;h6&gt;Header 6&lt;/h6&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;3&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;# Header 1&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;## Header 2&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;### Header 3&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;#### Header 4&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;##### Header 5&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;###### Header 6&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h1&gt;Header 1&lt;/h1&gt;
-&lt;h2&gt;Header 2&lt;/h2&gt;
-&lt;h3&gt;Header 3&lt;/h3&gt;
-&lt;h4&gt;Header 4&lt;/h4&gt;
-&lt;h5&gt;Header 5&lt;/h5&gt;
-&lt;h6&gt;Header 6&lt;/h6&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;4&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;# Header 1 #&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;## Header 2 ##&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;### Header 3 ###&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;#### Header 4 ####&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;##### Header 5 #####&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;###### Header 6 ######&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;5&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&amp;gt; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
-&lt;h2&gt;This is a header.&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;This is the first list item.&lt;/li&gt;
-&lt;li&gt;This is the second list item.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Here’s some example code:&lt;/p&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;6&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;Markdown.generate();&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/blockquote&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;7&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&amp;gt; ## This is a header.&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&amp;gt; 1. This is the first list item.&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&amp;gt; 2. This is the second list item.&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&amp;gt; Here&amp;#39;s some example code:&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&amp;gt;     Markdown.generate();&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;Red&lt;/li&gt;
-&lt;li&gt;Green&lt;/li&gt;
-&lt;li&gt;Blue&lt;/li&gt;
-&lt;li&gt;Red&lt;/li&gt;
-&lt;li&gt;Green&lt;/li&gt;
-&lt;li&gt;Blue&lt;/li&gt;
-&lt;li&gt;Red&lt;/li&gt;
-&lt;li&gt;Green&lt;/li&gt;
-&lt;li&gt;Blue&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;markdown&quot; data-index=&quot;8&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;- Red&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;- Green&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;- Blue&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;* Red&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;* Green&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;* Blue&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;- Red&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;- Green&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;- Blue&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;code goes&lt;/code&gt; here in this line&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;bold&lt;/strong&gt; goes here&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;markdown&quot; data-index=&quot;9&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;mtk20&quot;&gt;`code goes`&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt; here in this line&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;**bold**&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt; goes here&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;ol&gt;
-&lt;li&gt;Buy flour and salt&lt;/li&gt;
-&lt;li&gt;Mix together with water&lt;/li&gt;
-&lt;li&gt;Bake&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;markdown&quot; data-index=&quot;10&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;1. Buy flour and salt&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;1. Mix together with water&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;1. Bake&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;code goes&lt;/code&gt; here in this line&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;bold&lt;/strong&gt; goes here&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;markdown&quot; data-index=&quot;11&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;1. &lt;/span&gt;&lt;span class=&quot;mtk20&quot;&gt;`code goes`&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt; here in this line&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;mtk8&quot;&gt;1. &lt;/span&gt;&lt;span class=&quot;mtk3&quot;&gt;**bold**&lt;/span&gt;&lt;span class=&quot;mtk8&quot;&gt; goes here&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Paragraph:&lt;/p&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;12&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;Code&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;!-- --&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;13&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;Paragraph:&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;    Code&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;14&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;* * *&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;***&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;*****&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;- - -&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;---------------------------------------&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This is &lt;a href=&quot;http://example.com&quot; title=&quot;Example&quot;&gt;an example&lt;/a&gt; link.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://example.com&quot;&gt;This link&lt;/a&gt; has no title attr.&lt;/p&gt;
-&lt;p&gt;This is &lt;a href=&quot;http://example.com&quot; title=&quot;Optional Title&quot;&gt;an example&lt;/a&gt; reference-style link.&lt;/p&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;15&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;This is [an example](http://example.com &amp;quot;Example&amp;quot;) link.&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;[This link](http://example.com) has no title attr.&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;This is [an example] [id] reference-style link.&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;[id]: http://example.com &amp;quot;Optional Title&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;single underscores&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;double underscores&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;16&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;*single asterisks*&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;_single underscores_&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;**double asterisks**&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;__double underscores__&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This paragraph has some &lt;code class=&quot;language-text&quot;&gt;code&lt;/code&gt; in it.&lt;/p&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;17&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;This paragraph has some `code` in it.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://placehold.it/200x50&quot; alt=&quot;Alt Text&quot; title=&quot;Image Title&quot;&gt;&lt;/p&gt;
-&lt;pre class=&quot;grvsc-container monokai-dimmed grvsc-mm-tuw09S&quot; data-language=&quot;&quot; data-index=&quot;18&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;![Alt Text](https://placehold.it/200x50 &amp;quot;Image Title&amp;quot;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;style class=&quot;grvsc-styles&quot;&gt;
-  .grvsc-container {
-    overflow: auto;
-    position: relative;
-    -webkit-overflow-scrolling: touch;
-    padding-top: 1rem;
-    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
-    padding-bottom: 1rem;
-    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
-    border-radius: 8px;
-    border-radius: var(--grvsc-border-radius, 8px);
-    font-feature-settings: normal;
-    line-height: 1.4;
-  }
-  
-  .grvsc-code {
-    display: table;
-  }
-  
-  .grvsc-line {
-    display: table-row;
-    box-sizing: border-box;
-    width: 100%;
-    position: relative;
-  }
-  
-  .grvsc-line &gt; * {
-    position: relative;
-  }
-  
-  .grvsc-gutter-pad {
-    display: table-cell;
-    padding-left: 0.75rem;
-    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
-  }
-  
-  .grvsc-gutter {
-    display: table-cell;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  .grvsc-gutter::before {
-    content: attr(data-content);
-  }
-  
-  .grvsc-source {
-    display: table-cell;
-    padding-left: 1.5rem;
-    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
-    padding-right: 1.5rem;
-    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
-  }
-  
-  .grvsc-source:empty::after {
-    content: &apos; &apos;;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  .grvsc-gutter + .grvsc-source {
-    padding-left: 0.75rem;
-    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
-  }
-  
-  /* Line transformer styles */
-  
-  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
-    content: &apos; &apos;;
-    position: absolute;
-    width: 100%;
-  }
-  
-  .grvsc-line-diff-add::before {
-    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
-  }
-  
-  .grvsc-line-diff-del::before {
-    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
-  }
-  
-  .grvsc-line-number {
-    padding: 0 2px;
-    text-align: right;
-    opacity: 0.7;
-  }
-  
-  .monokai-dimmed {
-    background-color: #1e1e1e;
-    color: #c5c8c6;
-  }
-  .monokai-dimmed .mtk11 { color: #9872A2; }
-  .monokai-dimmed .mtk1 { color: #C5C8C6FF; }
-  .monokai-dimmed .mtk3 { color: #6089B4; }
-  .monokai-dimmed .mtk15 { color: #676867; }
-  .monokai-dimmed .mtk8 { color: #9AA83A; }
-  .monokai-dimmed .mtk20 { color: #FF0080; }
-  .monokai-dimmed .grvsc-line-highlighted::before {
-    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
-    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
-  }
-  
-  /* Monokai Dimmed */
-  @media (prefers-color-scheme: dark) {
-    .grvsc-mm-tuw09S {
-      background-color: #1e1e1e;
-      color: #c5c8c6;
-    }
-    .grvsc-mm-tuw09S .mtk11 { color: #9872A2; }
-    .grvsc-mm-tuw09S .mtk1 { color: #C5C8C6FF; }
-    .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
-    .grvsc-mm-tuw09S .mtk15 { color: #676867; }
-    .grvsc-mm-tuw09S .mtk8 { color: #9AA83A; }
-    .grvsc-mm-tuw09S .mtk20 { color: #FF0080; }
-    .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
-      background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
-      box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
-    }
-  }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 합격후기]]></title><description><![CDATA[우와아아 12월 17일 오후 2시 1…]]></description><link>https://tinnia.github.io/portfolio/ETC/SSAFY_4/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/ETC/SSAFY_4/</guid><pubDate>Thu, 26 Dec 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 합격후기]]></title><description><![CDATA[우와아아 12월 17일 오후 2시 1…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_4/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_4/</guid><pubDate>Thu, 26 Dec 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
     &gt;
@@ -47185,7 +46858,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 면접]]></title><description><![CDATA[2019년 12월…]]></description><link>https://tinnia.github.io/portfolio/ETC/SSAFY_3/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/ETC/SSAFY_3/</guid><pubDate>Thu, 05 Dec 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 면접]]></title><description><![CDATA[2019년 12월…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_3/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_3/</guid><pubDate>Thu, 05 Dec 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
     &gt;
@@ -47309,7 +46982,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[00. Blog를 위한 CSS]]></title><description><![CDATA[2. CSS  오늘은 CSS에 대해 배웠다.   먼저, html은 쉽게 배울 수 있지만, 가장 중요한 기초가 된다. 그리고, CSS는 HTML이 WEB의 정보에 집중할 수 있게, 디자인적 요소를 맡고 있다.   간단하게, 몇 가지 Tag…]]></description><link>https://tinnia.github.io/portfolio/blog/2/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/2/</guid><pubDate>Wed, 27 Nov 2019 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;2. CSS &lt;/span&gt;&lt;/h4&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[02. Blog를 위한 CSS]]></title><description><![CDATA[2. CSS  오늘은 CSS에 대해 배웠다.   먼저, html은 쉽게 배울 수 있지만, 가장 중요한 기초가 된다. 그리고, CSS는 HTML이 WEB의 정보에 집중할 수 있게, 디자인적 요소를 맡고 있다.   간단하게, 몇 가지 Tag…]]></description><link>https://tinnia.github.io/project/pjt/blog (2)/</link><guid isPermaLink="false">https://tinnia.github.io/project/pjt/blog (2)/</guid><pubDate>Wed, 27 Nov 2019 02:15:32 GMT</pubDate><content:encoded>&lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;2. CSS &lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;오늘은 &lt;strong&gt;CSS&lt;/strong&gt;에 대해 배웠다.  &lt;/p&gt;
 &lt;p&gt;먼저, html은 쉽게 배울 수 있지만, 가장 중요한 기초가 된다.&lt;br&gt;
 그리고, CSS는 HTML이 WEB의 정보에 집중할 수 있게, 디자인적 요소를 맡고 있다.  &lt;/p&gt;
@@ -47594,7 +47267,7 @@ id(#) → class(.) → Tag(a,h1,ol…)&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[00. Blog를 위한 HTML]]></title><description><![CDATA[블로그를 시작하게 되었을 때, html 수정을 많이 할 것이라는 생각은 못 했던 것 같다. 물론 수정을 하더라도, 구글이나 네이버에 검색하면 바로바로 나올 것이라고 생각했는데… 생각외로 Hugo를 사용하여 Github…]]></description><link>https://tinnia.github.io/portfolio/blog/1/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/blog/1/</guid><pubDate>Tue, 26 Nov 2019 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;블로그를 시작하게 되었을 때, html 수정을 많이 할 것이라는 생각은 못 했던 것 같다.&lt;br&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[01. Blog를 위한 HTML]]></title><description><![CDATA[블로그를 시작하게 되었을 때, html 수정을 많이 할 것이라는 생각은 못 했던 것 같다. 물론 수정을 하더라도, 구글이나 네이버에 검색하면 바로바로 나올 것이라고 생각했는데… 생각외로 Hugo를 사용하여 Github…]]></description><link>https://tinnia.github.io/project/pjt/blog (1)/</link><guid isPermaLink="false">https://tinnia.github.io/project/pjt/blog (1)/</guid><pubDate>Tue, 26 Nov 2019 02:15:32 GMT</pubDate><content:encoded>&lt;p&gt;블로그를 시작하게 되었을 때, html 수정을 많이 할 것이라는 생각은 못 했던 것 같다.&lt;br&gt;
 물론 수정을 하더라도, 구글이나 네이버에 검색하면 바로바로 나올 것이라고 생각했는데…&lt;br&gt;
 생각외로 Hugo를 사용하여 Github 블로그를 만든 분들이 많이 없었다. &lt;strong&gt;깃허브 블로그&lt;/strong&gt; 라고 검색하면, 지킬을 활용한 블로그들이 대다수이기 때문에 찾기도 힘들다.&lt;br&gt;
 하지만 현재는 나도 Hugo 대신 Gatsby를 활용한 블로그를 꾸미고 있다.&lt;/p&gt;
@@ -47836,7 +47509,7 @@ id(#) → class(.) → Tag(a,h1,ol…)&lt;/p&gt;
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
     }
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 사전학습]]></title><description><![CDATA[11월 16일 12시에 SW적성진단을 쳤다.   1과목인 수리/추리 논리는 진짜 정말 잘 친 것 같아서 걱정이 없었는데, 문제는…]]></description><link>https://tinnia.github.io/portfolio/ETC/SSAFY_2/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/ETC/SSAFY_2/</guid><pubDate>Fri, 22 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 사전학습]]></title><description><![CDATA[11월 16일 12시에 SW적성진단을 쳤다.   1과목인 수리/추리 논리는 진짜 정말 잘 친 것 같아서 걱정이 없었는데, 문제는…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_2/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_2/</guid><pubDate>Fri, 22 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
     &gt;
@@ -47965,7 +47638,7 @@ id(#) → class(.) → Tag(a,h1,ol…)&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[42seoul] 서류지원 + 적성진단]]></title><description><![CDATA[42SEOUL 지원 요강 지원대상 : 2020년 1월 1일 기준 민법상 성인 또는 2020년 3월 1일 기준 고졸 이상의 학력자 모집기간 : 2019.11.01. ~ 11.30. 접수방법 : 온라인 접수 교육기간 :…]]></description><link>https://tinnia.github.io/portfolio/ETC/42SEOUL_0/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/ETC/42SEOUL_0/</guid><pubDate>Sun, 17 Nov 2019 15:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;42SEOUL&lt;/span&gt;&lt;/h2&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[42seoul] 서류지원 + 적성진단]]></title><description><![CDATA[42SEOUL 지원 요강 지원대상 : 2020년 1월 1일 기준 민법상 성인 또는 2020년 3월 1일 기준 고졸 이상의 학력자 모집기간 : 2019.11.01. ~ 11.30. 접수방법 : 온라인 접수 교육기간 :…]]></description><link>https://tinnia.github.io/study/ETC/42SEOUL_0/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/42SEOUL_0/</guid><pubDate>Sun, 17 Nov 2019 15:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;42SEOUL&lt;/span&gt;&lt;/h2&gt;
 &lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;지원 요강&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;지원대상&lt;/span&gt;&lt;/strong&gt; : 2020년 1월 1일 기준 민법상 성인 또는 2020년 3월 1일 기준 고졸 이상의 학력자&lt;br&gt;
 &lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;모집기간&lt;/span&gt;&lt;/strong&gt; : 2019.11.01. ~ 11.30.&lt;br&gt;
@@ -48153,7 +47826,7 @@ id(#) → class(.) → Tag(a,h1,ol…)&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 적성진단]]></title><description><![CDATA[삼성 SW 아카데미 3기 모집 지원 요강 대상 : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자 모집기간 : 2019.10.28. ~ 11.11. 교육기간 : 2020.01.06. ~ 12.31. 교육장소 : 전국…]]></description><link>https://tinnia.github.io/portfolio/ETC/SSAFY_1/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/ETC/SSAFY_1/</guid><pubDate>Sun, 17 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;삼성 SW 아카데미 3기 모집&lt;/h2&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 적성진단]]></title><description><![CDATA[삼성 SW 아카데미 3기 모집 지원 요강 대상 : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자 모집기간 : 2019.10.28. ~ 11.11. 교육기간 : 2020.01.06. ~ 12.31. 교육장소 : 전국…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_1/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_1/</guid><pubDate>Sun, 17 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;삼성 SW 아카데미 3기 모집&lt;/h2&gt;
 &lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;지원 요강&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;대상&lt;/span&gt;&lt;/strong&gt; : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자&lt;br&gt;
 &lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;모집기간&lt;/span&gt;&lt;/strong&gt; : 2019.10.28. ~ 11.11.&lt;br&gt;
@@ -48273,7 +47946,7 @@ id(#) → class(.) → Tag(a,h1,ol…)&lt;/p&gt;
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 서류지원]]></title><description><![CDATA[삼성 SW 아카데미 3기 모집 지원 요강 대상 : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자 모집기간 : 2019.10.28. ~ 11.11. 교육기간 : 2020.01.06. ~ 12.31. 교육장소 : 전국…]]></description><link>https://tinnia.github.io/portfolio/ETC/SSAFY_0/</link><guid isPermaLink="false">https://tinnia.github.io/portfolio/ETC/SSAFY_0/</guid><pubDate>Mon, 11 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;삼성 SW 아카데미 3기 모집&lt;/span&gt;&lt;/h2&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[SSAFY] 삼성청년SW아카데미 3기 | 서류지원]]></title><description><![CDATA[삼성 SW 아카데미 3기 모집 지원 요강 대상 : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자 모집기간 : 2019.10.28. ~ 11.11. 교육기간 : 2020.01.06. ~ 12.31. 교육장소 : 전국…]]></description><link>https://tinnia.github.io/study/ETC/SSAFY_0/</link><guid isPermaLink="false">https://tinnia.github.io/study/ETC/SSAFY_0/</guid><pubDate>Mon, 11 Nov 2019 13:41:32 GMT</pubDate><content:encoded>&lt;h2&gt;&lt;span style=&quot;color:#505F66&quot;&gt;삼성 SW 아카데미 3기 모집&lt;/span&gt;&lt;/h2&gt;
 &lt;h4&gt;&lt;span style=&quot;color:#6D838C&quot;&gt;지원 요강&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;대상&lt;/span&gt;&lt;/strong&gt; : 국내외 4년제 대학(학사이상) 졸업자 중 만 29세 이하 미취업자&lt;br&gt;
 &lt;strong&gt;&lt;span style=&quot;color:#819BA6&quot;&gt;모집기간&lt;/span&gt;&lt;/strong&gt; : 2019.10.28. ~ 11.11.&lt;br&gt;
