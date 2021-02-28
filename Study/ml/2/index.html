@@ -514,34 +514,25 @@ void function() {
 <pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="2"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk11">import</span><span class="mtk1"> pandas </span><span class="mtk11">as</span><span class="mtk1"> pd</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 보통 pd라는 별칭으로 호출</span></span></span></code></pre>
 <br />
-<h5>사용해본 코드</h5>
-<ul>
-<li>
-<p>head, tail</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="3"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df </span><span class="mtk15">=</span><span class="mtk1"> 데이터프레임 형태 (</span><span class="mtk3">column</span><span class="mtk1"> </span><span class="mtk15">=</span><span class="mtk1"> series라고 불림)</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.head()	</span><span class="mtk4"># 처음 5줄 출력</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.tail()	</span><span class="mtk4"># 마지막 5줄 출력</span></span></span></code></pre>
-</li>
-<li>
-<p>Series</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="4"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">lst </span><span class="mtk15">=</span><span class="mtk1"> [</span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk3">5</span><span class="mtk1">, </span><span class="mtk3">7</span><span class="mtk1">, </span><span class="mtk3">9</span><span class="mtk1">]</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">obj </span><span class="mtk15">=</span><span class="mtk1"> Series(</span><span class="mtk3">data</span><span class="mtk15">=</span><span class="mtk1">lst)</span></span></span>
+<h5>함수</h5>
+<h6>Series</h6>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="3"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">obj </span><span class="mtk15">=</span><span class="mtk1"> pd.Series([</span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk3">5</span><span class="mtk1">, </span><span class="mtk3">7</span><span class="mtk1">, </span><span class="mtk3">9</span><span class="mtk1">])</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">obj</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># index data</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 0 1</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 1 3</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 2 5</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 3 7</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 4 9</span></span></span></code></pre>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="5"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">lst </span><span class="mtk15">=</span><span class="mtk1"> [</span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk3">5</span><span class="mtk1">, </span><span class="mtk3">7</span><span class="mtk1">, </span><span class="mtk3">9</span><span class="mtk1">]</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">lst_name </span><span class="mtk15">=</span><span class="mtk1"> [</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;c&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;d&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;e&#39;</span><span class="mtk1">]</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">obj </span><span class="mtk15">=</span><span class="mtk1"> Series(</span><span class="mtk3">data</span><span class="mtk15">=</span><span class="mtk1">lst, </span><span class="mtk3">index</span><span class="mtk15">=</span><span class="mtk1">lst_name)</span></span></span>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="4"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">obj </span><span class="mtk15">=</span><span class="mtk1"> pd.Series([</span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk3">5</span><span class="mtk1">, </span><span class="mtk3">7</span><span class="mtk1">, </span><span class="mtk3">9</span><span class="mtk1">], [</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;c&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;d&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;e&#39;</span><span class="mtk1">])</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">obj</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># index data</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># a 1</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># b 3</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># c 5</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># d 7</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># e 9</span></span></span></code></pre>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="6"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">dic </span><span class="mtk15">=</span><span class="mtk1"> {</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">:</span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">:</span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk8">&#39;c&#39;</span><span class="mtk1">:</span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk8">&#39;d&#39;</span><span class="mtk1">:</span><span class="mtk3">4</span><span class="mtk1">, </span><span class="mtk8">&#39;e&#39;</span><span class="mtk1">:</span><span class="mtk3">5</span><span class="mtk1">}</span></span></span>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="5"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">dic </span><span class="mtk15">=</span><span class="mtk1"> {</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">:</span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">:</span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk8">&#39;c&#39;</span><span class="mtk1">:</span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk8">&#39;d&#39;</span><span class="mtk1">:</span><span class="mtk3">4</span><span class="mtk1">, </span><span class="mtk8">&#39;e&#39;</span><span class="mtk1">:</span><span class="mtk3">5</span><span class="mtk1">}</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">obj </span><span class="mtk15">=</span><span class="mtk1"> Series(dic)</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># index data</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># a 1</span></span></span>
@@ -549,10 +540,10 @@ void function() {
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># c 5</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># d 7</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># e 9</span></span></span></code></pre>
-</li>
+<ul>
 <li>
 <p>index</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="7"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">dic </span><span class="mtk15">=</span><span class="mtk1"> {</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">:</span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">:</span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk8">&#39;c&#39;</span><span class="mtk1">:</span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk8">&#39;d&#39;</span><span class="mtk1">:</span><span class="mtk3">4</span><span class="mtk1">, </span><span class="mtk8">&#39;e&#39;</span><span class="mtk1">:</span><span class="mtk3">5</span><span class="mtk1">}</span></span></span>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="6"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">dic </span><span class="mtk15">=</span><span class="mtk1"> {</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">:</span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">:</span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk8">&#39;c&#39;</span><span class="mtk1">:</span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk8">&#39;d&#39;</span><span class="mtk1">:</span><span class="mtk3">4</span><span class="mtk1">, </span><span class="mtk8">&#39;e&#39;</span><span class="mtk1">:</span><span class="mtk3">5</span><span class="mtk1">}</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">obj </span><span class="mtk15">=</span><span class="mtk1"> Series(dic)</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">obj[</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">]</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 1</span></span></span>
@@ -563,7 +554,7 @@ void function() {
 </li>
 <li>
 <p>key, val</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="8"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">dic </span><span class="mtk15">=</span><span class="mtk1"> {</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">:</span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">:</span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk8">&#39;c&#39;</span><span class="mtk1">:</span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk8">&#39;d&#39;</span><span class="mtk1">:</span><span class="mtk3">4</span><span class="mtk1">, </span><span class="mtk8">&#39;e&#39;</span><span class="mtk1">:</span><span class="mtk3">5</span><span class="mtk1">}</span></span></span>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="7"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">dic </span><span class="mtk15">=</span><span class="mtk1"> {</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">:</span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">:</span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk8">&#39;c&#39;</span><span class="mtk1">:</span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk8">&#39;d&#39;</span><span class="mtk1">:</span><span class="mtk3">4</span><span class="mtk1">, </span><span class="mtk8">&#39;e&#39;</span><span class="mtk1">:</span><span class="mtk3">5</span><span class="mtk1">}</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">obj </span><span class="mtk15">=</span><span class="mtk1"> Series(dic)</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">obj.values</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># array([1, 2, 3, 4, 5])</span></span></span>
@@ -572,71 +563,276 @@ void function() {
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># Index([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;])</span></span></span></code></pre>
 </li>
 <li>
-<p>DataFrame</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="9"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df </span><span class="mtk15">=</span><span class="mtk1"> pd.DataFrame(data, </span><span class="mtk3">columns</span><span class="mtk15">=</span><span class="mtk1">[</span><span class="mtk8">&#39;col1&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;col2&#39;</span><span class="mtk1">,</span><span class="mtk8">&#39;col3&#39;</span><span class="mtk1">])</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.col1 </span><span class="mtk15">=</span><span class="mtk1"> df[</span><span class="mtk8">&#39;col1&#39;</span><span class="mtk1">]	</span><span class="mtk4"># col1 선택</span></span></span></code></pre>
+<p>size, shape, unique, count, mean, value_counts</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="8"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">s </span><span class="mtk15">=</span><span class="mtk1"> pd.Series([</span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk3">4</span><span class="mtk1">, </span><span class="mtk3">5</span><span class="mtk1">, </span><span class="mtk3">5</span><span class="mtk1">, </span><span class="mtk3">7</span><span class="mtk1">, np.NaN])</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">s</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 0     1.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 1     1.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 2     2.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 3     1.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 4     2.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 5     2.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 6     2.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 7     1.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 8     1.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 9     3.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 10    3.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 11    4.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 12    5.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 13    5.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 14    7.0</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 15    NaN</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">s.size	</span><span class="mtk4"># 16</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">s.shape	</span><span class="mtk4"># (16, )</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">s.unique()	</span><span class="mtk4"># array([ 1.,  2.,  3.,  4.,  5.,  7., nan])</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">s.count()	</span><span class="mtk4"># 15	(NaN을 제외한 개수)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">s.mean()	</span><span class="mtk4"># 2.666666..</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">s.value_counts()	</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 1.0    5</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 2.0    4</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 3.0    2</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 5.0    2</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 7.0    1</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 4.0    1</span></span></span></code></pre>
 </li>
 <li>
-<p>loc, iloc</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="10"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.loc[</span><span class="mtk3">1</span><span class="mtk1">]	</span><span class="mtk4"># index location</span></span></span>
+<p>head, tail</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="9"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df </span><span class="mtk15">=</span><span class="mtk1"> 데이터프레임 형태 (</span><span class="mtk3">column</span><span class="mtk1"> </span><span class="mtk15">=</span><span class="mtk1"> series라고 불림)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.head()	</span><span class="mtk4"># 처음 5줄 출력</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.tail()	</span><span class="mtk4"># 마지막 5줄 출력</span></span></span></code></pre>
+</li>
+</ul>
+<h6>연산</h6>
+<ul>
+<li>
+<p>index 기준 연산</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="10"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">s1 </span><span class="mtk15">=</span><span class="mtk1"> pd.Series([</span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk3">4</span><span class="mtk1">], [</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;c&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;d&#39;</span><span class="mtk1">])</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">s2 </span><span class="mtk15">=</span><span class="mtk1"> pd.Series([</span><span class="mtk3">6</span><span class="mtk1">, </span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk3">2</span><span class="mtk1">, </span><span class="mtk3">1</span><span class="mtk1">], [</span><span class="mtk8">&#39;d&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;c&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">])</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">s1 </span><span class="mtk15">+</span><span class="mtk1"> s2</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># a     2</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># b     4</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># c     6</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># d    10</span></span></span></code></pre>
+</li>
+<li>
+<p>스칼라와의 연산</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="11"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">s1 </span><span class="mtk15">**</span><span class="mtk1"> </span><span class="mtk3">2</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># a     1</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># b     4</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># c     9</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># d    16</span></span></span></code></pre>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="12"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">s1 </span><span class="mtk15">**</span><span class="mtk1"> s2</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># a 1</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># b	4</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># c 27</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># d 4096</span></span></span></code></pre>
+</li>
+<li>index 맞지 않는 경우에는 NaN 값 생성됨</li>
+<li>
+<p>추가, 삭제</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="13"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 추가</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">s[</span><span class="mtk8">&#39;k&#39;</span><span class="mtk1">] </span><span class="mtk15">=</span><span class="mtk1"> </span><span class="mtk3">300</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 삭제</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">S.drop(</span><span class="mtk8">&#39;k&#39;</span><span class="mtk1">, </span><span class="mtk3">inplace</span><span class="mtk15">=</span><span class="mtk7">True</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.drop(</span><span class="mtk3">1</span><span class="mtk1">) </span><span class="mtk4"># index_number로 drop</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.drop([</span><span class="mtk3">0</span><span class="mtk1">, </span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk3">4</span><span class="mtk1">])</span></span></span></code></pre>
+</li>
+</ul>
+<h6>dataframe</h6>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="14"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df </span><span class="mtk15">=</span><span class="mtk1"> pd.DataFrame(data, </span><span class="mtk3">columns</span><span class="mtk15">=</span><span class="mtk1">[</span><span class="mtk8">&#39;col1&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;col2&#39;</span><span class="mtk1">,</span><span class="mtk8">&#39;col3&#39;</span><span class="mtk1">])</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.col1 </span><span class="mtk15">=</span><span class="mtk1"> df[</span><span class="mtk8">&#39;col1&#39;</span><span class="mtk1">]	</span><span class="mtk4"># col1 선택</span></span></span></code></pre>
+<ul>
+<li>
+<p>shape</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="15"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.shape	</span><span class="mtk4"># (891, 12)</span></span></span></code></pre>
+</li>
+<li>
+<p>index, column</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="16"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.index	</span><span class="mtk4"># RangeIndex(start=0, stop=891, step=1)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.columns	</span><span class="mtk4"># Index([&#39;PassengerId&#39;, &#39;Survived&#39;, &#39;Pclass&#39;, &#39;Name&#39;, &#39;Sex&#39;, &#39;Age&#39;, &#39;SibSp&#39;, &#39;Parch&#39;, &#39;Ticket&#39;, &#39;Fare&#39;, &#39;Cabin&#39;, &#39;Embarked&#39;], dtype=&#39;object&#39;)</span></span></span></code></pre>
+</li>
+<li>
+<p>describe - 요약</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="17"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.describe()</span></span></span></code></pre>
+</li>
+<li>
+<p>info</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="18"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.info()	</span><span class="mtk4"># id, column, non-null count, dtype</span></span></span></code></pre>
+</li>
+<li>
+<p>생성</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="19"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">data </span><span class="mtk15">=</span><span class="mtk1"> {</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1"> : </span><span class="mtk3">100</span><span class="mtk1">, </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1"> : </span><span class="mtk3">200</span><span class="mtk1">, </span><span class="mtk8">&#39;c&#39;</span><span class="mtk1"> : </span><span class="mtk3">300</span><span class="mtk1">}</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.DataFrame(data, </span><span class="mtk3">index</span><span class="mtk15">=</span><span class="mtk1">[</span><span class="mtk8">&#39;x&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;y&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;z&#39;</span><span class="mtk1">])</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">	a	b	c</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">x	</span><span class="mtk3">100</span><span class="mtk1">	</span><span class="mtk3">200</span><span class="mtk1">	</span><span class="mtk3">300</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">y	</span><span class="mtk3">100</span><span class="mtk1">	</span><span class="mtk3">200</span><span class="mtk1">	</span><span class="mtk3">300</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">z	</span><span class="mtk3">100</span><span class="mtk1">	</span><span class="mtk3">200</span><span class="mtk1">	</span><span class="mtk3">300</span></span></span></code></pre>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="20"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">a </span><span class="mtk15">=</span><span class="mtk1"> pd.Series([</span><span class="mtk3">100</span><span class="mtk1">, </span><span class="mtk3">200</span><span class="mtk1">, </span><span class="mtk3">300</span><span class="mtk1">], [</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;d&#39;</span><span class="mtk1">])</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">b </span><span class="mtk15">=</span><span class="mtk1"> pd.Series([</span><span class="mtk3">101</span><span class="mtk1">, </span><span class="mtk3">201</span><span class="mtk1">, </span><span class="mtk3">301</span><span class="mtk1">], [</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;k&#39;</span><span class="mtk1">])</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">c </span><span class="mtk15">=</span><span class="mtk1"> pd.Series([</span><span class="mtk3">110</span><span class="mtk1">, </span><span class="mtk3">210</span><span class="mtk1">, </span><span class="mtk3">310</span><span class="mtk1">], [</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;c&#39;</span><span class="mtk1">])</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.DataFrame([a, b, c], </span><span class="mtk3">index</span><span class="mtk15">=</span><span class="mtk1">[</span><span class="mtk3">100</span><span class="mtk1">, </span><span class="mtk3">101</span><span class="mtk1">, </span><span class="mtk3">102</span><span class="mtk1">])</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">	a		b		d		k		c</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk3">100</span><span class="mtk1">	</span><span class="mtk3">100.0</span><span class="mtk1">	</span><span class="mtk3">200.0</span><span class="mtk1">	</span><span class="mtk3">300.0</span><span class="mtk1">	NaN		NaN</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk3">101</span><span class="mtk1">	</span><span class="mtk3">101.0</span><span class="mtk1">	</span><span class="mtk3">201.0</span><span class="mtk1">	NaN		</span><span class="mtk3">301.0</span><span class="mtk1">	NaN</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk3">102</span><span class="mtk1">	</span><span class="mtk3">110.0</span><span class="mtk1">	</span><span class="mtk3">210.0</span><span class="mtk1">	NaN		NaN		</span><span class="mtk3">310.0</span></span></span></code></pre>
+</li>
+<li>
+<p>column 선택</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="21"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df[</span><span class="mtk8">&#39;Survived&#39;</span><span class="mtk1">]									</span><span class="mtk4"># 하나</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df[[</span><span class="mtk8">&#39;Survived&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;Name&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;Age&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;Embarked&#39;</span><span class="mtk1">]]		</span><span class="mtk4"># 여러개</span></span></span></code></pre>
+</li>
+<li>
+<p>row 선택 - loc, iloc</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="22"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.loc[</span><span class="mtk3">1</span><span class="mtk1">]	</span><span class="mtk4"># index location</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.loc[[</span><span class="mtk3">986</span><span class="mtk1">, </span><span class="mtk3">100</span><span class="mtk1">, </span><span class="mtk3">110</span><span class="mtk1">, </span><span class="mtk3">990</span><span class="mtk1">]]</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df[</span><span class="mtk8">&#39;col2&#39;</span><span class="mtk1">].iloc[</span><span class="mtk3">1</span><span class="mtk1">:]		</span><span class="mtk4"># index position</span></span></span></code></pre>
 </li>
 <li>
+<p>column, row 동시 선택</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="23"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.loc[[</span><span class="mtk3">986</span><span class="mtk1">, </span><span class="mtk3">100</span><span class="mtk1">, </span><span class="mtk3">110</span><span class="mtk1">, </span><span class="mtk3">990</span><span class="mtk1">], [</span><span class="mtk8">&#39;Survived&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;Name&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;Sex&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;Age&#39;</span><span class="mtk1">]]</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.iloc[[</span><span class="mtk3">101</span><span class="mtk1">, </span><span class="mtk3">100</span><span class="mtk1">, </span><span class="mtk3">200</span><span class="mtk1">, </span><span class="mtk3">102</span><span class="mtk1">], [</span><span class="mtk3">1</span><span class="mtk1">, </span><span class="mtk3">4</span><span class="mtk1">, </span><span class="mtk3">5</span><span class="mtk1">]]</span></span></span></code></pre>
+</li>
+<li>
 <p>column 삭제</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="11"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk11">del</span><span class="mtk1"> df[</span><span class="mtk8">&#39;col1&#39;</span><span class="mtk1">]</span></span></span></code></pre>
-</li>
-<li>
-<p>column 선택</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="12"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 1개</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df[</span><span class="mtk8">&#39;col1&#39;</span><span class="mtk1">]</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># 여러개</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df[[</span><span class="mtk8">&#39;col1&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;col2&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;col3&#39;</span><span class="mtk1">]]</span></span></span></code></pre>
-</li>
-<li>
-<p>drop</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="13"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.drop(</span><span class="mtk3">1</span><span class="mtk1">) </span><span class="mtk4"># index_number로 drop</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.drop([</span><span class="mtk3">0</span><span class="mtk1">, </span><span class="mtk3">3</span><span class="mtk1">, </span><span class="mtk3">4</span><span class="mtk1">])</span></span></span></code></pre>
-</li>
-<li>
-<p>describe - 요약</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="14"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.describe()</span></span></span></code></pre>
-</li>
-<li>
-<p>isnull</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="15"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.isnull()</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.isnull().sum()	</span><span class="mtk4"># null인 값의 합</span></span></span></code></pre>
-</li>
-<li>
-<p>sort_values - column 값 기준으로 정렬</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="16"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.sort_values([</span><span class="mtk8">&#39;col1&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;col2&#39;</span><span class="mtk1">], </span><span class="mtk3">ascending</span><span class="mtk15">=</span><span class="mtk7">True</span><span class="mtk1">)	</span><span class="mtk4"># ascending : 오름차순</span></span></span></code></pre>
-</li>
-<li>
-<p>groupby</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="17"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.groupby(</span><span class="mtk8">&#39;col1&#39;</span><span class="mtk1">)[</span><span class="mtk8">&#39;col3&#39;</span><span class="mtk1">].sum()	 </span><span class="mtk4"># groupby(기준이 되는 컬럼)[적용받는 컬럼].적용받는 연산</span></span></span></code></pre>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="24"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk11">del</span><span class="mtk1"> df[</span><span class="mtk8">&#39;col1&#39;</span><span class="mtk1">]</span></span></span></code></pre>
 </li>
 <li>
 <p>filter</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="18"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.groupby(</span><span class="mtk8">&#39;col1&#39;</span><span class="mtk1">).filter(</span><span class="mtk11">lambda</span><span class="mtk1"> </span><span class="mtk3">x</span><span class="mtk1">: </span><span class="mtk11">len</span><span class="mtk1">(x)</span><span class="mtk15">&gt;=</span><span class="mtk3">3</span><span class="mtk1">)</span></span></span></code></pre>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="25"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.groupby(</span><span class="mtk8">&#39;col1&#39;</span><span class="mtk1">).filter(</span><span class="mtk11">lambda</span><span class="mtk1"> </span><span class="mtk3">x</span><span class="mtk1">: </span><span class="mtk11">len</span><span class="mtk1">(x)</span><span class="mtk15">&gt;=</span><span class="mtk3">3</span><span class="mtk1">)</span></span></span></code></pre>
+</li>
+<li>
+<p>sort_values - column 값 기준으로 정렬</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="26"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.sort_values([</span><span class="mtk8">&#39;col1&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;col2&#39;</span><span class="mtk1">], </span><span class="mtk3">ascending</span><span class="mtk15">=</span><span class="mtk7">True</span><span class="mtk1">)	</span><span class="mtk4"># ascending : 오름차순</span></span></span></code></pre>
+</li>
+</ul>
+<h6>상관관계</h6>
+<ul>
+<li>상관계수 연산 (-1 ~ 1)</li>
+</ul>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="27"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.corr()</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">plt.matshow(df.corr())	</span><span class="mtk4"># 시각화</span></span></span></code></pre>
+<h6>NaN 처리</h6>
+<ul>
+<li>
+<p>NaN 값 확인</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="28"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.isna()</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df[</span><span class="mtk8">&#39;Age&#39;</span><span class="mtk1">].isna()</span></span></span></code></pre>
+</li>
+<li>
+<p>isnull</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="29"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.isnull()</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.isnull().sum()	</span><span class="mtk4"># null인 값의 합</span></span></span></code></pre>
+</li>
+<li>
+<p>삭제</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="30"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.dropna()</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.dropna(</span><span class="mtk3">subset</span><span class="mtk15">=</span><span class="mtk1">[</span><span class="mtk8">&#39;Age&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;Cabin&#39;</span><span class="mtk1">])	</span><span class="mtk4"># 특정 열에 NaN값이 있으면 행 삭제</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.dropna(</span><span class="mtk3">axis</span><span class="mtk15">=</span><span class="mtk3">1</span><span class="mtk1">)	</span><span class="mtk4"># 열 삭제</span></span></span></code></pre>
+</li>
+<li>
+<p>치환</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="31"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk3">1</span><span class="mtk1">. 평균으로 대체</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df[</span><span class="mtk8">&#39;Age&#39;</span><span class="mtk1">].fillna(df[</span><span class="mtk8">&#39;Age&#39;</span><span class="mtk1">].mean())</span></span></span></code></pre>
+</li>
+</ul>
+<h6>group</h6>
+<ul>
+<li>
+<p>groupby</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="32"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">group_df </span><span class="mtk15">=</span><span class="mtk1"> df.groupby(</span><span class="mtk8">&#39;col1&#39;</span><span class="mtk1">)[</span><span class="mtk8">&#39;col3&#39;</span><span class="mtk1">].sum()	 </span><span class="mtk4"># groupby(기준이 되는 컬럼)[적용받는 컬럼].적용받는 연산</span></span></span></code></pre>
+</li>
+<li>
+<p>count, mean</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="33"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">group_df.count()</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">group_df.mean()[</span><span class="mtk8">&#39;Survived&#39;</span><span class="mtk1">]				</span><span class="mtk4"># 생존율</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">group_df.groupby(</span><span class="mtk8">&#39;Sex&#39;</span><span class="mtk1">).mean()[</span><span class="mtk8">&#39;Survived&#39;</span><span class="mtk1">]	</span><span class="mtk4"># 성별에 따른 생존율</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">group_df.groupby([</span><span class="mtk8">&#39;Pclass&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;Sex&#39;</span><span class="mtk1">]).mean()[</span><span class="mtk8">&#39;Survived&#39;</span><span class="mtk1">]	</span><span class="mtk4"># 클래스와 성별에 따른 생존율</span></span></span></code></pre>
+</li>
+<li>
+<p>index를 이용한 group by</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="34"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.set_index([</span><span class="mtk8">&#39;Pclass&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;Sex&#39;</span><span class="mtk1">]).reset_index()	</span><span class="mtk4"># 인덱스 초기화</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.set_index(</span><span class="mtk8">&#39;Age&#39;</span><span class="mtk1">).groupby(</span><span class="mtk3">level</span><span class="mtk15">=</span><span class="mtk3">0</span><span class="mtk1">).mean()		</span><span class="mtk4"># column 데이터를 index 레벨로 변경</span></span></span></code></pre>
+</li>
+<li>
+<p>aggregate - 집계함수</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="35"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.set_index([</span><span class="mtk8">&#39;Pclass&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;Sex&#39;</span><span class="mtk1">]).groupby(</span><span class="mtk3">level</span><span class="mtk15">=</span><span class="mtk1">[</span><span class="mtk3">0</span><span class="mtk1">, </span><span class="mtk3">1</span><span class="mtk1">]).aggregate([np.mean, np.sum, np.max])</span></span></span></code></pre>
+</li>
+<li>
+<p>transform - group 후 원래의 index 유지한 상태로 통계함수 적용</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="36"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.groupby(</span><span class="mtk8">&#39;Pclass&#39;</span><span class="mtk1">).transform(np.mean)</span></span></span></code></pre>
+</li>
+</ul>
+<h6>pivot</h6>
+<ul>
+<li>
+<p>pivot</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="37"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df.pivot(</span><span class="mtk8">&#39;a&#39;</span><span class="mtk1">,</span><span class="mtk8">&#39;b&#39;</span><span class="mtk1">)</span></span></span></code></pre>
+</li>
+<li>
+<p>pivot_table</p>
+<ul>
+<li>pivot 과의 차이점은 중복되는 모호한 값은 aggregation 함수를 사용해 값을 채울 수 있음</li>
+</ul>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="38"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.pivot_table(df, </span><span class="mtk3">index</span><span class="mtk15">=</span><span class="mtk8">&#39;요일&#39;</span><span class="mtk1">, </span><span class="mtk3">columns</span><span class="mtk15">=</span><span class="mtk8">&#39;지역&#39;</span><span class="mtk1">, </span><span class="mtk3">aggfunc</span><span class="mtk15">=</span><span class="mtk1">np.mean)</span></span></span></code></pre>
+</li>
+</ul>
+<h6>stack</h6>
+<ul>
+<li>
+<p>stack : 컬럼 레벨 -> 인덱스 레벨</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="39"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">new_df </span><span class="mtk15">=</span><span class="mtk1"> df.set_index([</span><span class="mtk8">&#39;지역&#39;</span><span class="mtk1">, </span><span class="mtk8">&#39;요일&#39;</span><span class="mtk1">])</span></span></span></code></pre>
+</li>
+<li>
+<p>unstack : 인덱스 레벨 -> 컬럼 레벨</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="40"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">new_df.unstack(</span><span class="mtk3">0</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">new_df.unstack(</span><span class="mtk3">1</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">new_df.unstack(</span><span class="mtk3">0</span><span class="mtk1">).stack(</span><span class="mtk3">0</span><span class="mtk1">)</span></span></span></code></pre>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="41"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">new_df.stack</span></span></span></code></pre>
+</li>
+</ul>
+<h6>병합</h6>
+<ul>
+<li>
+<p>concat</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="42"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># column명 같을 때</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df </span><span class="mtk15">=</span><span class="mtk1"> pd.concat([df1, df2], </span><span class="mtk3">ignore_index</span><span class="mtk15">=</span><span class="mtk7">True</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df </span><span class="mtk15">=</span><span class="mtk1"> pd.concat([df1, df2], </span><span class="mtk3">axis</span><span class="mtk15">=</span><span class="mtk3">1</span><span class="mtk1">)</span></span></span></code></pre>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="43"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk4"># column명 다를 때 - 맞는 값끼리 반응 없으면 NaN</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df </span><span class="mtk15">=</span><span class="mtk1"> pd.concat([df1, df2], </span><span class="mtk3">axis</span><span class="mtk15">=</span><span class="mtk3">1</span><span class="mtk1">)</span></span></span></code></pre>
 </li>
 <li>
 <p>merge</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="19"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.merge(df1, df2, </span><span class="mtk3">on</span><span class="mtk15">=</span><span class="mtk8">&quot;id&quot;</span><span class="mtk1">)		</span><span class="mtk4"># id기준으로 merge</span></span></span>
+<ol>
+<li>inner : 기본값</li>
+<li>left : left outer join</li>
+<li>right : right outer join</li>
+<li>outer : full outer join</li>
+</ol>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="44"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.merge(customer, orders, </span><span class="mtk3">on</span><span class="mtk15">=</span><span class="mtk8">&#39;customer_id&#39;</span><span class="mtk1">, </span><span class="mtk3">how</span><span class="mtk15">=</span><span class="mtk8">&#39;inner&#39;</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.merge(customer, orders, </span><span class="mtk3">on</span><span class="mtk15">=</span><span class="mtk8">&#39;customer_id&#39;</span><span class="mtk1">, </span><span class="mtk3">how</span><span class="mtk15">=</span><span class="mtk8">&#39;left&#39;</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.merge(customer, orders, </span><span class="mtk3">on</span><span class="mtk15">=</span><span class="mtk8">&#39;customer_id&#39;</span><span class="mtk1">, </span><span class="mtk3">how</span><span class="mtk15">=</span><span class="mtk8">&#39;right&#39;</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.merge(customer, orders, </span><span class="mtk3">on</span><span class="mtk15">=</span><span class="mtk8">&#39;customer_id&#39;</span><span class="mtk1">, </span><span class="mtk3">how</span><span class="mtk15">=</span><span class="mtk8">&#39;outer&#39;</span><span class="mtk1">)</span></span></span></code></pre>
+</li>
+<li>
+<p>index 기준으로 merge</p>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="45"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">cust1 </span><span class="mtk15">=</span><span class="mtk1"> customer.set_index(</span><span class="mtk8">&#39;customer_id&#39;</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">order1 </span><span class="mtk15">=</span><span class="mtk1"> orders.set_index(</span><span class="mtk8">&#39;customer_id&#39;</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.merge(cust1, order1, </span><span class="mtk3">left_index</span><span class="mtk15">=</span><span class="mtk7">True</span><span class="mtk1">, </span><span class="mtk3">right_index</span><span class="mtk15">=</span><span class="mtk7">True</span><span class="mtk1">)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.merge(df1, df2, </span><span class="mtk3">on</span><span class="mtk15">=</span><span class="mtk8">&quot;id&quot;</span><span class="mtk1">)		</span><span class="mtk4"># id기준으로 merge</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.merge(df1, df2, </span><span class="mtk3">left_on</span><span class="mtk15">=</span><span class="mtk8">&quot;df1_id&quot;</span><span class="mtk1">, </span><span class="mtk3">right_on</span><span class="mtk15">=</span><span class="mtk8">&quot;df2_id&quot;</span><span class="mtk1">)</span></span></span></code></pre>
 </li>
 <li>
 <p>join</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="20"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.merge(df1, df2, </span><span class="mtk3">on</span><span class="mtk15">=</span><span class="mtk8">&quot;id&quot;</span><span class="mtk1">, </span><span class="mtk3">how</span><span class="mtk15">=</span><span class="mtk8">&quot;left&quot;</span><span class="mtk1">)		</span><span class="mtk4"># left join</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.merge(df1, df2, </span><span class="mtk3">on</span><span class="mtk15">=</span><span class="mtk8">&quot;id&quot;</span><span class="mtk1">, </span><span class="mtk3">how</span><span class="mtk15">=</span><span class="mtk8">&quot;right&quot;</span><span class="mtk1">)	</span><span class="mtk4"># right join</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.merge(df1, df2, </span><span class="mtk3">on</span><span class="mtk15">=</span><span class="mtk8">&quot;id&quot;</span><span class="mtk1">, </span><span class="mtk3">how</span><span class="mtk15">=</span><span class="mtk8">&quot;outer&quot;</span><span class="mtk1">)	</span><span class="mtk4"># outer join</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">pd.merge(df1, df2, </span><span class="mtk3">on</span><span class="mtk15">=</span><span class="mtk8">&quot;id&quot;</span><span class="mtk1">, </span><span class="mtk3">how</span><span class="mtk15">=</span><span class="mtk8">&quot;inner&quot;</span><span class="mtk1">)	</span><span class="mtk4"># inner join</span></span></span></code></pre>
-</li>
-<li>
-<p>concat</p>
-<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="21"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df </span><span class="mtk15">=</span><span class="mtk1"> pd.concat([df1, df2])</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">df </span><span class="mtk15">=</span><span class="mtk1"> pd.concat([df1, df2], </span><span class="mtk3">axis</span><span class="mtk15">=</span><span class="mtk3">1</span><span class="mtk1">)</span></span></span></code></pre>
+<pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="46"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">cust1.join(order1, </span><span class="mtk3">how</span><span class="mtk15">=</span><span class="mtk8">&#39;inner&#39;</span><span class="mtk1">)</span></span></span></code></pre>
 </li>
 </ul>
 <style class="grvsc-styles">
