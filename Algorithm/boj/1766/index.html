@@ -504,32 +504,27 @@ void function() {
 <pre class="grvsc-container monokai-dimmed grvsc-mm-tuw09S" data-language="python" data-index="2"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk11">import</span><span class="mtk1"> heapq</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">N, M </span><span class="mtk15">=</span><span class="mtk1"> </span><span class="mtk11">map</span><span class="mtk1">(</span><span class="mtk13">int</span><span class="mtk1">, </span><span class="mtk11">input</span><span class="mtk1">().split())</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">arr </span><span class="mtk15">=</span><span class="mtk1"> [[] </span><span class="mtk11">for</span><span class="mtk1"> i </span><span class="mtk15">in</span><span class="mtk1"> </span><span class="mtk11">range</span><span class="mtk1">(N </span><span class="mtk15">+</span><span class="mtk1"> </span><span class="mtk3">1</span><span class="mtk1">)]</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">inde </span><span class="mtk15">=</span><span class="mtk1"> [</span><span class="mtk3">0</span><span class="mtk1">] </span><span class="mtk15">*</span><span class="mtk1"> (N </span><span class="mtk15">+</span><span class="mtk1"> </span><span class="mtk3">1</span><span class="mtk1">)</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">heap </span><span class="mtk15">=</span><span class="mtk1"> []</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">answer </span><span class="mtk15">=</span><span class="mtk1"> []</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">arr </span><span class="mtk15">=</span><span class="mtk1"> [[] </span><span class="mtk11">for</span><span class="mtk1"> _ </span><span class="mtk15">in</span><span class="mtk1"> </span><span class="mtk11">range</span><span class="mtk1">(N </span><span class="mtk15">+</span><span class="mtk1"> </span><span class="mtk3">1</span><span class="mtk1">)]</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">rank </span><span class="mtk15">=</span><span class="mtk1"> [</span><span class="mtk3">0</span><span class="mtk1">] </span><span class="mtk15">*</span><span class="mtk1"> (N </span><span class="mtk15">+</span><span class="mtk1"> </span><span class="mtk3">1</span><span class="mtk1">)</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk11">for</span><span class="mtk1"> _ </span><span class="mtk15">in</span><span class="mtk1"> </span><span class="mtk11">range</span><span class="mtk1">(M):</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    x, y </span><span class="mtk15">=</span><span class="mtk1"> </span><span class="mtk11">map</span><span class="mtk1">(</span><span class="mtk13">int</span><span class="mtk1">, </span><span class="mtk11">input</span><span class="mtk1">().split())</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    arr[x].append(y)</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    inde[y] </span><span class="mtk15">+=</span><span class="mtk1"> </span><span class="mtk3">1</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    rank[y] </span><span class="mtk15">+=</span><span class="mtk1"> </span><span class="mtk3">1</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">heap </span><span class="mtk15">=</span><span class="mtk1"> []</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk11">for</span><span class="mtk1"> i </span><span class="mtk15">in</span><span class="mtk1"> </span><span class="mtk11">range</span><span class="mtk1">(</span><span class="mtk3">1</span><span class="mtk1">, N </span><span class="mtk15">+</span><span class="mtk1"> </span><span class="mtk3">1</span><span class="mtk1">):</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    </span><span class="mtk11">if</span><span class="mtk1"> inde[i] </span><span class="mtk15">==</span><span class="mtk1"> </span><span class="mtk3">0</span><span class="mtk1">:</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    </span><span class="mtk11">if</span><span class="mtk1"> rank[i] </span><span class="mtk15">==</span><span class="mtk1"> </span><span class="mtk3">0</span><span class="mtk1">:</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        heapq.heappush(heap, i)</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        </span><span class="mtk11">print</span><span class="mtk1">(heap)</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">answer </span><span class="mtk15">=</span><span class="mtk1"> []</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk11">while</span><span class="mtk1"> heap:</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    data </span><span class="mtk15">=</span><span class="mtk1"> heapq.heappop(heap)</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    answer.append(data)</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    </span><span class="mtk11">for</span><span class="mtk1"> d </span><span class="mtk15">in</span><span class="mtk1"> arr[data]:</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        inde[d] </span><span class="mtk15">-=</span><span class="mtk1"> </span><span class="mtk3">1</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        </span><span class="mtk11">if</span><span class="mtk1"> inde[d] </span><span class="mtk15">==</span><span class="mtk1"> </span><span class="mtk3">0</span><span class="mtk1">:</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">            heapq.heappush(heap, d)</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk11">for</span><span class="mtk1"> i </span><span class="mtk15">in</span><span class="mtk1"> answer:</span></span></span>
-<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    </span><span class="mtk11">print</span><span class="mtk1">(i, </span><span class="mtk3">end</span><span class="mtk15">=</span><span class="mtk8">&#39; &#39;</span><span class="mtk1">)</span></span></span></code></pre>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    tmp </span><span class="mtk15">=</span><span class="mtk1"> heapq.heappop(heap)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    answer.append(tmp)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">    </span><span class="mtk11">for</span><span class="mtk1"> i </span><span class="mtk15">in</span><span class="mtk1"> arr[tmp]:</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        rank[i] </span><span class="mtk15">-=</span><span class="mtk1"> </span><span class="mtk3">1</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">        </span><span class="mtk11">if</span><span class="mtk1"> rank[i] </span><span class="mtk15">==</span><span class="mtk1"> </span><span class="mtk3">0</span><span class="mtk1">:</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">            heapq.heappush(heap, i)</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk11">print</span><span class="mtk1">(</span><span class="mtk15">*</span><span class="mtk1">answer)</span></span></span></code></pre>
 <style class="grvsc-styles">
   .grvsc-container {
     overflow: auto;
@@ -628,7 +623,6 @@ void function() {
   .monokai-dimmed .mtk15 { color: #676867; }
   .monokai-dimmed .mtk13 { color: #C7444A; }
   .monokai-dimmed .mtk3 { color: #6089B4; }
-  .monokai-dimmed .mtk8 { color: #9AA83A; }
   .monokai-dimmed .grvsc-line-highlighted::before {
     background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
     box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
@@ -645,7 +639,6 @@ void function() {
     .grvsc-mm-tuw09S .mtk15 { color: #676867; }
     .grvsc-mm-tuw09S .mtk13 { color: #C7444A; }
     .grvsc-mm-tuw09S .mtk3 { color: #6089B4; }
-    .grvsc-mm-tuw09S .mtk8 { color: #9AA83A; }
     .grvsc-mm-tuw09S .grvsc-line-highlighted::before {
       background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
       box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
