@@ -5,7 +5,7 @@ path: "/Algorithm/programmers/12916/"
 category: "Algorithm"
 ci: "Lv1"
 cat: "PROGRAMMERS"
-tags: ["PROGRAMMERS", "PYTHON", "Lv1"]
+tags: ["PROGRAMMERS", "Python", "Lv1"]
 description: "[Python | Programmers] 문자열 내 p와 y의 개수"
 ---
 

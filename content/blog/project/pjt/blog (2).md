@@ -1,0 +1,267 @@
+---
+title: "02. Blog를 위한 CSS"
+date: "2019-11-27T02:15:32.169Z"
+description: "[Blog] 02. Blog를 위한 CSS"
+path: "/Project/blog/2/"
+category: "Project"
+ci: "Blog"
+cat: "PJT"
+tags: ["PJT", "Gatsby", "CSS"]
+---
+
+#### <span style="color:#6D838C">2. CSS </span>
+
+오늘은 **CSS**에 대해 배웠다.  
+
+먼저, html은 쉽게 배울 수 있지만, 가장 중요한 기초가 된다.  
+그리고, CSS는 HTML이 WEB의 정보에 집중할 수 있게, 디자인적 요소를 맡고 있다.  
+
+간단하게, 몇 가지 **Tag**를 배울 수 있었다.  
+<br>
+
+<hr>
+
+
+###### <span style="color:#819BA6">1. 폰트 색상</span>
+
+~~~
+<font color = "red"> 빨강 </font>
+~~~
+
+* <font color = "red"> 빨강 </font>
+
+ <span style="color:#D9A493"> **※ WEB에서 무시하게 하는 방법** </span>
+ : **<!--** ___________________ **-->** 사용  
+
+
+<br>
+
+###### <span style="color:#819BA6">2. CSS코드로 인식 시키기</span>
+
+~~~
+<style> css코드로 인식 </style>
+~~~
+
+* <span style="color:#D9A493"> **HTML** </span> : 모든 tag 하나하나 수정해야함  
+  <span style="color:#D9A493"> **CSS** </span> : 공통된 tag 하나만 수정해도 다 변경됨
+
+=> CSS가 효율적이다. 
+
+
+<br>
+
+###### <span style="color:#819BA6">3. 'a'(링크) 색상 변경</span>
+
+~~~
+<style>
+  a {
+     color : red;
+     }
+</style>
+~~~
+
+
+<br>
+
+###### <span style="color:#819BA6">4. 'a'(링크) 밑줄</span>
+
+* 밑줄 X
+
+~~~
+<style>
+  a {
+     text-decoration : none;
+     }
+</style>
+~~~
+
+* 밑줄 O
+
+~~~
+<style>
+  a {
+     text-decoration : underline;
+     }
+</style>
+~~~
+
+<br>
+
+###### <span style="color:#819BA6">5. 폰트 크기</span>
+
+~~~
+<style>
+  a {
+     font-size : 45px;
+     }
+</style>
+~~~
+
+<br>
+
+###### <span style="color:#819BA6">6. 정렬</span>
+
+~~~
+<style>
+  a {
+     text-align : center;
+     }
+</style>
+~~~
+
+
+ <span style="color:#D9A493"> **※ 모든 링크(Black), 방문했던 페이지(Gray), 현재 페이지(Red)** </span>
+
+~~~
+<style>
+  .saw {
+       color : gray;
+       }
+  .active {
+       color : red;
+          }
+</style>
+
+<body>
+  <ol>
+    <li><a href="링크" class="saw" > HTML </a></li>
+    <li><a href="링크" class="saw active" > CSS </a></li>
+  </ol>
+</body>
+~~~
+
+<span style="color:#D9A493">**style의 .saw와 .active가 순서가 바뀌면 .active가 적용이 안됨.**</span>  
+그래서, **class="saw active"**를 **class="saw" id="active"**로 바꿔준다.  
+그리고 style의 **.active**를 **#active**로 바꿔준다면 순서에 상관 없이 적용시킬 수 있다. 
+
+
+<span style="color:#D9A493">**CSS코드 적용 순서**</span>  
+ id(#) → class(.) → Tag(a,h1,ol...)
+
+
+<br>
+
+###### <span style="color:#819BA6">7. 테두리</span>
+
+* Block level element : 화면 전체를 테두리로 쓰는 것. **ex) h1**
+
+~~~
+<style>
+  h1 {
+     border-width : 5px;
+     border-color : black;
+     border-style : solid;
+     }
+</style>
+~~~
+
+* inline element : 부분을 테두리로 쓰는 것. **ex) a**
+
+~~~
+<style>
+  h1 {
+     border-width : 5px;
+     border-color : black;
+     border-style : solid;
+     }
+</style>
+~~~
+
+* <span style="color:#D9A493"> **부분 → 전체** </span> : {} 안에 **display : block;** 입력  
+  <span style="color:#D9A493"> **전체 → 부분** </span> : {} 안에 **display : inline;** 입력  
+
+
+<br>  
+
+* <span style="color:#D9A493"> **테두리 선택자 중복 없이 줄이기** </span>
+
+~~~
+<style>
+  h1 {
+     border : 5px black solid;
+     }
+</style>
+~~~
+
+* 콘텐츠와 테두리 사이 간격 조정 : {} 안에 **padding : 20px;** 입력  
+
+* 테두리와 테두리 사이 간격 조정 : {} 안에 **margin : 20px;** 입력  
+
+* 테두리 가로 길이 조정 : {} 안에 **width : 100px;** 입력  
+
+* 밑에만 테두리 지정 : {} 안에 **border-bottom : 5px solid red;** 입력  
+
+
+<br>  
+
+* <span style="color:#D9A493">**의미 없이 디자인만을 위한 그룹 설정 tag**</span> 
+
+~~~
+<div>____</div> : 화면 전체
+<span> ____ </span> : 부분
+~~~
+
+<br>
+
+###### <span style="color:#819BA6">8. 좌우로 나누고, 테두리 설정</span>
+
+~~~
+<style>
+  #grid {
+     border : 1px black solid;
+     display : grid;
+     grid-template-colums : 150px 1fr; ('포스트'는 150px로 고정, '블로그'는 페이지 크기에 따라)
+     }
+  div {
+     border : 5px red solid;
+     }
+</style>
+
+<body>
+  <div id="grid">
+    <div> 포스트 </div>
+    <div> 블로그 </div>
+  </div>
+</body>
+~~~
+
+<br>
+
+###### <span style="color:#819BA6">9. 미디어 쿼리</span>
+
+* 화면이 800px보다 크다면,  
+
+~~~
+  @media(min-width:800px) {
+    div {
+       display : none;
+       }
+    }
+~~~
+
+* 화면이 800px보다 작으면,  
+
+~~~
+  @media(max-width:800px) {
+    #grid {
+       display : block;  (800px보다 작으면, 화면 전체를 사용)
+         }
+    ol {
+       border-right : none;  (800px보다 작으면, 테두리 없앰)
+      }
+    }
+~~~
+
+<br>
+<span style="color:#D9A493">**모든 웹페이지 공통적으로 수정하는 방법**</span>
+
+~~~
+<link rel="stylesheet" href="style.css">
+~~~
+
+지정한 style을 **style.css**로 저장하고, 그것을 불러와서 적용시키는 방법이다.  
+이 방법을 사용하면, 전체 페이지를 수정하지 않고 **style.css**만 수정하면 된다.
+
+<br>
+
+[생활코딩](https://www.opentutorials.org/course/1)에서 더 자세한 내용을 확인할 수 있다. 

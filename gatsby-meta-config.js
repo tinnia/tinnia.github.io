@@ -8,7 +8,7 @@ module.exports = {
     lang: 'en',
     links: {
         github: 'https://github.com/tinnia/',
-        instagram: 'https://www.instagram.com/tinnia_story/',
+        instagram: 'https://www.instagram.com/',
         notion: 'https://www.notion.so/',
         linkedin: 'https://www.linkedin.com/'
     },

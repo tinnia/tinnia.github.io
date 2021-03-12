@@ -1,0 +1,50 @@
+---
+title: "04. 페이지 만들기"
+date: "2020-11-04T02:15:32.169Z"
+description: "[Gatsby + React] 페이지 만들기"
+path: "/Project/blog/4/"
+category: "Project"
+ci: "Blog"
+cat: "PJT"
+tags: ["PJT", "Gatsby"]
+---
+
+#### Gatsby + React Todo 페이지 만들기
+
+
+
+##### 1️⃣ js파일 만들기
+
+&nbsp;- src/pages에 todo.js 만들기
+
+
+
+##### 2️⃣ js 파일 원하는 모습으로 꾸미기
+
+```js noLineNumbers
+import React from "react"
+...
+
+const TodoPage = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata.title
+  const todolist = [...]
+  const addBoard = [...]
+
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title="Todo" />
+      <h2 style={{ color:"#8C749F" }}>To Do List</h2>
+      ...
+    </Layout>
+  );
+}
+
+export default TodoPage
+
+export const pageQuery = graphql`
+  query {
+    ...
+  }
+`
+```
+

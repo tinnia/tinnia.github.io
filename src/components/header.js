@@ -10,7 +10,7 @@ const Header = () => {
     const [scrolled, setScrolled] = useState(false)
     let isChecked
     if (typeof window !== `undefined`) {
-        isChecked = localStorage.getItem('theme') === 'dark' ? true : false;
+        isChecked = localStorage.getItem('theme') === 'dark' ? false : true;
     }
     useEffect(() => {
         const handleScroll = () => {
@@ -40,11 +40,11 @@ const Header = () => {
                                 <input id="switch"
                                     className="invisible"
                                     type="checkbox"
-                                    onChange={e => {toggleTheme(e.target.checked ? 'dark' : 'light');isChecked=e.target.checked;}}
-                                    checked={theme === 'dark'}
+                                    onChange={e => {toggleTheme(e.target.checked ? 'light' : 'dark');isChecked=e.target.checked;}}
+                                    checked={theme === 'light'}
                                 />
                                 <label className={`switchLabel`} htmlFor="switch">
-                                    { isChecked ? <RiMoonClearFill /> : <RiSunFill /> }
+                                    { isChecked ? <RiSunFill /> : <RiMoonClearFill /> }
                                 </label>
                             </div>
                         )}

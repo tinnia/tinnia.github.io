@@ -18,6 +18,33 @@ main {
   margin:10rem auto 0rem auto;
 }
 
+.main {
+  display: flex;
+  /* height: 150px;
+  line-height: 150px; */
+  /* padding: 0 3rem; */
+  /* border-radius: 13px;
+  box-shadow: var(--toggleShadow); */
+}
+
+.maintoTags {
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  padding:1rem;
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+}
+
+.maintoTags:hover {
+  box-shadow: var(--toggleHover);
+}
+
+.mainTags {
+  padding:0 2rem;
+  margin-bottom: 5rem;
+}
+
+
 .drag {
   -ms-user-select: none; 
   -moz-user-select: -moz-none;
@@ -126,14 +153,14 @@ ul, ol, li {
 }
 
 .catePostListItemImg {
-  padding: 0.3rem;
-  margin: 0 1rem 0 0;
-  width:40px;
-  height: 40px;
+  padding: 0 0.3rem;
+  margin: 0.2rem 1rem 0 0;
+  width: 43px;
+  height: 43px;
   color:#D97B59;
-  line-height: 30px;
+  line-height: 43px;
   text-align: center;
-  border-radius: 40px;
+  border-radius: 17px;
   font-size: 0.9rem;
   background-color: #F2D4C2;
   box-shadow: var(--toggleShadow);
@@ -144,7 +171,7 @@ ul, ol, li {
 }
 
 .catePostListItemTitle h4 {
-  color:#F2CA99;
+  color:var(--titletext);
 }
 
 .catePostListItemTitle small {
@@ -226,8 +253,68 @@ ul, ol, li {
 }
 
 
+/* Tags */
+.tags {
+  margin:1.5rem 0;
+  padding:0 1rem;
+}
 
+.recommendTags {
+  margin: 3rem 0;
+}
 
+.taghr {
+  border:0;
+  border-top: 1px solid var(--taghr);
+}
+
+.tagGroup {
+  margin:3rem 0;
+}
+
+.tagButton {
+  display: inline-flex;
+  padding:0.5rem 0.5rem 0.5rem 0.8rem;
+  margin:0.5rem;
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+  color: var(--imgBg);
+  border:0;
+  background-color: var(--tag);
+}
+
+.tagButton:hover {
+  box-shadow: var(--toggleHover);
+}
+
+.tagBadge {
+  margin-left: 0.5rem;
+  padding:0.1rem 0.4rem;
+  min-width:1.3rem;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  background-color:#F2CA99 ;
+  color:black;
+}
+
+.tagPosts {
+  margin: 3rem auto;
+  padding: 0.7rem 1rem;
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+}
+
+.tagicons {
+  transform: rotate(42deg);
+}
+
+.toTags {
+  margin:auto 0;
+  height:3rem;
+  background-color:#F2CA99 ;
+  border-radius: 13px;
+  box-shadow: var(--toggleShadow);
+}
 
 
 
@@ -235,7 +322,7 @@ ul, ol, li {
 .mainCat {
   border-radius: 13px;
   box-shadow: var(--toggleShadow);
-  margin:8rem auto;
+  margin:6rem auto 3rem auto;
   padding:1.5rem 2rem;
   text-align: center;
 }
@@ -255,7 +342,7 @@ ul, ol, li {
 
 
 .recentTitle {
-  margin:4rem 1.5rem;
+  margin:7rem 1.5rem 3rem 1.5rem;
 }
 
 .recentPosts {
@@ -271,14 +358,17 @@ ul, ol, li {
 .light {
   color: #212121;
   background-color: #f3f3f3;
-  
+  --titletext: #f2ca99;
+  --taghr:#dbdbdb;
   --headerBg: #fafafaea;
   --hr: #ececec;
   --text:#b9b9b9;
   --bg: #fafafa;
+  --tag:#fafafa;
+  --imgBg:#323232;
+  --imgTagBg:#3232321b;
   --selecttext:#d6d6d6;
   --selectbg:#30303090;
-  --imgBg:#323232;
   --boxshadow:0px 0px 10px #43394450;
   --comment: 'github-light';
   --imgShadow:  6px 6px 8px #c9b0a1, -6px -6px 8px #fff8e3;
@@ -290,12 +380,15 @@ ul, ol, li {
 .dark {
   color:#dbdbdb;
   background-color: #323232;
-
+  --titletext: #f2ca99;
+  --taghr:#424242;
   --headerBg: #323232ea;
   --hr: #3a3a3a;
   --text:#979797;
   --bg: #323232;  
+  --tag:#323232;
   --imgBg: #fafafa;
+  --imgTagBg: #fafafa40;
   --selecttext:#474747;
   --selectbg:#fafafa90;
   --boxshadow:0px 0px 10px #d1d1d148; 

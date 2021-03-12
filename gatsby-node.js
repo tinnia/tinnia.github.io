@@ -2,11 +2,16 @@ const path = require(`path`)
 const _ = require('lodash')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+function replaceAll(str, searchStr, replaceStr) {
+  return str.split(searchStr).join(replaceStr);
+}
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   // Define a template for blog post
   const categoryTemplate = path.resolve("./src/templates/categories.js")
+  const tagTemplate = path.resolve("./src/templates/tags.js")
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
 
   // Get all markdown blog posts sorted by date
@@ -34,6 +39,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fieldValue
           }
         }
+        tagGroup: allMarkdownRemark(limit: 2000) {
+          group(field: frontmatter___tags) {
+            fieldValue
+          }
+        }
       }
     `
   )
@@ -55,7 +65,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     posts.forEach((post, index) => {
       const previousPostId = index === 0 ? null : posts[index - 1].id
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
-
       createPage({
         path: post.frontmatter.path,
         component: blogPost,
@@ -70,7 +79,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Create Category Pages
   const categories = result.data.categoryGroup.group
-  
   if (categories.length > 0) {
     categories.forEach(category => {
       createPage({
@@ -82,6 +90,33 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
+
+  // Create Tag Pages
+  const tags = result.data.tagGroup.group
+  if (tags.length > 0) {
+    tags.forEach(tag => {
+      if (tag.fieldValue === 'ADsP') {
+        createPage({
+          path: `/tags/A-Ds-P/`,
+          component: tagTemplate,
+          context: {
+            tag: tag.fieldValue,
+          },
+        })
+      } else {
+        let tmp = replaceAll(tag.fieldValue, ' ','_')
+        tmp = replaceAll(tmp, "’", '_')
+        createPage({
+          path: `/tags/${tmp}/`,
+          component: tagTemplate,
+          context: {
+            tag: tag.fieldValue,
+          },
+        })
+      }
+    })
+  }
+  
 }
 
 

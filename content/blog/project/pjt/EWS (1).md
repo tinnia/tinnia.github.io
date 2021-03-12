@@ -1,0 +1,68 @@
+---
+title: "[Project #1] 프로젝트 기획"
+date: "2021-01-22T21:15:32.169Z"
+description: "[Project #1] 프로젝트 기획"
+path: "/Project/everywherescrap/1/"
+category: "Project"
+ci: "EWS"
+cat: "PJT"
+tags: ["PJT", "Spring Boot", "Crawling" ]
+---
+
+
+
+###### Project #1 Everywhere Scrap
+
+#### 프로젝트 기획
+
+<hr />
+
+##### 프로젝트 주제
+
+기사 스크랩
+
+* 스크랩 주제 : 사회 / 경제 / IT, 과학
+* 프로젝트 이름 : Everywhere Scrap
+
+
+
+##### 프로젝트 기간
+
+3주 (2020.01.18 ~ 2020.02.07)
+
+
+
+##### 프로젝트 규칙
+
+1. Commit명 : 날짜, 기능 순으로 띄워쓰기는 밑줄
+
+   ```
+   0125_login_signup
+   ```
+
+   
+
+2. 하루 2시간 이상 Google Meet으로 진행
+
+
+
+##### 프로젝트 개발 환경
+
+1. Back End
+   * Spring Boot 
+ 2. Front End
+    * Vue.js
+3. DB
+   * Mongo DB
+4. Crawling & Data
+   *  Python
+
+
+
+##### 프로젝트 기능
+
+* 회원 기능
+* 기사 찜하기
+* 검색 기능
+* 워드클라우드
+* 정해진 시간에 자동 크롤링

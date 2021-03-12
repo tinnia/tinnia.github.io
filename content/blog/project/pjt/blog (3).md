@@ -1,0 +1,126 @@
+---
+title: "03. Blog 제작"
+date: "2020-10-25T02:15:32.169Z"
+description: "[Gatsby + React+ gh-pages] Blog 만들기"
+path: "/Project/blog/3/"
+category: "Project"
+ci: "Blog"
+cat: "PJT"
+tags: ["PJT", "Gatsby", "Git"]
+---
+
+#### Gatsby + React + gh-pages로 블로그 만들기
+
+###### ❤️ 준비
+
+```shell
+node.js
+npm
+git
+github 계정
+```
+
+
+
+##### 1️⃣ Gatsby 설치
+
+```bashnolinenumbers
+npm install —global gatsby-cli
+```
+
+
+
+##### 2️⃣ Gatsby 프로젝트 만들기
+
+```bash noLineNumbers
+gatsby new [프로젝트명] [테마] 
+```
+
+&nbsp;&nbsp;- 테마는 생략 가능하지만 빠른 시작을 위해서는 [여기](https://www.gatsbyjs.com/starters/?v=2)에서 테마를 선택하는 것이 좋다.
+
+
+
+##### 3️⃣ Gatsby 개발모드
+
+```bash noLineNumbers
+cd [프로젝트명]
+gatsby develop 
+```
+
+
+
+##### 4️⃣ Config 수정
+
+```bash noLineNumbers
+siteMetadata: {
+    siteTitleAlt: `Tinnia Blog`,
+    author:`tinnia`,
+    siteUrl:`https://tinnia.github.io`,
+    siteImage:``,
+    siteLanguage:`ko`,
+    siteDescription:`Welcome to Tinnia Blog`,
+    siteHeadline:``,
+    siteTitle:`Tinnia Blog`,
+  },
+```
+
+&nbsp;- siteMetadata외에도 plugin 수정하기
+
+
+
+
+##### 5️⃣ package.json 수정
+
+```bash noLineNumbers
+"homepage": "https://tinnia.github.io",
+"scripts": {
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    ...
+},
+```
+
+
+
+##### 6️⃣ Github repository 만들기
+
+```bash noLineNumbers
+[닉네임].github.io 라는 이름의 repo 만들기
+```
+
+
+
+##### 7️⃣ Github 올리기
+
+```bash noLineNumbers
+git add .
+git commit -m "커밋명"
+git remote add origin "https://github.com/[닉네임]/[닉네임].github.io.git"
+git push origin -u master
+```
+
+
+
+##### 8️⃣ Git Branch 만들고 gh-pages 설치 후 Deploy 하기
+
+```bash noLineNumbers
+git checkout -b gh-pages
+npm install --save-dev gh-pages
+npm run deploy
+```
+
+
+
+##### 9️⃣ 수정사항 커밋
+
+```bash noLineNumbers
+git add .
+git commit -m "커밋명"
+git push origin -u gh-pages
+```
+
+<br />
+
+###### 📌 참고
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>[React Theme - Gatsby Starter Blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog)</small>
+

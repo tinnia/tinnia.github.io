@@ -5,7 +5,7 @@ path: "/Algorithm/programmers/12954/"
 category: "Algorithm"
 ci: "Lv1"
 cat: "PROGRAMMERS"
-tags: ["PROGRAMMERS", "PYTHON", "Lv1"]
+tags: ["PROGRAMMERS", "Python", "Lv1"]
 description: "[Python | Programmers] x만큼 간격이 있는 n개의 숫자"
 ---
 

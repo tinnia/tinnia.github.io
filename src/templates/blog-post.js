@@ -32,7 +32,7 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header className="postHeader">
           <div>
-            <h2 itemProp="headline">{post.frontmatter.title}</h2>
+            <h3 itemProp="headline">{post.frontmatter.title}</h3>
             <small>{post.frontmatter.category}</small> - <small>{post.frontmatter.date}</small>
           </div>
           {/* <div className="">

@@ -1,0 +1,101 @@
+---
+title: "[Project #1] Spring Boot 비밀번호 암호화"
+date: "2021-01-25T23:15:32.169Z"
+description: "[Project #1] Spring Boot + MongoDB 비밀번호 암호화 (Security)"
+path: "/Project/everywherescrap/4/"
+category: "Project"
+ci: "EWS"
+cat: "PJT"
+tags: ["PJT", "Spring Boot", "Java", "Security"]
+---
+
+
+
+###### Project #1 Everywhere Scrap
+
+#### Spring Boot + MongoDB 비밀번호 암호화
+
+<hr />
+
+##### Security - Bcrypt
+
+비밀번호를 암호화하는 것은 다양한 방법이 있지만, Bcrypt로 암호화하여 쓰는 간단한 코드를 사용했다.
+
+
+
+##### 과정
+
+1. Maven Dependency 추가
+
+   ```xml
+   <!-- 토큰 -->
+   <dependency>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-security</artifactId>
+   </dependency>
+   ```
+   
+2. Security/PasswordEncoding.java
+
+   * Bearer 방식으로 토큰 만들기
+
+   ```java
+   package com.example.backend.security;
+   
+   import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+   import org.springframework.security.crypto.password.PasswordEncoder;
+   
+   // 비밀번호 암호화 코드
+   public class PasswordEncoding implements PasswordEncoder {
+      private PasswordEncoder passwordEncoder;
+   
+      public PasswordEncoding() {
+         this.passwordEncoder = new BCryptPasswordEncoder();
+      }
+   
+      public PasswordEncoding(PasswordEncoder passwordEncoder) {
+         this.passwordEncoder = passwordEncoder;
+      }
+   
+      @Override	// 패스워드 암호화 코드
+      public String encode(CharSequence rawPassword) {
+         return passwordEncoder.encode(rawPassword);
+      }
+   
+      @Override	// 패스워드 비교 코드
+      public boolean matches(CharSequence rawPassword, String encodedPassword) {
+         return passwordEncoder.matches(rawPassword, encodedPassword);
+      }
+   }
+   ```
+
+   
+
+   
+
+   
+
+##### 사용 - AccountController.java
+
+```java
+
+import com.example.backend.security.PasswordEncoding;
+
+public class AccountController {
+    
+    ...
+        
+    // 비밀번호 암호화
+    PasswordEncoding passwordEncoding = new PasswordEncoding();
+    String newPassword = passwordEncoding.encode(request.getPassword());
+
+    // 비밀번호 match
+    PasswordEncoding passwordEncoding = new PasswordEncoding();
+    if (passwordEncoding.matches(password, userOpt.get().getPassword())) {
+        ...
+    }
+}
+```
+
+
+

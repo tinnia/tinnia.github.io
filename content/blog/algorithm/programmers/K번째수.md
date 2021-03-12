@@ -5,7 +5,7 @@ path: "/Algorithm/programmers/42748/"
 category: "Algorithm"
 ci: "Lv1"
 cat: "PROGRAMMERS"
-tags: ["PROGRAMMERS", "PYTHON", "Lv1"]
+tags: ["PROGRAMMERS", "Python", "Lv1"]
 description: "[Python | Programmers] K번째수"
 ---
 

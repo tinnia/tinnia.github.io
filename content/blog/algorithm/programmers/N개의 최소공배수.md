@@ -5,7 +5,7 @@ path: "/Algorithm/programmers/12953/"
 category: "Algorithm"
 ci: "Lv2"
 cat: "PROGRAMMERS"
-tags: ["PROGRAMMERS", "PYTHON", "Lv2"]
+tags: ["PROGRAMMERS", "Python", "Lv2"]
 description: "[Python | Programmers] N개의 최소공배수"
 ---
 
